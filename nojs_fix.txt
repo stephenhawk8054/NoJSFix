@@ -19,6 +19,9 @@ insideevs.com##.detailed-box .lazyload
 mysmartprice.com##+js(lazy-src)
 mysmartprice.com##img[data-lazy-fallback]:style(opacity: 1 !important;)
 
+! scitechdaily.com
+scitechdaily.com##+js(srcset, img.ezlazyload, ezsrc)
+
 ! vice.com
 vice.com##+js(picture-source)
 vice.com##picture.lazyloader--lowres:remove-class(lazyloader--lowres)
