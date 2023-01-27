@@ -13,6 +13,7 @@
     const target = "{{1}}";
     const replace = "{{2}}";
     const mode = "{{3}}";
+    console.log(mode);
     window.addEventListener("load", function () {
         for (const imgEl of document.querySelectorAll(target)) {
             if (mode === "" || mode === "{{3}}") {
