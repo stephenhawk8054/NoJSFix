@@ -1,5 +1,5 @@
 /// lazy-src.js
-(function() {
+(function () {
     window.addEventListener("load", function () {
         for (const imgEl of document.querySelectorAll("img[data-lazy-src]")) {
             imgEl.src = imgEl.dataset.lazySrc;
@@ -9,20 +9,26 @@
 
 
 /// srcset.js
-(function() {
+(function () {
     const target = "{{1}}";
     const replace = "{{2}}";
+    const mode = "{{3}}";
     window.addEventListener("load", function () {
         for (const imgEl of document.querySelectorAll(target)) {
-            let imgSplit = imgEl.dataset[replace].split(",");
-            imgEl.src = imgSplit[imgSplit.length - 1].trim().split(" ")[0];
+            if (mode === "") {
+                imgEl.src = imgEl.dataset[replace]
+            }
+            else {
+                let imgSplit = imgEl.dataset[replace].split(",");
+                imgEl.src = imgSplit[imgSplit.length - 1].trim().split(" ")[0];
+            }
         }
     });
 })();
 
 
 /// loading-lazy.js
-(function() {
+(function () {
     window.addEventListener("load", function () {
         const selectorStr = '.right_container_flip img[loading="lazy"], #article_box img[loading="lazy"]';
 
@@ -35,7 +41,7 @@
 
 
 /// picture-source.js
-(function() {
+(function () {
     window.addEventListener("load", function () {
         for (let srcEl of document.querySelectorAll("picture > source")) {
             srcEl.srcset = srcEl.srcset.split("?")[0];
@@ -45,7 +51,7 @@
 
 
 /// vanilla-gallery.js
-(function() {
+(function () {
     window.addEventListener("load", function () {
         let scriptEl = document.querySelector('script[id^="vanilla-slice-imageGallery"]');
         let imgEl = document.querySelector("#article-body img.image-wrapped__image");

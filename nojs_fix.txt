@@ -9,18 +9,18 @@
 ! GitHub pull requests: https://github.com/stephenhawk8054/NoJSFix/pulls
 
 ! techradar-sites
-gamesradar.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##+js(lazy-van)
+gamesradar.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##+js(srcset, img.lazy-image-van, srcset, 1)
 
 ! insideevs.com
 insideevs.com##+js(loading-lazy)
 insideevs.com##.detailed-box .lazyload
 
 ! mysmartprice.com
-mysmartprice.com##+js(lazy-src)
+mysmartprice.com##+js(srcset, img[data-lazy-src], lazySrc)
 mysmartprice.com##img[data-lazy-fallback]:style(opacity: 1 !important;)
 
 ! scitechdaily.com
-scitechdaily.com##+js(srcset, img.ezlazyload, ezsrc)
+scitechdaily.com##+js(srcset, img.ezlazyload, ezsrc, 1)
 
 ! vice.com
 vice.com##+js(picture-source)
