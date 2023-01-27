@@ -15,7 +15,7 @@
     const mode = "{{3}}";
     window.addEventListener("load", function () {
         for (const imgEl of document.querySelectorAll(target)) {
-            if (mode === "") {
+            if (mode === "" || mode === "{{3}}") {
                 imgEl.src = imgEl.dataset[replace]
             }
             else {
