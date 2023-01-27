@@ -1,0 +1,12 @@
+! Title: NoJS Fix
+! Description: Filters to fix images not loading in noscript mode
+! Expires: 1 days
+! Last modified: Fri, 27 Jan 2023 03:49 UTC
+! Homepage: https://github.com/stephenhawk8054/NoJSFix
+! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
+!
+! GitHub issues: https://github.com/stephenhawk8054/NoJSFix/issues
+! GitHub pull requests: https://github.com/stephenhawk8054/NoJSFix/pulls
+
+! techradar-sites
+gamesradar.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##+js(lazy-van)
