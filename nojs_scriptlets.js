@@ -1,13 +1,3 @@
-/// lazy-src.js
-(function () {
-    window.addEventListener("load", function () {
-        for (const imgEl of document.querySelectorAll("img[data-lazy-src]")) {
-            imgEl.src = imgEl.dataset.lazySrc;
-        }
-    });
-})();
-
-
 /// srcset.js
 (function () {
     const target = "{{1}}";
