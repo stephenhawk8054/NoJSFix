@@ -10,3 +10,18 @@
 
 ! techradar-sites
 gamesradar.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##+js(lazy-van)
+
+! insideevs.com
+insideevs.com##+js(loading-lazy)
+insideevs.com##.detailed-box .lazyload
+
+! mysmartprice.com
+mysmartprice.com##+js(lazy-src)
+mysmartprice.com##img[data-lazy-fallback]:style(opacity: 1 !important;)
+
+! vice.com
+vice.com##+js(picture-source)
+vice.com##picture.lazyloader--lowres:remove-class(lazyloader--lowres)
+
+! windowscentral.com
+windowscentral.com##+js(vanilla-gallery)
