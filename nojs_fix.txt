@@ -15,12 +15,12 @@ gamesradar.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windows
 insideevs.com##+js(loading-lazy)
 insideevs.com##.detailed-box .lazyload
 
+! techxplore-sites
+medicalxpress.com,phys.org,techxplore.com##+js(srcset, img[src^="data:image"], src)
+
 ! mysmartprice.com
 mysmartprice.com##+js(srcset, img[data-lazy-src], lazySrc)
 mysmartprice.com##img[data-lazy-fallback]:style(opacity: 1 !important;)
-
-! phys.org
-phys.org##+js(srcset, img[src^="data:image"], src)
 
 ! scitechdaily.com
 scitechdaily.com##+js(srcset, img.ezlazyload, ezsrc, 1)
