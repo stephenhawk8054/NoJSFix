@@ -25,6 +25,9 @@ mysmartprice.com##img[data-lazy-fallback]:style(opacity: 1 !important;)
 ! scitechdaily.com
 scitechdaily.com##+js(srcset, img.ezlazyload, ezsrc, 1)
 
+! usatoday.com
+usatoday.com##+js(srcset, img[data-g-r^="lazy"], glSrcset, 1)
+
 ! vice.com
 vice.com##+js(picture-source)
 vice.com##picture.lazyloader--lowres:remove-class(lazyloader--lowres)
