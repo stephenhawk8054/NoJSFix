@@ -9,8 +9,8 @@
                 imgEl.src = imgEl.dataset[replace]
             }
             else {
-                let imgSplit = imgEl.dataset[replace].split(",");
-                imgEl.src = imgSplit[imgSplit.length - 1].trim().split(" ")[0];
+                let imgSplit = imgEl.dataset[replace].split("http");
+                imgEl.src = "http" + imgSplit[imgSplit.length - 1].trim().split(" ")[0];
             }
         }
     });
