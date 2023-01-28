@@ -8,12 +8,10 @@
 ! GitHub issues: https://github.com/stephenhawk8054/NoJSFix/issues
 ! GitHub pull requests: https://github.com/stephenhawk8054/NoJSFix/pulls
 
+
+! ====================================== Generic srcset fixes ======================================
 ! techradar-sites
 gamesradar.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##+js(srcset, img.lazy-image-van, srcset, 1)
-
-! insideevs.com
-insideevs.com##+js(loading-lazy)
-insideevs.com##.detailed-box .lazyload
 
 ! techxplore-sites
 medicalxpress.com,phys.org,techxplore.com##+js(srcset, img[src^="data:image"], src)
@@ -28,9 +26,19 @@ scitechdaily.com##+js(srcset, img.ezlazyload, ezsrc, 1)
 ! usatoday.com
 usatoday.com##+js(srcset, img[data-g-r^="lazy"], glSrcset, 1)
 
+
+! ====================================== Specific sites-fix ======================================
+! businessinsider.com
+businessinsider.com##+js(bi-fix)
+businessinsider.com##img.lazy-image:style(opacity: 1 !important;)
+
+! insideevs.com
+insideevs.com##+js(ie-fix)
+insideevs.com##.detailed-box .lazyload
+
 ! vice.com
-vice.com##+js(picture-source)
+vice.com##+js(vice-fix)
 vice.com##picture.lazyloader--lowres:remove-class(lazyloader--lowres)
 
 ! windowscentral.com
-windowscentral.com##+js(vanilla-gallery)
+windowscentral.com##+js(windowscentral-fix)

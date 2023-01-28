@@ -17,7 +17,16 @@
 })();
 
 
-/// loading-lazy.js
+/// bi-fix.js
+(function () {
+    for (const imgEl of document.querySelectorAll("img.lazy-image")) {
+        let imgJSON = JSON.parse(imgEl.dataset.srcs);
+        imgEl.src = Object.keys(imgJSON)[0];
+    }
+})();
+
+
+/// ie-fix.js
 (function () {
     window.addEventListener("load", function () {
         const selectorStr = '.right_container_flip img[loading="lazy"], #article_box img[loading="lazy"]';
@@ -30,7 +39,7 @@
 })();
 
 
-/// picture-source.js
+/// vice-fix.js
 (function () {
     window.addEventListener("load", function () {
         for (let srcEl of document.querySelectorAll("picture > source")) {
@@ -40,7 +49,7 @@
 })();
 
 
-/// vanilla-gallery.js
+/// windowscentral-fix.js
 (function () {
     window.addEventListener("load", function () {
         let scriptEl = document.querySelector('script[id^="vanilla-slice-imageGallery"]');
