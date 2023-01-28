@@ -22,6 +22,9 @@ medicalxpress.com,phys.org,techxplore.com##+js(srcset, img[src^="data:image"], s
 ! mangabtt.com
 mangabtt.com##+js(srcset, .detail-info img.lazyload, src)
 
+! mangapuma.com
+mangapuma.com##+js(srcset, img.lazy, src)
+
 ! mangaread.org
 mangaread.org##+js(srcset, img.lazyload, src)
 mangaread.org##img.lazyload:style(height: auto !important; padding-top: 0px !important;)
