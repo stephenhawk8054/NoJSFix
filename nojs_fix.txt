@@ -10,6 +10,9 @@
 
 
 ! ====================================== Generic srcset fixes ======================================
+! bleepingcomputer.com
+bleepingcomputer.com##+js(srcset, img.b-lazy, src)
+
 ! techradar-sites
 gamesradar.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##+js(srcset, img.lazy-image-van, srcset, 1)
 
