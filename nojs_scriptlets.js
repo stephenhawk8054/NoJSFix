@@ -6,6 +6,7 @@
     const mode = "{{4}}";
     let attr = "src";
     if (attribute != "" && attribute != "{{3}}") { attr = attribute };
+    console.log(attr);
     window.addEventListener("load", function () {
         for (const imgEl of document.querySelectorAll(target)) {
             if (mode === "" || mode === "{{4}}") {
