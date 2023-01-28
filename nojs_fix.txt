@@ -14,7 +14,7 @@
 bleepingcomputer.com##+js(srcset, img.b-lazy, src)
 
 ! techradar-sites
-gamesradar.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##+js(srcset, img.lazy-image-van, srcset, , 1)
+gamesradar.com,livescience.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##+js(srcset, img.lazy-image-van, srcset, , 1)
 
 ! govtech.com
 govtech.com##+js(srcset, picture > source[data-lazy-load="true"], srcset, srcset)
