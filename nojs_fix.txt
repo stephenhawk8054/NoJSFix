@@ -23,6 +23,10 @@ mangabtt.com##+js(srcset, .detail-info img.lazyload, src)
 mysmartprice.com##+js(srcset, img[data-lazy-src], lazySrc)
 mysmartprice.com##img[data-lazy-fallback]:style(opacity: 1 !important;)
 
+! saytruyenvip.com
+saytruyenvip.com##+js(srcset, img.lazyload, src)
+saytruyenvip.com##img.lazyload:style(opacity: 1 !important; height: auto !important;)
+
 ! scitechdaily.com
 scitechdaily.com##+js(srcset, img.ezlazyload, ezsrc, 1)
 
