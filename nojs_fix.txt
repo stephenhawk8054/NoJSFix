@@ -9,7 +9,7 @@
 ! GitHub pull requests: https://github.com/stephenhawk8054/NoJSFix/pulls
 
 
-! ====================================== Generic srcset fixes ======================================
+! ====================================== Generic fixes ======================================
 ! bleepingcomputer.com
 bleepingcomputer.com##+js(srcset, img.b-lazy, src)
 
@@ -48,6 +48,9 @@ scitechdaily.com##+js(srcset, img.ezlazyload, ezsrc, , 1)
 
 ! usatoday.com
 usatoday.com##+js(srcset, img[data-g-r^="lazy"], glSrcset, , 1)
+
+! https://www.wired.com
+wired.com##figure span.responsive-asset:style(opacity: 1 !important;)
 
 ! xemtruyen.info
 xemtruyen.info##+js(srcset, img.lazyloaded, src)
