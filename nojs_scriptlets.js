@@ -12,13 +12,13 @@
                 imgEl[attr] = imgEl.dataset[replace]
             }
             else {
-                console.log(attr);
-                console.log(mode);
-                console.log(replace);
-                console.log(target);
-                let imgSplit = imgEl.dataset[replace].split("http");
-                console.log("http" + imgSplit[imgSplit.length - 1].trim().split(" ")[0]);
-                imgEl[attr] = "http" + imgSplit[imgSplit.length - 1].trim().split(" ")[0];
+                console.log(imgEl);
+                if (imgEl.dataset.hasOwnProperty(replace)) {
+                    let imgSplit = imgEl.dataset[replace].split("http");
+                    console.log("http" + imgSplit[imgSplit.length - 1].trim().split(" ")[0]);
+                    imgEl[attr] = "http" + imgSplit[imgSplit.length - 1].trim().split(" ")[0];
+                }
+                else { return; }
             }
         }
     });
