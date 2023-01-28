@@ -6,7 +6,7 @@
     const mode = "{{4}}";
     let attr = "src";
     if (attribute != "" && attribute != "{{3}}") { attr = attribute };
-    const regexp = /(?<=\dw,)(?:.*?)(?= \d{1,4}w)|(?<=^)(?:.*?)(?= \d{1,4}w)/g;
+    const regexp = /(?<=\d[a-z],)(?:.*?)(?= \d{1,4}w)|(?<=^)(?:.*?)(?= \d{1,4}[a-z])/g;
     window.addEventListener("load", function () {
         for (const imgEl of document.querySelectorAll(target)) {
             let replaceData = imgEl;
