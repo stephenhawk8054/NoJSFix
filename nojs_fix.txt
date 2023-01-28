@@ -18,13 +18,17 @@ arabnews.com##.slider-item:style(opacity: 1 !important;)
 bleepingcomputer.com##+js(srcset, img.b-lazy, dataset src)
 
 ! techradar-sites
-gamesradar.com,livescience.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##+js(srcset, img.lazy-image-van, dataset srcset, , 1)
+gamesradar.com,livescience.com,kotaku.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##+js(srcset, img.lazy-image-van, dataset originalMos)
 
 ! govtech.com
 govtech.com##+js(srcset, picture > source[data-lazy-load="true"], dataset srcset, srcset)
 
 ! hoimetruyen.com
 hoimetruyen.com##+js(srcset, img.lazyload, dataset src)
+
+! kotaku.com
+kotaku.com##+js(srcset, .image-hydration-wrapper > img, dataset srcset, , 1)
+kotaku.com##+js(srcset, .js_lazy-image > img, dataset srcset, , 1)
 
 ! techxplore-sites
 medicalxpress.com,phys.org,techxplore.com##+js(srcset, img[src^="data:image"], dataset src)
