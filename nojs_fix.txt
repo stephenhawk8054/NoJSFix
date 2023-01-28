@@ -73,7 +73,7 @@ businessinsider.com##+js(bi-fix)
 businessinsider.com##img.lazy-image:style(opacity: 1 !important;)
 
 ! insideevs.com
-insideevs.com##+js(ie-fix)
+insideevs.com##+js(srcset, img[loading="lazy"], previousElementSibling dataset srcset, , 1)
 insideevs.com##.detailed-box .lazyload
 
 ! vice.com

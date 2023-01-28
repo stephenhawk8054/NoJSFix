@@ -15,14 +15,13 @@
                 replaceData = replaceData[r];
             }
             if (typeof replaceData != "string") { continue; }
-            if (mode === "" || mode === "{{4}}") {
-                imgEl[attr] = replaceData;
-            }
-            else {
+            if (mode != "" && mode != "{{4}}") {
                 const matches = [...replaceData.matchAll(regexp)];
-                if (matches === []) { continue; }
-                imgEl[attr] = matches[matches.length - 1][0].trim(" ");
+                if (matches.length > 0) {
+                    replaceData = matches[matches.length - 1][0].trim(" ");
+                }
             }
+            imgEl[attr] = replaceData;
         }
     });
 })();
@@ -34,19 +33,6 @@
         for (const imgEl of document.querySelectorAll("img.lazy-image")) {
             let imgJSON = JSON.parse(imgEl.dataset.srcs);
             imgEl.src = Object.keys(imgJSON)[0];
-        }
-    });
-})();
-
-
-/// ie-fix.js
-(function () {
-    window.addEventListener("load", function () {
-        const selectorStr = '.right_container_flip img[loading="lazy"], #article_box img[loading="lazy"]';
-
-        for (let imgEl of document.querySelectorAll(selectorStr)) {
-            let imgSplit = imgEl.previousElementSibling.dataset.srcset.split(",");
-            imgEl.src = imgSplit[imgSplit.length - 1].trim().split(" ")[0];
         }
     });
 })();
