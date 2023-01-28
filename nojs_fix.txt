@@ -13,6 +13,9 @@
 ! techradar-sites
 gamesradar.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##+js(srcset, img.lazy-image-van, srcset, 1)
 
+! hoimetruyen.com
+hoimetruyen.com##+js(srcset, img.lazyload, src)
+
 ! techxplore-sites
 medicalxpress.com,phys.org,techxplore.com##+js(srcset, img[src^="data:image"], src)
 
