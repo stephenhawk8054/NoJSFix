@@ -10,6 +10,10 @@
 
 
 ! ====================================== Generic fixes ======================================
+! arabnews.com
+arabnews.com##+js(srcset, img[data-lazy], lazy)
+arabnews.com##.slider-item:style(opacity: 1 !important;)
+
 ! bleepingcomputer.com
 bleepingcomputer.com##+js(srcset, img.b-lazy, src)
 
