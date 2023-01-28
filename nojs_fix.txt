@@ -46,6 +46,9 @@ saytruyenvip.com##img.lazyload:style(opacity: 1 !important; height: auto !import
 ! scitechdaily.com
 scitechdaily.com##+js(srcset, img.ezlazyload, ezsrc, , 1)
 
+! sdxcentral.com
+sdxcentral.com##img.preview:style(filter: unset !important;)
+
 ! usatoday.com
 usatoday.com##+js(srcset, img[data-g-r^="lazy"], glSrcset, , 1)
 
