@@ -14,7 +14,7 @@
 bleepingcomputer.com##+js(srcset, img.b-lazy, src)
 
 ! techradar-sites
-gamesradar.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##+js(srcset, img.lazy-image-van, srcset, 1)
+gamesradar.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##+js(srcset, img.lazy-image-van, srcset, , 1)
 
 ! hoimetruyen.com
 hoimetruyen.com##+js(srcset, img.lazyload, src)
@@ -41,10 +41,10 @@ saytruyenvip.com##+js(srcset, img.lazyload, src)
 saytruyenvip.com##img.lazyload:style(opacity: 1 !important; height: auto !important;)
 
 ! scitechdaily.com
-scitechdaily.com##+js(srcset, img.ezlazyload, ezsrc, 1)
+scitechdaily.com##+js(srcset, img.ezlazyload, ezsrc, , 1)
 
 ! usatoday.com
-usatoday.com##+js(srcset, img[data-g-r^="lazy"], glSrcset, 1)
+usatoday.com##+js(srcset, img[data-g-r^="lazy"], glSrcset, , 1)
 
 ! xemtruyen.info
 xemtruyen.info##+js(srcset, img.lazyloaded, src)
