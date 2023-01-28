@@ -2,15 +2,18 @@
 (function () {
     const target = "{{1}}";
     const replace = "{{2}}";
-    const mode = "{{3}}";
+    const attribute = "{{3}}";
+    const mode = "{{4}}";
+    let attr = "src";
+    if (attribute != "" && attribute != "{{3}}") { attr = attribute };
     window.addEventListener("load", function () {
         for (const imgEl of document.querySelectorAll(target)) {
-            if (mode === "" || mode === "{{3}}") {
-                imgEl.src = imgEl.dataset[replace]
+            if (mode === "" || mode === "{{4}}") {
+                imgEl[attr] = imgEl.dataset[replace]
             }
             else {
                 let imgSplit = imgEl.dataset[replace].split("http");
-                imgEl.src = "http" + imgSplit[imgSplit.length - 1].trim().split(" ")[0];
+                imgEl[attr] = "http" + imgSplit[imgSplit.length - 1].trim().split(" ")[0];
             }
         }
     });
