@@ -5,10 +5,6 @@
     const attribute = "{{3}}";
     const mode = "{{4}}";
     let attr = "src";
-    console.log(attr);
-    console.log(mode);
-    console.log(replace);
-    console.log(target);
     if (attribute != "" && attribute != "{{3}}") { attr = attribute };
     window.addEventListener("load", function () {
         for (const imgEl of document.querySelectorAll(target)) {
@@ -16,7 +12,12 @@
                 imgEl[attr] = imgEl.dataset[replace]
             }
             else {
+                console.log(attr);
+                console.log(mode);
+                console.log(replace);
+                console.log(target);
                 let imgSplit = imgEl.dataset[replace].split("http");
+                console.log("http" + imgSplit[imgSplit.length - 1].trim().split(" ")[0]);
                 imgEl[attr] = "http" + imgSplit[imgSplit.length - 1].trim().split(" ")[0];
             }
         }
