@@ -19,10 +19,12 @@
 
 /// bi-fix.js
 (function () {
-    for (const imgEl of document.querySelectorAll("img.lazy-image")) {
-        let imgJSON = JSON.parse(imgEl.dataset.srcs);
-        imgEl.src = Object.keys(imgJSON)[0];
-    }
+    window.addEventListener("load", function () {
+        for (const imgEl of document.querySelectorAll("img.lazy-image")) {
+            let imgJSON = JSON.parse(imgEl.dataset.srcs);
+            imgEl.src = Object.keys(imgJSON)[0];
+        }
+    });
 })();
 
 
