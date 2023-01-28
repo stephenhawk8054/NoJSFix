@@ -6,19 +6,22 @@
     const mode = "{{4}}";
     let attr = "src";
     if (attribute != "" && attribute != "{{3}}") { attr = attribute };
+    const regexp = /(?<=\dw,)(?:.*?)(?= \d{1,4}w)|(?<=^)(?:.*?)(?= \d{1,4}w)/g;
     window.addEventListener("load", function () {
         for (const imgEl of document.querySelectorAll(target)) {
+            let replaceData = imgEl;
+            for (const r of replace.split(" ")) {
+                if (!(r in replaceData)) { continue; }
+                replaceData = replaceData[r];
+            }
+            if (typeof replaceData != "string") { continue; }
             if (mode === "" || mode === "{{4}}") {
-                imgEl[attr] = imgEl.dataset[replace]
+                imgEl[attr] = replaceData;
             }
             else {
-                console.log(imgEl);
-                if (imgEl.dataset.hasOwnProperty(replace)) {
-                    let imgSplit = imgEl.dataset[replace].split("http");
-                    console.log("http" + imgSplit[imgSplit.length - 1].trim().split(" ")[0]);
-                    imgEl[attr] = "http" + imgSplit[imgSplit.length - 1].trim().split(" ")[0];
-                }
-                else { continue; }
+                const matches = [...replaceData.matchAll(regexp)];
+                if (matches === []) { continue; }
+                imgEl[attr] = matches[matches.length - 1][0].trim(" ");
             }
         }
     });

@@ -11,56 +11,56 @@
 
 ! ====================================== Generic fixes ======================================
 ! arabnews.com
-arabnews.com##+js(srcset, img[data-lazy], lazy)
+arabnews.com##+js(srcset, img[data-lazy], dataset lazy)
 arabnews.com##.slider-item:style(opacity: 1 !important;)
 
 ! bleepingcomputer.com
-bleepingcomputer.com##+js(srcset, img.b-lazy, src)
+bleepingcomputer.com##+js(srcset, img.b-lazy, dataset src)
 
 ! techradar-sites
-gamesradar.com,livescience.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##+js(srcset, img.lazy-image-van, srcset, , 1)
+gamesradar.com,livescience.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##+js(srcset, img.lazy-image-van, dataset srcset, , 1)
 
 ! govtech.com
-govtech.com##+js(srcset, picture > source[data-lazy-load="true"], srcset, srcset)
+govtech.com##+js(srcset, picture > source[data-lazy-load="true"], dataset srcset, srcset)
 
 ! hoimetruyen.com
-hoimetruyen.com##+js(srcset, img.lazyload, src)
+hoimetruyen.com##+js(srcset, img.lazyload, dataset src)
 
 ! techxplore-sites
-medicalxpress.com,phys.org,techxplore.com##+js(srcset, img[src^="data:image"], src)
+medicalxpress.com,phys.org,techxplore.com##+js(srcset, img[src^="data:image"], dataset src)
 
 ! mangabtt.com
-mangabtt.com##+js(srcset, .detail-info img.lazyload, src)
+mangabtt.com##+js(srcset, .detail-info img.lazyload, dataset src)
 
 ! mangapuma.com
-mangapuma.com##+js(srcset, img.lazy, src)
+mangapuma.com##+js(srcset, img.lazy, dataset src)
 
 ! mangaread.org
-mangaread.org##+js(srcset, img.lazyload, src)
+mangaread.org##+js(srcset, img.lazyload, dataset src)
 mangaread.org##img.lazyload:style(height: auto !important; padding-top: 0px !important;)
 
 ! mysmartprice.com
-mysmartprice.com##+js(srcset, img[data-lazy-src], lazySrc)
+mysmartprice.com##+js(srcset, img[data-lazy-src], dataset lazySrc)
 mysmartprice.com##img[data-lazy-fallback]:style(opacity: 1 !important;)
 
 ! saytruyenvip.com
-saytruyenvip.com##+js(srcset, img.lazyload, src)
+saytruyenvip.com##+js(srcset, img.lazyload, dataset src)
 saytruyenvip.com##img.lazyload:style(opacity: 1 !important; height: auto !important;)
 
 ! scitechdaily.com
-scitechdaily.com##+js(srcset, img.ezlazyload, ezsrc, , 1)
+scitechdaily.com##+js(srcset, img.ezlazyload, dataset ezsrc, , 1)
 
 ! sdxcentral.com
 sdxcentral.com##img.preview:style(filter: unset !important;)
 
 ! usatoday.com
-usatoday.com##+js(srcset, img[data-g-r^="lazy"], glSrcset, , 1)
+usatoday.com##+js(srcset, img[data-g-r^="lazy"], dataset glSrcset, , 1)
 
 ! https://www.wired.com
 wired.com##span.responsive-asset:style(opacity: 1 !important;)
 
 ! xemtruyen.info
-xemtruyen.info##+js(srcset, img.lazyloaded, src)
+xemtruyen.info##+js(srcset, img.lazyloaded, dataset src)
 
 
 ! ====================================== Specific sites-fix ======================================
