@@ -19,6 +19,10 @@ medicalxpress.com,phys.org,techxplore.com##+js(srcset, img[src^="data:image"], s
 ! mangabtt.com
 mangabtt.com##+js(srcset, .detail-info img.lazyload, src)
 
+! mangaread.org
+mangaread.org##+js(srcset, img.lazyload, src)
+mangaread.org##img.lazyload:style(height: auto !important; padding-top: 0px !important;)
+
 ! mysmartprice.com
 mysmartprice.com##+js(srcset, img[data-lazy-src], lazySrc)
 mysmartprice.com##img[data-lazy-fallback]:style(opacity: 1 !important;)
