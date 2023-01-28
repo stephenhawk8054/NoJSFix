@@ -37,6 +37,9 @@ scitechdaily.com##+js(srcset, img.ezlazyload, ezsrc, 1)
 ! usatoday.com
 usatoday.com##+js(srcset, img[data-g-r^="lazy"], glSrcset, 1)
 
+! xemtruyen.info
+xemtruyen.info##+js(srcset, img.lazyloaded, src)
+
 
 ! ====================================== Specific sites-fix ======================================
 ! businessinsider.com
