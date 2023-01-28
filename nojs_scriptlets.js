@@ -18,7 +18,7 @@
                     console.log("http" + imgSplit[imgSplit.length - 1].trim().split(" ")[0]);
                     imgEl[attr] = "http" + imgSplit[imgSplit.length - 1].trim().split(" ")[0];
                 }
-                else { return; }
+                else { continue; }
             }
         }
     });
