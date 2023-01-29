@@ -95,7 +95,8 @@ usatoday.com##+js(srcset, img[data-g-r^="lazy"], dataset glSrcset, , 1)
 wired.com##span.responsive-asset:style(opacity: 1 !important;)
 
 ! xemtruyen.info
-xemtruyen.info##+js(srcset, img.lazyloaded, dataset src)
+xemtruyen.info##+js(srcset, img.lazy[data-src], dataset src)
+xemtruyen.info##img.lazy:style(height: auto !important; padding-top: 0px !important;)
 
 
 ! ====================================== Specific sites-fix ======================================
