@@ -25,6 +25,7 @@ ehn.org##i-amphtml-sizer
 
 ! techradar-sites
 gamesradar.com,livescience.com,kotaku.com,pcgamer.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##+js(srcset, img.lazy-image-van, dataset originalMos)
+kotaku.com##+js(srcset, img[src^="data:image"], dataset srcset, , 1)
 
 ! gizmodo.com
 gizmodo.com##+js(srcset, picture.lazy-picture > source, dataset srcset, srcset)
