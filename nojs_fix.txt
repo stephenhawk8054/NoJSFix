@@ -24,7 +24,7 @@ ehn.org##.i-amphtml-layout-intrinsic:style(height: auto !important;)
 ehn.org##i-amphtml-sizer
 
 ! techradar-sites
-gamesradar.com,livescience.com,kotaku.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##+js(srcset, img.lazy-image-van, dataset originalMos)
+gamesradar.com,livescience.com,kotaku.com,pcgamer.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##+js(srcset, img.lazy-image-van, dataset originalMos)
 
 ! gizmodo.com
 gizmodo.com##+js(srcset, picture.lazy-picture > source, dataset srcset, srcset)
