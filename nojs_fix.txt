@@ -60,6 +60,10 @@ mysmartprice.com##img[data-lazy-fallback]:style(opacity: 1 !important;)
 ! newyorker.com
 newyorker.com##[class^="SpanWrapper"]:style(opacity: 1 !important;)
 
+! nowarchaeology.com
+nowarchaeology.com##.entry-thumb > .attachment-WRT-post-image
+nowarchaeology.com##.wp-block-image > [class^="wp-image"]
+
 ! saytruyenvip.com
 saytruyenvip.com##+js(srcset, img.lazyload, dataset src)
 saytruyenvip.com##img.lazyload:style(opacity: 1 !important; height: auto !important;)
