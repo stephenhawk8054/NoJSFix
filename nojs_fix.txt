@@ -88,6 +88,10 @@ sfchronicle.com##+js(srcset, .deferred img[data-src], dataset src)
 sfchronicle.com##.deferred img:style(opacity: 1 !important; height: auto !important; position: inherit !important;)
 sfchronicle.com##.deferred::after:style(background-image: unset !important;)
 
+! the74million.org
+the74million.org###frontpage-repeat:style(opacity: 1 !important; transform: inherit !important;)
+the74million.org##li[data-id]:style(opacity: 1 !important;)
+
 ! usatoday.com
 usatoday.com##+js(srcset, img[data-g-r^="lazy"], dataset glSrcset, , 1)
 
