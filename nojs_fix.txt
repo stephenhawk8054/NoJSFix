@@ -57,6 +57,9 @@ mangaread.org##img.lazyload:style(height: auto !important; padding-top: 0px !imp
 mysmartprice.com##+js(srcset, img[data-lazy-src], dataset lazySrc)
 mysmartprice.com##img[data-lazy-fallback]:style(opacity: 1 !important;)
 
+! newyorker.com
+newyorker.com##[class^="SpanWrapper"]:style(opacity: 1 !important;)
+
 ! saytruyenvip.com
 saytruyenvip.com##+js(srcset, img.lazyload, dataset src)
 saytruyenvip.com##img.lazyload:style(opacity: 1 !important; height: auto !important;)
