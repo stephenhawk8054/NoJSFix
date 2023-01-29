@@ -5,7 +5,9 @@
     const attribute = "{{3}}";
     const mode = "{{4}}";
     let attr = "src";
-    if (attribute != "" && attribute != "{{3}}") { attr = attribute };
+    if (attribute != "" && attribute != "{{3}}") { 
+        attr = attribute 
+    };
     // const regexp = /(?<=\d[a-z],)(?:.*?)(?= \d{1,4}w)|(?<=^)(?:.*?)(?= \d{1,4}[a-z])/g;
     const regexp = /\S+\.[a-zA-Z]{3,4}/g;
     window.addEventListener("load", function () {
