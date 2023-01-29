@@ -17,6 +17,11 @@ arabnews.com##.slider-item:style(opacity: 1 !important;)
 ! bleepingcomputer.com
 bleepingcomputer.com##+js(srcset, img.b-lazy, dataset src)
 
+ehn.org##+js(srcset, amp-img img, parentElement parentElement attributes src value)
+ehn.org##+js(srcset, img.rm-lazyloadable-image, dataset runnerSrc)
+ehn.org##+js(replace-tag, .widget__image > amp-img, img)
+ehn.org##i-amphtml-sizer
+
 ! techradar-sites
 gamesradar.com,livescience.com,kotaku.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##+js(srcset, img.lazy-image-van, dataset originalMos)
 

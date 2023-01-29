@@ -27,6 +27,22 @@
 })();
 
 
+/// replace-tag.js
+(function () {
+    const target = '{{1}}';
+    const replace = '{{2}}';
+    let tagName;
+    window.addEventListener("load", function () {
+        for (var imgEl of document.querySelectorAll(target)) {
+            tagName = imgEl.tagName.toLowerCase();
+            imgEl.outerHTML = imgEl.outerHTML.trim()
+                .replace(`<${tagName} `, `<${replace} `)
+                .replace(`</${tagName}>`, `</${replace}>`)
+        }
+    });
+})();
+
+
 /// bi-fix.js
 (function () {
     window.addEventListener("load", function () {
