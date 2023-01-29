@@ -72,6 +72,9 @@ nowarchaeology.com##.wp-block-image > [class^="wp-image"]
 ! platform.sh
 platform.sh##img[loading="lazy"]:style(opacity: 1 !important;)
 
+! quantamagazine.org
+quantamagazine.org##video:style(opacity: 1 !important;)
+
 ! saytruyenvip.com
 saytruyenvip.com##+js(srcset, img.lazyload, dataset src)
 saytruyenvip.com##img.lazyload:style(opacity: 1 !important; height: auto !important;)
