@@ -1,4 +1,5 @@
-/// srcset.js
+/// setsrc.js
+/// alias ss.js
 (function () {
     const target = "{{1}}";
     const replace = "{{2}}";
@@ -30,7 +31,8 @@
 })();
 
 
-/// replace-tag.js
+/// rename-tag.js
+/// alias rt.js
 (function () {
     const target = '{{1}}';
     const replace = '{{2}}';

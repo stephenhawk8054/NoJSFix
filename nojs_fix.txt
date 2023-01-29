@@ -11,56 +11,56 @@
 
 ! ====================================== Generic fixes ======================================
 ! arabnews.com
-arabnews.com##+js(srcset, img[data-lazy], dataset lazy)
+arabnews.com##+js(ss, img[data-lazy], dataset lazy)
 arabnews.com##.slider-item:style(opacity: 1 !important;)
 
 ! bleepingcomputer.com
-bleepingcomputer.com##+js(srcset, img.b-lazy, dataset src)
+bleepingcomputer.com##+js(ss, img.b-lazy, dataset src)
 
-ehn.org##+js(srcset, amp-img img, parentElement parentElement attributes src value)
-ehn.org##+js(srcset, img.rm-lazyloadable-image, dataset runnerSrc)
-ehn.org##+js(replace-tag, amp-img[src], img)
+ehn.org##+js(ss, amp-img img, parentElement parentElement attributes src value)
+ehn.org##+js(ss, img.rm-lazyloadable-image, dataset runnerSrc)
+ehn.org##+js(rt, amp-img[src], img)
 ehn.org##.i-amphtml-layout-intrinsic:style(height: auto !important;)
 ehn.org##i-amphtml-sizer
 
 ! techradar-sites
-gamesradar.com,livescience.com,kotaku.com,pcgamer.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##+js(srcset, img.lazy-image-van, dataset originalMos)
-kotaku.com##+js(srcset, img[src^="data:image"], dataset srcset, , 1)
+gamesradar.com,livescience.com,kotaku.com,pcgamer.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##+js(ss, img.lazy-image-van, dataset originalMos)
+kotaku.com##+js(ss, img[src^="data:image"], dataset srcset, , 1)
 
 ! gizmodo.com
-gizmodo.com##+js(srcset, picture.lazy-picture > source, dataset srcset, srcset)
-gizmodo.com##+js(srcset, .js_lazy-image > img, dataset srcset, , 1)
-gizmodo.com##+js(srcset, .js_lazy-image > video, dataset postersrc, poster)
+gizmodo.com##+js(ss, picture.lazy-picture > source, dataset srcset, srcset)
+gizmodo.com##+js(ss, .js_lazy-image > img, dataset srcset, , 1)
+gizmodo.com##+js(ss, .js_lazy-image > video, dataset postersrc, poster)
 
 ! govtech.com
-govtech.com##+js(srcset, picture > source[data-lazy-load="true"], dataset srcset, srcset)
+govtech.com##+js(ss, picture > source[data-lazy-load="true"], dataset srcset, srcset)
 
 ! hoimetruyen.com
-hoimetruyen.com##+js(srcset, img.lazyload, dataset src)
+hoimetruyen.com##+js(ss, img.lazyload, dataset src)
 
 ! insideevs.com
-insideevs.com##+js(srcset, img[loading="lazy"], previousElementSibling dataset srcset, , 1)
+insideevs.com##+js(ss, img[loading="lazy"], previousElementSibling dataset srcset, , 1)
 insideevs.com##.detailed-box .lazyload
 
 ! kotaku.com
-kotaku.com##+js(srcset, .image-hydration-wrapper > img, dataset srcset, , 1)
-kotaku.com##+js(srcset, .js_lazy-image > img, dataset srcset, , 1)
+kotaku.com##+js(ss, .image-hydration-wrapper > img, dataset srcset, , 1)
+kotaku.com##+js(ss, .js_lazy-image > img, dataset srcset, , 1)
 
 ! techxplore-sites
-medicalxpress.com,phys.org,techxplore.com##+js(srcset, img[src^="data:image"], dataset src)
+medicalxpress.com,phys.org,techxplore.com##+js(ss, img[src^="data:image"], dataset src)
 
 ! mangabtt.com
-mangabtt.com##+js(srcset, .detail-info img.lazyload, dataset src)
+mangabtt.com##+js(ss, .detail-info img.lazyload, dataset src)
 
 ! mangapuma.com
-mangapuma.com##+js(srcset, img.lazy, dataset src)
+mangapuma.com##+js(ss, img.lazy, dataset src)
 
 ! mangaread.org
-mangaread.org##+js(srcset, img.lazyload, dataset src)
+mangaread.org##+js(ss, img.lazyload, dataset src)
 mangaread.org##img.lazyload:style(height: auto !important; padding-top: 0px !important;)
 
 ! mysmartprice.com
-mysmartprice.com##+js(srcset, img[data-lazy-src], dataset lazySrc)
+mysmartprice.com##+js(ss, img[data-lazy-src], dataset lazySrc)
 mysmartprice.com##img[data-lazy-fallback]:style(opacity: 1 !important;)
 
 ! newyorker.com
@@ -77,18 +77,18 @@ platform.sh##img[loading="lazy"]:style(opacity: 1 !important;)
 quantamagazine.org##video:style(opacity: 1 !important;)
 
 ! saytruyenvip.com
-saytruyenvip.com##+js(srcset, img.lazyload, dataset src)
+saytruyenvip.com##+js(ss, img.lazyload, dataset src)
 saytruyenvip.com##img.lazyload:style(opacity: 1 !important; height: auto !important;)
 
 ! scitechdaily.com
-scitechdaily.com##+js(srcset, img.ezlazyload, dataset ezsrc, , 1)
+scitechdaily.com##+js(ss, img.ezlazyload, dataset ezsrc, , 1)
 
 ! sdxcentral.com
 sdxcentral.com##img.preview:style(filter: unset !important;)
 
 ! sfchronicle.com
-sfchronicle.com##+js(srcset, .deferred img[data-srcset], dataset srcset)
-sfchronicle.com##+js(srcset, .deferred img[data-src], dataset src)
+sfchronicle.com##+js(ss, .deferred img[data-srcset], dataset srcset)
+sfchronicle.com##+js(ss, .deferred img[data-src], dataset src)
 sfchronicle.com##.deferred img:style(opacity: 1 !important; height: auto !important; position: inherit !important;)
 sfchronicle.com##.deferred::after:style(background-image: unset !important;)
 
@@ -97,7 +97,7 @@ the74million.org###frontpage-repeat:style(opacity: 1 !important; transform: inhe
 the74million.org##li[data-id]:style(opacity: 1 !important;)
 
 ! usatoday.com
-usatoday.com##+js(srcset, img[data-g-r^="lazy"], dataset glSrcset, , 1)
+usatoday.com##+js(ss, img[data-g-r^="lazy"], dataset glSrcset, , 1)
 
 ! wbay.com
 wbay.com##.w-100[style]
@@ -106,7 +106,7 @@ wbay.com##.w-100[style]
 wired.com##span.responsive-asset:style(opacity: 1 !important;)
 
 ! xemtruyen.info
-xemtruyen.info##+js(srcset, img.lazy[data-src], dataset src)
+xemtruyen.info##+js(ss, img.lazy[data-src], dataset src)
 xemtruyen.info##img.lazy:style(height: auto !important; padding-top: 0px !important;)
 
 
