@@ -82,6 +82,12 @@ scitechdaily.com##+js(srcset, img.ezlazyload, dataset ezsrc, , 1)
 ! sdxcentral.com
 sdxcentral.com##img.preview:style(filter: unset !important;)
 
+! sfchronicle.com
+sfchronicle.com##+js(srcset, .deferred img[data-srcset], dataset srcset)
+sfchronicle.com##+js(srcset, .deferred img[data-src], dataset src)
+sfchronicle.com##.deferred img:style(opacity: 1 !important; height: auto !important; position: inherit !important;)
+sfchronicle.com##.deferred::after:style(background-image: unset !important;)
+
 ! usatoday.com
 usatoday.com##+js(srcset, img[data-g-r^="lazy"], dataset glSrcset, , 1)
 
