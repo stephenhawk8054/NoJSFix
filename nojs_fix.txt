@@ -24,8 +24,10 @@ ehn.org##.i-amphtml-layout-intrinsic:style(height: auto !important;)
 ehn.org##i-amphtml-sizer
 
 ! techradar-sites
-gamesradar.com,livescience.com,kotaku.com,pcgamer.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##+js(ss, img.lazy-image-van, dataset originalMos)
-kotaku.com##+js(ss, img[src^="data:image"], dataset srcset, , 1)
+gamesradar.com,lifehacker.com,livescience.com,kotaku.com,pcgamer.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##+js(ss, img.lazy-image-van, dataset originalMos)
+lifehacker.com,kotaku.com##+js(ss, .image-hydration-wrapper > img, dataset srcset, , 1)
+lifehacker.com,kotaku.com##+js(ss, .js_lazy-image > img, dataset srcset, , 1)
+lifehacker.com,kotaku.com##+js(ss, img[src^="data:image"], dataset srcset, , 1)
 
 ! gizmodo.com
 gizmodo.com##+js(ss, picture.lazy-picture > source, dataset srcset, srcset)
@@ -41,10 +43,6 @@ hoimetruyen.com##+js(ss, img.lazyload, dataset src)
 ! insideevs.com
 insideevs.com##+js(ss, img[loading="lazy"], previousElementSibling dataset srcset, , 1)
 insideevs.com##.detailed-box .lazyload
-
-! kotaku.com
-kotaku.com##+js(ss, .image-hydration-wrapper > img, dataset srcset, , 1)
-kotaku.com##+js(ss, .js_lazy-image > img, dataset srcset, , 1)
 
 ! techxplore-sites
 medicalxpress.com,phys.org,techxplore.com##+js(ss, img[src^="data:image"], dataset src)
