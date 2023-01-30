@@ -97,6 +97,11 @@ the74million.org##li[data-id]:style(opacity: 1 !important;)
 ! usatoday.com
 usatoday.com##+js(ss, img[data-g-r^="lazy"], dataset glSrcset, , 1)
 
+! https://www.vinmec.com
+vinmec.com###waiting-screen
+vinmec.com##.new-landing
+vinmec.com##.top-list
+
 ! wbay.com
 wbay.com##.w-100[style]
 
