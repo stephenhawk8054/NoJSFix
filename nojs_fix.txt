@@ -68,6 +68,9 @@ newyorker.com##[class^="SpanWrapper"]:style(opacity: 1 !important;)
 nowarchaeology.com##.entry-thumb > .attachment-WRT-post-image
 nowarchaeology.com##.wp-block-image > [class^="wp-image"]
 
+! https://www.openculture.com
+openculture.com##.native-lazyload-js-fallback
+
 ! platform.sh
 platform.sh##img[loading="lazy"]:style(opacity: 1 !important;)
 
