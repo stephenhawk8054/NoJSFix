@@ -17,6 +17,12 @@ arabnews.com##.slider-item:style(opacity: 1 !important;)
 ! bleepingcomputer.com
 bleepingcomputer.com##+js(ss, img.b-lazy, dataset src)
 
+! codelivly.com
+codelivly.com##+js(ss, img.lazyload, dataset src)
+codelivly.com##+js(ss, img.lazyload, dataset src, srcset)
+codelivly.com##img.lazyload:style(display: block !important; opacity: 1 !important; height: auto !important;)
+
+! ehn.org
 ehn.org##+js(ss, amp-img img, parentElement parentElement attributes src value)
 ehn.org##+js(ss, img.rm-lazyloadable-image, dataset runnerSrc)
 ehn.org##+js(rt, amp-img[src], img)
