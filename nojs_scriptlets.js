@@ -22,7 +22,12 @@
             if (mode != "" && mode != "{{4}}") {
                 const matches = [...replaceData.matchAll(regexp)];
                 if (matches.length > 0) {
-                    replaceData = matches[matches.length - 1][0].trim(" ");
+                    if (mode === "0") {
+                        replaceData = matches[0][0].trim(" ");
+                    }
+                    else {
+                        replaceData = matches[matches.length - 1][0].trim(" ");
+                    }
                 }
             }
             imgEl[attr] = replaceData;
