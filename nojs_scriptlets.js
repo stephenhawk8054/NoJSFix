@@ -10,7 +10,7 @@
         attr = attribute;
     }
     // const regexp = /(?<=\d[a-z],)(?:.*?)(?= \d{1,4}w)|(?<=^)(?:.*?)(?= \d{1,4}[a-z])/g;
-    const regexp = /https?:\/\/\S+/g;
+    const regexp = /(?:https?:)?\/\/\S+/g;
     window.addEventListener("load", function () {
         for (const imgEl of document.querySelectorAll(target)) {
             let replaceData = imgEl;
