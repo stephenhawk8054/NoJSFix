@@ -94,6 +94,9 @@ platform.sh##img[loading="lazy"]:style(opacity: 1 !important;)
 ! quantamagazine.org
 quantamagazine.org##video:style(opacity: 1 !important;)
 
+! republic.com
+republic.com##.layouts-application__content-container--blurred:remove-class(layouts-application__content-container--blurred)
+
 ! saytruyenvip.com
 saytruyenvip.com##+js(ss, img.lazyload, dataset src)
 saytruyenvip.com##img.lazyload:style(opacity: 1 !important; height: auto !important;)
