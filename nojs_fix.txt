@@ -82,6 +82,9 @@ newyorker.com##[class^="SpanWrapper"]:style(opacity: 1 !important;)
 nowarchaeology.com##.entry-thumb > .attachment-WRT-post-image
 nowarchaeology.com##.wp-block-image > [class^="wp-image"]
 
+! nutsandboltsspeedtraining.com
+nutsandboltsspeedtraining.com##+js(ss, img.ezlazyload, dataset ezsrcset, , 0)
+
 ! https://www.openculture.com
 openculture.com##.native-lazyload-js-fallback
 
