@@ -27,6 +27,9 @@ codelivly.com##+js(ss, img.lazyload, dataset src)
 codelivly.com##+js(ss, img.lazyload, dataset src, srcset)
 codelivly.com##img.lazyload:style(display: block !important; opacity: 1 !important; height: auto !important;)
 
+! diakov.net
+diakov.net##+js(ss, img#lazyATS[src^="data:image"], dataset src)
+
 ! ehn.org
 ehn.org##+js(ss, amp-img img, parentElement parentElement attributes src value)
 ehn.org##+js(ss, img.rm-lazyloadable-image, dataset runnerSrc)
