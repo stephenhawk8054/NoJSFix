@@ -38,7 +38,7 @@ ehn.org##.i-amphtml-layout-intrinsic:style(height: auto !important;)
 ehn.org##i-amphtml-sizer
 
 ! techradar-sites
-gamesradar.com,lifehacker.com,livescience.com,kotaku.com,pcgamer.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##+js(ss, img.lazy-image-van, dataset originalMos)
+gamesradar.com,lifehacker.com,livescience.com,kotaku.com,pcgamer.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##+js(ss, img.lazy-image-van[src$="/missing-image.svg"], dataset originalMos)
 lifehacker.com,kotaku.com##+js(ss, .image-hydration-wrapper > img, dataset srcset, , 1)
 lifehacker.com,kotaku.com##+js(ss, .js_lazy-image > img, dataset srcset, , 1)
 lifehacker.com,kotaku.com##+js(ss, img[src^="data:image"], dataset srcset, , 1)
