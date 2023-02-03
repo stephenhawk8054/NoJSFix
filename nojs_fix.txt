@@ -68,6 +68,9 @@ linyiru.com##aside, section:style(display: block !important;)
 ! lnk.to
 lnk.to##img.music-service-list__img:style(display: block !important;)
 
+! may69.com
+may69.com###af-preloader
+
 ! techxplore-sites
 medicalxpress.com,phys.org,techxplore.com##+js(ss, img[src^="data:image"], dataset src)
 
