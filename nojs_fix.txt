@@ -146,6 +146,9 @@ wired.com##span.responsive-asset:style(opacity: 1 !important;)
 xemtruyen.info##+js(ss, img.lazy[data-src], dataset src)
 xemtruyen.info##img.lazy:style(height: auto !important; padding-top: 0px !important;)
 
+! zingnews.vn#
+zingnews.vn##+js(ss, img[src^="data:image"], dataset src)
+
 
 ! ====================================== Specific sites-fix ======================================
 ! businessinsider.com
