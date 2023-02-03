@@ -18,7 +18,7 @@ arabnews.com##.slider-item:style(opacity: 1 !important;)
 bleepingcomputer.com##+js(ss, img.b-lazy[src^="data:image"], dataset src)
 
 ! chinadialogueocean.net
-chinadialogueocean.net##+js(ss, img.lazy, dataset src)
+chinadialogueocean.net##+js(ss, img.lazy:not([src]), dataset src)
 chinadialogueocean.net##+js(ss, img.lazy__placeholder, nextElementSibling attributes src value)
 chinadialogueocean.net##img.lazy__placeholder:style(filter: unset !important;)
 
