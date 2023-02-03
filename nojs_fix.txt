@@ -23,8 +23,8 @@ chinadialogueocean.net##+js(ss, img.lazy__placeholder, nextElementSibling attrib
 chinadialogueocean.net##img.lazy__placeholder:style(filter: unset !important;)
 
 ! codelivly.com
-codelivly.com##+js(ss, img.lazyload, dataset src)
-codelivly.com##+js(ss, img.lazyload, dataset src, srcset)
+codelivly.com##+js(ss, img.lazyload[data-src][data-lazy-src=""], dataset src)
+codelivly.com##+js(ss, img.lazyload[data-src][data-lazy-src=""], dataset src, srcset)
 codelivly.com##img.lazyload:style(display: block !important; opacity: 1 !important; height: auto !important;)
 
 ! diakov.net
