@@ -15,7 +15,7 @@ arabnews.com##+js(ss, img[data-lazy], dataset lazy)
 arabnews.com##.slider-item:style(opacity: 1 !important;)
 
 ! bleepingcomputer.com
-bleepingcomputer.com##+js(ss, img.b-lazy, dataset src)
+bleepingcomputer.com##+js(ss, img.b-lazy[src^="data:image"], dataset src)
 
 ! chinadialogueocean.net
 chinadialogueocean.net##+js(ss, img.lazy, dataset src)
