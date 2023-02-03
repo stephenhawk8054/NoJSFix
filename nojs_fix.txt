@@ -61,6 +61,10 @@ howtogeek.com##+js(ss, img[data-pagespeed-lazy-src], dataset pagespeedLazySrc)
 insideevs.com##+js(ss, img[loading="lazy"], previousElementSibling dataset srcset, , 1)
 insideevs.com##.detailed-box .lazyload
 
+! linyiru.com
+linyiru.com##article, .brand, .site-title:style(opacity: 1 !important;)
+linyiru.com##aside, section:style(display: block !important;)
+
 ! lnk.to
 lnk.to##img.music-service-list__img:style(display: block !important;)
 
