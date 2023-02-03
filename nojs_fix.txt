@@ -32,7 +32,7 @@ diakov.net##+js(ss, img#lazyATS[src^="data:image"], dataset src)
 
 ! ehn.org
 ehn.org##+js(ss, amp-img img, parentElement parentElement attributes src value)
-ehn.org##+js(ss, img.rm-lazyloadable-image, dataset runnerSrc)
+ehn.org##+js(ss, img.rm-lazyloadable-image[src^="data:image"], dataset runnerSrc)
 ehn.org##+js(rt, amp-img[src], img)
 ehn.org##.i-amphtml-layout-intrinsic:style(height: auto !important;)
 ehn.org##i-amphtml-sizer
