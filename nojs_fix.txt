@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 1 days
-! Last modified: Sun, 5 Feb 2023 04:51 UTC
+! Last modified: Sun, 5 Feb 2023 04:54 UTC
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -69,7 +69,7 @@ insideevs.com##.detailed-box .lazyload
 
 ! kilala.vn
 kilala.vn##+js(ss, .swiper-lazy[data-background] img[src$="/img_1x1.png"]:not(.img-fluid), parentElement parentElement dataset background)
-kilala.vn##+js(ss, img.img-fluid, dataset src)
+kilala.vn##+js(ss, img.img-fluid[data-src], dataset src)
 kilala.vn##.js-page-loader
 kilala.vn##.opacity0:remove-class(opacity0)
 kilala.vn##img.img-fluid:style(display: block !important;)
