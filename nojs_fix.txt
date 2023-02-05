@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 1 days
-! Last modified: Sun, 5 Feb 2023 04:50 UTC
+! Last modified: Sun, 5 Feb 2023 04:51 UTC
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -88,7 +88,8 @@ may69.com###af-preloader
 medicalxpress.com,phys.org,techxplore.com##+js(ss, img[src^="data:image"], dataset src)
 
 ! mangabtt.com
-mangabtt.com##+js(ss, .detail-info img.lazyload, dataset src)
+mangabtt.com##+js(ss, img[data-src][src^="data:image"], dataset src)
+mangabtt.com##.owl-carousel:style(display: block !important;)
 
 ! mangapuma.com
 mangapuma.com##+js(ss, img.lazy, dataset src)
