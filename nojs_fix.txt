@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 1 days
-! Last modified: Mon, 6 Feb 2023 07:55 UTC
+! Last modified: Mon, 6 Feb 2023 07:57 UTC
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -14,7 +14,7 @@
 allthings.how##+js(ss, img[loading="lazy"][data-origin-src]:not([src]), dataset originSrc)
 
 ! https://www.androidpolice.com
-androidpolice.com##+js(ss, picture > source[data-srcset]:not([srcset]), dataset srcset, srcset)
+androidpolice.com##+js(ss, picture > source[data-srcset]:not([srcset]), dataset srcset)
 
 ! arabnews.com
 arabnews.com##+js(ss, img[data-lazy], dataset lazy)
@@ -63,7 +63,7 @@ gamesradar.com,lifehacker.com,livescience.com,kotaku.com,pcgamer.com,techradar.c
 lifehacker.com,kotaku.com##+js(ss, img[data-srcset][src^="data:image"], dataset srcset, , 1)
 lifehacker.com,kotaku.com##+js(ss, img[data-src][src^="data:image"], dataset src)
 lifehacker.com,kotaku.com##+js(ss, picture > source[data-srcset][srcset^="data:image"], dataset srcset, srcset)
-lifehacker.com,kotaku.com##+js(ss, video[data-poster], dataset poster, poster)
+lifehacker.com,kotaku.com##+js(ss, video[data-poster], dataset poster)
 
 ! gizmodo.com
 gizmodo.com##+js(ss, picture.lazy-picture > source, dataset srcset, srcset)
