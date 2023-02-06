@@ -16,31 +16,31 @@
 
         for (const imgEl of document.querySelectorAll(target)) {
             console.log(imgEl);
-            let attr = attr_json[imgEl.localName];
-            if (attribute != "" && attribute != "{{4}}") {
-                attr = attribute;
-            }
-            console.log(attr);
+            // let attr = attr_json[imgEl.localName];
+            // if (attribute != "" && attribute != "{{4}}") {
+            //     attr = attribute;
+            // }
+            // console.log(attr);
 
-            let replaceData = imgEl;
-            for (const r of replace.split(" ")) {
-                if (!(r in replaceData)) { continue; }
-                replaceData = replaceData[r];
-            }
-            if (typeof replaceData != "string") { continue; }
-            if (mode != "" && mode != "{{3}}") {
-                const matches = [...replaceData.matchAll(regexp)];
-                if (matches.length > 0) {
-                    if (mode === "0") {
-                        replaceData = matches[0][0].trim(" ");
-                    }
-                    else {
-                        replaceData = matches[matches.length - 1][0].trim(" ");
-                    }
-                }
-            }
+            // let replaceData = imgEl;
+            // for (const r of replace.split(" ")) {
+            //     if (!(r in replaceData)) { continue; }
+            //     replaceData = replaceData[r];
+            // }
+            // if (typeof replaceData != "string") { continue; }
+            // if (mode != "" && mode != "{{3}}") {
+            //     const matches = [...replaceData.matchAll(regexp)];
+            //     if (matches.length > 0) {
+            //         if (mode === "0") {
+            //             replaceData = matches[0][0].trim(" ");
+            //         }
+            //         else {
+            //             replaceData = matches[matches.length - 1][0].trim(" ");
+            //         }
+            //     }
+            // }
 
-            imgEl[attr] = replaceData;
+            // imgEl[attr] = replaceData;
         }
     });
 })();
