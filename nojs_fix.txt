@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 1 days
-! Last modified: Mon, 6 Feb 2023 14:30 UTC
+! Last modified: Mon, 6 Feb 2023 14:43 UTC
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -148,7 +148,8 @@ nutsandboltsspeedtraining.com##+js(ss, img.ezlazyload, dataset ezsrcset, 0)
 openculture.com##.native-lazyload-js-fallback
 
 ! pcmag.com
-pcmag.com##+js(ss, img[data-image-loader][src^="data:image"], dataset imageLoader)
+pcmag.com##+js(ss, img[data-image-loader][src^="data:image"]:not([data-src]), dataset imageLoader)
+pcmag.com##+js(ss, img[data-src][src^="data:image"], dataset src)
 pcmag.com##img[data-image-loader][src]:style(margin-bottom: 1.5rem !important;)
 
 ! platform.sh
