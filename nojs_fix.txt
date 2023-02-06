@@ -43,6 +43,10 @@ ehn.org##+js(rt, amp-img[src], img)
 ehn.org##.i-amphtml-layout-intrinsic:style(height: auto !important;)
 ehn.org##i-amphtml-sizer
 
+! forbes.com
+forbes.com##.image-embed__placeholder:style(height: auto !important; padding-top: 0px !important;)
+forbes.com##+js(rt, progressive-image, img)
+
 ! techradar-sites
 gamesradar.com,lifehacker.com,livescience.com,kotaku.com,pcgamer.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##+js(ss, img.lazy-image-van[src$="/missing-image.svg"], dataset originalMos)
 lifehacker.com,kotaku.com##+js(ss, .image-hydration-wrapper > img, dataset srcset, , 1)
