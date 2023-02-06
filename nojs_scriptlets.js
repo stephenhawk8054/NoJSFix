@@ -18,7 +18,7 @@
     window.addEventListener("load", function () {
         for (const imgEl of document.querySelectorAll(target)) {
             let attr = attr_json[imgEl.localName];
-            if (attribute != "" || attribute != "{{4}}") {
+            if (attribute != "" && attribute != "{{4}}") {
                 attr = attribute;
             }
 
