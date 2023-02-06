@@ -1,18 +1,21 @@
 /// setsrc.js
 /// alias ss.js
 (function () {
-    const target = "{{1}}";
-    const replace = "{{2}}";
-    const mode = "{{3}}";
-    const attribute = "{{4}}";
-    const attr_json = {
-        "img": "src",
-        "source": "srcset",
-        "video": "poster",
-    };
-    const regexp = /(?:https?:)?\/\/\S+/g;
     window.addEventListener("load", function () {
+        const target = "{{1}}";
+        const replace = "{{2}}";
+        const mode = "{{3}}";
+        const attribute = "{{4}}";
+
+        const attr_json = {
+            "img": "src",
+            "source": "srcset",
+            "video": "poster",
+        };
+        const regexp = /(?:https?:)?\/\/\S+/g;
+
         for (const imgEl of document.querySelectorAll(target)) {
+            console.log(imgEl);
             let attr = attr_json[imgEl.localName];
             if (attribute != "" && attribute != "{{4}}") {
                 attr = attribute;
