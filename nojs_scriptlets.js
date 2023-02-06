@@ -5,10 +5,6 @@
     const replace = "{{2}}";
     const mode = "{{3}}";
     const attribute = "{{4}}";
-    // let attr, attr_json;
-    // if (attribute != "" && attribute != "{{3}}") {
-    //     attr = attribute;
-    // }
     const attr_json = {
         "img": "src",
         "video": "poster",
