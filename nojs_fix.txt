@@ -113,6 +113,12 @@ mangaread.org##img.lazyload:style(height: auto !important; padding-top: 0px !imp
 mysmartprice.com##+js(ss, img[data-lazy-src], dataset lazySrc)
 mysmartprice.com##img[data-lazy-fallback]:style(opacity: 1 !important;)
 
+! https://www.newprint.com
+newprint.com##+js(rt, amp-img[fallback][src], img)
+newprint.com##.land-see-post-item:style(opacity: 1 !important;)
+newprint.com##amp-img[fallback][src], img[fallback][src]:style(width: 100% !important; height: auto !important;)
+newprint.com##li.ampstart-dropdown-item
+
 ! newyorker.com
 newyorker.com##[class^="SpanWrapper"]:style(opacity: 1 !important;)
 
