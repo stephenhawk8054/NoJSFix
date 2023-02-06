@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 1 days
-! Last modified: Mon, 6 Feb 2023 07:22 UTC
+! Last modified: Mon, 6 Feb 2023 07:55 UTC
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -56,13 +56,14 @@ finance.yahoo.com##img.caas-img:style(opacity: 1 !important;)
 
 ! forbes.com
 forbes.com##.image-embed__placeholder:style(height: auto !important; padding-top: 0px !important;)
-forbes.com##+js(rt, progressive-image, img)
+forbes.com##+js(rt, progressive-image[src], img)
 
 ! techradar-sites
 gamesradar.com,lifehacker.com,livescience.com,kotaku.com,pcgamer.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##+js(ss, img.lazy-image-van[src$="/missing-image.svg"], dataset originalMos)
-lifehacker.com,kotaku.com##+js(ss, .image-hydration-wrapper > img, dataset srcset, , 1)
-lifehacker.com,kotaku.com##+js(ss, .js_lazy-image > img, dataset srcset, , 1)
-lifehacker.com,kotaku.com##+js(ss, img[src^="data:image"], dataset srcset, , 1)
+lifehacker.com,kotaku.com##+js(ss, img[data-srcset][src^="data:image"], dataset srcset, , 1)
+lifehacker.com,kotaku.com##+js(ss, img[data-src][src^="data:image"], dataset src)
+lifehacker.com,kotaku.com##+js(ss, picture > source[data-srcset][srcset^="data:image"], dataset srcset, srcset)
+lifehacker.com,kotaku.com##+js(ss, video[data-poster], dataset poster, poster)
 
 ! gizmodo.com
 gizmodo.com##+js(ss, picture.lazy-picture > source, dataset srcset, srcset)

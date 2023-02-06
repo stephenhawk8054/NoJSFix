@@ -5,14 +5,23 @@
     const replace = "{{2}}";
     const attribute = "{{3}}";
     const mode = "{{4}}";
-    let attr = "src";
-    if (attribute != "" && attribute != "{{3}}") {
-        attr = attribute;
-    }
-    // const regexp = /(?<=\d[a-z],)(?:.*?)(?= \d{1,4}w)|(?<=^)(?:.*?)(?= \d{1,4}[a-z])/g;
+    // let attr, attr_json;
+    // if (attribute != "" && attribute != "{{3}}") {
+    //     attr = attribute;
+    // }
+    const attr_json = {
+        "img": "src",
+        "video": "poster",
+        "source": "srcset"
+    };
     const regexp = /(?:https?:)?\/\/\S+/g;
     window.addEventListener("load", function () {
         for (const imgEl of document.querySelectorAll(target)) {
+            let attr = attr_json[imgEl.localName];
+            if (attribute === "" || attribute === "{{3}}") {
+                attr = attribute;
+            }
+
             let replaceData = imgEl;
             for (const r of replace.split(" ")) {
                 if (!(r in replaceData)) { continue; }
@@ -30,6 +39,7 @@
                     }
                 }
             }
+            
             imgEl[attr] = replaceData;
         }
     });
