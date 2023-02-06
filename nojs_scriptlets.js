@@ -14,6 +14,8 @@
         };
         const regexp = /(?:https?:)?\/\/\S+/g;
 
+        console.log(target);
+
         for (const imgEl of document.querySelectorAll(target)) {
             console.log(imgEl);
             // let attr = attr_json[imgEl.localName];
