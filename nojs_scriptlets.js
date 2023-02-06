@@ -1,11 +1,7 @@
 /// setsrc.js
 /// alias ss.js
 (function () {
-    const target = "{{1}}";
-    const replace = "{{2}}";
-    const mode = "{{3}}";
-    const attribute = "{{4}}";
-
+    const target = '{{1}}';
     window.addEventListener("load", function () {
         console.log(target);
     });
