@@ -3,8 +3,8 @@
 (function () {
     const target = "{{1}}";
     const replace = "{{2}}";
-    const attribute = "{{3}}";
-    const mode = "{{4}}";
+    const mode = "{{3}}";
+    const attribute = "{{4}}";
     // let attr, attr_json;
     // if (attribute != "" && attribute != "{{3}}") {
     //     attr = attribute;
@@ -18,7 +18,7 @@
     window.addEventListener("load", function () {
         for (const imgEl of document.querySelectorAll(target)) {
             let attr = attr_json[imgEl.localName];
-            if (attribute === "" || attribute === "{{3}}") {
+            if (attribute != "" || attribute != "{{4}}") {
                 attr = attribute;
             }
 
@@ -28,7 +28,7 @@
                 replaceData = replaceData[r];
             }
             if (typeof replaceData != "string") { continue; }
-            if (mode != "" && mode != "{{4}}") {
+            if (mode != "" && mode != "{{3}}") {
                 const matches = [...replaceData.matchAll(regexp)];
                 if (matches.length > 0) {
                     if (mode === "0") {
@@ -39,7 +39,7 @@
                     }
                 }
             }
-            
+
             imgEl[attr] = replaceData;
         }
     });

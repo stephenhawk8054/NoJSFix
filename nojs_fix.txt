@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 1 days
-! Last modified: Mon, 6 Feb 2023 07:57 UTC
+! Last modified: Mon, 6 Feb 2023 08:08 UTC
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -60,18 +60,18 @@ forbes.com##+js(rt, progressive-image[src], img)
 
 ! techradar-sites
 gamesradar.com,lifehacker.com,livescience.com,kotaku.com,pcgamer.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##+js(ss, img.lazy-image-van[src$="/missing-image.svg"], dataset originalMos)
-lifehacker.com,kotaku.com##+js(ss, img[data-srcset][src^="data:image"], dataset srcset, , 1)
+lifehacker.com,kotaku.com##+js(ss, img[data-srcset][src^="data:image"], dataset srcset, 1)
 lifehacker.com,kotaku.com##+js(ss, img[data-src][src^="data:image"], dataset src)
-lifehacker.com,kotaku.com##+js(ss, picture > source[data-srcset][srcset^="data:image"], dataset srcset, srcset)
+lifehacker.com,kotaku.com##+js(ss, picture > source[data-srcset][srcset^="data:image"], dataset srcset)
 lifehacker.com,kotaku.com##+js(ss, video[data-poster], dataset poster)
 
 ! gizmodo.com
-gizmodo.com##+js(ss, picture.lazy-picture > source, dataset srcset, srcset)
-gizmodo.com##+js(ss, .js_lazy-image > img, dataset srcset, , 1)
-gizmodo.com##+js(ss, .js_lazy-image > video, dataset postersrc, poster)
+gizmodo.com##+js(ss, picture.lazy-picture > source, dataset srcset)
+gizmodo.com##+js(ss, .js_lazy-image > img, dataset srcset, 1)
+gizmodo.com##+js(ss, .js_lazy-image > video, dataset postersrc)
 
 ! govtech.com
-govtech.com##+js(ss, picture > source[data-lazy-load="true"], dataset srcset, srcset)
+govtech.com##+js(ss, picture > source[data-lazy-load="true"], dataset srcset)
 
 ! hoimetruyen.com
 hoimetruyen.com##+js(ss, img.lazyload, dataset src)
@@ -80,7 +80,7 @@ hoimetruyen.com##+js(ss, img.lazyload, dataset src)
 howtogeek.com##+js(ss, img[data-pagespeed-lazy-src], dataset pagespeedLazySrc)
 
 ! insideevs.com
-insideevs.com##+js(ss, img[loading="lazy"], previousElementSibling dataset srcset, , 1)
+insideevs.com##+js(ss, img[loading="lazy"], previousElementSibling dataset srcset, 1)
 insideevs.com##.detailed-box .lazyload
 
 ! kilala.vn
@@ -132,7 +132,7 @@ nowarchaeology.com##.entry-thumb > .attachment-WRT-post-image
 nowarchaeology.com##.wp-block-image > [class^="wp-image"]
 
 ! nutsandboltsspeedtraining.com
-nutsandboltsspeedtraining.com##+js(ss, img.ezlazyload, dataset ezsrcset, , 0)
+nutsandboltsspeedtraining.com##+js(ss, img.ezlazyload, dataset ezsrcset, 0)
 
 ! https://www.openculture.com
 openculture.com##.native-lazyload-js-fallback
@@ -155,7 +155,7 @@ saytruyenvip.com##+js(ss, img.lazyload, dataset src)
 saytruyenvip.com##img.lazyload:style(opacity: 1 !important; height: auto !important;)
 
 ! scitechdaily.com
-scitechdaily.com##+js(ss, img.ezlazyload, dataset ezsrc, , 1)
+scitechdaily.com##+js(ss, img.ezlazyload, dataset ezsrc, 0)
 
 ! sdxcentral.com
 sdxcentral.com##img.preview:style(filter: unset !important;)
@@ -175,7 +175,7 @@ the74million.org###frontpage-repeat:style(opacity: 1 !important; transform: inhe
 the74million.org##li[data-id]:style(opacity: 1 !important;)
 
 ! usatoday.com
-usatoday.com##+js(ss, img[data-g-r^="lazy"], dataset glSrcset, , 1)
+usatoday.com##+js(ss, img[data-g-r^="lazy"], dataset glSrcset, 1)
 
 ! usnews.com
 usnews.com##[class*="PhotoGalleryEmbed"]:style(opacity: 1 !important;)
