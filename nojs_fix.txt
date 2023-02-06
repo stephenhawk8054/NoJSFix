@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 1 days
-! Last modified: Mon, 6 Feb 2023 11:27 UTC
+! Last modified: Mon, 6 Feb 2023 14:30 UTC
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -17,14 +17,14 @@ allthings.how##+js(ss, img[loading="lazy"][data-origin-src]:not([src]), dataset 
 androidpolice.com##+js(ss, picture > source[data-srcset]:not([srcset]), dataset srcset)
 
 ! arabnews.com
-arabnews.com##+js(ss, img[data-lazy], dataset lazy)
+arabnews.com##+js(ss, img[data-lazy]:not([src]), dataset lazy)
 arabnews.com##.slider-item:style(opacity: 1 !important;)
 
 ! axelar.network
 axelar.network##.opacity-0:remove-class(opacity-0)
 
 ! bleepingcomputer.com
-bleepingcomputer.com##+js(ss, img.b-lazy[src^="data:image"], dataset src)
+bleepingcomputer.com##+js(ss, img.b-lazy[data-src][src^="data:image"], dataset src)
 
 ! blockdaemon.com
 blockdaemon.com##[data-jazzy-scroll]:style(opacity: 1 !important;)
@@ -35,13 +35,12 @@ blocktower.com##.sqs-dynamic-text:style(visibility: visible !important;)
 blocktower.com##img[data-src]:style(opacity: 1 !important;)
 
 ! chinadialogueocean.net
-chinadialogueocean.net##+js(ss, img.lazy:not([src]), dataset src)
+chinadialogueocean.net##+js(ss, img.lazy[data-src]:not([src]), dataset src)
 chinadialogueocean.net##+js(ss, img.lazy__placeholder, nextElementSibling attributes src value)
 chinadialogueocean.net##img.lazy__placeholder:style(filter: unset !important;)
 
 ! codelivly.com
-codelivly.com##+js(ss, img.lazyload[data-src][data-lazy-src=""], dataset src)
-codelivly.com##+js(ss, img.lazyload[data-src][data-lazy-src=""], dataset src, srcset)
+codelivly.com##+js(ss, img.lazyload[data-src][srcset^="data"], dataset src, , srcset)
 codelivly.com##img.lazyload:style(display: block !important; opacity: 1 !important; height: auto !important;)
 
 ! diakov.net
@@ -56,7 +55,7 @@ eff.org##.primary-nav-nojs
 
 ! ehn.org
 ehn.org##+js(ss, amp-img img, parentElement parentElement attributes src value)
-ehn.org##+js(ss, img.rm-lazyloadable-image[src^="data:image"], dataset runnerSrc)
+ehn.org##+js(ss, img.rm-lazyloadable-image[data-runner-src][src^="data:image"], dataset runnerSrc)
 ehn.org##+js(rt, amp-img[src], img)
 ehn.org##.i-amphtml-layout-intrinsic:style(height: auto !important;)
 ehn.org##i-amphtml-sizer
@@ -77,9 +76,9 @@ lifehacker.com,kotaku.com##+js(ss, picture > source[data-srcset][srcset^="data:i
 lifehacker.com,kotaku.com##+js(ss, video[data-poster], dataset poster)
 
 ! gizmodo.com
-gizmodo.com##+js(ss, picture.lazy-picture > source, dataset srcset)
-gizmodo.com##+js(ss, .js_lazy-image > img, dataset srcset, 1)
-gizmodo.com##+js(ss, .js_lazy-image > video, dataset postersrc)
+gizmodo.com##+js(ss, .js_lazy-image > img[data-srcset][src^="data:image"], dataset srcset, 1)
+gizmodo.com##+js(ss, picture.lazy-picture > source[data-srcset][srcset^="data:image"], dataset srcset)
+gizmodo.com##+js(ss, video[data-poster], dataset poster)
 
 ! govtech.com
 govtech.com##+js(ss, picture > source[data-lazy-load="true"], dataset srcset)
