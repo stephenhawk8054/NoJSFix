@@ -7,8 +7,8 @@
     const attribute = "{{4}}";
     const attr_json = {
         "img": "src",
+        "source": "srcset",
         "video": "poster",
-        "source": "srcset"
     };
     const regexp = /(?:https?:)?\/\/\S+/g;
     window.addEventListener("load", function () {
@@ -17,6 +17,7 @@
             if (attribute != "" && attribute != "{{4}}") {
                 attr = attribute;
             }
+            console.log(attr);
 
             let replaceData = imgEl;
             for (const r of replace.split(" ")) {
