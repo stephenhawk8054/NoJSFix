@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 1 days
-! Last modified: Sun, 5 Feb 2023 04:54 UTC
+! Last modified: Mon, 6 Feb 2023 07:22 UTC
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -49,6 +49,10 @@ ehn.org##+js(ss, img.rm-lazyloadable-image[src^="data:image"], dataset runnerSrc
 ehn.org##+js(rt, amp-img[src], img)
 ehn.org##.i-amphtml-layout-intrinsic:style(height: auto !important;)
 ehn.org##i-amphtml-sizer
+
+! finance.yahoo.com
+finance.yahoo.com##.caas-img-container.caas-img-loader::after:style(background: transparent !important;)
+finance.yahoo.com##img.caas-img:style(opacity: 1 !important;)
 
 ! forbes.com
 forbes.com##.image-embed__placeholder:style(height: auto !important; padding-top: 0px !important;)
