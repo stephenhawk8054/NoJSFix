@@ -33,6 +33,10 @@ codelivly.com##img.lazyload:style(display: block !important; opacity: 1 !importa
 ! diakov.net
 diakov.net##+js(ss, img#lazyATS[src^="data:image"], dataset src)
 
+! digitalhygge.com
+digitalhygge.com##+js(ss, img[data-lazy="true"][src$="transparent.gif"][data-src], dataset src)
+digitalhygge.com##img[data-lazy="true"]:style(opacity: 1 !important;)
+
 ! https://www.eff.org
 eff.org##.primary-nav-nojs
 
