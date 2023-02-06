@@ -10,6 +10,9 @@
 
 
 ! ====================================== Generic fixes ======================================
+! allthings.how
+allthings.how##+js(ss, img[loading="lazy"][data-origin-src]:not([src]), dataset originSrc)
+
 ! https://www.androidpolice.com
 androidpolice.com##+js(ss, picture > source[data-srcset]:not([srcset]), dataset srcset, srcset)
 
