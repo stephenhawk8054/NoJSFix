@@ -7,11 +7,11 @@
         const mode = "{{3}}";
         const attribute = "{{4}}";
 
-        const attr_json = {
-            "img": "src",
-            "source": "srcset",
-            "video": "poster",
-        };
+        // const attr_json = {
+        //     "img": "src",
+        //     "source": "srcset",
+        //     "video": "poster",
+        // };
         const regexp = /(?:https?:)?\/\/\S+/g;
 
         console.log(target);
