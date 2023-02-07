@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 1 days
-! Last modified: Mon, 6 Feb 2023 14:43 UTC
+! Last modified: Tue, 7 Feb 2023 00:55 UTC
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -81,10 +81,10 @@ gizmodo.com##+js(ss, picture.lazy-picture > source[data-srcset][srcset^="data:im
 gizmodo.com##+js(ss, video[data-poster], dataset poster)
 
 ! govtech.com
-govtech.com##+js(ss, picture > source[data-lazy-load="true"], dataset srcset)
+govtech.com##+js(ss, picture > source[data-lazy-load="true"][data-srcset][srcset^="data:image"], dataset srcset)
 
 ! hoimetruyen.com
-hoimetruyen.com##+js(ss, img.lazyload, dataset src)
+hoimetruyen.com##+js(ss, img.lazyload[data-src][src^="data:image"], dataset src)
 
 ! howtogeek.com
 howtogeek.com##+js(ss, img[data-pagespeed-lazy-src], dataset pagespeedLazySrc)
@@ -162,7 +162,7 @@ quantamagazine.org##video:style(opacity: 1 !important;)
 republic.com##.layouts-application__content-container--blurred:remove-class(layouts-application__content-container--blurred)
 
 ! saytruyenvip.com
-saytruyenvip.com##+js(ss, img.lazyload, dataset src)
+saytruyenvip.com##+js(ss, img.lazyload[data-src], dataset src)
 saytruyenvip.com##img.lazyload:style(opacity: 1 !important; height: auto !important;)
 
 ! scitechdaily.com
@@ -170,6 +170,10 @@ scitechdaily.com##+js(ss, img.ezlazyload, dataset ezsrc, 0)
 
 ! sdxcentral.com
 sdxcentral.com##img.preview:style(filter: unset !important;)
+
+! sensereceptornews.com
+sensereceptornews.com##img:style(opacity: 1 !important;)
+sensereceptornews.com##.inner-content *:style(visibility: visible !important;)
 
 ! sfchronicle.com
 sfchronicle.com##+js(ss, .deferred img[data-srcset], dataset srcset)
