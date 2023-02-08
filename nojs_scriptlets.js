@@ -31,7 +31,12 @@
                 }
             }
             if (attribute === "" || attribute === "{{4}}") {
-                imgEl[attr_json[imgEl.localName]] = replaceData
+                if (target === "progressive-image") {
+                    imgEl.style.backgroundImage = `url("${replaceData}")`
+                }
+                else {
+                    imgEl[attr_json[imgEl.localName]] = replaceData
+                }
             }
             else {
                 imgEl[attribute] = replaceData
