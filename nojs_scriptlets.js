@@ -62,6 +62,7 @@
 
 
 /// bi-fix.js
+/// alias bf.js
 (function () {
     window.addEventListener("load", function () {
         for (const imgEl of document.querySelectorAll("img.lazy-image")) {
