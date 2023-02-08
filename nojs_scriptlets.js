@@ -54,8 +54,8 @@
     window.addEventListener("load", function () {
         for (var imgEl of document.querySelectorAll(target)) {
             imgEl.outerHTML = imgEl.outerHTML.trim()
-                .replace(/^<[a-z\-]+/, '<' + replace)
-                .replace(/<\/[a-z\-]+>$/, '</' + replace + '>');
+                .replace(/^<[-a-z]+/, '<' + replace)
+                .replace(/<\/[-a-z]+>$/, '</' + replace + '>');
         }
     });
 })();
