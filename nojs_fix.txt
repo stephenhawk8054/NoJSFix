@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 1 days
-! Last modified: Tue, 7 Feb 2023 00:55 UTC
+! Last modified: 9 Feb 2023 04:23 UTC
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -66,7 +66,11 @@ finance.yahoo.com##img.caas-img:style(opacity: 1 !important;)
 
 ! forbes.com
 forbes.com##.image-embed__placeholder:style(height: auto !important; padding-top: 0px !important;)
+forbes.com##.amp-imgratio
+forbes.com##img[style*="position: absolute"]:style(position: inherit !important;)
+forbes.com##+js(rt, amp-img[src], img)
 forbes.com##+js(rt, progressive-image[src], img)
+forbes.com##+js(ss, progressive-image[background-image]:not([src]), attributes background-image value)
 
 ! techradar-sites
 gamesradar.com,lifehacker.com,livescience.com,kotaku.com,pcgamer.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##+js(ss, img.lazy-image-van[src$="/missing-image.svg"], dataset originalMos)

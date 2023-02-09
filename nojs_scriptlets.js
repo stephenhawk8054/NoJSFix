@@ -30,11 +30,9 @@
                     }
                 }
             }
-            console.log(imgEl);
             if (attribute === "" || attribute === "{{4}}") {
                 if (imgEl.localName === "progressive-image") {
                     imgEl.style.backgroundImage = `url("${replaceData}")`;
-                    console.log(imgEl);
                 }
                 else {
                     imgEl[attr_json[imgEl.localName]] = replaceData;
