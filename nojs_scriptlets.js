@@ -31,7 +31,7 @@
                 }
             }
             if (attribute === "" || attribute === "{{4}}") {
-                if (target === "progressive-image") {
+                if (imgEl.localName === "progressive-image") {
                     imgEl.style.backgroundImage = `url("${replaceData}")`
                 }
                 else {
@@ -62,7 +62,6 @@
 
 
 /// bi-fix.js
-/// alias bf.js
 (function () {
     window.addEventListener("load", function () {
         for (const imgEl of document.querySelectorAll("img.lazy-image")) {
