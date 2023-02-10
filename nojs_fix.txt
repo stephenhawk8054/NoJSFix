@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 1 days
-! Last modified: 9 Feb 2023 05:18 UTC
+! Last modified: 10 Feb 2023 02:42 UTC
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -10,6 +10,9 @@
 
 
 ! ====================================== Generic fixes ======================================
+! https://www.airgradient.com
+airgradient.com##.preloader
+
 ! allthings.how
 allthings.how##+js(ss, img[loading="lazy"][data-origin-src]:not([src]), dataset originSrc)
 
@@ -134,6 +137,10 @@ mangaread.org##img.lazyload:style(height: auto !important; padding-top: 0px !imp
 ! mysmartprice.com
 mysmartprice.com##+js(ss, img[data-lazy-src], dataset lazySrc)
 mysmartprice.com##img[data-lazy-fallback]:style(opacity: 1 !important;)
+
+! ndtv.com
+ndtv.com##+js(ss, img.lazy[data-original]:not([data-src]), dataset original)
+ndtv.com##+js(ss, img[data-src][src^="data:image"], dataset src)
 
 ! https://www.newprint.com
 newprint.com##+js(rt, amp-img[fallback][src], img)
