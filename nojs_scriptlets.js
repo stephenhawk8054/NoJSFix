@@ -31,11 +31,12 @@
                 }
             }
             if (attribute === "" || attribute === "{{4}}") {
-                if (imgEl.localName === "progressive-image") {
-                    imgEl.style.backgroundImage = `url("${replaceData}")`;
+                if (imgEl.localName in attr_json) {
+                    imgEl[attr_json[imgEl.localName]] = replaceData;
+
                 }
                 else {
-                    imgEl[attr_json[imgEl.localName]] = replaceData;
+                    imgEl.style.backgroundImage = `url("${replaceData}")`;
                 }
             }
             else {
