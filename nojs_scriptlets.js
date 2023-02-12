@@ -33,7 +33,6 @@
             if (attribute === "" || attribute === "{{4}}") {
                 if (imgEl.localName in attr_json) {
                     imgEl[attr_json[imgEl.localName]] = replaceData;
-
                 }
                 else {
                     imgEl.style.backgroundImage = `url("${replaceData}")`;
