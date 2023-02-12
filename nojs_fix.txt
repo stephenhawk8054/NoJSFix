@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 1 days
-! Last modified: 12 Feb 2023 13:17 UTC
+! Last modified: 12 Feb 2023 13:49 UTC
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -194,6 +194,9 @@ retroshareteam.wordpress.com##img:style(max-width: -moz-available !important; he
 ! saytruyenvip.com
 saytruyenvip.com##+js(ss, img.lazyload[data-src], dataset src)
 saytruyenvip.com##img.lazyload:style(opacity: 1 !important; height: auto !important;)
+
+! schengenvisainfo.com
+schengenvisainfo.com##+js(ss, span.entry-thumb.rocket-lazyload[data-bg], dataset bg)
 
 ! scitechdaily.com
 scitechdaily.com##+js(ss, img.ezlazyload, dataset ezsrc, 0)
