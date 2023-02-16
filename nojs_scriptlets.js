@@ -7,6 +7,7 @@
     const attribute = "{{4}}";
     window.addEventListener("load", function () {
         const attr_json = {
+            "iframe": "src",
             "img": "src",
             "source": "srcset",
             "video": "poster",
