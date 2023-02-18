@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 1 days
-! Last modified: 16 Feb 2023 03:40 UTC
+! Last modified: 18 Feb 2023 12:16 UTC
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -270,6 +270,9 @@ wbay.com##.w-100[style]
 
 ! https://www.wired.com
 wired.com##span.responsive-asset:style(opacity: 1 !important;)
+
+! xda-developers.com
+xda-developers.com##+js(ss, picture > source[data-srcset]:not([srcset]), dataset srcset)
 
 ! xemtruyen.info
 xemtruyen.info##+js(ss, img.lazy[data-src], dataset src)
