@@ -19,6 +19,10 @@ airgradient.com##.preloader
 ! allthings.how
 allthings.how##+js(ss, img[loading="lazy"][data-origin-src]:not([src]), dataset originSrc)
 
+! androidheadlines.com
+androidheadlines.com##+js(ss, div.lazyload[data-bg][style^="background-image"], dataset bg)
+androidheadlines.com##div.lazyload[data-bg][style^="background-image"]:style(display: block !important;)
+
 ! https://www.androidpolice.com
 androidpolice.com##+js(ss, picture > source[data-srcset]:not([srcset]), dataset srcset)
 
