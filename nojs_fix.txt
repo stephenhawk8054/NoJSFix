@@ -221,6 +221,10 @@ schengenvisainfo.com##+js(ss, span.entry-thumb.rocket-lazyload[data-bg], dataset
 ! scitechdaily.com
 scitechdaily.com##+js(ss, img.ezlazyload, dataset ezsrc, 0)
 
+! screenrant.com
+screenrant.com##+js(ss, picture > source[data-srcset]:not([srcset]), dataset srcset)
+screenrant.com###article-directory-list-cta:style(position: inherit !important;)
+
 ! sdxcentral.com
 sdxcentral.com##img.preview:style(filter: unset !important;)
 
