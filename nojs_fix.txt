@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 1 days
-! Last modified: 18 Feb 2023 12:16 UTC
+! Last modified: 19 Feb 2023 11:21 UTC
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -105,7 +105,7 @@ forbes.com##+js(rt, progressive-image[src], img)
 forbes.com##+js(ss, progressive-image[background-image]:not([src]), attributes background-image value)
 
 ! techradar-sites
-gamesradar.com,lifehacker.com,livescience.com,kotaku.com,pcgamer.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##+js(ss, img.lazy-image-van[src$="/missing-image.svg"], dataset originalMos)
+gamesradar.com,lifehacker.com,livescience.com,kotaku.com,pcgamer.com,space.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##+js(ss, img.lazy-image-van[src$="/missing-image.svg"], dataset originalMos)
 lifehacker.com,kotaku.com##+js(ss, img[data-srcset][src^="data:image"], dataset srcset, 1)
 lifehacker.com,kotaku.com##+js(ss, img[data-src][src^="data:image"], dataset src)
 lifehacker.com,kotaku.com##+js(ss, picture > source[data-srcset][srcset^="data:image"], dataset srcset)
