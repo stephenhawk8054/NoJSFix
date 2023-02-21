@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 1 days
-! Last modified: 19 Feb 2023 11:41 UTC
+! Last modified: 21 Feb 2023 12:35 UTC
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -110,6 +110,14 @@ lifehacker.com,kotaku.com##+js(ss, img[data-srcset][src^="data:image"], dataset 
 lifehacker.com,kotaku.com##+js(ss, img[data-src][src^="data:image"], dataset src)
 lifehacker.com,kotaku.com##+js(ss, picture > source[data-srcset][srcset^="data:image"], dataset srcset)
 lifehacker.com,kotaku.com##+js(ss, video[data-poster], dataset poster)
+
+! gizchina.com
+gizchina.com##+js(ss, span.mrf-galleryGrid__row > img[data-src], dataset src)
+gizchina.com##span.mrf-galleryGrid__row > span
+gizchina.com##span.mrf-image:style(height: auto !important; padding-bottom: 0px !important;)
+gizchina.com##span.mrf-image > span > img:style(height: auto !important; width: auto !important;)
+gizchina.com##div.mrf-article-image:style(background-image: unset !important;)
+gizchina.com##div.mrf-article-image > img
 
 ! gizmodo.com
 gizmodo.com##+js(ss, .js_lazy-image > img[data-srcset][src^="data:image"], dataset srcset, 1)
