@@ -283,6 +283,9 @@ vinmec.com###waiting-screen
 vinmec.com##.new-landing
 vinmec.com##.top-list
 
+! washingtonpost.com
+washingtonpost.com##figure > div[style*="blur"]:style(filter: none !important;)
+
 ! wbay.com
 wbay.com##.w-100[style]
 
