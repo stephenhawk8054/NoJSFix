@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 1 days
-! Last modified: 23 Feb 2023 07:49 UTC
+! Last modified: 23 Feb 2023 08:06 UTC
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -260,6 +260,10 @@ sifted.eu###header:style(position: absolute !important;)
 simplilearn.com##+js(ss, img.lazy, dataset src)
 simplilearn.com##img.lazy:style(width: auto !important;)
 
+! skysports.com
+skysports.com##+js(ss, picture > source[data-srcset][srcset^="data:image"], dataset srcset)
+skysports.com##img.sdc-site-pundits__figure-image[loading="lazy"][src^="https"][srcset^="data:image"]:remove-attr(srcset)
+
 ! stackexchange.com
 stackexchange.com##header.s-topbar:style(position: absolute !important; margin-top: 0 !important;)
 
@@ -282,11 +286,6 @@ usatoday.com##+js(ss, img[data-g-r^="lazy"], dataset glSrcset, 1)
 ! usnews.com
 usnews.com##[class*="PhotoGalleryEmbed"]:style(opacity: 1 !important;)
 usnews.com###main-column .border-top:style(visibility: visible !important;)
-
-! https://www.vinmec.com
-vinmec.com###waiting-screen
-vinmec.com##.new-landing
-vinmec.com##.top-list
 
 ! washingtonpost.com
 washingtonpost.com##figure > div[style*="blur"]:style(filter: none !important;)
