@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 12 hours
-! Last modified: 26 Feb 2023 01:14 UTC
+! Last modified: 26 Feb 2023 12:35 UTC
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -304,6 +304,9 @@ techspot.com##img.b-lazy[data-src]:style(opacity: 1 !important;)
 ! the74million.org
 the74million.org###frontpage-repeat:style(opacity: 1 !important; transform: inherit !important;)
 the74million.org##li[data-id]:style(opacity: 1 !important;)
+
+! https://thefintechtimes.com
+thefintechtimes.com##img[src^="data:image"]
 
 ! thehackernews.com
 thehackernews.com##+js(ss, img[data-src][src^="data:image"], dataset src)
