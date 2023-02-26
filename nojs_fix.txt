@@ -158,6 +158,10 @@ hoimetruyen.com##+js(ss, img.lazyload[data-src][src^="data:image"], dataset src)
 ! howtogeek.com
 howtogeek.com##+js(ss, img[data-pagespeed-lazy-src], dataset pagespeedLazySrc)
 
+! howtopronounce.com
+howtopronounce.com##+js(ss, img[loading="lazy"][data-src]:not([src]), dataset src)
+howtopronounce.com##img[loading="lazy"][data-src]:style(visibility: visible !important;)
+
 ! insideevs.com
 insideevs.com##+js(ss, img[loading="lazy"], previousElementSibling dataset srcset, 1)
 insideevs.com##.detailed-box .lazyload
