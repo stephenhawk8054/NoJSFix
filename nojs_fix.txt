@@ -246,6 +246,9 @@ platform.sh##img[loading="lazy"]:style(opacity: 1 !important;)
 proton.me##img[loading="lazy"]:style(opacity: 1 !important;)
 proton.me###gatsby-focus-wrapper > .top-0.fixed:style(position: absolute !important;)
 
+! https://pureinfotech.com
+pureinfotech.com##img.jetpack-lazy-image[srcset^="data:image"]
+
 ! quantamagazine.org
 quantamagazine.org##video:style(opacity: 1 !important;)
 
