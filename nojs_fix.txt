@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 12 hours
-! Last modified: 02 Mar 2023 01:33 UTC
+! Last modified: 02 Mar 2023 01:40 UTC
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -25,6 +25,7 @@ analyzemath.com##+js(ss, img.ezlazyload[data-ezsrc][src^="data:image"], dataset 
 ! androidheadlines.com
 androidheadlines.com##+js(ss, div.lazyload[data-bg][style^="background-image"], dataset bg)
 androidheadlines.com##div.lazyload[data-bg][style^="background-image"]:style(display: block !important;)
+androidheadlines.com##p > img.lazyload[src^="data:image"]
 
 ! https://www.androidpolice.com
 androidpolice.com##+js(ss, picture > source[data-srcset]:not([srcset]), dataset srcset)
