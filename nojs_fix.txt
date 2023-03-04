@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 12 hours
-! Last modified: 02 Mar 2023 01:51 UTC
+! Last modified: 03 Mar 2023 00:14 UTC
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -298,6 +298,10 @@ sfchronicle.com##+js(ss, .deferred img[data-srcset], dataset srcset)
 sfchronicle.com##+js(ss, .deferred img[data-src], dataset src)
 sfchronicle.com##.deferred img:style(opacity: 1 !important; height: auto !important; position: inherit !important;)
 sfchronicle.com##.deferred::after:style(background-image: unset !important;)
+
+! si.com
+si.com##+js(ss, picture > source[data-srcset]:not([srcset]), dataset srcset, 1)
+si.com##picture > img:style(visibility: visible !important; opacity: 1 !important;)
 
 ! sifted.eu
 sifted.eu##+js(ss, img.lazyload[data-src][src^="data:image"], dataset src)
