@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 12 hours
-! Last modified: 07 Mar 2023 04:31 UTC
+! Last modified: 07 Mar 2023 11:14 UTC
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -196,6 +196,9 @@ linyiru.com##aside, section:style(display: block !important;)
 
 ! lnk.to
 lnk.to##img.music-service-list__img:style(display: block !important;)
+
+! https://kevdees.com
+kevdees.com##.preloader
 
 ! macrumors.com
 macrumors.com##+js(ss, img.lazyload[data-src][src$="1x1.trans.gif"]:not(article img), dataset src)
