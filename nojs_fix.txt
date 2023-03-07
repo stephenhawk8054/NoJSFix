@@ -127,6 +127,10 @@ forbes.com##+js(rt, amp-img[src], img)
 forbes.com##+js(rt, progressive-image[src], img)
 forbes.com##+js(ss, progressive-image[background-image]:not([src]), attributes background-image value)
 
+! gadgets360.com
+gadgets360.com##+js(ss, iframe[data-src]:not([src]), dataset src)
+gadgets360.com##+js(ss, img.lazy[data-original][src], dataset original)
+
 ! techradar-sites
 gamesradar.com,lifehacker.com,livescience.com,kotaku.com,pcgamer.com,space.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##+js(ss, img.lazy-image-van[src$="/missing-image.svg"], dataset originalMos)
 lifehacker.com,kotaku.com##+js(ss, img[data-srcset][src^="data:image"], dataset srcset, 1)
