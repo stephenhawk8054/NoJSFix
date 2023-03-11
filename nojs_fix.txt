@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 12 hours
-! Last modified: 07 Mar 2023 11:32 UTC
+! Last modified: 11 Mar 2023 03:56 UTC
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -405,6 +405,12 @@ xda-developers.com##+js(ss, picture > source[data-srcset]:not([srcset]), dataset
 ! xemtruyen.info
 xemtruyen.info##+js(ss, img.lazy[data-src], dataset src)
 xemtruyen.info##img.lazy:style(height: auto !important; padding-top: 0px !important;)
+
+! yahoo.com
+yahoo.com##+js(ss, img.caas-lazy[data-src]:not([src]), dataset src)
+yahoo.com##+js(ss, img.wafer-img[data-wf-src][src$="spaceball.gif"], dataset wfSrc)
+yahoo.com##div.caas-img-container::after:style(background: transparent !important;)
+yahoo.com##img.caas-lazy[data-src]:style(opacity: 1 !important; animation: none !important;)
 
 ! zingnews.vn
 zingnews.vn##+js(ss, img[src^="data:image"], dataset src)
