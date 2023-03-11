@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 12 hours
-! Last modified: 11 Mar 2023 04:16 UTC
+! Last modified: 11 Mar 2023 04:24 UTC
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -298,6 +298,11 @@ republic.com##.layouts-application__content-container--blurred:remove-class(layo
 
 ! retroshareteam.wordpress.com
 retroshareteam.wordpress.com##img:style(max-width: -moz-available !important; height: auto !important;)
+
+! https://www.sandvine.com
+sandvine.com##.no-js #smm-header:style(display: block !important;)
+sandvine.com##.no-js .smm-menu-wrapper .smm-mobile-wrapper
+sandvine.com##.no-js body *:style(visibility: visible !important;)
 
 ! santafenm.gov
 santafenm.gov##header:style(position: absolute !important;)
