@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 12 hours
-! Last modified: 11 Mar 2023 04:28 UTC
+! Last modified: 11 Mar 2023 04:39 UTC
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -258,6 +258,12 @@ newprint.com##li.ampstart-dropdown-item
 ! newyorker.com
 newyorker.com##[class^="SpanWrapper"]:style(opacity: 1 !important;)
 
+! nilsenreport.ca
+nilsenreport.ca##+js(ss, html.no-js img.ezlazyload[data-orig-file][src^="data:image"], dataset origFile)
+nilsenreport.ca##+js(ss, html.no-js img.ezlazyload[data-ezsrc]:not([data-orig-file])[src^="data:image"], dataset ezsrc)
+nilsenreport.ca##html.no-js img.ezlazyload[data-orig-file][src]:style(position: relative !important;)
+nilsenreport.ca##html.no-js div.thumbnail-container::after:style(background: transparent !important;)
+
 ! nowarchaeology.com
 nowarchaeology.com##.entry-thumb > .attachment-WRT-post-image
 nowarchaeology.com##.wp-block-image > [class^="wp-image"]
@@ -300,9 +306,9 @@ republic.com##.layouts-application__content-container--blurred:remove-class(layo
 retroshareteam.wordpress.com##img:style(max-width: -moz-available !important; height: auto !important;)
 
 ! https://www.sandvine.com
-sandvine.com##.no-js #smm-header:style(display: block !important;)
-sandvine.com##.no-js .smm-menu-wrapper .smm-mobile-wrapper
-sandvine.com##.no-js body *:style(visibility: visible !important;)
+sandvine.com##html.no-js #smm-header:style(display: block !important;)
+sandvine.com##html.no-js .smm-menu-wrapper .smm-mobile-wrapper
+sandvine.com##html.no-js body *:style(visibility: visible !important;)
 
 ! santafenm.gov
 santafenm.gov##header:style(position: absolute !important;)
