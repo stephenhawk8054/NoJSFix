@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 12 hours
-! Last modified: 11 Mar 2023 03:56 UTC
+! Last modified: 11 Mar 2023 04:00 UTC
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -60,6 +60,9 @@ blockdaemon.com##[data-jazzy-scroll]:style(opacity: 1 !important;)
 blocktower.com##+js(ss, img[data-src]:not([src]):not([loading="lazy"]), dataset src)
 blocktower.com##.sqs-dynamic-text:style(visibility: visible !important;)
 blocktower.com##img[data-src]:style(opacity: 1 !important;)
+
+! bongdaplus.vn
+bongdaplus.vn##+js(ss, img.lzl[data-src][src^="data:image"], dataset src)
 
 ! browsertouse.com
 browsertouse.com##+js(ss, img.ezlazyload[data-ezsrc][src^="data:image", dataset ezsrc)
