@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 12 hours
-! Last modified: 11 Mar 2023 04:00 UTC
+! Last modified: 11 Mar 2023 04:11 UTC
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -271,6 +271,13 @@ pcmag.com##img[data-image-loader][src]:style(margin-bottom: 1.5rem !important;)
 
 ! platform.sh
 platform.sh##img[loading="lazy"]:style(opacity: 1 !important;)
+
+! politico.com
+politico.com##+js(ss, img[data-lazy-img][src^="data:image"], dataset lazyImg)
+politico.com##+js(ss, img[data-lazy][src$="placeholder.png"], dataset lazy)
+politico.com##.cover__cta:style(opacity: 1 !important;)
+politico.com##body:style(visibility: visible !important;)
+politico.com##img[data-lazy-img][src]:style(height: auto !important; padding-bottom: 0px !important;)
 
 ! proton.me
 proton.me##img[loading="lazy"]:style(opacity: 1 !important;)
