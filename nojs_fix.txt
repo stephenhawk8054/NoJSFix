@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 12 hours
-! Last modified: 11 Mar 2023 05:14 UTC
+! Last modified: 12 Mar 2023 04:45 UTC
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -147,6 +147,14 @@ lifehacker.com,kotaku.com##+js(ss, img[data-srcset][src^="data:image"], dataset 
 lifehacker.com,kotaku.com##+js(ss, img[data-src][src^="data:image"], dataset src)
 lifehacker.com,kotaku.com##+js(ss, picture > source[data-srcset][srcset^="data:image"], dataset srcset)
 lifehacker.com,kotaku.com##+js(ss, video[data-poster], dataset poster)
+
+! linuxandubuntu.com
+linuxandubuntu.com##+js(ss, html[amp] amp-img[src] > i-amphtml-sizer > img.i-amphtml-intrinsic-sizer[src^="data:image"], parentElement parentElement attributes src value)
+linuxandubuntu.com##+js(rt, html[amp] amp-img:not(figure amp-img):not(.amp-logo amp-img):not([src$="default-image.png"]), img)
+linuxandubuntu.com##+js(rt, html[amp] div.amp-author-image > amp-img[src], img)
+linuxandubuntu.com##html[amp] .ultp-block-image amp-img[src]:not([src$="default-image.png"]), html[amp] .ultp-block-image img[src]:not(.i-amphtml-fill-content):style(width: 100% !important; height: auto !important;)
+linuxandubuntu.com##html[amp] [rel="bookmark"] > amp-img:not(figure amp-img):not(.amp-logo amp-img):not([src$="default-image.png"]), html[amp] [rel="bookmark"] > img:style(width: 100% !important; height: auto !important;)
+linuxandubuntu.com##html[amp] i-amphtml-sizer:not(figure i-amphtml-sizer):not(.amp-logo i-amphtml-sizer)
 
 ! gizchina.com
 gizchina.com##+js(ss, span.mrf-galleryGrid__row > img[data-src], dataset src)
