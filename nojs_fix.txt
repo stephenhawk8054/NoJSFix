@@ -10,6 +10,8 @@
 
 
 ! ====================================== Generic fixes ======================================
+*##.no-js-message
+
 ! 7news.com.au
 7news.com.au##.video-js__overlay:style(opacity: 1 !important;)
 
