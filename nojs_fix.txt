@@ -471,6 +471,9 @@ wbay.com##.w-100[style]
 ! https://www.wired.com
 wired.com##span.responsive-asset:style(opacity: 1 !important;)
 
+! wpengine.com
+wpengine.com##header:style(position: absolute !important;)
+
 ! wpstackable.com
 wpstackable.com##+js(ss, img.nitro-lazy[nitro-lazy-src][src^="data:image"], attributes nitro-lazy-src value)
 
