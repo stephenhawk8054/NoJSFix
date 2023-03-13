@@ -291,6 +291,9 @@ nutsandboltsspeedtraining.com##+js(ss, img.ezlazyload, dataset ezsrcset, 0)
 ! https://www.openculture.com
 openculture.com##.native-lazyload-js-fallback
 
+! https://www.optimizesmart.com
+optimizesmart.com##figure > img.lazyload[src^="data:image"]
+
 ! pcmag.com
 pcmag.com##+js(ss, img[data-image-loader][src^="data:image"]:not([data-src]), dataset imageLoader)
 pcmag.com##+js(ss, img[data-src][src^="data:image"], dataset src)
