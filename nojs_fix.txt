@@ -344,6 +344,10 @@ quantamagazine.org##video:style(opacity: 1 !important;)
 ! republic.com
 republic.com##.layouts-application__content-container--blurred:remove-class(layouts-application__content-container--blurred)
 
+! restofworld.org
+restofworld.org##+js(ss, img[data-src][src], dataset src)
+restofworld.org##img[data-src][src]:style(filter: none !important;)
+
 ! retroshareteam.wordpress.com
 retroshareteam.wordpress.com##img:style(max-width: -moz-available !important; height: auto !important;)
 
