@@ -49,6 +49,9 @@ indiewire.com##.wp-caption > img
 robbreport.com##+js(ss, img.c-lazy-image__img[data-lazy-src][src$="lazyload-fallback.jpg", dataset lazySrc)
 robbreport.com##.featured-image > a > img[data-lazy-src]
 
+! https://artsysops.com
+artsysops.com##img.lazyload[src^="data:image"]
+
 ! axelar.network
 axelar.network##.opacity-0:remove-class(opacity-0)
 
