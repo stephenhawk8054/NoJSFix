@@ -357,6 +357,9 @@ politico.com##.cover__cta:style(opacity: 1 !important;)
 politico.com##body:style(visibility: visible !important;)
 politico.com##img[data-lazy-img][src]:style(height: auto !important; padding-bottom: 0px !important;)
 
+! practical365.com
+practical365.com##figure > img[decoding="async"]:style(display: block !important;)
+
 ! proton.me
 proton.me##img[loading="lazy"]:style(opacity: 1 !important;)
 proton.me###gatsby-focus-wrapper > .top-0.fixed:style(position: absolute !important;)
