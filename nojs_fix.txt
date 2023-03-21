@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 12 hours
-! Last modified: 21 Mar 2023 03:11 UTC
+! Last modified: 21 Mar 2023 03:16 UTC
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -164,6 +164,9 @@ linuxandubuntu.com##+js(rt, html[amp] div.amp-author-image > amp-img[src], img)
 linuxandubuntu.com##html[amp] .ultp-block-image amp-img[src]:not([src$="default-image.png"]), html[amp] .ultp-block-image img[src]:not(.i-amphtml-fill-content):style(width: 100% !important; height: auto !important;)
 linuxandubuntu.com##html[amp] [rel="bookmark"] > amp-img:not(figure amp-img):not(.amp-logo amp-img):not([src$="default-image.png"]), html[amp] [rel="bookmark"] > img:style(width: 100% !important; height: auto !important;)
 linuxandubuntu.com##html[amp] i-amphtml-sizer:not(figure i-amphtml-sizer):not(.amp-logo i-amphtml-sizer)
+
+! lithub.com
+lithub.com##+js(ss, img.lazy[data-src][src*="lazy"], dataset src)
 
 ! gizchina.com
 gizchina.com##+js(ss, span.mrf-galleryGrid__row > img[data-src], dataset src)
