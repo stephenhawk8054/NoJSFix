@@ -103,6 +103,10 @@ darkreading.com###container-main:style(opacity: 1 !important;)
 darkreading.com###overlay-fixed-all-screen
 darkreading.com##.announcement
 
+! dataconomy.com
+dataconomy.com##+js(ss, html.no-js iframe[data-lazyloaded="1"][data-litespeed-src][src="about:blank"], dataset litespeedSrc)
+dataconomy.com##+js(ss, html.no-js img[loading="lazy"][data-src][src^="data:image"], dataset src)
+
 ! devblogs.microsoft.com
 devblogs.microsoft.com##+js(ss, img.lazyload[data-srcset][src^="data:image"], dataset srcset, 1)
 
