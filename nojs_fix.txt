@@ -165,6 +165,8 @@ lifehacker.com,kotaku.com##+js(ss, img[data-srcset][src^="data:image"], dataset 
 lifehacker.com,kotaku.com##+js(ss, img[data-src][src^="data:image"], dataset src)
 lifehacker.com,kotaku.com##+js(ss, picture > source[data-srcset][srcset^="data:image"], dataset srcset)
 lifehacker.com,kotaku.com##+js(ss, video[data-poster], dataset poster)
+windowscentral.com##+js(ss, iframe[data-lazy-src]:not([src]), dataset lazySrc)
+windowscentral.com##iframe[data-lazy-src]:style(display: block !important;)
 
 ! linuxandubuntu.com
 linuxandubuntu.com##+js(ss, html[amp] amp-img[src] > i-amphtml-sizer > img.i-amphtml-intrinsic-sizer[src^="data:image"], parentElement parentElement attributes src value)
@@ -547,7 +549,7 @@ vice.com##+js(vice-fix)
 vice.com##picture.lazyloader--lowres:remove-class(lazyloader--lowres)
 
 ! windowscentral.com
-windowscentral.com##+js(windowscentral-fix)
+! windowscentral.com##+js(windowscentral-fix)
 
 ! ====================================== Specific paywall ======================================
 ! bloomberg.com
