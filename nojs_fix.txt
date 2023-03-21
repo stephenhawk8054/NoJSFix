@@ -107,6 +107,9 @@ diakov.net##+js(ss, img#lazyATS[src^="data:image"], dataset src)
 digitalhygge.com##+js(ss, img[data-lazy="true"][src$="transparent.gif"][data-src], dataset src)
 digitalhygge.com##img[data-lazy="true"]:style(opacity: 1 !important;)
 
+! djangostars.com
+djangostars.com##+js(ss, img.nitro-lazy[nitro-lazy-src][src^="data:image"], attributes nitro-lazy-src value)
+
 ! documentjournal.com
 documentjournal.com##+js(ss, html.no-js img.lazyload[data-src][src], dataset src)
 documentjournal.com##html.no-js img.lazyload[src]:style(opacity: 1 !important;)
