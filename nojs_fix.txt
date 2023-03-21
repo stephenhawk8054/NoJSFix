@@ -168,6 +168,11 @@ linuxandubuntu.com##html[amp] i-amphtml-sizer:not(figure i-amphtml-sizer):not(.a
 ! lithub.com
 lithub.com##+js(ss, img.lazy[data-src][src*="lazy"], dataset src)
 
+! livemint.com
+livemint.com##+js(ss, img.lozad[data-src][src$="/1x1_img.gif"], dataset src)
+livemint.com##section#podcastCarousel > .mainArea:style(display: block !important;)
+livemint.com###genie_UserPortfolio
+
 ! gizchina.com
 gizchina.com##+js(ss, span.mrf-galleryGrid__row > img[data-src], dataset src)
 gizchina.com##span.mrf-galleryGrid__row > span
