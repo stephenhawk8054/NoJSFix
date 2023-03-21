@@ -481,6 +481,9 @@ thefintechtimes.com##img[src^="data:image"]
 thehackernews.com##+js(ss, img[data-src][src^="data:image"], dataset src)
 thehackernews.com##img[loading="lazy"]:style(height: auto !important;)
 
+! thewindowsclub.com
+thewindowsclub.com##+js(ss, body.no-js img.ezlazyload[data-ezsrc][src^="data:image"], dataset ezsrc)
+
 ! tools2study.com
 tools2study.com##+js(ss, img.ezlazyload[data-ezsrc][src^="data:image"], dataset ezsrc)
 
