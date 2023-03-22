@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 12 hours
-! Last modified: 22 Mar 2023 07:56 UTC
+! Last modified: 22 Mar 2023 07:57 UTC
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -12,6 +12,9 @@
 ! ====================================== Generic fixes ======================================
 *##.no-js-message
 *###nojs-banner
+
+! 1337x.*
+1337x.*##body:style(display: block !important;)
 
 ! 7news.com.au
 7news.com.au##.video-js__overlay:style(opacity: 1 !important;)
