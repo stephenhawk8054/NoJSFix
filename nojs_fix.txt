@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 12 hours
-! Last modified: 23 Mar 2023 09:23 UTC
+! Last modified: 23 Mar 2023 09:24 UTC
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -197,6 +197,9 @@ lithub.com##+js(ss, img.lazy[data-src][src*="lazy"], dataset src)
 livemint.com##+js(ss, img.lozad[data-src][src$="/1x1_img.gif"], dataset src)
 livemint.com##section#podcastCarousel > .mainArea:style(display: block !important;)
 livemint.com###genie_UserPortfolio
+
+! logicmatters.net
+logicmatters.net##+js(ss, img.lazyload[data-src][src^="data:image"], dataset src)
 
 ! gizchina.com
 gizchina.com##+js(ss, span.mrf-galleryGrid__row > img[data-src], dataset src)
