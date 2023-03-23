@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 12 hours
-! Last modified: 23 Mar 2023 04:05 UTC
+! Last modified: 23 Mar 2023 09:23 UTC
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -178,6 +178,9 @@ lifehacker.com,kotaku.com##+js(ss, picture > source[data-srcset][srcset^="data:i
 lifehacker.com,kotaku.com##+js(ss, video[data-poster], dataset poster)
 windowscentral.com##+js(ss, iframe[data-lazy-src]:not([src]), dataset lazySrc)
 windowscentral.com##iframe[data-lazy-src]:style(display: block !important;)
+
+! https://www.groovypost.com
+groovypost.com##img[data-lazyloaded="1"][src^="data:image"]
 
 ! linuxandubuntu.com
 linuxandubuntu.com##+js(ss, html[amp] amp-img[src] > i-amphtml-sizer > img.i-amphtml-intrinsic-sizer[src^="data:image"], parentElement parentElement attributes src value)
