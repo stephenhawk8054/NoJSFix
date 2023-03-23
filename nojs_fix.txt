@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 12 hours
-! Last modified: 22 Mar 2023 11:09 UTC
+! Last modified: 23 Mar 2023 04:05 UTC
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -391,6 +391,11 @@ pureinfotech.com##img.jetpack-lazy-image[srcset^="data:image"]
 
 ! quantamagazine.org
 quantamagazine.org##video:style(opacity: 1 !important;)
+
+! qz.com
+qz.com##+js(ss, iframe[data-src]:not([src]), dataset src)
+qz.com##+js(ss, picture > source[data-srcset][srcset^="data:image"], dataset srcset)
+qz.com##+js(ss, video[data-poster][poster], dataset poster)
 
 ! republic.com
 republic.com##.layouts-application__content-container--blurred:remove-class(layouts-application__content-container--blurred)
