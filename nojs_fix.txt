@@ -559,6 +559,9 @@ washingtonpost.com##figure > div[style*="blur"]:style(filter: none !important;)
 ! wbay.com
 wbay.com##.w-100[style]
 
+! https://winbuzzer.com
+winbuzzer.com##img[src^="data:image"]
+
 ! https://www.wired.com
 wired.com##span.responsive-asset:style(opacity: 1 !important;)
 
