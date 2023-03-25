@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 12 hours
-! Last modified: 25 Mar 2023 02:52 UTC
+! Last modified: 25 Mar 2023 04:19 UTC
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -159,6 +159,11 @@ fastcompany.com##img.lazyload[data-srcset]:style(opacity: 1 !important;)
 ! finance.yahoo.com
 finance.yahoo.com##.caas-img-container.caas-img-loader::after:style(background: transparent !important;)
 finance.yahoo.com##img.caas-img:style(opacity: 1 !important;)
+
+! fintechfutures.com
+fintechfutures.com##+js(ss, html.no-js div.lazy[data-background], dataset background)
+fintechfutures.com##+js(ss, html.no-js img.lazy[data-src][src$="placeholder.jpg"], dataset src)
+fintechfutures.com##html.no-js #body-wrapper:style(opacity: 1 !important;)
 
 ! flatlogic.com
 flatlogic.com##+js(ss, img[loading="lazy"][data-src]:not([src]), dataset src)
