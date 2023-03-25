@@ -253,6 +253,9 @@ kilala.vn##.js-page-loader
 kilala.vn##.opacity0:remove-class(opacity0)
 kilala.vn##img.img-fluid:style(display: block !important;)
 
+! kingged.com
+kingged.com##img[src]:style(opacity: 1 !important;)
+
 ! kyodonews.net
 kyodonews.net##+js(ss, div.pic[data-src], dataset src)
 kyodonews.net##+js(ss, img[data-src][src$="thumbnail.png"], dataset src)
