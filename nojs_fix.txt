@@ -333,6 +333,9 @@ mysmartprice.com##img[data-lazy-fallback]:style(opacity: 1 !important;)
 ndtv.com##+js(ss, img.lazy[data-original]:not([data-src]), dataset original)
 ndtv.com##+js(ss, img[data-src][src^="data:image"], dataset src)
 
+! newatlas.com
+newatlas.com##+js(ss, img.lazy[data-src]:not([src]), dataset src)
+
 ! https://www.newprint.com
 newprint.com##+js(rt, amp-img[fallback][src], img)
 newprint.com##.land-see-post-item:style(opacity: 1 !important;)
