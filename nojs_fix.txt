@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 12 hours
-! Last modified: 25 Mar 2023 02:42 UTC
+! Last modified: 25 Mar 2023 02:50 UTC
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -174,6 +174,9 @@ forbes.com##+js(ss, progressive-image[background-image]:not([src]), attributes b
 gadgets360.com##+js(ss, iframe[data-src]:not([src]), dataset src)
 gadgets360.com##+js(ss, img.lazy[data-original][src], dataset original)
 
+! gadgetstouse.com
+gadgetstouse.com##+js(ss, img.ezlazyload[data-ezsrc][src^="data:image"], dataset ezsrc)
+
 ! techradar-sites
 gamesradar.com,lifehacker.com,livescience.com,kotaku.com,pcgamer.com,space.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##+js(ss, img.lazy-image-van[src$="/missing-image.svg"], dataset originalMos)
 lifehacker.com,kotaku.com##+js(ss, img[data-srcset][src^="data:image"], dataset srcset, 1)
@@ -182,28 +185,6 @@ lifehacker.com,kotaku.com##+js(ss, picture > source[data-srcset][srcset^="data:i
 lifehacker.com,kotaku.com##+js(ss, video[data-poster], dataset poster)
 windowscentral.com##+js(ss, iframe[data-lazy-src]:not([src]), dataset lazySrc)
 windowscentral.com##iframe[data-lazy-src]:style(display: block !important;)
-
-! https://www.groovypost.com
-groovypost.com##img[data-lazyloaded="1"][src^="data:image"]
-
-! linuxandubuntu.com
-linuxandubuntu.com##+js(ss, html[amp] amp-img[src] > i-amphtml-sizer > img.i-amphtml-intrinsic-sizer[src^="data:image"], parentElement parentElement attributes src value)
-linuxandubuntu.com##+js(rt, html[amp] amp-img:not(figure amp-img):not(.amp-logo amp-img):not([src$="default-image.png"]), img)
-linuxandubuntu.com##+js(rt, html[amp] div.amp-author-image > amp-img[src], img)
-linuxandubuntu.com##html[amp] .ultp-block-image amp-img[src]:not([src$="default-image.png"]), html[amp] .ultp-block-image img[src]:not(.i-amphtml-fill-content):style(width: 100% !important; height: auto !important;)
-linuxandubuntu.com##html[amp] [rel="bookmark"] > amp-img:not(figure amp-img):not(.amp-logo amp-img):not([src$="default-image.png"]), html[amp] [rel="bookmark"] > img:style(width: 100% !important; height: auto !important;)
-linuxandubuntu.com##html[amp] i-amphtml-sizer:not(figure i-amphtml-sizer):not(.amp-logo i-amphtml-sizer)
-
-! lithub.com
-lithub.com##+js(ss, img.lazy[data-src][src*="lazy"], dataset src)
-
-! livemint.com
-livemint.com##+js(ss, img.lozad[data-src][src$="/1x1_img.gif"], dataset src)
-livemint.com##section#podcastCarousel > .mainArea:style(display: block !important;)
-livemint.com###genie_UserPortfolio
-
-! logicmatters.net
-logicmatters.net##+js(ss, img.lazyload[data-src][src^="data:image"], dataset src)
 
 ! gizchina.com
 gizchina.com##+js(ss, span.mrf-galleryGrid__row > img[data-src], dataset src)
@@ -232,6 +213,9 @@ gq.*##span.responsive-asset:style(opacity: 1 !important;)
 
 ! grammarly.com
 grammarly.com##+js(ss, img.lazyload[data-src]:not([src]), dataset src)
+
+! https://www.groovypost.com
+groovypost.com##img[data-lazyloaded="1"][src^="data:image"]
 
 ! grunge.com
 grunge.com##+js(ss, img.lazyload[data-lazy-src][src^="data:image"], dataset lazySrc)
@@ -281,12 +265,31 @@ lalal.ai##header#gh-head:style(position: absolute !important;)
 ! leadfeeder.com
 leadfeeder.com##+js(ss, img.lazy-image[data-src]:not([src]), dataset src)
 
+! linuxandubuntu.com
+linuxandubuntu.com##+js(ss, html[amp] amp-img[src] > i-amphtml-sizer > img.i-amphtml-intrinsic-sizer[src^="data:image"], parentElement parentElement attributes src value)
+linuxandubuntu.com##+js(rt, html[amp] amp-img:not(figure amp-img):not(.amp-logo amp-img):not([src$="default-image.png"]), img)
+linuxandubuntu.com##+js(rt, html[amp] div.amp-author-image > amp-img[src], img)
+linuxandubuntu.com##html[amp] .ultp-block-image amp-img[src]:not([src$="default-image.png"]), html[amp] .ultp-block-image img[src]:not(.i-amphtml-fill-content):style(width: 100% !important; height: auto !important;)
+linuxandubuntu.com##html[amp] [rel="bookmark"] > amp-img:not(figure amp-img):not(.amp-logo amp-img):not([src$="default-image.png"]), html[amp] [rel="bookmark"] > img:style(width: 100% !important; height: auto !important;)
+linuxandubuntu.com##html[amp] i-amphtml-sizer:not(figure i-amphtml-sizer):not(.amp-logo i-amphtml-sizer)
+
 ! linyiru.com
 linyiru.com##article, .brand, .site-title:style(opacity: 1 !important;)
 linyiru.com##aside, section:style(display: block !important;)
 
+! lithub.com
+lithub.com##+js(ss, img.lazy[data-src][src*="lazy"], dataset src)
+
+! livemint.com
+livemint.com##+js(ss, img.lozad[data-src][src$="/1x1_img.gif"], dataset src)
+livemint.com##section#podcastCarousel > .mainArea:style(display: block !important;)
+livemint.com###genie_UserPortfolio
+
 ! lnk.to
 lnk.to##img.music-service-list__img:style(display: block !important;)
+
+! logicmatters.net
+logicmatters.net##+js(ss, img.lazyload[data-src][src^="data:image"], dataset src)
 
 ! https://kevdees.com
 kevdees.com##.preloader
