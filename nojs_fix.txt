@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 12 hours
-! Last modified: 26 Mar 2023 01:42 UTC
+! Last modified: 26 Mar 2023 01:45 UTC
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -138,6 +138,9 @@ djangostars.com##+js(ss, img.nitro-lazy[nitro-lazy-src][src^="data:image"], attr
 ! documentjournal.com
 documentjournal.com##+js(ss, html.no-js img.lazyload[data-src][src], dataset src)
 documentjournal.com##html.no-js img.lazyload[src]:style(opacity: 1 !important;)
+
+! dpreview.com
+dpreview.com##+js(ss, img.lazyload[data-src]:not([src]), dataset src)
 
 ! https://www.eff.org
 eff.org##.primary-nav-nojs
