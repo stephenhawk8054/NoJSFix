@@ -156,6 +156,9 @@ ehn.org##i-amphtml-sizer
 ! every.to
 every.to##html:style(opacity: 1 !important;)
 
+! explorecams.com
+explorecams.com##+js(ss, img.lazy[data-src][src^="data:image"], dataset src)
+
 ! fastcompany.com
 fastcompany.com##+js(ss, img.lazyload[data-srcset]:not([src]), dataset srcset, 1)
 fastcompany.com##img.lazyload[data-srcset]:style(opacity: 1 !important;)
