@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 12 hours
-! Last modified: 26 Mar 2023 10:58 UTC
+! Last modified: 28 Mar 2023 02:18 UTC
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -590,7 +590,7 @@ wbay.com##.w-100[style]
 winbuzzer.com##img[src^="data:image"]
 
 ! https://www.wired.com
-wired.com##span.responsive-asset:style(opacity: 1 !important;)
+wired.*##span.responsive-asset:style(opacity: 1 !important;)
 
 ! wpengine.com
 wpengine.com##header:style(position: absolute !important;)
