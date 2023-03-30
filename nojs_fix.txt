@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 12 hours
-! Last modified: 28 Mar 2023 02:18 UTC
+! Last modified: 30 Mar 2023 04:22 UTC
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -101,6 +101,10 @@ cleantechnica.com##+js(ss, img.avatar[data-loading="lazy"][data-src]:not([data-o
 cleantechnica.com##+js(ss, img[data-orig-file][src^="data:image"], dataset origFile)
 cleantechnica.com##.mrf-sectionsHint div.img.mrf-article-image > span
 cleantechnica.com##span.mrf-detailsMedia > span
+
+! cnet.com
+cnet.com##picture:style(opacity: 1 !important;)
+cnet.com##picture > img[src=""]
 
 ! https://codefordev.com
 codefordev.com###load_spinner
