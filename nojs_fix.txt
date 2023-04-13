@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 12 hours
-! Last modified: 08 Apr 2023 14:26 UTC
+! Last modified: 13 Apr 2023 12:30 UTC
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -612,6 +612,11 @@ usatoday.com##img.blur-up:style(filter: none !important;)
 ! usnews.com
 usnews.com##[class*="PhotoGalleryEmbed"]:style(opacity: 1 !important;)
 usnews.com###main-column .border-top:style(visibility: visible !important;)
+
+! vtc.vn
+vtc.vn##+js(ss, b.video-element[data-poster], dataset poster)
+vtc.vn##+js(ss, img[data-src][src^="data:image"], dataset src)
+vtc.vn##.swiper-slide > article:style(height: auto !important;)
 
 ! washingtonpost.com
 washingtonpost.com##figure > div[style*="blur"]:style(filter: none !important;)
