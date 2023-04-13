@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 12 hours
-! Last modified: 13 Apr 2023 12:32 UTC
+! Last modified: 13 Apr 2023 12:44 UTC
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -533,6 +533,9 @@ sifted.eu###header:style(position: absolute !important;)
 ! simplilearn.com
 simplilearn.com##+js(ss, img.lazy, dataset src)
 simplilearn.com##img.lazy:style(width: auto !important;)
+
+! sky.com
+sky.com##html.no-js .ui-consent-roadblock-body:style(visibility: visible !important;)
 
 ! skysports.com
 skysports.com##+js(ss, picture > source[data-srcset][srcset^="data:image"], dataset srcset)
