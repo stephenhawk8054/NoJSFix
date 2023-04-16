@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 12 hours
-! Last modified: 14 Apr 2023 11:44 UTC
+! Last modified: 16 Apr 2023 10:23 UTC
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -469,6 +469,9 @@ proton.me###gatsby-focus-wrapper > .top-0.fixed:style(position: absolute !import
 
 ! https://pureinfotech.com
 pureinfotech.com##img.jetpack-lazy-image[srcset^="data:image"]
+
+! pythonforfinance.net
+pythonforfinance.net##+js(ss, img.penci-lazy[data-src][src^="data:image"], dataset src)
 
 ! quantamagazine.org
 quantamagazine.org##video:style(opacity: 1 !important;)
