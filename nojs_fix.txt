@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 12 hours
-! Last modified: 20 Apr 2023 12:40 UTC
+! Last modified: 20 Apr 2023 12:55 UTC
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -85,6 +85,9 @@ bongdaplus.vn##+js(ss, img.lzl[data-src][src^="data:image"], dataset src)
 
 ! browsertouse.com
 browsertouse.com##+js(ss, img.ezlazyload[data-ezsrc][src^="data:image", dataset ezsrc)
+
+! c4isrnet.com
+c4isrnet.com##.nav-logo:style(opacity: 1 !important; visibility: visible !important;)
 
 ! cbsnews.com
 cbsnews.com##+js(ss, img.lazyload[data-srcset][srcset^="data:image"], dataset srcset, 1, srcset)
