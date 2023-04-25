@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 12 hours
-! Last modified: 2023.04.25.1
+! Last modified: 2023.04.25.2
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -485,6 +485,10 @@ politico.com##img[data-lazy-img][src]:style(height: auto !important; padding-bot
 
 ! practical365.com
 practical365.com##figure > img[decoding="async"]:style(display: block !important;)
+
+! https://www.pressherald.com
+pressherald.com##.mtm-article, .post-content:style(display: block !important;)
+pressherald.com##span > img[loading="lazy"][src$="1x1.trans.gif"]
 
 ! proton.me
 proton.me##img[loading="lazy"]:style(opacity: 1 !important;)
