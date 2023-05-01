@@ -12,6 +12,10 @@
             "source": "srcset",
             "video": "poster",
         };
+        const imgExts = [
+            'jpg',
+            'JPG'
+        ]
         const regexp = /(?:https?:)?\/\/\S+/g;
         for (const imgEl of document.querySelectorAll(target)) {
             let replaceData = imgEl;
@@ -29,6 +33,12 @@
                     else {
                         replaceData = matches[matches.length - 1][0].trim(" ");
                     }
+                }
+            }
+            for (const ext of imgExts) {
+                if (replaceData.includes(`.${ext}|`)) {
+                    replaceData = replaceData.split(`.${ext}|`)[0] + `.${ext}`;
+                    break;
                 }
             }
             if (attribute === "" || attribute === "{{4}}") {

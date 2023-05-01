@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 12 hours
-! Last modified: 2023.05.01.1
+! Last modified: 2023.05.01.2
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -664,8 +664,9 @@ urbandictionary.com###ud-root > div:style(padding-top: 56px !important;)
 urbandictionary.com##button > svg:style(display: block !important;)
 
 ! usatoday.com
-usatoday.com##+js(ss, img[data-g-r^="lazy"]:not([data-src]), dataset glSrcset, 1)
-usatoday.com##+js(ss, img.lazyload.blur-up[data-src][src], dataset src)
+usatoday.com##+js(ss, html.gnt__njs img.lazyload.blur-up[data-src][src], dataset src)
+usatoday.com##+js(ss, html.gnt__njs img[data-g-r="lazy"][data-gl-bs]:not([src]), dataset glBs)
+usatoday.com##+js(ss, html.gnt__njs img[data-g-r^="lazy"]:not([data-src]):not([data-gl-bs]), dataset glSrcset, 1)
 usatoday.com##img.blur-up:style(filter: none !important;)
 
 ! usnews.com
