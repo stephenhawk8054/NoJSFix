@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 12 hours
-! Last modified: 2023.05.01.4
+! Last modified: 2023.05.01.5
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -58,6 +58,14 @@ robbreport.com##.featured-image > a > img[data-lazy-src]
 
 ! https://artsysops.com
 artsysops.com##img.lazyload[src^="data:image"]
+
+! https://www.atlasobscura.com
+atlasobscura.com##+js(ss, img.lazy[data-src], dataset src)
+atlasobscura.com##img:is(.lazy, .lazyloading)[src]:style(opacity: 1 !important; height: auto !important; padding-top: 0 !important;)
+atlasobscura.com##.splide,*:not(:defined):style(visibility: visible !important;)
+atlasobscura.com##.splide button i:empty:upward(.splide button)
+atlasobscura.com##.splide img:style(width: auto !important;)
+atlasobscura.com##.splide__slide:style(width: fit-content !important)
 
 ! axelar.network
 axelar.network##.opacity-0:remove-class(opacity-0)
