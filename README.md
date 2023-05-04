@@ -9,4 +9,5 @@ https://raw.githubusercontent.com/stephenhawk8054/NoJSFix/main/nojs_fix.txt
 
 3. Declutter filter list - remove all distracting elements of the article
 *Warning: This could cause unexpected behavior/breakages. Use at your own risk*
+
 https://raw.githubusercontent.com/stephenhawk8054/NoJSFix/main/declutter.txt
