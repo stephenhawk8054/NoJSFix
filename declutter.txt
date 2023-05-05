@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 12 hours
-! Last modified: 2023.05.05.10
+! Last modified: 2023.05.05.11
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -13,7 +13,7 @@
 note.nkmk.me,polygon.com,theverge.com##article:others()
 
 ! .content:others()
-dunebook.com,educba.com,geeksforgeeks.org##.content:others()
+dunebook.com,educba.com,geeksforgeeks.org,techcrunch.com##.content:others()
 
 ! ====================================== Specific ======================================
 ! https://www.dunebook.com
@@ -60,6 +60,15 @@ stackexchange.com,stackoverflow.com##body.question-page #post-form
 stackexchange.com,stackoverflow.com##body.question-page .bottom-notice
 stackexchange.com,stackoverflow.com##body.question-page .s-btn__primary
 stackexchange.com,stackoverflow.com##body.question-page [id^="comments-link"]
+
+! https://techcrunch.com
+techcrunch.com##.sidebar
+techcrunch.com##.article__floating-wrap
+techcrunch.com##.article__related-links
+techcrunch.com##.article-footer
+techcrunch.com##.container__access-control
+techcrunch.com##.newsletter-signup-block
+techcrunch.com##.post-block
 
 ! theverge.com
 theverge.com##.duet--article--comments-button
