@@ -10,7 +10,7 @@
 
 ! ====================================== Generic =======================================
 ! article:others()
-note.nkmk.me,polygon.com,theverge.com##article:others()
+note.nkmk.me,polygon.com##article:others()
 
 ! .content:others()
 dunebook.com,educba.com,geeksforgeeks.org##.content:others()
@@ -66,11 +66,11 @@ techcrunch.com##.article__content-wrap:others()
 techcrunch.com##.container__access-control
 
 ! theverge.com
-theverge.com##.duet--article--comments-button
+theverge.com##:is(.duet--article--article-body-component-container .duet--article--article-body-component, .duet--article--lede):others()
 theverge.com##.duet--article--comments-link
 theverge.com##.duet--article--disclaimer
 theverge.com##.duet--article--share-buttons
-theverge.com##.duet--layout--rail
+theverge.com##.duet--recirculation--related-list
 
 ! https://www.tutorialspoint.com
 tutorialspoint.com##.tutorial-content:others()
