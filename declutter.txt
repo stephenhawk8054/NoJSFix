@@ -66,17 +66,14 @@ techcrunch.com##.article__content-wrap:others()
 techcrunch.com##.container__access-control
 
 ! theverge.com
-theverge.com##:is(.duet--article--article-body-component-container .duet--article--article-body-component, .duet--article--lede):others()
+theverge.com##.duet--article--article-body-component-container .duet--article--article-body-component, .duet--article--lede:others()
 theverge.com##.duet--article--comments-link
 theverge.com##.duet--article--disclaimer
 theverge.com##.duet--article--share-buttons
 theverge.com##.duet--recirculation--related-list
 
 ! https://www.tutorialspoint.com
-tutorialspoint.com##.tutorial-content:others()
+tutorialspoint.com##.qa_title, #downloadContent, .qa_widget:others()
 tutorialspoint.com##.tutorial-content:style(margin: auto !important;)
-tutorialspoint.com##.chapters
 tutorialspoint.com##.uthor-prof-social-icon
 tutorialspoint.com##.views-count
-tutorialspoint.com###bottom_navigation
-tutorialspoint.com###adp_top_ads
