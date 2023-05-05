@@ -25,8 +25,7 @@ dunebook.com##.tags
 dunebook.com###author
 
 ! https://www.easytweaks.com
-easytweaks.com###primary:others()
-easytweaks.com##.entry-meta
+easytweaks.com##.entry-header, .entry-content:others()
 
 ! https://www.educba.com
 educba.com##.box-div
