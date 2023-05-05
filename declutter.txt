@@ -10,7 +10,7 @@
 
 ! ====================================== Generic =======================================
 ! article:others()
-geeksforgeeks.org,note.nkmk.me##article:others()
+geeksforgeeks.org##article:others()
 
 ! .content:others()
 dunebook.com,educba.com##.content:others()
@@ -36,8 +36,7 @@ geeksforgeeks.org##.article--viewer_like
 geeksforgeeks.org##.leftBar:style(margin: auto !important;)
 
 ! https://note.nkmk.me
-note.nkmk.me##article > h2
-note.nkmk.me##.link-list
+note.nkmk.me##article :is(h1, #info, #content):others()
 
 ! https://www.polygon.com
 polygon.com##.c-entry-content, .c-entry-hero, .e-image--hero:others()
