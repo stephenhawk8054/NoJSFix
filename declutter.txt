@@ -10,7 +10,7 @@
 
 ! ====================================== Generic =======================================
 ! article:others()
-geeksforgeeks.org,note.nkmk.me,polygon.com##article:others()
+geeksforgeeks.org,note.nkmk.me##article:others()
 
 ! .content:others()
 dunebook.com,educba.com##.content:others()
@@ -40,13 +40,10 @@ note.nkmk.me##article > h2
 note.nkmk.me##.link-list
 
 ! https://www.polygon.com
-polygon.com##main:style(margin-top: 0px !important;)
-polygon.com###comments
+polygon.com##.c-entry-content, .c-entry-hero, .e-image--hero:others()
+polygon.com##.c-entry-hero__header
 polygon.com##.c-entry-stat--words
-polygon.com##.l-col__sidebar
-polygon.com##.main-social
-polygon.com##.c-compact-river
-polygon.com##.outbrain-container
+polygon.com##main:style(margin-top: 0px !important;)
 
 ! https://www.programiz.com
 programiz.com##.editor-contents, .menu-with-accordion, .toc-trigger:others()
