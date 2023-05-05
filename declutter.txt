@@ -49,7 +49,7 @@ polygon.com##.c-compact-river
 polygon.com##.outbrain-container
 
 ! https://www.programiz.com
-programiz.com##.editor-contents:others()
+programiz.com##.editor-contents, .menu-with-accordion, .toc-trigger:others()
 programiz.com##.contents:style(margin-bottom: unset !important;)
 programiz.com##main:style(padding-top: unset !important;)
 
