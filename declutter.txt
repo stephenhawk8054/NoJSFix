@@ -10,10 +10,10 @@
 
 ! ====================================== Generic =======================================
 ! article:others()
-note.nkmk.me,polygon.com##article:others()
+geeksforgeeks.org,note.nkmk.me,polygon.com##article:others()
 
 ! .content:others()
-dunebook.com,educba.com,geeksforgeeks.org##.content:others()
+dunebook.com,educba.com##.content:others()
 
 ! ====================================== Specific ======================================
 ! https://www.dunebook.com
