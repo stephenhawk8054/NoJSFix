@@ -13,7 +13,7 @@
 note.nkmk.me,polygon.com,theverge.com##article:others()
 
 ! .content:others()
-dunebook.com,educba.com,geeksforgeeks.org,techcrunch.com##.content:others()
+dunebook.com,educba.com,geeksforgeeks.org##.content:others()
 
 ! ====================================== Specific ======================================
 ! https://www.dunebook.com
@@ -62,13 +62,8 @@ stackexchange.com,stackoverflow.com##body.question-page .s-btn__primary
 stackexchange.com,stackoverflow.com##body.question-page [id^="comments-link"]
 
 ! https://techcrunch.com
-techcrunch.com##.sidebar
-techcrunch.com##.article__floating-wrap
-techcrunch.com##.article__related-links
-techcrunch.com##.article-footer
+techcrunch.com##.article__content-wrap:others()
 techcrunch.com##.container__access-control
-techcrunch.com##.newsletter-signup-block
-techcrunch.com##.post-block
 
 ! theverge.com
 theverge.com##.duet--article--comments-button
