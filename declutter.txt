@@ -45,6 +45,11 @@ gamesradar.com,livescience.com,pcgamer.com,space.com,techradar.com,tomsguide.com
 geeksforgeeks.org##.article--viewer_like
 geeksforgeeks.org##.leftBar:style(margin: auto !important;)
 
+! https://gizmodo.com
+gizmodo.com##.js_post-content, header, .js_regular-subhead, .js_starterpost > div:first-child:others()
+gizmodo.com##.js_more-below-post
+gizmodo.com###Templates
+
 ! https://www.lovetoknow.com
 lovetoknow.com##.content-body, .content-header:others()
 lovetoknow.com##.social-container
