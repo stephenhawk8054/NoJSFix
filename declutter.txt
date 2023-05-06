@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 12 hours
-! Last modified: 2023.05.06.2
+! Last modified: 2023.05.06.3
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -37,6 +37,10 @@ gamesradar.com,livescience.com,pcgamer.com,space.com,techradar.com,tomsguide.com
 ! https://www.geeksforgeeks.org
 geeksforgeeks.org##.article--viewer_like
 geeksforgeeks.org##.leftBar:style(margin: auto !important;)
+
+! https://www.lovetoknow.com
+lovetoknow.com##.content-body, .content-header:others()
+lovetoknow.com##.social-container
 
 ! https://note.nkmk.me
 note.nkmk.me##article :is(h1, #info, #content):others()
