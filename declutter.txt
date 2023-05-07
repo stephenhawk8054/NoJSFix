@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 12 hours
-! Last modified: 2023.05.07.1
+! Last modified: 2023.05.07.2
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -50,12 +50,12 @@ easytweaks.com##.entry-header, .entry-content:others()
 educba.com##.content:others()
 educba.com##.box-div
 
-! https://www.tomshardware.com
-gamesradar.com,livescience.com,pcgamer.com,space.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com###article-body, .hero-image-wrapper, .news-article > header, #slice-container-authorBio:others()
-gamesradar.com,livescience.com,pcgamer.com,space.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##.socialite-widget
-gamesradar.com,livescience.com,pcgamer.com,space.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##.fancy-box
-gamesradar.com,livescience.com,pcgamer.com,space.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##+js(norafif, [native code])
-gamesradar.com,livescience.com,pcgamer.com,space.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##+js(aeld, scroll, requestAnimationFrame)
+! techradar-sites
+gamesradar.com,laptopmag.com,livescience.com,pcgamer.com,space.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com###article-body, .hero-image-wrapper, .news-article > header, #slice-container-authorBio:others()
+gamesradar.com,laptopmag.com,livescience.com,pcgamer.com,space.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##.socialite-widget
+gamesradar.com,laptopmag.com,livescience.com,pcgamer.com,space.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##.fancy-box
+gamesradar.com,laptopmag.com,livescience.com,pcgamer.com,space.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##+js(norafif, [native code])
+gamesradar.com,laptopmag.com,livescience.com,pcgamer.com,space.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##+js(aeld, scroll, requestAnimationFrame)
 
 ! https://www.geeksforgeeks.org
 geeksforgeeks.org##.article--viewer_like
