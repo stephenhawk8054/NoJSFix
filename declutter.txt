@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 12 hours
-! Last modified: 2023.05.06.13
+! Last modified: 2023.05.07.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -12,9 +12,6 @@
 ! article:others()
 geeksforgeeks.org,thedailybeast.com##article:others()
 
-! .content:others()
-educba.com##.content:others()
-
 ! ====================================== Specific ======================================
 ! https://www.adweek.com
 adweek.com##.mx-0, .hero-wrapper, .entry-header:others()
@@ -22,6 +19,10 @@ adweek.com##.article-native-ad
 adweek.com##.section
 adweek.com###meter-count
 adweek.com###page:style(padding-top: 0px !important;)
+
+! https://arstechnica.com
+arstechnica.com##.article-content, .article-header, .page-numbers:others()
+arstechnica.com###social-left
 
 ! https://www.codingdeft.com
 codingdeft.com###main > :not([class^="CallToActionstyles"]), [class^="PostTemplatestyles__PostHeader"]:others()
@@ -46,6 +47,7 @@ dunebook.com##.comments
 easytweaks.com##.entry-header, .entry-content:others()
 
 ! https://www.educba.com
+educba.com##.content:others()
 educba.com##.box-div
 
 ! https://www.tomshardware.com
