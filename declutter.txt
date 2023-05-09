@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 12 hours
-! Last modified: 2023.05.07.2
+! Last modified: 2023.05.09.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -23,6 +23,11 @@ adweek.com###page:style(padding-top: 0px !important;)
 ! https://arstechnica.com
 arstechnica.com##.article-content, .article-header, .page-numbers:others()
 arstechnica.com###social-left
+
+! https://cleantechnica.com
+cleantechnica.com##.zox-post-body > :not(.afterpost):not(.afterpost ~ *), .zox-post-title, .zox-post-excerpt, .zox-post-byline-wrap, .zox-post-img-wrap:others()
+cleantechnica.com##.zox-post-main-wrap:style(grid-template-columns: 100% !important;)
+cleantechnica.com##header:remove()
 
 ! https://www.codingdeft.com
 codingdeft.com###main > :not([class^="CallToActionstyles"]), [class^="PostTemplatestyles__PostHeader"]:others()
