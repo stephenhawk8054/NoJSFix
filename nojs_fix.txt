@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 12 hours
-! Last modified: 2023.05.11.2
+! Last modified: 2023.05.12.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -52,11 +52,11 @@ arabnews.com##+js(ss, img[data-lazy]:not([src]), dataset lazy)
 arabnews.com##.slider-item:style(opacity: 1 !important;)
 
 ! PMC-sites
-artnews.com,billboard.com,dirt.com,hollywoodreporter.com,rollingstone.com,sheknows.com,sportico.com,spy.com,tvline.com,variety.com,vibe.com,wwd.com##+js(ss, img[data-lazy-src], dataset lazySrc)
-artnews.com,billboard.com,dirt.com,hollywoodreporter.com,indiewire.com,robbreport.com,rollingstone.com,sheknows.com,sportico.com,spy.com,tvline.com,variety.com,vibe.com,wwd.com##+js(ss, iframe[data-lazy-src][src^="javascript", dataset lazySrc)
-artnews.com,billboard.com,dirt.com,hollywoodreporter.com,indiewire.com,robbreport.com,rollingstone.com,sheknows.com,sportico.com,spy.com,tvline.com,variety.com,vibe.com,wwd.com##.carousel-content:style(visibility: visible !important;)
-artnews.com,billboard.com,dirt.com,hollywoodreporter.com,indiewire.com,robbreport.com,rollingstone.com,sheknows.com,sportico.com,spy.com,tvline.com,variety.com,vibe.com,wwd.com##.js-Flickity-cell:style(opacity: 1 !important; visibility: visible !important;)
-artnews.com,billboard.com,dirt.com,hollywoodreporter.com,indiewire.com,robbreport.com,rollingstone.com,sheknows.com,sportico.com,spy.com,tvline.com,variety.com,vibe.com,wwd.com##.js-Flickity-loading
+artnews.com,billboard.com,deadline.com,dirt.com,hollywoodreporter.com,rollingstone.com,sheknows.com,sportico.com,spy.com,tvline.com,variety.com,vibe.com,wwd.com##+js(ss, img[data-lazy-src], dataset lazySrc)
+artnews.com,billboard.com,deadline.com,dirt.com,hollywoodreporter.com,indiewire.com,robbreport.com,rollingstone.com,sheknows.com,sportico.com,spy.com,tvline.com,variety.com,vibe.com,wwd.com##+js(ss, iframe[data-lazy-src][src^="javascript", dataset lazySrc)
+artnews.com,billboard.com,deadline.com,dirt.com,hollywoodreporter.com,indiewire.com,robbreport.com,rollingstone.com,sheknows.com,sportico.com,spy.com,tvline.com,variety.com,vibe.com,wwd.com##.carousel-content:style(visibility: visible !important;)
+artnews.com,billboard.com,deadline.com,dirt.com,hollywoodreporter.com,indiewire.com,robbreport.com,rollingstone.com,sheknows.com,sportico.com,spy.com,tvline.com,variety.com,vibe.com,wwd.com##.js-Flickity-cell:style(opacity: 1 !important; visibility: visible !important;)
+artnews.com,billboard.com,deadline.com,dirt.com,hollywoodreporter.com,indiewire.com,robbreport.com,rollingstone.com,sheknows.com,sportico.com,spy.com,tvline.com,variety.com,vibe.com,wwd.com##.js-Flickity-loading
 indiewire.com##.wp-caption > img
 robbreport.com##+js(ss, img.c-lazy-image__img[data-lazy-src][src$="lazyload-fallback.jpg", dataset lazySrc)
 robbreport.com##.featured-image > a > img[data-lazy-src]
