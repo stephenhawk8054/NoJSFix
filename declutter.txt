@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 12 hours
-! Last modified: 2023.05.12.3
+! Last modified: 2023.05.12.4
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -128,6 +128,9 @@ thedailybeast.com##article div[style] > .Fancylinks:upward(1)
 theglobeandmail.com##article > :not([class^="Newsletter"]), .c-article-meta, .l-article-title:others()
 theglobeandmail.com###article-toolbar-share-btn
 theglobeandmail.com##.c-button--comments
+
+! https://theintercept.com
+theintercept.com##.PostContent > :not(.NewsletterEmbed-container):not(.Cta):not(.PromoteRelatedPost-promo), .Post-contact, .Post-header-block, .Post-image-block:others()
 
 ! theverge.com
 theverge.com##.duet--article--article-body-component-container .duet--article--article-body-component, .duet--article--lede:others()
