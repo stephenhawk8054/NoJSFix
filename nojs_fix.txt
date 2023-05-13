@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 12 hours
-! Last modified: 2023.05.12.1
+! Last modified: 2023.05.13.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -11,8 +11,8 @@
 
 ! ====================================== Generic fixes ======================================
 *###mdp-deblocker-js-disabled
-*##.no-js-message
 *###nojs-banner
+*##.no-js-message
 
 ! 1337x.*
 1337x.*##body:style(display: block !important;)
@@ -546,6 +546,11 @@ restofworld.org##img[data-src][src]:style(filter: none !important;)
 
 ! retroshareteam.wordpress.com
 retroshareteam.wordpress.com##img:style(max-width: -moz-available !important; height: auto !important;)
+
+! rte.ie
+rte.ie##+js(ss, html.no-js iframe[data-src]:not([src]), dataset src)
+rte.ie##.loading-overlay
+rte.ie##.carousel > article:style(opacity: 1 !important;)
 
 ! https://www.sandvine.com
 sandvine.com##html.no-js #smm-header:style(display: block !important;)
