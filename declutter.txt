@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 12 hours
-! Last modified: 2023.05.14.1
+! Last modified: 2023.05.14.2
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -14,23 +14,25 @@ geeksforgeeks.org,thedailybeast.com##article:others()
 
 ! ====================================== Specific ======================================
 ! https://www.adweek.com
-adweek.com##.mx-0, .hero-wrapper, .entry-header:others()
-adweek.com##.article-native-ad
-adweek.com##.section
-adweek.com###meter-count
+adweek.com##.aw-article-content, .author-bottom, .author-image-wrap, .byline-wrap, .featured-image, .entry-header:others()
+adweek.com##.section--teaser
 adweek.com###page:style(padding-top: 0px !important;)
 
 ! https://arstechnica.com
-arstechnica.com##.article-content, .article-header, .page-numbers:others()
-arstechnica.com###social-left
+arstechnica.com##[itemprop="articleBody"] > :not(#social-left), .article-author, .article-header, .page-numbers, #archive-head, .heading, [itemprop="description"], [itemprop="author creator"]:others()
+arstechnica.com##[data-page] > .left-column:style(width: 80% !important;)
+arstechnica.com##main, #container:style(padding-top: 0px !important;)
+arstechnica.com##.instream-wrap
+arstechnica.com##.superscroll-ad
 
 ! https://cleantechnica.com
-cleantechnica.com##.zox-post-body > :not(.afterpost):not(.afterpost ~ *), .zox-post-title, .zox-post-excerpt, .zox-post-byline-wrap, .zox-post-img-wrap:others()
+cleantechnica.com##.zox-post-body > :not(.afterpost):not(.afterpost ~ *), .zox-post-cat, .zox-post-title, .zox-post-excerpt, .zox-post-byline-wrap, .zox-post-img-wrap, .zox-author-box-wrap:others()
 cleantechnica.com##.zox-post-main-wrap:style(grid-template-columns: 100% !important;)
-cleantechnica.com##header:remove()
+cleantechnica.com###zox-main-head-wrap:remove()
 
 ! https://www.codingdeft.com
 codingdeft.com###main > :not([class^="CallToActionstyles"]), [class^="PostTemplatestyles__PostHeader"]:others()
+codingdeft.com##body:style(overflow: auto !important;)
 
 ! https://compucademy.net
 compucademy.net##.oct-post-content > :not(#dpsp-content-bottom), article > :is(figure, h1):others()
