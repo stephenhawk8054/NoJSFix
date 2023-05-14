@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 12 hours
-! Last modified: 2023.05.14.3
+! Last modified: 2023.05.14.4
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -52,6 +52,11 @@ deseret.com##.RichTextArticleBody > :not(.to-comments-button-container), .Page-h
 dunebook.com##.featured-image, .post-content > .text:others()
 dunebook.com##.crp_related
 dunebook.com##.comments
+
+! https://dzone.com
+dzone.com##.content-html, .header:others()
+dzone.com##.content:style(width: 100% !important;)
+dzone.com###body-container:style(padding-top: 0px !important;)
 
 ! https://www.easytweaks.com
 easytweaks.com##.entry-header, .entry-content:others()
