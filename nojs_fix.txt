@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 12 hours
-! Last modified: 2023.05.15.1
+! Last modified: 2023.05.16.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -272,11 +272,13 @@ gizchina.com##div.mrf-article-image:style(background-image: unset !important;)
 gizchina.com##div.mrf-article-image > img
 
 ! gizmodo.com
-gizmodo.com##+js(ss, .js_lazy-image > img[data-srcset][src^="data:image"], dataset srcset, 1)
+gizmodo.com##+js(ss, img[data-srcset][src^="data:image"], dataset srcset, 1)
 gizmodo.com##+js(ss, picture.lazy-picture > source[data-srcset][srcset^="data:image"], dataset srcset)
 gizmodo.com##+js(ss, video[data-poster], dataset poster)
 gizmodo.com##+js(ss, video[data-postersrc][poster^="data:image"]:not([data-poster]), dataset postersrc)
 gizmodo.com##+js(ss, iframe.lazyload[data-src]:not([src]), dataset src)
+gizmodo.com##.js_expandable-container-button:upward(1)
+gizmodo.com##.js_starterpost div:not([id]):not([class]):upward(1):style(max-height: unset !important;)
 gizmodo.com##iframe.lazyload[data-src]:style(height: auto !important;)
 
 ! glamour.com
