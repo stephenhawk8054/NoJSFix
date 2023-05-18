@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 12 hours
-! Last modified: 2023.05.17.1
+! Last modified: 2023.05.18.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -428,6 +428,9 @@ mitefcee.org##.delay:style(visibility: visible !important;)
 
 ! mozilla.org
 mozilla.org##+js(ss, img.lazy[data-original-src][src$=".gif"], dataset originalSrc)
+
+! natalie.mu
+natalie.mu##+js(ss, img.lazyload[data-src]:not([src]), dataset src)
 
 ! mysmartprice.com
 mysmartprice.com##+js(ss, img[data-lazy-src], dataset lazySrc)
