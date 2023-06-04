@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 12 hours
-! Last modified: 2023.05.20.1
+! Last modified: 2023.06.04.2
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -422,6 +422,9 @@ meaww.com##+js(ss, img.lazyload[data-src], dataset src)
 
 ! techxplore-sites
 medicalxpress.com,phys.org,techxplore.com##+js(ss, img[src^="data:image"], dataset src)
+
+! medscape.com
+medscape.com##+js(ss, img[data-src][src$="1x1.png"], dataset src)
 
 ! memgraph.com
 memgraph.com##.code_section, .hero_left, .w-background-video, [class*="_flex"], [class*="_split"], [class*="container"]:style(opacity: 1 !important;)
