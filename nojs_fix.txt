@@ -17,6 +17,10 @@
 ! 1337x.*
 1337x.*##body:style(display: block !important;)
 
+! 2minutemedicine.com
+2minutemedicine.com##+js(ss, html.no-js img.lazyload[data-src][src$="empty.png"], dataset src)
+2minutemedicine.com##html.no-js img.lazyload:style(display: block !important; opacity: 1 !important;)
+
 ! 7news.com.au
 7news.com.au##.video-js__overlay:style(opacity: 1 !important;)
 
