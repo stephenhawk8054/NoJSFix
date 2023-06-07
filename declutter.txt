@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 12 hours
-! Last modified: 2023.06.04.4
+! Last modified: 2023.06.07.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -176,6 +176,7 @@ stackexchange.com,stackoverflow.com,superuser.com##body.question-page #post-form
 stackexchange.com,stackoverflow.com,superuser.com##body.question-page .bottom-notice
 stackexchange.com,stackoverflow.com,superuser.com##body.question-page .s-btn__primary
 stackexchange.com,stackoverflow.com,superuser.com##body.question-page [id^="comments-link"]
+stackexchange.com,stackoverflow.com,superuser.com##body.question-page #mainbar:style(width: 100% !important;)
 stackexchange.com,stackoverflow.com,superuser.com##body.question-page:style(padding-top: 0px !important;)
 
 ! https://www.statology.org
