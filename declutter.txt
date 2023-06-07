@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 12 hours
-! Last modified: 2023.06.07.4
+! Last modified: 2023.06.07.5
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -49,6 +49,16 @@ arstechnica.com##[data-page] > .left-column:style(width: 80% !important;)
 arstechnica.com##main, #container:style(padding-top: 0px !important;)
 arstechnica.com##.instream-wrap
 arstechnica.com##.superscroll-ad
+
+! https://www.bloomberg.com
+bloomberg.com##[class^="article-content"] > :not(aside, [class^="topReads"], div:not([class])):others()
+bloomberg.com##[class^="share-article-button"]
+bloomberg.com##[class^="blens-container"]
+bloomberg.com##[class^="bottom-left-rail"]
+bloomberg.com##[class^="lede_"], [class^="main-column"]:style(width: 80% !important;)
+bloomberg.com##[class^="content-well"]:style(padding-right: 0px !important;)
+bloomberg.com##+js(aeld, scroll)
+||assets.bwbx.io/s3/navi/$domain=bloomberg.com
 
 ! https://careerfoundry.com
 careerfoundry.com##.entry-content > :not(#intext-cta), .post__author__bottom, .post__header, .featured-image:others()
