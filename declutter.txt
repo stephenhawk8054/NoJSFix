@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 12 hours
-! Last modified: 2023.06.07.3
+! Last modified: 2023.06.07.4
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -35,6 +35,13 @@ androidauthority.com##main > div aside:upward(main > div):others()
 androidauthority.com##a:is([title="facebook"],[title="twitter"]), aside
 androidauthority.com##div > a[data-sel="related-content-link"]:upward(1)
 androidauthority.com##div > div > a[href="https://www.androidauthority.com/news/"]:upward(2)
+
+! techradar-sites
+androidcentral.com,gamesradar.com,laptopmag.com,livescience.com,pcgamer.com,space.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com###article-body, .hero-image-wrapper, .news-article > header, #slice-container-authorBio:others()
+androidcentral.com,gamesradar.com,laptopmag.com,livescience.com,pcgamer.com,space.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##.socialite-widget
+androidcentral.com,gamesradar.com,laptopmag.com,livescience.com,pcgamer.com,space.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##.fancy-box
+androidcentral.com,gamesradar.com,laptopmag.com,livescience.com,pcgamer.com,space.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##+js(norafif, [native code])
+androidcentral.com,gamesradar.com,laptopmag.com,livescience.com,pcgamer.com,space.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##+js(aeld, scroll, requestAnimationFrame)
 
 ! https://arstechnica.com
 arstechnica.com##[itemprop="articleBody"] > :not(#social-left), .article-author, .article-header, .page-numbers, #archive-head, .heading, [itemprop="description"], [itemprop="author creator"]:others()
@@ -86,13 +93,6 @@ easytweaks.com##.entry-header, .entry-content:others()
 ! https://www.educba.com
 educba.com##.content:others()
 educba.com##.box-div
-
-! techradar-sites
-gamesradar.com,laptopmag.com,livescience.com,pcgamer.com,space.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com###article-body, .hero-image-wrapper, .news-article > header, #slice-container-authorBio:others()
-gamesradar.com,laptopmag.com,livescience.com,pcgamer.com,space.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##.socialite-widget
-gamesradar.com,laptopmag.com,livescience.com,pcgamer.com,space.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##.fancy-box
-gamesradar.com,laptopmag.com,livescience.com,pcgamer.com,space.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##+js(norafif, [native code])
-gamesradar.com,laptopmag.com,livescience.com,pcgamer.com,space.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##+js(aeld, scroll, requestAnimationFrame)
 
 ! https://www.geeksforgeeks.org
 geeksforgeeks.org##.article--viewer_like
