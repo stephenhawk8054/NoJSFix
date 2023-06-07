@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 12 hours
-! Last modified: 2023.06.06.1
+! Last modified: 2023.06.07.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -803,8 +803,6 @@ vice.com##picture.lazyloader--lowres:remove-class(lazyloader--lowres)
 
 ! ====================================== Specific paywall ======================================
 ! bloomberg.com
-||assets.bwbx.io/s3/javelin/public/javelin/js/foundation/transporter/foundation_transporter-*.js$script,domain=bloomberg.com
-||assets.bwbx.io/s3/fence/plug-client/v0/app.bundle.js$script,domain=bloomberg.com
-bloomberg.com##+js(cookie-remover, gatehouse_id, stay)
-bloomberg.com##+js(aopr, localStorage)
-bloomberg.com##+js(ra, data-paywall-overlay-status, body[data-paywall-overlay-status], stay)
+||coordinator.cm.bloomberg.com^
+bloomberg.com##+js(aost, localStorage, /^(?=.*bundle)(?!.*nrWrapper).*/)
+bloomberg.com##.banner
