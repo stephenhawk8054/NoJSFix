@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 12 hours
-! Last modified: 2023.06.07.1
+! Last modified: 2023.06.07.2
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -29,6 +29,12 @@ leaky_paywall_process_cookie$domain=2minutemedicine.com
 adweek.com##.aw-article-content, .author-bottom, .author-image-wrap, .byline-wrap, .featured-image, .entry-header:others()
 adweek.com##.section--teaser
 adweek.com###page:style(padding-top: 0px !important;)
+
+! androidauthority.com
+androidauthority.com##main > div aside:upward(main > div):others()
+androidauthority.com##a:is([title="facebook"],[title="twitter"]), aside
+androidauthority.com##div > a[data-sel="related-content-link"]:upward(1)
+androidauthority.com##div > div > a[href="https://www.androidauthority.com/news/"]:upward(2)
 
 ! https://arstechnica.com
 arstechnica.com##[itemprop="articleBody"] > :not(#social-left), .article-author, .article-header, .page-numbers, #archive-head, .heading, [itemprop="description"], [itemprop="author creator"]:others()
