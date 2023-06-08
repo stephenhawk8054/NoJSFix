@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 12 hours
-! Last modified: 2023.06.07.5
+! Last modified: 2023.06.08.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -241,6 +241,9 @@ tutorialspoint.com##.views-count
 ! https://www.vice.com
 vice.com##.article__body-components > :not([data-component="RelatedArticleBlock"]), .remixd-audio-player, .short-form__body__article-lede-image, .article__header__datebar__date--original, .contributors, .article__header__dek, span[data-article-title]:others()
 ||privacy-mgmt.com^$domain=vice.com
+
+! https://www.w3schools.com
+w3schools.com###main > :not(.nextprev), #sidenav:others()
 
 ! https://www.washingtonpost.com
 washingtonpost.com##.article-body, [data-testid="lede-art"], header, [data-qa="author-byline"]:others()
