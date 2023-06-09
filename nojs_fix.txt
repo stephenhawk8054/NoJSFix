@@ -204,9 +204,6 @@ diakov.net##+js(ss, img#lazyATS[src^="data:image"], dataset src)
 digitalhygge.com##+js(ss, img[data-lazy="true"][src$="transparent.gif"][data-src], dataset src)
 digitalhygge.com##img[data-lazy="true"]:style(opacity: 1 !important;)
 
-! https://www.digitalocean.com
-digitalocean.com##[class^="QuestionAndTutorialLeftContainer"] ~ [class^="ContainerStyles__StyledContainer"] > :not(.container, [class^="TutorialTemplateStyles__StyledHelpfulCTA"], [class^="TutorialTemplateStyles__StyledCreativeCommonsLicense"]), [class^="QuestionAndTutorialLeftContainerStyles"]:others()
-
 ! digitaltrends.com
 digitaltrends.com##+js(ss, img.dt-lazy-pending[data-dt-lazy-src][src^="data:image"], dataset dtLazySrc)
 digitaltrends.com##img.dt-lazy-pending[data-dt-lazy-src][src]:style(opacity: 1 !important;)
