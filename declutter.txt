@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 12 hours
-! Last modified: 2023.06.10.1
+! Last modified: 2023.06.11.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -63,6 +63,11 @@ bloomberg.com##+js(aeld, scroll)
 ! https://careerfoundry.com
 careerfoundry.com##.entry-content > :not(#intext-cta), .post__author__bottom, .post__header, .featured-image:others()
 careerfoundry.com##main.post > *:style(max-width: 80% !important;)
+
+! https://careerkarma.com
+careerkarma.com##.bialty-container > :not(.code-block[style]), .post-author, article > .post-title, .breadcrumb-container:others()
+careerkarma.com##.post-content-container:style(padding-left: 0px !important;)
+careerkarma.com##.post-detail-row > .columns:not(.sidebar):style(flex: unset !important; max-width: 100% !important;)
 
 ! https://cleantechnica.com
 cleantechnica.com##.zox-post-body > :not(.afterpost):not(.afterpost ~ *), .zox-post-cat, .zox-post-title, .zox-post-excerpt, .zox-post-byline-wrap, .zox-post-img-wrap, .zox-author-box-wrap:others()
