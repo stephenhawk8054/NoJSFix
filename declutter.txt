@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 12 hours
-! Last modified: 2023.06.09.1
+! Last modified: 2023.06.10.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -138,6 +138,17 @@ linuxhint.com###wpbody > :not(.slick-inline-search-panel), .author-box, .entry-h
 lovetoknow.com##.content-body, .content-header:others()
 lovetoknow.com##.social-container
 
+
+! https://scicomp.stackexchange.com
+mathoverflow.net,stackexchange.com,stackoverflow.com,superuser.com##body.question-page :is(#content > div, #MathJax_MenuFrame, .site-header--container):others()
+mathoverflow.net,stackexchange.com,stackoverflow.com,superuser.com##body.question-page #sidebar
+mathoverflow.net,stackexchange.com,stackoverflow.com,superuser.com##body.question-page #post-form
+mathoverflow.net,stackexchange.com,stackoverflow.com,superuser.com##body.question-page .bottom-notice
+mathoverflow.net,stackexchange.com,stackoverflow.com,superuser.com##body.question-page .s-btn__primary
+mathoverflow.net,stackexchange.com,stackoverflow.com,superuser.com##body.question-page [id^="comments-link"]
+mathoverflow.net,stackexchange.com,stackoverflow.com,superuser.com##body.question-page #mainbar:style(width: 100% !important;)
+mathoverflow.net,stackexchange.com,stackoverflow.com,superuser.com##body.question-page:style(padding-top: 0px !important;)
+
 ! medscape.com
 medscape.com##+js(set, isFPFEligible, false)
 medscape.com##.csdpages, #pagination, #legal_block, .title-area > :not(.toolbar):others()
@@ -192,16 +203,6 @@ skyheadlines.com##.blog-content > .entry-content, header.featured-wrapper:others
 sparkbyexamples.com##.entry-content > :not(.yarpp-related, .heateor_sss_sharing_container), .meta, .entry-header:others()
 sparkbyexamples.com###content-wrap:style(height: auto !important;)
 sparkbyexamples.com###primary:style(width: 100% !important; left: 0% !important;)
-
-! https://scicomp.stackexchange.com
-stackexchange.com,stackoverflow.com,superuser.com##body.question-page :is(#content > div, #MathJax_MenuFrame, .site-header--container):others()
-stackexchange.com,stackoverflow.com,superuser.com##body.question-page #sidebar
-stackexchange.com,stackoverflow.com,superuser.com##body.question-page #post-form
-stackexchange.com,stackoverflow.com,superuser.com##body.question-page .bottom-notice
-stackexchange.com,stackoverflow.com,superuser.com##body.question-page .s-btn__primary
-stackexchange.com,stackoverflow.com,superuser.com##body.question-page [id^="comments-link"]
-stackexchange.com,stackoverflow.com,superuser.com##body.question-page #mainbar:style(width: 100% !important;)
-stackexchange.com,stackoverflow.com,superuser.com##body.question-page:style(padding-top: 0px !important;)
 
 ! https://www.statology.org
 statology.org##.entry-content, .entry-header-wrapper:others()
