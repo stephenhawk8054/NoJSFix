@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 12 hours
-! Last modified: 2023.06.11.3
+! Last modified: 2023.06.11.4
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -121,6 +121,12 @@ easytweaks.com##.entry-header, .entry-content:others()
 ! https://www.educba.com
 educba.com##.content:others()
 educba.com##.box-div
+
+! https://firewallsdontstopdragons.com
+firewallsdontstopdragons.com##.entry-content > :not(div[style]), .ast-post-format- > .entry-header:others()
+firewallsdontstopdragons.com##.ast-container:style(max-width: 80% !important;)
+firewallsdontstopdragons.com##.ast-post-format- > .entry-header:style(text-align: center !important;)
+firewallsdontstopdragons.com###primary:style(width: 100% !important; padding-right: 0px !important;)
 
 ! https://www.geeksforgeeks.org
 geeksforgeeks.org##.article--viewer_like
