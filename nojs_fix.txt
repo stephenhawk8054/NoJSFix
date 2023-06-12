@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 12 hours
-! Last modified: 2023.06.08.3
+! Last modified: 2023.06.12.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -643,6 +643,9 @@ si.com##.m-card--header-text, .m-card--header-text::before, .m-card--header-text
 ! sifted.eu
 sifted.eu##+js(ss, img.lazyload[data-src][src^="data:image"], dataset src)
 sifted.eu###header:style(position: absolute !important;)
+
+! siipo.la
+siipo.la##+js(ss, picture > source[data-srcset][srcset^="data:image"], dataset srcset)
 
 ! simplilearn.com
 simplilearn.com##+js(ss, img.lazy, dataset src)

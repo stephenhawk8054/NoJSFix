@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 12 hours
-! Last modified: 2023.06.11.4
+! Last modified: 2023.06.12.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -216,6 +216,9 @@ rte.ie##.article-body, #main-article-image, header, .modified-date, .dotie-icon_
 
 ! https://www.scribbr.com
 scribbr.com##.content-block > :not(.scw), .post-meta, .post-title, .list-of-contents:others()
+
+! siipo.la
+siipo.la##article, .sla-title-element:others()
 
 ! https://skyheadlines.com
 skyheadlines.com##.blog-content > .entry-content, header.featured-wrapper:others()
