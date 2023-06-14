@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 12 hours
-! Last modified: 2023.06.14.3
+! Last modified: 2023.06.14.4
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -94,6 +94,11 @@ codingdeft.com##body:style(overflow: auto !important;)
 ! https://compucademy.net
 compucademy.net##.oct-post-content > :not(#dpsp-content-bottom), article > :is(figure, h1):others()
 compucademy.net##body:style(padding-bottom: unset !important;)
+
+! https://www.cyberithub.com
+cyberithub.com##.entry-content, .entry-header:others()
+cyberithub.com###primary:style(width: 100% !important;)
+cyberithub.com##.entry-header:style(text-align: center !important;)
 
 ! https://data-flair.training
 data-flair.training##.entry-inner > :not(.code-block), .post-title:others()
