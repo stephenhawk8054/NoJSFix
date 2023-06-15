@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 12 hours
-! Last modified: 2023.06.14.4
+! Last modified: 2023.06.15.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -248,6 +248,12 @@ sparkbyexamples.com###primary:style(width: 100% !important; left: 0% !important;
 ! https://www.statology.org
 statology.org##.entry-content, .entry-header-wrapper:others()
 statology.org###primary:style(max-width: 100% !important; flex: unset !important;)
+
+! https://www.studysmarter.co.uk
+studysmarter.co.uk###api-content > div > :not(.ss-dynamic-banner), #faq, #flashcards, .navi-list, .list-box, .ss-breadcrumbs-nav, .hero__title:others()
+studysmarter.co.uk##body, section.content:style(padding-top: 0px !important;)
+studysmarter.co.uk##section.content > .container:style(max-width: 90% !important;)
+studysmarter.co.uk##section.content .content-column:style(max-width: 70% !important;)
 
 ! https://techcrunch.com
 techcrunch.com##.article__content-wrap:others()
