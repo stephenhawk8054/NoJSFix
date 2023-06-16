@@ -22,8 +22,11 @@ leaky_paywall_process_cookie$domain=2minutemedicine.com
 2minutemedicine.com##.jeg_main_content:style(width: 100% !important;)
 
 ! https://9to5google.com
-9to5google.com##.post-content > :not(.google-news-link, #after_disclaimer_placement, .top-comment), .container > .post-meta > :not(.meta__comment-count), h1:others()
-9to5google.com##.container.med, .post-content:style(max-width: 100% !important;)
+9to5google.com##.post-content, .container > .post-meta, h1:others()
+9to5google.com##.meta__comment-count
+9to5google.com##.google-news-link
+9to5google.com###after_disclaimer_placement
+9to5google.com##.container.med, .post-content:style(max-width: 100% !important; flex: unset !important;)
 9to5google.com##main:style(padding-top: 0px !important;)
 9to5google.com##+js(aeld, scroll, throttle)
 
