@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 12 hours
-! Last modified: 2023.06.16.3
+! Last modified: 2023.06.16.5
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -49,7 +49,9 @@ androidcentral.com,gamesradar.com,laptopmag.com,livescience.com,pcgamer.com,spac
 androidcentral.com,gamesradar.com,laptopmag.com,livescience.com,pcgamer.com,space.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##+js(aeld, scroll, requestAnimationFrame)
 
 ! https://arstechnica.com
-arstechnica.com##[itemprop="articleBody"] > :not(#social-left), .article-author, .article-header, .page-numbers, #archive-head, .heading, [itemprop="description"], [itemprop="author creator"]:others()
+arstechnica.com##[itemprop="articleBody"], .article-author, .article-header, .page-numbers, #archive-head, .heading, [itemprop="description"], [itemprop="author creator"]:others()
+arstechnica.com##.ars-newsletter-callbox
+arstechnica.com###social-left
 arstechnica.com##[data-page] > .left-column:style(width: 80% !important;)
 arstechnica.com##main, #container:style(padding-top: 0px !important;)
 arstechnica.com##.instream-wrap
