@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 12 hours
-! Last modified: 2023.06.16.2
+! Last modified: 2023.06.16.3
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -15,7 +15,9 @@ geeksforgeeks.org,thedailybeast.com##article:others()
 ! ====================================== Specific ======================================
 ! https://www.2minutemedicine.com
 leaky_paywall_process_cookie$domain=2minutemedicine.com
-2minutemedicine.com##.content-inner > :not(.jnews_inline_related_post_wrapper, .jnews_inline_related_post_wrapper ~ *), .entry-header, .jeg_breadcrumbs:others()
+2minutemedicine.com##.content-inner, .entry-header, .jeg_breadcrumbs:others()
+2minutemedicine.com##.jnews_inline_related_post
+2minutemedicine.com##.jeg_post_tags
 2minutemedicine.com##.content-inner:style(margin-left: 0px !important;)
 2minutemedicine.com##.jeg_main_content:style(width: 100% !important;)
 
