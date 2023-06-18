@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 12 hours
-! Last modified: 2023.06.18.1
+! Last modified: 2023.06.18.2
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -199,6 +199,11 @@ mathoverflow.net,stackexchange.com,stackoverflow.com,superuser.com##body.questio
 medscape.com##+js(set, isFPFEligible, false)
 medscape.com##.csdpages, #pagination, #legal_block, .title-area > :not(.toolbar):others()
 medscape.com##.article-content-wrapper, #legal_block:style(max-width: 100% !important;)
+
+! https://www.mirror.co.uk
+mirror.co.uk##.article-body, .article-information, .copy-link-list, .bookmark-li, .lead-content, .breadcrumbs:others()
+mirror.co.uk##.max-content, .inline-article-nav, .read-more-links, .recirculation, .read-more__title, #qc-cmp2-container
+mirror.co.uk##main:style(grid-template-columns: unset !important;)
 
 ! https://www.newshub.co.nz
 newshub.co.nz##.c-ArticleBody > :not(.relatedarticles), .c-ArticleHeading:others()
