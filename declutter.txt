@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 12 hours
-! Last modified: 2023.06.18.2
+! Last modified: 2023.06.18.3
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -184,6 +184,13 @@ linuxhint.com###wpbody > :not(.slick-inline-search-panel), .author-box, .entry-h
 ! https://www.lovetoknow.com
 lovetoknow.com##.content-body, .content-header:others()
 lovetoknow.com##.social-container
+
+! https://www.marketwatch.com
+||privacy-mgmt.com^$domain=marketwatch.com
+marketwatch.com##.article__body, button:is(.email, .js-print, .js-text-resize), [aria-label="article"] .article__figure, .article__header, .author__bios:others()
+marketwatch.com##.comment-count
+marketwatch.com##.article__content:style(max-width: 100% !important;)
+marketwatch.com##main > div:style(width: 100% !important;)
 
 ! https://scicomp.stackexchange.com
 mathoverflow.net,stackexchange.com,stackoverflow.com,superuser.com##body.question-page :is(#content > div, #MathJax_MenuFrame, .site-header--container):others()
