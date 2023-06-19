@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 12 hours
-! Last modified: 2023.06.18.3
+! Last modified: 2023.06.19.4
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -64,8 +64,16 @@ askpython.com##.entry-header:style(text-align: center !important;)
 askpython.com###primary:style(margin: 0 !important; width: 100% !important;)
 
 ! https://www.bleepingcomputer.com
-bleepingcomputer.com##.articleBody > :not(.cz-related-article-wrapp), .cz-news-title-left-area, .cz-news-date, .cz-news-time, h1, .cz-breadcrumb-outer-wrapp, .cz-full-bio-wrapp:others()
+bleepingcomputer.com##.articleBody, .cz-news-title-left-area, .cz-news-date, .cz-news-time, h1, .cz-breadcrumb-outer-wrapp, .cz-full-bio-wrapp:others()
+bleepingcomputer.com##.cz-related-article-wrapp
 bleepingcomputer.com##.bc_wrapper:style(padding-top: 0px !important;)
+bleepingcomputer.com##.bc_main_content .row > div:style(width: 100% !important;)
+
+! https://blog.finxter.com
+blog.finxter.com##.tve-tl-cnt-wrap, .entry-header:others()
+blog.finxter.com##.kk-star-ratings
+blog.finxter.com###primary:style(width: 100% !important;)
+blog.finxter.com##+js(nostif, tve)
 
 ! https://www.bloomberg.com
 bloomberg.com##[class^="article-content"] > :not(aside, [class^="topReads"], div:not([class])):others()
@@ -87,7 +95,9 @@ careerkarma.com##.post-content-container:style(padding-left: 0px !important;)
 careerkarma.com##.post-detail-row > .columns:not(.sidebar):style(flex: unset !important; max-width: 100% !important;)
 
 ! https://www.cbsnews.com
-cbsnews.com##.content__body > :not(aside.recirculation), article > figure, .content__meta--topiclink, .content__title, .content__meta-wrapper > :not(.sharebar):others()
+cbsnews.com##.content__body, article > figure, .content__meta--topiclink, .content__title, .content__meta-wrapper > :not(.sharebar):others()
+cbsnews.com##.content__tags
+cbsnews.com##aside.recirculation
 cbsnews.com##article > *:style(min-height: 0px !important; width: 80% !important;)
 
 ! https://cleantechnica.com
@@ -292,6 +302,9 @@ studysmarter.co.uk##section.content .content-column:style(max-width: 70% !import
 ! https://techcrunch.com
 techcrunch.com##.article__content-wrap:others()
 techcrunch.com##.container__access-control
+
+! https://techxplore.com
+techxplore.com##.news-article, [aria-label="breadcrumb"], .article-actions, [data-target="#feedback-email"]:others()
 
 ! https://theconversation.com
 theconversation.com##.content-body, .magazine, .content-authors, .print:others()
