@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 12 hours
-! Last modified: 2023.06.20.2
+! Last modified: 2023.06.20.3
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -177,6 +177,11 @@ guru99.com##.entry-content > :not(.yarpp-related), .entry-header:others()
 hothardware.com##.e-content, .p-name, .cn-byline:others()
 hothardware.com##.main:style(margin-right: 0px !important; max-width: unset !important;)
 hothardware.com###spotim-specific
+
+! https://joergdietrich.github.io
+joergdietrich.github.io##article:others()
+joergdietrich.github.io##.categories
+joergdietrich.github.io###content:style(margin-right: 0 !important;)
 
 ! https://www.jpost.com
 jpost.com##.article-inner-content, .trinityAudioPlaceholder, [class^="article-image"], .article-title, .article-subtitle, .article-subline-inner > :not(.article-subline-inner-share-buttons), .share-mail-button, .breadcrumbs-wrap:others()
