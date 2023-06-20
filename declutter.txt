@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 12 hours
-! Last modified: 2023.06.20.3
+! Last modified: 2023.06.20.4
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -101,8 +101,10 @@ cbsnews.com##aside.recirculation
 cbsnews.com##article > *:style(min-height: 0px !important; width: 80% !important;)
 
 ! https://cleantechnica.com
-cleantechnica.com##.zox-post-body > :not(.afterpost):not(.afterpost ~ *), .zox-post-cat, .zox-post-title, .zox-post-excerpt, .zox-post-byline-wrap, .zox-post-img-wrap, .zox-author-box-wrap:others()
+cleantechnica.com##.zox-post-body, .zox-post-cat, .zox-post-title, .zox-post-excerpt, .zox-post-byline-wrap, .zox-post-img-wrap, .zox-author-box-wrap:others()
+cleantechnica.com##.afterpost, .afterpost ~ *
 cleantechnica.com##.zox-post-main-wrap:style(grid-template-columns: 100% !important;)
+cleantechnica.com##.zox-post-body > *, .zox-post-body-width:style(max-width: 100% !important;)
 cleantechnica.com###zox-main-head-wrap:remove()
 
 ! https://edition.cnn.com
