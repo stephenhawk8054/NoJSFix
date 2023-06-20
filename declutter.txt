@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 12 hours
-! Last modified: 2023.06.20.1
+! Last modified: 2023.06.20.2
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -247,6 +247,10 @@ polygon.com##main:style(margin-top: 0px !important;)
 programiz.com##.editor-contents, .menu-with-accordion, .toc-trigger:others()
 programiz.com##.contents:style(margin-bottom: unset !important;)
 programiz.com##main:style(padding-top: unset !important;)
+
+! https://pyshark.com
+pyshark.com##article.main-article:others()
+pyshark.com##article.main-article:upward(1):style(width: 100% !important;)
 
 ! https://www.pythonforbeginners.com
 ||widgets.getsitecontrol.com^$domain=pythonforbeginners.com
