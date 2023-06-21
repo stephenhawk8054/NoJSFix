@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 12 hours
-! Last modified: 2023.06.20.5
+! Last modified: 2023.06.21.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -34,6 +34,11 @@ leaky_paywall_process_cookie$domain=2minutemedicine.com
 adweek.com##.aw-article-content, .author-bottom, .author-image-wrap, .byline-wrap, .featured-image, .entry-header:others()
 adweek.com##.section--teaser
 adweek.com###page:style(padding-top: 0px !important;)
+
+! https://almostsuremath.com
+almostsuremath.com##article:others()
+almostsuremath.com##.entry-footer, .jp-relatedposts, .jetpack-likes-widget-wrapper, [data-sharing-events-added] > :not(.share-print, .share-email)
+almostsuremath.com##main:style(max-width: 100% !important; margin: 0 !important;)
 
 ! androidauthority.com
 androidauthority.com##main > div aside:upward(main > div):others()
@@ -129,7 +134,7 @@ data-flair.training##.entry-inner > :not(.code-block), .post-title:others()
 data-flair.training##article:style(margin-top: 50px !important;)
 
 ! https://datagy.io
-datagy.io##.entry-content > :not(.has-background), .nv-thumb-wrap, .entry-header:others()
+datagy.io##.entry-content > :not(.has-backgroun d), .nv-thumb-wrap, .entry-header:others()
 datagy.io##article:style(max-width: 100% !important; padding: 0px !important;)
 
 ! https://deadline.com
