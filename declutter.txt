@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 12 hours
-! Last modified: 2023.06.24.2
+! Last modified: 2023.06.24.3
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -177,6 +177,11 @@ firewallsdontstopdragons.com##.entry-content > :not(div[style]), .ast-post-forma
 firewallsdontstopdragons.com##.ast-container:style(max-width: 80% !important;)
 firewallsdontstopdragons.com##.ast-post-format- > .entry-header:style(text-align: center !important;)
 firewallsdontstopdragons.com###primary:style(width: 100% !important; padding-right: 0px !important;)
+
+! https://fosspost.org
+fosspost.org##article, .svq-panel:others()
+fosspost.org##.saboxplugin-socials, .saboxplugin-wrap ~ *
+fosspost.org##+js(aeld, mouseup, lastMousedown)
 
 ! https://www.geeksforgeeks.org
 geeksforgeeks.org##.article--viewer_like
