@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 12 hours
-! Last modified: 2023.06.18.3
+! Last modified: 2023.06.24.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -326,6 +326,10 @@ hostinger.com##+js(ss, img[data-lazy-src][src^="data:imagge"], dataset lazySrc)
 
 ! hothardware.com
 hothardware.com##+js(ss, img[data-src][src^="data:image"], dataset src)
+
+! https://www.howstuffworks.com
+howstuffworks.com##+js(ss, img[data-src][src^="data:image"], dataset src)
+howstuffworks.com##picture + span
 
 ! howtogeek.com
 howtogeek.com##+js(ss, img[data-pagespeed-lazy-src], dataset pagespeedLazySrc)
