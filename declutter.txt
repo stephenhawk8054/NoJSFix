@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 12 hours
-! Last modified: 2023.06.24.3
+! Last modified: 2023.06.24.4
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -67,6 +67,16 @@ askpython.com##article:others()
 askpython.com##.ast-container:style(max-width: 80% !important;)
 askpython.com##.entry-header:style(text-align: center !important;)
 askpython.com###primary:style(margin: 0 !important; width: 100% !important;)
+
+! https://scicomp.stackexchange.com
+askubuntu.com,mathoverflow.net,serverfault.com,stackexchange.com,stackoverflow.com,superuser.com##body.question-page :is(#content > div, #MathJax_MenuFrame, .site-header--container):others()
+askubuntu.com,mathoverflow.net,serverfault.com,stackexchange.com,stackoverflow.com,superuser.com##body.question-page #sidebar
+askubuntu.com,mathoverflow.net,serverfault.com,stackexchange.com,stackoverflow.com,superuser.com##body.question-page #post-form
+askubuntu.com,mathoverflow.net,serverfault.com,stackexchange.com,stackoverflow.com,superuser.com##body.question-page .bottom-notice
+askubuntu.com,mathoverflow.net,serverfault.com,stackexchange.com,stackoverflow.com,superuser.com##body.question-page .s-btn__primary
+askubuntu.com,mathoverflow.net,serverfault.com,stackexchange.com,stackoverflow.com,superuser.com##body.question-page [id^="comments-link"]
+askubuntu.com,mathoverflow.net,serverfault.com,stackexchange.com,stackoverflow.com,superuser.com##body.question-page #mainbar:style(width: 100% !important;)
+askubuntu.com,mathoverflow.net,serverfault.com,stackexchange.com,stackoverflow.com,superuser.com##body.question-page:style(padding-top: 0px !important;)
 
 ! https://www.bleepingcomputer.com
 bleepingcomputer.com##.articleBody, .cz-news-title-left-area, .cz-news-date, .cz-news-time, h1, .cz-breadcrumb-outer-wrapp, .cz-full-bio-wrapp:others()
@@ -231,16 +241,6 @@ marketwatch.com##.article__body, button:is(.email, .js-print, .js-text-resize), 
 marketwatch.com##.comment-count
 marketwatch.com##.article__content:style(max-width: 100% !important;)
 marketwatch.com##main > div:style(width: 100% !important;)
-
-! https://scicomp.stackexchange.com
-mathoverflow.net,stackexchange.com,stackoverflow.com,superuser.com##body.question-page :is(#content > div, #MathJax_MenuFrame, .site-header--container):others()
-mathoverflow.net,stackexchange.com,stackoverflow.com,superuser.com##body.question-page #sidebar
-mathoverflow.net,stackexchange.com,stackoverflow.com,superuser.com##body.question-page #post-form
-mathoverflow.net,stackexchange.com,stackoverflow.com,superuser.com##body.question-page .bottom-notice
-mathoverflow.net,stackexchange.com,stackoverflow.com,superuser.com##body.question-page .s-btn__primary
-mathoverflow.net,stackexchange.com,stackoverflow.com,superuser.com##body.question-page [id^="comments-link"]
-mathoverflow.net,stackexchange.com,stackoverflow.com,superuser.com##body.question-page #mainbar:style(width: 100% !important;)
-mathoverflow.net,stackexchange.com,stackoverflow.com,superuser.com##body.question-page:style(padding-top: 0px !important;)
 
 ! medscape.com
 medscape.com##+js(set, isFPFEligible, false)
