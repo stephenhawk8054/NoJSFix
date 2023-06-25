@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 12 hours
-! Last modified: 2023.06.25.3
+! Last modified: 2023.06.25.4
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -235,7 +235,10 @@ kolide.com##.blog-article__content:style(max-width: 80% !important;)
 learnpython.com##.blog-post-main, .blog-post-intro, .blog-post-header-background:others()
 
 ! https://linuxhint.com
-linuxhint.com###wpbody > :not(.slick-inline-search-panel), .author-box, .entry-header:others()
+linuxhint.com###wpbody, .author-box, .entry-header:others()
+linuxhint.com##.slick-inline-search-panel
+linuxhint.com###primary:style(width: 100% !important;)
+linuxhint.com##.entry-title, .entry-content:style(width: 80% !important)
 
 ! https://www.lovetoknow.com
 lovetoknow.com##.content-body, .content-header:others()
