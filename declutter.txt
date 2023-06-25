@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 12 hours
-! Last modified: 2023.06.25.1
+! Last modified: 2023.06.25.2
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -224,6 +224,11 @@ jpost.com##.article-inner-content, .trinityAudioPlaceholder, [class^="article-im
 ! https://knowyourmeme.com
 knowyourmeme.com###entry_body, .floating-keyboard-info, article > header:others()
 knowyourmeme.com###maru:style(max-width: 100% !important;)
+
+! https://www.kolide.com
+kolide.com##article:others()
+kolide.com##.blog-article__ctas-sharing > :not(.blog-article__ctas-sharing-link--copy-link), .blog-article__ctas-app-signup, .blog-article__spacer
+kolide.com##.blog-article__content:style(max-width: 80% !important;)
 
 ! https://learnpython.com
 learnpython.com##.blog-post-main, .blog-post-intro, .blog-post-header-background:others()
