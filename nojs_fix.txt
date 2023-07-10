@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 12 hours
-! Last modified: 2023.06.24.1
+! Last modified: 2023.07.10.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -514,6 +514,13 @@ nytimes.com##div > a[href="https://www.nytimes.com/section/todayspaper"]:upward(
 
 ! olympics.com
 olympics.com##+js(ss, img.lazyload[src*="/t_lqip/"], previousSibling dataset srcset, 1)
+
+! onlinemathlearning.com
+onlinemathlearning.com##+js(ss, html.no-js img.ss-lazy[data-src][src^="data:image"], dataset src)
+!#if ext_devbuild
+onlinemathlearning.com#@#+js(ss, html.no-js img.ss-lazy[data-src][src^="data:image"], dataset src)
+onlinemathlearning.com##+js(set-attr, html.no-js img.ss-lazy[data-src][src^="data:image"], src, [data-src])
+!#endif
 
 ! https://www.openculture.com
 openculture.com##.native-lazyload-js-fallback
