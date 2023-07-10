@@ -819,12 +819,12 @@ zingnews.vn##+js(ss, img[src^="data:image"], dataset src)
 
 ! ====================================== Specific sites-fix ======================================
 ! insider.com
-businessinsider.com,insider.com##+js(bi-fix)
+! businessinsider.com,insider.com##+js(bi-fix)
 businessinsider.com,insider.com##+js(ss, img[src^="data:image"][data-src]:not([data-srcs]), dataset src)
 businessinsider.com,insider.com##img.lazy-image:style(opacity: 1 !important;)
 
 ! vice.com
-vice.com##+js(vice-fix)
+! vice.com##+js(vice-fix)
 vice.com##picture.lazyloader--lowres:remove-class(lazyloader--lowres)
 
 ! windowscentral.com

@@ -1,10 +1,13 @@
 /// setsrc.js
 /// alias ss.js
-(function () {
-    const target = "{{1}}";
-    const replace = "{{2}}";
-    const mode = "{{3}}";
-    const attribute = "{{4}}";
+/// world ISOLATED
+function setSrc(
+    target = "",
+    replace = "",
+    mode = "",
+    attribute = ""
+) {
+    if (target === "" || replace === "") { return; }
     window.addEventListener("load", function () {
         const attr_json = {
             "iframe": "src",
@@ -13,8 +16,8 @@
             "video": "poster",
         };
         const imgExts = [
-            'jpg',
-            'JPG'
+            "jpg",
+            "JPG"
         ]
         const regexp = /(?:https?:)?\/\/\S+/g;
         for (const imgEl of document.querySelectorAll(target)) {
@@ -24,7 +27,7 @@
                 replaceData = replaceData[r];
             }
             if (typeof replaceData != "string") { continue; }
-            if (mode != "" && mode != "{{3}}") {
+            if (mode != "") {
                 const matches = [...replaceData.matchAll(regexp)];
                 if (matches.length > 0) {
                     if (mode === "0") {
@@ -41,7 +44,7 @@
                     break;
                 }
             }
-            if (attribute === "" || attribute === "{{4}}") {
+            if (attribute === "") {
                 if (imgEl.localName in attr_json) {
                     imgEl[attr_json[imgEl.localName]] = replaceData;
                 }
@@ -54,55 +57,56 @@
             }
         }
     });
-})();
-
+}
 
 /// rename-tag.js
 /// alias rt.js
-(function () {
-    const target = '{{1}}';
-    const replace = '{{2}}';
+/// world ISOLATED
+function renameTag(
+    target = "",
+    replace = ""
+) {
     window.addEventListener("load", function () {
         for (var imgEl of document.querySelectorAll(target)) {
             imgEl.outerHTML = imgEl.outerHTML.trim()
-                .replace(/^<[-a-z]+/, '<' + replace)
-                .replace(/<\/[-a-z]+>$/, '</' + replace + '>');
+                .replace(/^<[-a-z]+/, "<" + replace)
+                .replace(/<\/[-a-z]+>$/, "</" + replace + ">");
         }
     });
-})();
+}
 
 
-/// bi-fix.js
-(function () {
-    window.addEventListener("load", function () {
-        for (const imgEl of document.querySelectorAll("img.lazy-image[data-srcs]")) {
-            let srcs = imgEl.dataset.srcs;
-            if (srcs.startsWith("{")) {
-                let imgJSON = JSON.parse(srcs);
-                imgEl.src = Object.keys(imgJSON)[0];
-            }
-        }
-    });
-})();
+// /// bi-fix.js
+// (function () {
+//     window.addEventListener("load", function () {
+//         for (const imgEl of document.querySelectorAll("img.lazy-image[data-srcs]")) {
+//             let srcs = imgEl.dataset.srcs;
+//             if (srcs.startsWith("{")) {
+//                 let imgJSON = JSON.parse(srcs);
+//                 imgEl.src = Object.keys(imgJSON)[0];
+//             }
+//         }
+//     });
+// })();
 
 
-/// vice-fix.js
-(function () {
-    window.addEventListener("load", function () {
-        for (let srcEl of document.querySelectorAll("picture > source")) {
-            srcEl.srcset = srcEl.srcset.split("?")[0];
-        }
-    });
-})();
+// /// vice-fix.js
+// (function () {
+//     window.addEventListener("load", function () {
+//         for (let srcEl of document.querySelectorAll("picture > source")) {
+//             srcEl.srcset = srcEl.srcset.split("?")[0];
+//         }
+//     });
+// })();
 
 
-/// windowscentral-fix.js
-(function () {
-    window.addEventListener("load", function () {
-        let scriptEl = document.querySelector('script[id^="vanilla-slice-imageGallery"]');
-        let imgEl = document.querySelector("#article-body img.image-wrapped__image");
+// /// windowscentral-fix.js
+// (function () {
+//     window.addEventListener("load", function () {
+//         let scriptEl = document.querySelector('script[id^="vanilla-slice-imageGallery"]');
+//         let imgEl = document.querySelector("#article-body img.image-wrapped__image");
 
-        let dictStr = scriptEl.innerHTML.split("var data = ")[1].split(";\n")[0];
-        imgEl.src = JSON.parse(dictStr).galleryData[0].image.src;
-    });
-})();
+//         let dictStr = scriptEl.innerHTML.split("var data = ")[1].split(";\n")[0];
+//         imgEl.src = JSON.parse(dictStr).galleryData[0].image.src;
+//     });
+// })();
