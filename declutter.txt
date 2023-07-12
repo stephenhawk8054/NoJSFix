@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 12 hours
-! Last modified: 2023.06.25.4
+! Last modified: 2023.07.12.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -91,7 +91,7 @@ blog.finxter.com###primary:style(width: 100% !important;)
 blog.finxter.com##+js(nostif, tve)
 
 ! https://www.bloomberg.com
-bloomberg.com##[class^="article-content"] > :not(aside, [class^="topReads"], div:not([class])):others()
+bloomberg.com##[class^="article-content"] > :not(aside, [class^="topReads"], div:not([class])), [class^="content-well"]:others()
 bloomberg.com##[class^="share-article-button"]
 bloomberg.com##[class^="blens-container"]
 bloomberg.com##[class^="bottom-left-rail"]

@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 12 hours
-! Last modified: 2023.07.12.1
+! Last modified: 2023.07.12.2
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -845,6 +845,7 @@ vice.com##picture.lazyloader--lowres:remove-class(lazyloader--lowres)
 ! bloomberg.com
 ||coordinator.cm.bloomberg.com^
 bloomberg.com##+js(aost, localStorage, /^(?=.*bundle)(?!.*nrWrapper).*/)
+bloomberg.com##figure:style(opacity: 1 !important;)
 bloomberg.com##.banner
 
 ! nj.com
