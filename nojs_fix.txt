@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 12 hours
-! Last modified: 2023.07.12.2
+! Last modified: 2023.07.13.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -34,6 +34,10 @@
 ! https://agi-sphere.com
 agi-sphere.com##:is(figure, span) > img[src^="data:image"]
 agi-sphere.com##+js(ss, a > img.lazyload[data-src][src^="data:image"]:not(figure > img), dataset src)
+!#if ext_devbuild
+agi-sphere.com#@#+js(ss, a > img.lazyload[data-src][src^="data:image"]:not(figure > img), dataset src)
+agi-sphere.com##+js(set-attr, a > img.lazyload[data-src][src^="data:image"]:not(figure > img), src, [data-src])
+!#endif
 
 ! https://www.airgradient.com
 airgradient.com##.preloader
