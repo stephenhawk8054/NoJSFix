@@ -19,7 +19,7 @@ lemmy.eus##^link#default-light
 lemmy.eus##+js(tsa, link#default-dark, media, (prefers-color-scheme: light))
 
 ! libreddit
-l.opnxng.com,libreddit.lunar.icu##+js(ac, dark, body)
+l.opnxng.com,libreddit.lunar.icu,libreddit.mha.fi##+js(ac, dark, body)
 
 ! privacyguides
 www.privacyguides.org##+js(tsa, body, data-md-color-scheme, slate)
