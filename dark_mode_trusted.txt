@@ -1,5 +1,9 @@
 !---------------------- Dark mode ----------------------
 
+! askpython.com
+askpython.com##+js(trusted-set-local-storage-item, color-theme, dark)
+askpython.com##+js(trusted-set-cookie, _lscache_vary, guest_mode%3A1, , , reload, 1)
+
 ! privacyguides
 discuss.privacyguides.net##+js(trusted-set-local-storage-item, discourse_color_scheme_override, dark)
 
