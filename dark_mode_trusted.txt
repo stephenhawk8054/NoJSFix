@@ -1,12 +1,6 @@
-! Title: Dark mode
-! Description: Dark mode for users using Firefox' resistfingerprint or noscript mode but with only trusted scriptlets
-! Expires: 12 hours
-! Last modified: 2023.07.16.1
-! Homepage: https://github.com/stephenhawk8054/NoJSFix
-! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
-!
-! GitHub issues: https://github.com/stephenhawk8054/NoJSFix/issues
-! GitHub pull requests: https://github.com/stephenhawk8054/NoJSFix/pulls
+!---------------------- Dark mode ----------------------
 
 ! privacyguides
 discuss.privacyguides.net##+js(trusted-set-local-storage-item, discourse_color_scheme_override, dark)
+
+!-------------------------------------------------------
