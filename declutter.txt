@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 12 hours
-! Last modified: 2023.07.12.2
+! Last modified: 2023.07.17.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -10,7 +10,7 @@
 
 ! ====================================== Generic =======================================
 ! article:others()
-geeksforgeeks.org,thedailybeast.com##article:others()
+almostsuremath.com,askpython.com,geeksforgeeks.org,joergdietrich.github.io,kolide.com,thedailybeast.com,washingtonpost.com##article:others()
 
 ! ====================================== Specific ======================================
 ! https://www.2minutemedicine.com
@@ -36,7 +36,6 @@ adweek.com##.section--teaser
 adweek.com###page:style(padding-top: 0px !important;)
 
 ! https://almostsuremath.com
-almostsuremath.com##article:others()
 almostsuremath.com##.entry-footer, .jp-relatedposts, .jetpack-likes-widget-wrapper, [data-sharing-events-added] > :not(.share-print, .share-email)
 almostsuremath.com##main:style(max-width: 100% !important; margin: 0 !important;)
 
@@ -63,7 +62,6 @@ arstechnica.com##.instream-wrap
 arstechnica.com##.superscroll-ad
 
 ! https://www.askpython.com
-askpython.com##article:others()
 askpython.com##.ast-container:style(max-width: 80% !important;)
 askpython.com##.entry-header:style(text-align: center !important;)
 askpython.com###primary:style(margin: 0 !important; width: 100% !important;)
@@ -220,7 +218,6 @@ japantimes.co.jp##.main > *:style(width: 100% !important;)
 japantimes.co.jp##article > .padding_block:not(.entry) > *:style(margin: 0 !important; max-width: 100% !important;)
 
 ! https://joergdietrich.github.io
-joergdietrich.github.io##article:others()
 joergdietrich.github.io##.categories
 joergdietrich.github.io###content:style(margin-right: 0 !important;)
 
@@ -232,7 +229,6 @@ knowyourmeme.com###entry_body, .floating-keyboard-info, article > header:others(
 knowyourmeme.com###maru:style(max-width: 100% !important;)
 
 ! https://www.kolide.com
-kolide.com##article:others()
 kolide.com##.blog-article__ctas-sharing > :not(.blog-article__ctas-sharing-link--copy-link), .blog-article__ctas-app-signup, .blog-article__spacer
 kolide.com##.blog-article__content:style(max-width: 80% !important;)
 
@@ -414,8 +410,8 @@ w3schools.com###main:style(margin-top: 0px !important; width: 100% !important;)
 w3schools.com###leftmenuinner:style(padding-top: 0px !important;)
 
 ! https://www.washingtonpost.com
-washingtonpost.com##.article-body, [data-testid="lede-art"], header, [data-qa="author-byline"]:others()
-washingtonpost.com##nav
+washingtonpost.com##[aria-label="Comment"]:upward([data-qa="article-actions"] > div)
+washingtonpost.com##[data-qa="subscribe-promo"], [data-qa="comments-btn-div"], nav
 
 ! https://www.xda-developers.com
 www.xda-developers.com##.content-block-regular, .article_heading:others()
