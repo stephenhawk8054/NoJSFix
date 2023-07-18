@@ -4,6 +4,12 @@
 askpython.com##+js(trusted-set-local-storage-item, color-theme, dark)
 askpython.com##+js(trusted-set-cookie, _lscache_vary, guest_mode%3A1, , , reload, 1)
 
+! breezewiki (fandom.com)
+breeze.hostux.net##+js(trusted-set-cookie, theme, dark, , , reload, 1)
+
+! lingva
+lingva.garudalinux.org##+js(trusted-set-local-storage-item, chakra-ui-color-mode, dark)
+
 ! privacyguides
 discuss.privacyguides.net##+js(trusted-set-local-storage-item, discourse_color_scheme_override, dark)
 
