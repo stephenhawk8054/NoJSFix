@@ -14,6 +14,9 @@ adguard.com##+js(tsa, html, data-theme, dark)
 ! bookdown.org
 bookdown.org##+js(ac, color-theme-2, .book)
 
+! developer.mozilla.org
+developer.mozilla.org##+js(ac, dark, html)
+
 ! kbin
 fedia.io##+js(tsa, body, class, theme--dark)
 
