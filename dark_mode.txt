@@ -1,7 +1,7 @@
 ! Title: Dark mode
 ! Description: Dark mode for users using Firefox' resistfingerprint or noscript mode
 ! Expires: 12 hours
-! Last modified: 2023.07.16.1
+! Last modified: 2023.07.18.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -11,6 +11,9 @@
 ! adguard.com
 adguard.com##+js(tsa, html, data-theme, dark)
 
+! bookdown.org
+bookdown.org##+js(ac, color-theme-2, .book)
+
 ! kbin
 fedia.io##+js(tsa, body, class, theme--dark)
 
@@ -19,8 +22,7 @@ lemmy.eus##^link#default-light
 lemmy.eus##+js(tsa, link#default-dark, media, (prefers-color-scheme: light))
 
 ! libreddit
-l.opnxng.com,libreddit.lunar.icu,libreddit.mha.fi##+js(ac, dark, body)
+libreddit.freedit.eu,libreddit.kylrth.com,libreddit.mha.fi,lr.4201337.xyz,rd.funami.tech##+js(ac, dark, body)
 
 ! privacyguides
 www.privacyguides.org##+js(tsa, body, data-md-color-scheme, slate)
-discuss.privacyguides.net##+js(trusted-set-local-storage-item, discourse_color_scheme_override, dark)
