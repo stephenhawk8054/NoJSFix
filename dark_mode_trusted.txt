@@ -13,4 +13,11 @@ lingva.garudalinux.org##+js(trusted-set-local-storage-item, chakra-ui-color-mode
 ! privacyguides
 discuss.privacyguides.net##+js(trusted-set-local-storage-item, discourse_color_scheme_override, dark)
 
+! virustotal.com
+virustotal.com##+js(trusted-set-local-storage-item, colorMode, dark)
+
+! w3schools.com
+w3schools.com##+js(trusted-set-local-storage-item, preferredmode, dark)
+w3schools.com##+js(trusted-set-local-storage-item, preferredpagemode, dark)
+
 !-------------------------------------------------------

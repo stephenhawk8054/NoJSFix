@@ -52,6 +52,16 @@ androidcentral.com,gamesradar.com,laptopmag.com,livescience.com,pcgamer.com,spac
 androidcentral.com,gamesradar.com,laptopmag.com,livescience.com,pcgamer.com,space.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##+js(norafif, [native code])
 androidcentral.com,gamesradar.com,laptopmag.com,livescience.com,pcgamer.com,space.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##+js(aeld, scroll, requestAnimationFrame)
 
+! https://archive.ph
+archive.is,archive.ph###CONTENT:style(width: 90% !important;)
+archive.is,archive.ph###hashtags
+
+archive.is,archive.ph##.html link[title="Medium"] ~ .body :is(section, header):others()
+archive.is,archive.ph##.html link[title="Medium"] ~ .body article:upward(1):style(max-width: 100% !important;)
+archive.is,archive.ph##.html link[title="Medium"] ~ .body img:style(max-width: 80% !important; height: auto !important;)
+archive.is,archive.ph##.html link[title="Medium"] ~ .body div > picture:upward(1):style(text-align: center;)
+archive.is,archive.ph##.html link[title="Medium"] ~ .body:style(min-height: 100% !important;)
+
 ! https://arstechnica.com
 arstechnica.com##[itemprop="articleBody"], .article-author, .article-header, .page-numbers, #archive-head, .heading, [itemprop="description"], [itemprop="author creator"]:others()
 arstechnica.com##.ars-newsletter-callbox

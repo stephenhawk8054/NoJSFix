@@ -280,6 +280,11 @@ forbes.com##+js(rt, amp-img[src], img)
 forbes.com##+js(rt, progressive-image[src], img)
 forbes.com##+js(ss, progressive-image[background-image]:not([src]), attributes background-image value)
 
+! builtin.com
+builtin.com##+js(ss, html:not(.js) img.b-lazy[data-src][src^="data:image"], dataset src)
+builtin.com##html:not(.js) img.b-lazy[data-src][src]:style(display: block !important;)
+builtin.com##html:not(.js) .wrap-share-social-fixed:style(opacity: 1 !important;)
+
 ! gadgets360.com
 gadgets360.com##+js(ss, iframe[data-src]:not([src]), dataset src)
 gadgets360.com##+js(ss, img.lazy[data-original][src], dataset original)
@@ -388,6 +393,14 @@ lalal.ai##header#gh-head:style(position: absolute !important;)
 ! leadfeeder.com
 leadfeeder.com##+js(ss, img.lazy-image[data-src]:not([src]), dataset src)
 
+! learnubuntu.com
+learnubuntu.com##+js(ss, img.lazyload[data-src][src*="/img-placeholder"], dataset src)
+!#if ext_devbuild
+learnubuntu.com#@#+js(ss, img.lazyload[data-src][src*="/img-placeholder"], dataset src)
+learnubuntu.com##+js(set-attr, img.lazyload[data-src][src*="/img-placeholder"], src, [data-src])
+!#endif
+learnubuntu.com##img.lazyload[data-src][src]:style(opacity: 1 !important; filter: none !important;)
+
 ! linuxandubuntu.com
 linuxandubuntu.com##+js(ss, html[amp] amp-img[src] > i-amphtml-sizer > img.i-amphtml-intrinsic-sizer[src^="data:image"], parentElement parentElement attributes src value)
 linuxandubuntu.com##+js(rt, html[amp] amp-img:not(figure amp-img):not(.amp-logo amp-img):not([src$="default-image.png"]), img)
@@ -422,7 +435,7 @@ macrumors.com##+js(ss, img.lazyload[data-src][src$="1x1.trans.gif"]:not(article 
 macrumors.com##img.lazyload[data-src][src]:not(article img):style(display: block !important;)
 
 ! makeuseof.com
-makeuseof.com##+js(ss, picture > source[data-srcset]:not([srcset]), dataset srcset)
+makeuseof.com##+js(set-attr, img.lazyload[data-img-url]:not([src]), src, [data-img-url])
 
 ! malwaretips.com
 malwaretips.com##+js(ss, img.lazyload[data-src][src^="data:image"], dataset src)
@@ -768,6 +781,10 @@ tongfamily.com##img.lazyload[src^="data:image"]
 
 ! tools2study.com
 tools2study.com##+js(ss, img.ezlazyload[data-ezsrc][src^="data:image"], dataset ezsrc)
+
+! tumblr.com
+tumblr.com##+js(set-attr, 'img[srcset]:not([src]):is([loading="lazy"], [loading="eager"])', src, [srcset])
+tumblr.com##img[srcset]:is([loading="lazy"], [loading="eager"]):style(visibility: visible !important;)
 
 ! https://webdesign.tutsplus.com/
 tutsplus.com##nav:style(position: absolute !important;)
