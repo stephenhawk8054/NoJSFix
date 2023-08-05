@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 12 hours
-! Last modified: 2023.07.13.1
+! Last modified: 2023.08.05.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -18,11 +18,7 @@
 1337x.*##body:style(display: block !important;)
 
 ! 2minutemedicine.com
-2minutemedicine.com##+js(ss, html.no-js img.lazyload[data-src][src$="empty.png"], dataset src)
-!#if ext_devbuild
-2minutemedicine.com#@#+js(ss, html.no-js img.lazyload[data-src][src$="empty.png"], dataset src)
 2minutemedicine.com##+js(set-attr, html.no-js img.lazyload[data-src][src$="empty.png"], src, [data-src])
-!#endif
 2minutemedicine.com##html.no-js img.lazyload:style(display: block !important; opacity: 1 !important;)
 
 ! 7news.com.au
@@ -33,11 +29,7 @@
 
 ! https://agi-sphere.com
 agi-sphere.com##:is(figure, span) > img[src^="data:image"]
-agi-sphere.com##+js(ss, a > img.lazyload[data-src][src^="data:image"]:not(figure > img), dataset src)
-!#if ext_devbuild
-agi-sphere.com#@#+js(ss, a > img.lazyload[data-src][src^="data:image"]:not(figure > img), dataset src)
 agi-sphere.com##+js(set-attr, a > img.lazyload[data-src][src^="data:image"]:not(figure > img), src, [data-src])
-!#endif
 
 ! https://www.airgradient.com
 airgradient.com##.preloader
@@ -180,6 +172,12 @@ codelivly.com##img.lazyload:style(display: block !important; opacity: 1 !importa
 computerworld.com##+js(ss, img.lazy[data-original]:not([src]), dataset original)
 computerworld.com##+js(ss, img[data-lazy]:not([src]):not([data-original]), dataset lazy)
 
+! cybercx.co.nz
+cybercx.co.nz##img[loading="lazy"]:style(display: block !important;)
+
+! cybernews.com
+cybernews.com##+js(set-attr, img.lazyload[data-src][src^="data:image"], src, [data-src])
+
 ! dailymail.co.uk
 dailymail.co.uk##[src^="data:image/gif;base64,"]
 
@@ -201,6 +199,11 @@ debug.to##.qa-a-form:style(display: block !important;)
 
 ! devblogs.microsoft.com
 devblogs.microsoft.com##+js(ss, img.lazyload[data-srcset][src^="data:image"], dataset srcset, 1)
+
+! devconnected.com
+devconnected.com##+js(set-attr, img.penci-lazy[data-src][src^="data:image"], src, [data-src])
+devconnected.com##+js(ss, a[data-bgset], dataset bgset)
+devconnected.com##a[data-bgset]:style(animation: unset !important; background-size: contain !important;)
 
 ! dexerto.com
 dexerto.com##.invisible:remove-class(invisible)
@@ -361,6 +364,10 @@ insideevs.com##.detailed-box .lazyload
 ! intelliwolf.com
 intelliwolf.com##+js(ss, img.ezlazyload[data-ezsrc][src^="data:image"], dataset ezsrc)
 
+! investopedia.com
+investopedia.com##+js(ss, div.lazyload[id^="mntl-sc-block-inlinevideo__video"][data-bgset], dataset bgset)
+investopedia.com##.katex-mathml:style(visibility: visible !important;)
+
 ! https://www.jpopsingles.eu
 jpopsingles.eu###mdp-deblocker-js-disabled
 
@@ -395,10 +402,7 @@ leadfeeder.com##+js(ss, img.lazy-image[data-src]:not([src]), dataset src)
 
 ! learnubuntu.com
 learnubuntu.com##+js(ss, img.lazyload[data-src][src*="/img-placeholder"], dataset src)
-!#if ext_devbuild
-learnubuntu.com#@#+js(ss, img.lazyload[data-src][src*="/img-placeholder"], dataset src)
 learnubuntu.com##+js(set-attr, img.lazyload[data-src][src*="/img-placeholder"], src, [data-src])
-!#endif
 learnubuntu.com##img.lazyload[data-src][src]:style(opacity: 1 !important; filter: none !important;)
 
 ! linuxandubuntu.com
@@ -537,11 +541,7 @@ nytimes.com##div > a[href="https://www.nytimes.com/section/todayspaper"]:upward(
 olympics.com##+js(ss, img.lazyload[src*="/t_lqip/"], previousSibling dataset srcset, 1)
 
 ! onlinemathlearning.com
-onlinemathlearning.com##+js(ss, html.no-js img.ss-lazy[data-src][src^="data:image"], dataset src)
-!#if ext_devbuild
-onlinemathlearning.com#@#+js(ss, html.no-js img.ss-lazy[data-src][src^="data:image"], dataset src)
 onlinemathlearning.com##+js(set-attr, html.no-js img.ss-lazy[data-src][src^="data:image"], src, [data-src])
-!#endif
 
 ! https://www.openculture.com
 openculture.com##.native-lazyload-js-fallback
@@ -741,6 +741,9 @@ techspot.com##img.b-lazy[data-src]:style(opacity: 1 !important;)
 ! techcrunch.com
 techcrunch.com##.content:style(margin-top: 50px !important;)
 
+! techtarget.com
+techtarget.com##+js(ss, html.no-js img.lazy[data-srcset]:not([src]), dataset srcset, 1)
+
 ! tedium.co
 tedium.co##+js(ss, html.no-js img.lazyload[data-src]:not([src]), dataset src)
 
@@ -865,9 +868,12 @@ vice.com##picture.lazyloader--lowres:remove-class(lazyloader--lowres)
 ! ====================================== Specific paywall ======================================
 ! bloomberg.com
 ||coordinator.cm.bloomberg.com^
-bloomberg.com##+js(aost, localStorage, /^(?=.*bundle)(?!.*nrWrapper).*/)
+bloomberg.com##+js(set-local-storage-item, history, $remove$)
 bloomberg.com##figure:style(opacity: 1 !important;)
 bloomberg.com##.banner
+
+! nikkei.com
+asia.nikkei.com##+js(set, Object.prototype.tbc, undefined)
 
 ! nj.com
 nj.com##+js(set, Fusion.globalContentConfig.query.limit, 10000)

@@ -1,7 +1,7 @@
 ! Title: Dark mode
 ! Description: Dark mode for users using Firefox' resistfingerprint or noscript mode
 ! Expires: 12 hours
-! Last modified: 2023.07.18.1
+! Last modified: 2023.08.05.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -12,20 +12,44 @@
 adguard.com##+js(tsa, html, data-theme, dark)
 
 ! bookdown.org
-bookdown.org##+js(ac, color-theme-2, .book)
+bookdown.org,psfaculty.plantsciences.ucdavis.edu##+js(ac, color-theme-2, .book)
+zief0002.github.io##+js(ac, color-theme-1, .book)
 
 ! developer.mozilla.org
 developer.mozilla.org##+js(ac, dark, html)
 
+! docs.github.com
+docs.github.com##+js(tsa, html, data-color-mode, dark)
+docs.github.com##+js(tsa, html, data-light-theme, dark)
+
+! python
+docs.scipy.org,numpy.org##+js(trusted-set-local-storage-item, mode, dark)
+docs.scipy.org,numpy.org##+js(trusted-set-local-storage-item, theme, dark)
+
+! fabiobarbero.eu
+fabiobarbero.eu##+js(tsa, body, theme, dark)
+
 ! kbin
 fedia.io##+js(tsa, body, class, theme--dark)
+
+! javascripttutorial.net
+javascripttutorial.net##+js(tsa, html, data-theme, dark)
 
 ! lemmy
 lemmy.eus##^link#default-light
 lemmy.eus##+js(tsa, link#default-dark, media, (prefers-color-scheme: light))
 
-! libreddit
-libreddit.freedit.eu,libreddit.kylrth.com,libreddit.mha.fi,lr.4201337.xyz,rd.funami.tech##+js(ac, dark, body)
+! nyaa.si
+nyaa.si##+js(ac, dark, body)
 
-! privacyguides
-www.privacyguides.org##+js(tsa, body, data-md-color-scheme, slate)
+! libreddit
+libreddit.freedit.eu,libreddit.kylrth.com,libreddit.mha.fi,lr.4201337.xyz,rd.funami.tech,darklab.sh,libreddit.kavin.rocks,libreddit.oxymagnesium.com,reddit.leptons.xyz,libreddit.pabloferreiro.es,lr.artemislena.eu,lr.riverside.rocks##+js(ac, dark, body)
+
+! pomfcrawl.pythonanywhere.com
+pomfcrawl.pythonanywhere.com##+js(ac, dark, body)
+
+! quetre
+qr.vern.cc,quetre.iket.me##+js(tsa, html, theme, dark)
+
+! techreviewbd.com
+techreviewbd.com##+js(ac, is-dark, html)

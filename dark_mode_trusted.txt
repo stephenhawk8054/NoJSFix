@@ -7,11 +7,18 @@ askpython.com##+js(trusted-set-cookie, _lscache_vary, guest_mode%3A1, , , reload
 ! breezewiki (fandom.com)
 breeze.hostux.net##+js(trusted-set-cookie, theme, dark, , , reload, 1)
 
+! librewolf.net
+librewolf.net##+js(trusted-set-local-storage-item, theme, dark)
+
 ! lingva
 lingva.garudalinux.org##+js(trusted-set-local-storage-item, chakra-ui-color-mode, dark)
 
+! geeksforgeeks.org
+geeksforgeeks.org##+js(trusted-set-cookie, gfg_theme, gfgThemeDark)
+
 ! privacyguides
-discuss.privacyguides.net##+js(trusted-set-local-storage-item, discourse_color_scheme_override, dark)
+privacyguides.net##+js(trusted-set-local-storage-item, discourse_color_scheme_override, dark)
+privacyguides.org##+js(trusted-set-local-storage-item, /en/.__palette, '{"index":1,"color":{"media":"(prefers-color-scheme: dark)","scheme":"slate","primary":"","accent":"amber"}}')
 
 ! virustotal.com
 virustotal.com##+js(trusted-set-local-storage-item, colorMode, dark)
