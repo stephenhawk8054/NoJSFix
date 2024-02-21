@@ -39,6 +39,12 @@ adweek.com###page:style(padding-top: 0px !important;)
 almostsuremath.com##.entry-footer, .jp-relatedposts, .jetpack-likes-widget-wrapper, [data-sharing-events-added] > :not(.share-print, .share-email)
 almostsuremath.com##main:style(max-width: 100% !important; margin: 0 !important;)
 
+! https://www.analyticsvidhya.com
+analyticsvidhya.com##.detail-page, #commentModule:others()
+analyticsvidhya.com##.tag-items
+analyticsvidhya.com##.follow-tag
+analyticsvidhya.com##.blog-comment-bg
+
 ! androidauthority.com
 androidauthority.com##main > div aside:upward(main > div):others()
 androidauthority.com##a:is([title="facebook"],[title="twitter"]), aside

@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
-! Expires: 12 hours
-! Last modified: 2023.08.05.1
+! Expires: 8 hours
+! Last modified: 2024.02.21.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -525,6 +525,10 @@ nilsenreport.ca##+js(ss, html.no-js img.ezlazyload[data-ezsrc]:not([data-orig-fi
 nilsenreport.ca##html.no-js img.ezlazyload[data-orig-file][src]:style(position: relative !important;)
 nilsenreport.ca##html.no-js div.thumbnail-container::after:style(background: transparent !important;)
 
+! https://nitratine.net/blog/post/auto-py-to-exe/
+nitratine.net##+js(set-attr, img.lazyload[src^="data:image"][data-src], src, [data-src])
+nitratine.net##.blur-up:style(filter: none !important;)
+
 ! nowarchaeology.com
 nowarchaeology.com##.entry-thumb > .attachment-WRT-post-image
 nowarchaeology.com##.wp-block-image > [class^="wp-image"]
@@ -676,6 +680,9 @@ sharpsightlabs.com##+js(ss, img.nitro-lazy[nitro-lazy-src][src^="data:image"], a
 sharpsightlabs.com##+js(ss, img.nitro-lazy[nitro-lazy-srcset][src^="data:image"]:not([nitro-lazy-src]), attributes nitro-lazy-srcset value, 1)
 sharpsightlabs.com##img.nitro-lazy[nitro-lazy-src][src]:style(display: block !important;)
 sharpsightlabs.com##article.post:style(opacity: 1 !important;)
+
+! https://www.shiksha.com/online-courses/articles/gpt-3-point-5-vs-gpt-4-how-do-they-differ/
+shiksha.com##+js(set-attr, img[data-original]:not([src]), src, [data-original])
 
 ! si.com
 si.com##+js(ss, picture > source[data-srcset]:not([srcset]), dataset srcset, 1)
