@@ -208,9 +208,6 @@ fosspost.org##+js(aeld, mouseup, lastMousedown)
 geeksforgeeks.org##.article--viewer_like
 geeksforgeeks.org##.leftBar:style(margin: auto !important; max-width: 80% !important; flex-basis: unset !important;)
 
-! https://www.ghostarrow.com/ark-survival-ascended-freezing-in-the-character-creation-fix
-ghostarrow.com##+js(set-attr, img.ezlazyload[src^="data:image"][data-ezsrc], src, [data-ezsrc])
-
 ! https://gizmodo.com
 gizmodo.com##.js_post-content, header, .js_regular-subhead, [data-ga*="Channel click"],  [data-ga*="Author click"], time, .js_expandable-container:others()
 gizmodo.com##.js_more-below-post
@@ -421,9 +418,6 @@ tweaktown.com###content-left:style(width: 100% !important;)
 ! https://www.vice.com
 vice.com##.article__body-components > :not([data-component="RelatedArticleBlock"]), .remixd-audio-player, .short-form__body__article-lede-image, .article__header__datebar__date--original, .contributors, .article__header__dek, span[data-article-title]:others()
 ||privacy-mgmt.com^$domain=vice.com
-
-! https://vietnamnet.vn
-vietnamnet.vn##+js(set-attr, img.lazy[data-original][src^="data:image"], src, [data-original])
 
 ! https://www.w3schools.com
 w3schools.com###main > :not(.nextprev), #sidenav:others()

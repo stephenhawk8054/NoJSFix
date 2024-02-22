@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.02.21.1
+! Last modified: 2024.02.22.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -120,6 +120,11 @@ bongdaplus.vn##+js(ss, img.lzl[data-src][src^="data:image"], dataset src)
 
 ! browsertouse.com
 browsertouse.com##+js(ss, img.ezlazyload[data-ezsrc][src^="data:image", dataset ezsrc)
+
+! builtin.com
+builtin.com##+js(ss, html:not(.js) img.b-lazy[data-src][src^="data:image"], dataset src)
+builtin.com##html:not(.js) img.b-lazy[data-src][src]:style(display: block !important;)
+builtin.com##html:not(.js) .wrap-share-social-fixed:style(opacity: 1 !important;)
 
 ! c4isrnet.com
 c4isrnet.com##.nav-logo:style(opacity: 1 !important; visibility: visible !important;)
@@ -283,17 +288,15 @@ forbes.com##+js(rt, amp-img[src], img)
 forbes.com##+js(rt, progressive-image[src], img)
 forbes.com##+js(ss, progressive-image[background-image]:not([src]), attributes background-image value)
 
-! builtin.com
-builtin.com##+js(ss, html:not(.js) img.b-lazy[data-src][src^="data:image"], dataset src)
-builtin.com##html:not(.js) img.b-lazy[data-src][src]:style(display: block !important;)
-builtin.com##html:not(.js) .wrap-share-social-fixed:style(opacity: 1 !important;)
-
 ! gadgets360.com
 gadgets360.com##+js(ss, iframe[data-src]:not([src]), dataset src)
 gadgets360.com##+js(ss, img.lazy[data-original][src], dataset original)
 
 ! gadgetstouse.com
 gadgetstouse.com##+js(ss, img.ezlazyload[data-ezsrc][src^="data:image"], dataset ezsrc)
+
+! https://www.ghostarrow.com/ark-survival-ascended-freezing-in-the-character-creation-fix
+ghostarrow.com##+js(set-attr, img.ezlazyload[src^="data:image"][data-ezsrc], src, [data-ezsrc])
 
 ! gizchina.com
 gizchina.com##+js(ss, span.mrf-galleryGrid__row > img[data-src], dataset src)
@@ -815,6 +818,9 @@ usatoday.com##img.blur-up:style(filter: none !important;)
 ! usnews.com
 usnews.com##[class*="PhotoGalleryEmbed"]:style(opacity: 1 !important;)
 usnews.com###main-column .border-top:style(visibility: visible !important;)
+
+! https://vietnamnet.vn
+vietnamnet.vn##+js(set-attr, img.lazy[data-original][src^="data:image"], src, [data-original])
 
 ! vtc.vn
 vtc.vn##+js(ss, b.video-element[data-poster], dataset poster)
