@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 12 hours
-! Last modified: 2024.02.21.1
+! Last modified: 2024.02.22.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -208,6 +208,9 @@ fosspost.org##+js(aeld, mouseup, lastMousedown)
 geeksforgeeks.org##.article--viewer_like
 geeksforgeeks.org##.leftBar:style(margin: auto !important; max-width: 80% !important; flex-basis: unset !important;)
 
+! https://www.ghostarrow.com/ark-survival-ascended-freezing-in-the-character-creation-fix
+ghostarrow.com##+js(set-attr, img.ezlazyload[src^="data:image"][data-ezsrc], src, [data-ezsrc])
+
 ! https://gizmodo.com
 gizmodo.com##.js_post-content, header, .js_regular-subhead, [data-ga*="Channel click"],  [data-ga*="Author click"], time, .js_expandable-container:others()
 gizmodo.com##.js_more-below-post
@@ -401,11 +404,14 @@ theverge.com##.duet--recirculation--related-list
 thoughtco.com##article > :not(.article-post-header), .article-post-header > :not(.post-header-social-block), .print-button:others()
 thoughtco.com##main:style(margin-top: 0px !important;)
 
-! https://www.tutorialspoint.com
-tutorialspoint.com##.qa_title, #downloadContent, .qa_widget:others()
+! https://www.tutorialspoint.com/difference-between-application-x-javascript-and-text-javascript-content-types
+tutorialspoint.com###mainContent:others()
 tutorialspoint.com##.uthor-prof-social-icon
 tutorialspoint.com##.views-count
-tutorialspoint.com##.tutorial-content:style(margin: auto !important; width: 80% !important;)
+tutorialspoint.com##.library-cta
+tutorialspoint.com##.qa_category
+tutorialspoint.com##.related-articles
+tutorialspoint.com##.row:style(grid-template-columns: auto !important;)
 
 ! https://www.tweaktown.com
 tweaktown.com##article, #content-crumbbar, .aboutauthor:others()
@@ -415,6 +421,9 @@ tweaktown.com###content-left:style(width: 100% !important;)
 ! https://www.vice.com
 vice.com##.article__body-components > :not([data-component="RelatedArticleBlock"]), .remixd-audio-player, .short-form__body__article-lede-image, .article__header__datebar__date--original, .contributors, .article__header__dek, span[data-article-title]:others()
 ||privacy-mgmt.com^$domain=vice.com
+
+! https://vietnamnet.vn
+vietnamnet.vn##+js(set-attr, img.lazy[data-original][src^="data:image"], src, [data-original])
 
 ! https://www.w3schools.com
 w3schools.com###main > :not(.nextprev), #sidenav:others()
