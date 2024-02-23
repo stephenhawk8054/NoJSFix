@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.02.22.1
+! Last modified: 2024.02.23.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -68,6 +68,11 @@ androidheadlines.com##p > img.lazyload[src^="data:image"]
 
 ! https://www.androidpolice.com
 androidpolice.com##+js(ss, picture > source[data-srcset]:not([srcset]), dataset srcset)
+
+! https://www.animenewsnetwork.com/
+animenewsnetwork.com##+js(set-attr, html.js-off img.lazyload[data-src], src, [data-src])
+animenewsnetwork.com##img.lazyload[data-src]:style(display: block !important;)
+animenewsnetwork.com##a.marquee-item:style(opacity: 1 !important;)
 
 ! arabnews.com
 arabnews.com##+js(ss, img[data-lazy]:not([src]), dataset lazy)
@@ -151,6 +156,9 @@ chinadialogueocean.net##img.lazy__placeholder:style(filter: unset !important;)
 
 ! chrome.google.com
 chrome.google.com##img[src]:style(opacity: 1 !important;)
+
+! https://chromeunboxed.com/say-hello-to-the-new-modern-google-sign-in-page/
+chromeunboxed.com##+js(set-attr, img.ezlazyload[src^="data:image"][data-ezsrc], src, [data-ezsrc])
 
 ! clashmusic.com
 clashmusic.com##+js(ss, img.lazy[data-src]:not([src]), dataset src)
@@ -399,6 +407,9 @@ kyodonews.net##nav:style(position: absolute !important;)
 
 ! lalal.ai
 lalal.ai##header#gh-head:style(position: absolute !important;)
+
+! https://www.laptopmag.com/
+laptopmag.com##+js(set-attr, img.lazy-image-van[src$="/missing-image.svg"][data-original-mos], src, [data-original-mos])
 
 ! leadfeeder.com
 leadfeeder.com##+js(ss, img.lazy-image[data-src]:not([src]), dataset src)
