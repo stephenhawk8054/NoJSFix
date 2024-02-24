@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 12 hours
-! Last modified: 2024.02.23.1
+! Last modified: 2024.02.24.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -419,6 +419,16 @@ tutorialspoint.com##.row:style(grid-template-columns: auto !important;)
 tweaktown.com##article, #content-crumbbar, .aboutauthor:others()
 tweaktown.com###popular-now, .sharedesktopsp:not([title])
 tweaktown.com###content-left:style(width: 100% !important;)
+
+! https://www.tweeteraser.com/resources/view-twitter-without-account-exploring-without-sign-up/
+tweeteraser.com##main:others()
+tweeteraser.com##.blog-side
+tweeteraser.com##.blog-post-floating-banner
+tweeteraser.com##.related_blog_post
+tweeteraser.com##.delete-past-tweets
+tweeteraser.com##.blog-single-right-main
+tweeteraser.com##.blog-single-content:style(display: block !important;)
+tweeteraser.com###page:style(padding: 0 !important;)
 
 ! https://www.vice.com
 vice.com##.article__body-components > :not([data-component="RelatedArticleBlock"]), .remixd-audio-player, .short-form__body__article-lede-image, .article__header__datebar__date--original, .contributors, .article__header__dek, span[data-article-title]:others()
