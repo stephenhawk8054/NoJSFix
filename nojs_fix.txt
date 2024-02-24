@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.02.23.1
+! Last modified: 2024.02.24.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -504,10 +504,9 @@ mozilla.org##+js(ss, img.lazy[data-original-src][src$=".gif"], dataset originalS
 natalie.mu##+js(ss, img.lazyload[data-src]:not([src]), dataset src)
 
 ! myanimelist.net
-myanimelist.net##+js(ss, .thumb.lazyload[data-bg], dataset bg)
-myanimelist.net##+js(ss, img.lazyload[data-src]:not([src]), dataset src)
-myanimelist.net##.thumb.lazyload:style(opacity: 1 !important;)
-myanimelist.net##img.lazyload[data-src]:style(opacity: 1 !important;)
+myanimelist.net##+js(ss, .lazyload[data-bg], dataset bg)
+myanimelist.net##+js(set-attr, img.lazyload[data-src]:not([src]), src, [data-src])
+myanimelist.net##.lazyload:style(opacity: 1 !important;)
 myanimelist.net##img.lazyload[data-src$="/bg_shadow_rect_trans.png"]
 
 ! mysmartprice.com
@@ -627,6 +626,9 @@ pythonforfinance.net##+js(ss, img.penci-lazy[data-src][src^="data:image"], datas
 
 ! quantamagazine.org
 quantamagazine.org##video:style(opacity: 1 !important;)
+
+! https://quantrimang.com/cong-nghe/thay-doi-background-tren-ps5-201731
+quantrimang.com##+js(set-attr, img.lazy[src$="holder.png"][data-src], src, [data-src])
 
 ! qz.com
 qz.com##+js(ss, iframe[data-src]:not([src]), dataset src)
@@ -815,6 +817,9 @@ tutsplus.com##nav:style(position: absolute !important;)
 
 ! tweaktown.com
 tweaktown.com##+js(ss, img.lazyload[data-src]:not([src]), dataset src)
+
+! https://www.tweeteraser.com/resources/view-twitter-without-account-exploring-without-sign-up/
+tweeteraser.com##+js(set-attr, img.lazy[data-src][src^="data:image"], src, [data-src])
 
 ! urbandictionary.com
 urbandictionary.com###ud-root > div:style(padding-top: 56px !important;)
