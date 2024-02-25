@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.02.24.1
+! Last modified: 2024.02.25.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -184,6 +184,10 @@ codelivly.com##img.lazyload:style(display: block !important; opacity: 1 !importa
 ! computerworld.com
 computerworld.com##+js(ss, img.lazy[data-original]:not([src]), dataset original)
 computerworld.com##+js(ss, img[data-lazy]:not([src]):not([data-original]), dataset lazy)
+
+! https://corporatefinanceinstitute.com/resources/data-science/statistics-for-finance/
+corporatefinanceinstitute.com##+js(set-attr, img.lazy[data-src], src, [data-src])
+corporatefinanceinstitute.com##img.lazy[data-src]:style(visibility: visible !important;)
 
 ! cybercx.co.nz
 cybercx.co.nz##img[loading="lazy"]:style(display: block !important;)
@@ -743,6 +747,9 @@ standard.co.uk##.i-amphtml-layout-responsive:style(width: 100% !important; heigh
 standard.co.uk##amp-carousel > article:style(display: inline-block !important; margin-right: 10px !important;)
 standard.co.uk##i-amphtml-sizer
 
+! statisticalhorizons.com
+statisticalhorizons.com##[data-aos="aos-fade-up"]:remove-attr(data-aos)
+
 ! https://www.stuff.tv
 stuff.tv##.c-ad.c-ad
 stuff.tv##+js(ss, img.lazyload[src^="data:image"][data-orig-file], dataset origFile)
@@ -837,6 +844,10 @@ usnews.com###main-column .border-top:style(visibility: visible !important;)
 
 ! https://vietnamnet.vn
 vietnamnet.vn##+js(set-attr, img.lazy[data-original][src^="data:image"], src, [data-original])
+
+! https://www.visual-design.net/post/three-improvements-to-future-proof-your-machine-learning-project
+visual-design.net##[data-animate-blur] img[data-pin-media]:style(filter: unset !important;)
+visual-design.net##+js(set-attr, [data-animate-blur] img[data-pin-media], src, [data-pin-media])
 
 ! vtc.vn
 vtc.vn##+js(ss, b.video-element[data-poster], dataset poster)
