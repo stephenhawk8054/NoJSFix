@@ -1,6 +1,6 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
-! Expires: 12 hours
+! Expires: 8 hours
 ! Last modified: 2024.02.24.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
