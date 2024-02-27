@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.02.25.1
+! Last modified: 2024.02.27.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -449,6 +449,9 @@ lnk.to##img.music-service-list__img:style(display: block !important;)
 ! logicmatters.net
 logicmatters.net##+js(ss, img.lazyload[data-src][src^="data:image"], dataset src)
 
+! https://logrhythm.com
+logrhythm.com###loader-wrapper
+
 ! https://kevdees.com
 kevdees.com##.preloader
 
@@ -641,6 +644,9 @@ qz.com##+js(ss, video[data-poster][poster], dataset poster)
 
 ! republic.com
 republic.com##.layouts-application__content-container--blurred:remove-class(layouts-application__content-container--blurred)
+
+! https://www.researchgate.net/post/How_to_use_previous_solution_as_initial_value_of_pressure_in_second_study_in_COMSOL
+researchgate.net##+js(set-attr, img[data-src][src^="data:image"], src, [data-src])
 
 ! restofworld.org
 restofworld.org##+js(ss, img[data-src][src], dataset src)
