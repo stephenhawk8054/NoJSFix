@@ -1,6 +1,6 @@
 ! Title: Dark mode
 ! Description: Dark mode for users using Firefox' resistfingerprint or noscript mode
-! Expires: 12 hours
+! Expires: 8 hours
 ! Last modified: 2024.03.12.3
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
