@@ -1,7 +1,7 @@
 ! Title: Dark mode
 ! Description: Dark mode for users using Firefox' resistfingerprint or noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.03.14.4
+! Last modified: 2024.03.14.5
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -41,6 +41,10 @@ docs.github.com##+js(tsa, html, data-light-theme, dark)
 
 ! kbin
 fedia.io##+js(tsa, body, class, theme--dark)
+
+! geeksforgeeks.org
+geeksforgeeks.org##+js(trusted-set-cookie, gfg_theme, gfgThemeDark)
+geeksforgeeks.org##+js(trusted-set-local-storage-item, codeEditorTheme, monokai)
 
 ! javascripttutorial.net
 javascripttutorial.net##+js(tsa, html, data-theme, dark)

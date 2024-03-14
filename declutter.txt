@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 8 hours
-! Last modified: 2024.03.14.2
+! Last modified: 2024.03.14.3
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -213,7 +213,7 @@ fosspost.org##.saboxplugin-socials, .saboxplugin-wrap ~ *
 fosspost.org##+js(aeld, mouseup, lastMousedown)
 
 ! https://www.geeksforgeeks.org
-geeksforgeeks.org##.article--viewer_like
+geeksforgeeks.org##nav, .header-main__slider, .sidebar_wrapper, .rightBar, .article--viewer_like
 geeksforgeeks.org##.leftBar:style(margin: auto !important; max-width: 80% !important; flex-basis: unset !important;)
 
 ! https://gizmodo.com
