@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.02.27.1
+! Last modified: 2024.03.15.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -603,6 +603,9 @@ plaintextoffenders.com##a.header-image[data-bg-image]:style(opacity: 1 !importan
 
 ! platform.sh
 platform.sh##img[loading="lazy"]:style(opacity: 1 !important;)
+
+! https://plo.vn/hlv-troussier-gach-5-cai-ten-chot-danh-sach-cuoi-cung-28-tuyen-thu-post780584.html
+plo.vn##+js(set-attr, img.lazyload[data-src][src^="data:image"], src, [data-src])
 
 ! pocket-lint.com
 pocket-lint.com##+js(ss, body.js-tldr img.lazyload[data-img-url]:not([src]), dataset imgUrl)

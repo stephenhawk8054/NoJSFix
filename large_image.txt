@@ -1,0 +1,13 @@
+! Title: Large Image Redirect
+! Description: Redirect small image to large image
+! Expires: 8 hours
+! Last modified: 2024.03.15.1
+! Homepage: https://github.com/stephenhawk8054/NoJSFix
+! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
+!
+! GitHub issues: https://github.com/stephenhawk8054/NoJSFix/issues
+! GitHub pull requests: https://github.com/stephenhawk8054/NoJSFix/pulls
+
+! https://plo.vn/hlv-troussier-gach-5-cai-ten-chot-danh-sach-cuoi-cung-28-tuyen-thu-post780584.html
+||image.plo.vn/*/Uploaded/$image,uritransform=/\/[^\/]+\/Uploaded\//\/Uploaded\//
+||image.plo.vn/*.jpg.webp$image,uritransform=/\.jpg\.webp/.jpg/
