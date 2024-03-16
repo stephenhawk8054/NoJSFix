@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.03.15.1
+! Last modified: 2024.03.16.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -16,3 +16,6 @@ gpsoft.com.au##.ui-widget-content:style(color: black !important;)
 
 ! proton
 proton.me##body:style(color: black !important;)
+
+! https://theathletic.com/5061003/2023/11/17/virgil-van-dijk-liverpool-netherlands-paradox/
+theathletic.com##.bodytext1:style(color: black !important;)
