@@ -1,0 +1,12 @@
+! Title: Cookie banners
+! Description: Hide/Reject cookie banner
+! Expires: 8 hours
+! Last modified: 2024.03.19.1
+! Homepage: https://github.com/stephenhawk8054/NoJSFix
+! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
+!
+! GitHub issues: https://github.com/stephenhawk8054/NoJSFix/issues
+! GitHub pull requests: https://github.com/stephenhawk8054/NoJSFix/pulls
+
+! https://obsproject.com
+##.notice--cookie
