@@ -1,7 +1,7 @@
 ! Title: Dark mode
 ! Description: Dark mode for users using Firefox' resistfingerprint or noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.03.18.1
+! Last modified: 2024.03.19.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -22,6 +22,9 @@ adguard.com##+js(tsa, html, data-theme, dark)
 ! bookdown.org
 bookdown.org,psfaculty.plantsciences.ucdavis.edu##+js(ac, color-theme-2, .book)
 zief0002.github.io##+js(ac, color-theme-1, .book)
+
+! breezewiki
+antifandom.com,breeze.hostux.net,breezewiki.com,breezewiki.pussthecat.org,bw.artemislena.eu,bw.hamstro.dev,bw.projectsegfau.lt##+js(trusted-set-cookie, theme, dark, , , reload, 1)
 
 ! cloudflare
 developers.cloudflare.com##+js(trusted-set-local-storage-item, theme, {"theme":"dark"})
