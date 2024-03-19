@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.03.19.1
+! Last modified: 2024.03.19.2
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -18,7 +18,8 @@ digitalocean.com##[class^="Markdown_markdown"]:style(color: black !important;)
 gpsoft.com.au##.ui-widget-content:style(color: black !important;)
 
 ! proton
-proton.me##body:style(color: black !important;)
+! pythonanywhere.com
+proton.me,pythonanywhere.com##body:style(color: black !important;)
 
 ! sublimetext
 forum.sublimetext.com##html:style(color: black !important;)
