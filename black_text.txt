@@ -1,12 +1,16 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.03.19.2
+! Last modified: 2024.03.19.3
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
 ! GitHub issues: https://github.com/stephenhawk8054/NoJSFix/issues
 ! GitHub pull requests: https://github.com/stephenhawk8054/NoJSFix/pulls
+
+!==== Multiple sites ===!
+flask.palletsprojects.com,forum.sublimetext.com,proton.me,pythonanywhere.com##body:style(color: black !important;)
+!=======================!
 
 ! briar
 briarproject.org###content-news p:style(color: black !important;)
@@ -14,15 +18,11 @@ briarproject.org###content-news p:style(color: black !important;)
 ! digitalocean
 digitalocean.com##[class^="Markdown_markdown"]:style(color: black !important;)
 
+! fideloper.com
+fideloper.com##.markdown:style(color: black !important;)
+
 ! gpsoft.com.au
 gpsoft.com.au##.ui-widget-content:style(color: black !important;)
-
-! proton
-! pythonanywhere.com
-proton.me,pythonanywhere.com##body:style(color: black !important;)
-
-! sublimetext
-forum.sublimetext.com##html:style(color: black !important;)
 
 ! https://theathletic.com/5061003/2023/11/17/virgil-van-dijk-liverpool-netherlands-paradox/
 theathletic.com##.bodytext1:style(color: black !important;)
