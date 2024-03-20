@@ -101,9 +101,11 @@ askubuntu.com,mathoverflow.net,serverfault.com,stackexchange.com,stackoverflow.c
 askubuntu.com,mathoverflow.net,serverfault.com,stackexchange.com,stackoverflow.com,superuser.com##body.question-page:style(padding-top: 0px !important;)
 
 ! https://www.bleepingcomputer.com
-bleepingcomputer.com##article, .cz-breadcrumb:others()
+bleepingcomputer.com##head:has(> meta[content="article"]) + body :is(article, .cz-breadcrumb):others()
+bleepingcomputer.com##^.bc_right_sidebar
 bleepingcomputer.com##^header
 bleepingcomputer.com##header
+bleepingcomputer.com##.bc_right_sidebar
 bleepingcomputer.com##.cz-related-article-wrapp
 bleepingcomputer.com##.bc_wrapper:style(padding-top: 0px !important;)
 bleepingcomputer.com##.bc_main_content .row > div:style(width: 100% !important;)
