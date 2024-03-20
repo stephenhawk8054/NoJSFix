@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 8 hours
-! Last modified: 2024.03.20.1
+! Last modified: 2024.03.20.2
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -97,7 +97,9 @@ askubuntu.com,mathoverflow.net,serverfault.com,stackexchange.com,stackoverflow.c
 askubuntu.com,mathoverflow.net,serverfault.com,stackexchange.com,stackoverflow.com,superuser.com##body.question-page:style(padding-top: 0px !important;)
 
 ! https://www.bleepingcomputer.com
-bleepingcomputer.com##.articleBody, .cz-news-title-left-area, .cz-news-date, .cz-news-time, h1, .cz-breadcrumb-outer-wrapp, .cz-full-bio-wrapp:others()
+bleepingcomputer.com##article:others()
+bleepingcomputer.com##^header
+bleepingcomputer.com##header
 bleepingcomputer.com##.cz-related-article-wrapp
 bleepingcomputer.com##.bc_wrapper:style(padding-top: 0px !important;)
 bleepingcomputer.com##.bc_main_content .row > div:style(width: 100% !important;)
