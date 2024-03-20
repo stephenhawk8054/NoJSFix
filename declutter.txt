@@ -101,7 +101,7 @@ askubuntu.com,mathoverflow.net,serverfault.com,stackexchange.com,stackoverflow.c
 askubuntu.com,mathoverflow.net,serverfault.com,stackexchange.com,stackoverflow.com,superuser.com##body.question-page:style(padding-top: 0px !important;)
 
 ! https://www.bleepingcomputer.com
-bleepingcomputer.com##article:others()
+bleepingcomputer.com##article, .cz-breadcrumb:others()
 bleepingcomputer.com##^header
 bleepingcomputer.com##header
 bleepingcomputer.com##.cz-related-article-wrapp
