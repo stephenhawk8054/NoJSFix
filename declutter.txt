@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 8 hours
-! Last modified: 2024.03.14.3
+! Last modified: 2024.03.20.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -411,13 +411,19 @@ thoughtco.com##article > :not(.article-post-header), .article-post-header > :not
 thoughtco.com##main:style(margin-top: 0px !important;)
 
 ! https://www.tutorialspoint.com/difference-between-application-x-javascript-and-text-javascript-content-types
-tutorialspoint.com###mainContent:others()
+tutorialspoint.com###mainContent, .tutorial-toc:others()
 tutorialspoint.com##.uthor-prof-social-icon
 tutorialspoint.com##.views-count
 tutorialspoint.com##.library-cta
 tutorialspoint.com##.qa_category
 tutorialspoint.com##.related-articles
-tutorialspoint.com##.row:style(grid-template-columns: auto !important;)
+tutorialspoint.com##.accent-header, header, nav
+tutorialspoint.com##.toc.reading
+tutorialspoint.com##^.row > div:has(> #google-right-ads)
+tutorialspoint.com##.row > div:has(> #google-right-ads)
+tutorialspoint.com##.row:style(grid-template-columns: 300px 1fr !important;)
+tutorialspoint.com##.tutorial-content h3:style(color: aqua !important;)
+tutorialspoint.com##.tutorial-toc:style(top: 0px !important;)
 
 ! https://www.tweaktown.com
 tweaktown.com##article, #content-crumbbar, .aboutauthor:others()
