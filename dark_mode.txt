@@ -1,7 +1,7 @@
 ! Title: Dark mode
 ! Description: Dark mode for users using Firefox' resistfingerprint or noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.03.20.1
+! Last modified: 2024.03.20.2
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -79,6 +79,9 @@ pomfcrawl.pythonanywhere.com##+js(ac, dark, body)
 ! privacyguides
 privacyguides.net##+js(trusted-set-local-storage-item, discourse_color_scheme_override, dark)
 privacyguides.org##+js(trusted-set-local-storage-item, /en/.__palette, '{"index":1,"color":{"media":"(prefers-color-scheme: dark)","scheme":"slate","primary":"","accent":"amber"}}')
+
+! pydantic
+docs.pydantic.dev##+js(trusted-set-local-storage-item, /latest/.__palette, '{"index":1,"color":{"media":"(prefers-color-scheme: dark)","scheme":"slate","primary":"pink","accent":"pink"}}')
 
 ! quetre
 qr.vern.cc,quetre.iket.me##+js(tsa, html, theme, dark)
