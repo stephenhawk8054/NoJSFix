@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.03.15.1
+! Last modified: 2024.03.22.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -246,6 +246,9 @@ djangostars.com##+js(ss, img.nitro-lazy[nitro-lazy-src][src^="data:image"], attr
 ! documentjournal.com
 documentjournal.com##+js(ss, html.no-js img.lazyload[data-src][src], dataset src)
 documentjournal.com##html.no-js img.lazyload[src]:style(opacity: 1 !important;)
+
+! https://dotsecurity.com/insights/blog-are-passphrases-more-secure-than-passwords
+dotsecurity.com##[style*="opacity:0"]:style(opacity: 1 !important;)
 
 ! dpreview.com
 dpreview.com##+js(ss, img.lazyload[data-src]:not([src]), dataset src)
