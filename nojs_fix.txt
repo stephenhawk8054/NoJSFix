@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.03.22.1
+! Last modified: 2024.03.22.2
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -551,6 +551,10 @@ nilsenreport.ca##html.no-js div.thumbnail-container::after:style(background: tra
 ! https://nitratine.net/blog/post/auto-py-to-exe/
 nitratine.net##+js(set-attr, img.lazyload[src^="data:image"][data-src], src, [data-src])
 nitratine.net##.blur-up:style(filter: none !important;)
+
+! https://nordvpn.com/blog/how-to-encrypt-flash-drive/
+nordvpn.com##+js(set-attr, html.no-js img.lazyload[src^="data:image"][data-src], src, [data-src])
+nordvpn.com##img:is(.lazyload--fade-in.lazyload, .lazyload--fade-in.lazyloading):style(opacity: 1 !important;)
 
 ! nowarchaeology.com
 nowarchaeology.com##.entry-thumb > .attachment-WRT-post-image
