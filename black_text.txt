@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.03.22.4
+! Last modified: 2024.03.24.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -9,7 +9,7 @@
 ! GitHub pull requests: https://github.com/stephenhawk8054/NoJSFix/pulls
 
 !==== Multiple sites ===!
-arcanecode.com,bitwarden.com,blogs.infoblox.com,exploreflask.com,flask.palletsprojects.com,forum.sublimetext.com,nordvpn.com,python-web.teclado.com,pythonanywhere.com,www.okta.com,~vault.bitwarden.com##body:style(color: black !important;)
+arcanecode.com,bitwarden.com,blogs.infoblox.com,exploreflask.com,flask.palletsprojects.com,forum.sublimetext.com,nordvpn.com,python-web.teclado.com,pythonanywhere.com,sourceforge.net,www.okta.com,~vault.bitwarden.com##body:style(color: black !important;)
 !=======================!
 
 ! briar
