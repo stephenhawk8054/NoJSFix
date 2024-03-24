@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.03.24.3
+! Last modified: 2024.03.24.4
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -11,7 +11,7 @@
 !==== Multiple sites ===!
 androidcentral.com,gamesradar.com,lifehacker.com,livescience.com,kotaku.com,pcgamer.com,space.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##html:style(color: black !important;)
 
-arcanecode.com,bitwarden.com,blogs.infoblox.com,exploreflask.com,flask.palletsprojects.com,forum.sublimetext.com,nordvpn.com,python-web.teclado.com,pythonanywhere.com,sourceforge.net,www.okta.com,~vault.bitwarden.com##body:style(color: black !important;)
+arcanecode.com,bitwarden.com,blogs.infoblox.com,exploreflask.com,flask.palletsprojects.com,forum.sublimetext.com,nordvpn.com,note.nkmk.me,python-web.teclado.com,pythonanywhere.com,sourceforge.net,www.okta.com,~vault.bitwarden.com##body:style(color: black !important;)
 !=======================!
 
 ! 1password
