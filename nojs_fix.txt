@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.03.24.1
+! Last modified: 2024.03.25.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -856,6 +856,9 @@ usatoday.com##+js(ss, html.gnt__njs img.lazyload.blur-up[data-src][src], dataset
 usatoday.com##+js(ss, html.gnt__njs img[data-g-r="lazy"][data-gl-bs]:not([src]), dataset glBs)
 usatoday.com##+js(ss, html.gnt__njs img[data-g-r^="lazy"]:not([data-src]):not([data-gl-bs]), dataset glSrcset, 1)
 usatoday.com##img.blur-up:style(filter: none !important;)
+
+! uservoice
+uservoice.com##wp-loading:style(visibility: visible !important;)
 
 ! usnews.com
 usnews.com##[class*="PhotoGalleryEmbed"]:style(opacity: 1 !important;)
