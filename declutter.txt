@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 8 hours
-! Last modified: 2024.03.25.1
+! Last modified: 2024.03.26.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -352,6 +352,11 @@ rte.ie##.article-body, #main-article-image, header, .modified-date, .dotie-icon_
 
 ! https://www.scribbr.com
 scribbr.com##.content-block > :not(.scw), .post-meta, .post-title, .list-of-contents:others()
+
+! sekoia.io
+blog.sekoia.io##body > div:not([id]):not([class]):others()
+blog.sekoia.io##.notizia-single-main-content-container:style(max-width: 80% !important;)
+blog.sekoia.io##.notizia-single-main-content-container-inner:style(max-width: 100% !important;)
 
 ! siipo.la
 siipo.la##article, .sla-title-element:others()

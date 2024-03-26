@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.03.25.4
+! Last modified: 2024.03.26.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -39,6 +39,9 @@ krebsonsecurity.com##p:style(color: black !important;)
 
 ! proton
 proton.me,~mail.proton.me##body, .entry-content:style(color: black !important;)
+
+! sekoia.io
+blog.sekoia.io##.notizia-single-main-content-container-inner > :is(h2,p,ul):style(color: black !important;)
 
 ! softkeys.uk
 softkeys.uk##.prose:style(color: black !important;)
