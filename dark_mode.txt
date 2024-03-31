@@ -1,7 +1,7 @@
 ! Title: Dark mode
 ! Description: Dark mode for users using Firefox' resistfingerprint or noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.03.25.1
+! Last modified: 2024.03.31.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -74,7 +74,7 @@ nyaa.si##+js(ac, dark, body)
 
 ! libreddit
 ! libreddit.freedit.eu,libreddit.kylrth.com,libreddit.mha.fi,lr.4201337.xyz,rd.funami.tech,darklab.sh,libreddit.kavin.rocks,libreddit.oxymagnesium.com,reddit.leptons.xyz,libreddit.pabloferreiro.es,lr.artemislena.eu,lr.riverside.rocks##+js(ac, dark, body)
-*$doc,replace=/<html lang="en">/<html lang="en" class="dark">/,domain=libreddit.bus-hit.me
+*$doc,replace=/<html lang="en">/<html lang="en" class="dark">/,domain=libreddit.bus-hit.me|redlib.freedit.eu
 
 ! pomfcrawl.pythonanywhere.com
 pomfcrawl.pythonanywhere.com##+js(ac, dark, body)
