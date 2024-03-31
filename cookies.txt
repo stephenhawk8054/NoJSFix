@@ -1,7 +1,7 @@
 ! Title: Cookie banners
 ! Description: Hide/Reject cookie banner
 ! Expires: 8 hours
-! Last modified: 2024.03.28.1
+! Last modified: 2024.03.31.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -13,6 +13,9 @@
 
 ! https://stats.uptimerobot.com/9PnmRfz6Gm
 /cookie-consent
+
+! https://www.fosshub.com/IrfanView.html
+/cookieconsent
 
 ! https://obsproject.com
 ##.notice--cookie
