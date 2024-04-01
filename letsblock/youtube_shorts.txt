@@ -1,0 +1,25 @@
+! Title: Black text
+! Description: YouTube Shorts
+! Expires: 8 hours
+! Last modified: 2024.04.01.1
+! Homepage: https://github.com/stephenhawk8054/NoJSFix
+! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
+!
+! GitHub issues: https://github.com/stephenhawk8054/NoJSFix/issues
+! GitHub pull requests: https://github.com/stephenhawk8054/NoJSFix/pulls
+
+! Navigation bar
+www.youtube.com##+js(json-prune-fetch-response, items.0.guideSectionRenderer.items.[-].guideEntryRenderer.serviceEndpoint.reelWatchEndpoint, , propsToMatch, url:/guide?)
+
+! Home page
+www.youtube.com##ytd-rich-shelf-renderer
+
+! Search
+www.youtube.com##ytd-reel-shelf-renderer
+www.youtube.com##ytd-shelf-renderer
+www.youtube.com##ytd-item-section-renderer > #contents > ytd-video-renderer:has(a#thumbnail[href^="/shorts/"])
+www.youtube.com##+js(json-prune-fetch-response, contents.twoColumnSearchResultsRenderer.primaryContents.sectionListRenderer.contents.[].itemSectionRenderer.contents.[-].reelShelfRenderer, , propsToMatch, url:/search?)
+www.youtube.com##+js(json-prune-fetch-response, contents.twoColumnSearchResultsRenderer.primaryContents.sectionListRenderer.contents.[].itemSectionRenderer.contents.[-].shelfRenderer, , propsToMatch, url:/search?)
+www.youtube.com##+js(json-prune-fetch-response, contents.twoColumnSearchResultsRenderer.primaryContents.sectionListRenderer.contents.[].itemSectionRenderer.contents.[-].videoRenderer.navigationEndpoint.reelWatchEndpoint, , propsToMatch, url:/search?)
+www.youtube.com##+js(json-prune-fetch-response, onResponseReceivedCommands.0.appendContinuationItemsAction.continuationItems.[].itemSectionRenderer.contents.[-].reelShelfRenderer, , propsToMatch, url:/search?)
+www.youtube.com##+js(json-prune-fetch-response, onResponseReceivedCommands.0.appendContinuationItemsAction.continuationItems.[].itemSectionRenderer.contents.[-].videoRenderer.navigationEndpoint.reelWatchEndpoint, , propsToMatch, url:/search?)
