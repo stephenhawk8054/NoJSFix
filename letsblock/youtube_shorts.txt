@@ -1,5 +1,5 @@
-! Title: Black text
-! Description: YouTube Shorts
+! Title: YouTube Shorts
+! Description: Remove Shorts on navigation bar, home and search pages
 ! Expires: 8 hours
 ! Last modified: 2024.04.01.2
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix

@@ -1,0 +1,13 @@
+! Title: YouTube Placeholders
+! Description: Hide ads placeholders on home page
+! Expires: 8 hours
+! Last modified: 2024.04.02.1
+! Homepage: https://github.com/stephenhawk8054/NoJSFix
+! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
+!
+! GitHub issues: https://github.com/stephenhawk8054/NoJSFix/issues
+! GitHub pull requests: https://github.com/stephenhawk8054/NoJSFix/pulls
+
+www.youtube.com##ytd-browse[page-subtype="home"] :is(ytd-rich-grid-row, #contents.ytd-rich-grid-row):style(display: contents !important)
+www.youtube.com##+js(json-prune-fetch-response, onResponseReceivedActions.[].appendContinuationItemsAction.continuationItems.[-].richItemRenderer.content.adSlotRenderer, , propsToMatch, url:/browse?)
+www.youtube.com##+js(json-prune-fetch-response, onResponseReceivedActions.[].adsControlFlowOpportunityReceivedCommand, , propsToMatch, url:/browse?)
