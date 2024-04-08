@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.04.08.3
+! Last modified: 2024.04.08.4
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -61,6 +61,9 @@ blog.sekoia.io##.notizia-single-main-content-container-inner > :is(h2,p,ul):styl
 
 ! softkeys.uk
 softkeys.uk##.prose:style(color: black !important;)
+
+! sonicwall
+blog.sonicwall.com##.main_color:style(color: black !important;)
 
 ! https://theathletic.com/5061003/2023/11/17/virgil-van-dijk-liverpool-netherlands-paradox/
 theathletic.com##.bodytext1:style(color: black !important;)
