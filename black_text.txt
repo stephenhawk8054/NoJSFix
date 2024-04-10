@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.04.09.2
+! Last modified: 2024.04.10.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -51,6 +51,9 @@ krebsonsecurity.com##p:style(color: black !important;)
 
 ! malwarebytes blog
 www.malwarebytes.com##.site-main:style(color: black !important;)
+
+! malwaretips.com
+malwaretips.com##.separate-containers .inside-article, .separate-containers .comments-area, .separate-containers .page-header, .one-container .container, .separate-containers .paging-navigation, .inside-page-header:style(color: black !important;)
 
 ! mullvad
 mullvad.net##.cms:style(color: black !important;)
