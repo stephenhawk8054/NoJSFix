@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.04.10.1
+! Last modified: 2024.04.11.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -17,7 +17,7 @@ cooltechzone.com,proofpoint.com##html:style(color: black !important;)
 
 askubuntu.com,mathoverflow.net,serverfault.com,stackexchange.com,stackoverflow.com,superuser.com##body:style(color: black !important;)
 
-alternativeto.net,arcanecode.com,bitwarden.com,blogs.infoblox.com,byjus.com,desmondrivet.com,exploreflask.com,flask.palletsprojects.com,forum.sublimetext.com,kodify.net,koofr.*,nordvpn.com,note.nkmk.me,pictureflect.com,private.storage,pwelke.github.io,python-web.teclado.com,pythonanywhere.com,rclone.org,sharepointdiary.com,sordum.org,sourceforge.net,support.mozilla.org,tenforums.com,thehackernews.com,wikihow.com,wikipedia.org,www.okta.com,~vault.bitwarden.com##body:style(color: black !important;)
+alternativeto.net,arcanecode.com,bitwarden.com,blogs.infoblox.com,byjus.com,desmondrivet.com,exploreflask.com,flask.palletsprojects.com,fortinet.com,forum.sublimetext.com,kodify.net,koofr.*,nordvpn.com,note.nkmk.me,pictureflect.com,private.storage,pwelke.github.io,python-web.teclado.com,pythonanywhere.com,rclone.org,sharepointdiary.com,sordum.org,sourceforge.net,support.mozilla.org,tenforums.com,thehackernews.com,wikihow.com,wikipedia.org,www.okta.com,~vault.bitwarden.com##body:style(color: black !important;)
 
 trustwave.com##p:style(color: black !important;)
 !=======================!
