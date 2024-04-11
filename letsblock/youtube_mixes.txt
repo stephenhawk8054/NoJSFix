@@ -1,7 +1,7 @@
 ! Title: YouTube Mixes
 ! Description: Remove the mixes / radios showing up in search results and recommendations
 ! Expires: 8 hours
-! Last modified: 2024.04.02.1
+! Last modified: 2024.04.11.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -9,6 +9,7 @@
 ! GitHub pull requests: https://github.com/stephenhawk8054/NoJSFix/pulls
 
 ! Home page
+www.youtube.com##ytd-rich-item-renderer:has([radio-meta])
 www.youtube.com##+js(json-prune-fetch-response, onResponseReceivedActions.0.appendContinuationItemsAction.continuationItems.[-].richItemRenderer.content.radioRenderer, , propsToMatch, url:/browse?)
 
 ! Search
