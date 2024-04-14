@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 8 hours
-! Last modified: 2024.03.26.1
+! Last modified: 2024.04.14.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -95,10 +95,10 @@ askpython.com##.entry-header:style(text-align: center !important;)
 askpython.com###primary:style(margin: 0 !important; width: 100% !important;)
 
 ! https://scicomp.stackexchange.com
-askubuntu.com,mathoverflow.net,serverfault.com,stackexchange.com,stackoverflow.com,superuser.com##body.question-page :is(.inner-content > :not(#sidebar), .site-header, #MathJax_MenuFrame):others()
-askubuntu.com,mathoverflow.net,serverfault.com,stackexchange.com,stackoverflow.com,superuser.com##body.question-page :is(#post-form, .bottom-notice, .aside-cta)
-askubuntu.com,mathoverflow.net,serverfault.com,stackexchange.com,stackoverflow.com,superuser.com##body.question-page #mainbar:style(width: 100% !important;)
-askubuntu.com,mathoverflow.net,serverfault.com,stackexchange.com,stackoverflow.com,superuser.com##body.question-page:style(padding-top: 0px !important;)
+askubuntu.com,mathoverflow.net,serverfault.com,stackapps.com,stackexchange.com,stackoverflow.com,superuser.com##body.question-page :is(.inner-content > :not(#sidebar), .site-header, #MathJax_MenuFrame):others()
+askubuntu.com,mathoverflow.net,serverfault.com,stackapps.com,stackexchange.com,stackoverflow.com,superuser.com##body.question-page :is(#post-form, .bottom-notice, .aside-cta)
+askubuntu.com,mathoverflow.net,serverfault.com,stackapps.com,stackexchange.com,stackoverflow.com,superuser.com##body.question-page #mainbar:style(width: 100% !important;)
+askubuntu.com,mathoverflow.net,serverfault.com,stackapps.com,stackexchange.com,stackoverflow.com,superuser.com##body.question-page:style(padding-top: 0px !important;)
 
 ! https://www.bleepingcomputer.com
 bleepingcomputer.com##head:has(> meta[content="article"]) + body :is(article, .cz-breadcrumb):others()
