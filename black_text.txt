@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.04.17.1
+! Last modified: 2024.04.17.2
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -57,6 +57,9 @@ malwaretips.com##.separate-containers .inside-article, .separate-containers .com
 
 ! mullvad
 mullvad.net##.cms:style(color: black !important;)
+
+! pdfjs.express
+pdfjs.express##.MarkdownTemplate .guide p:style(color: black !important;)
 
 ! proton
 proton.me,~mail.proton.me##body, .entry-content:style(color: black !important;)
