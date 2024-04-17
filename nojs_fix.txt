@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.03.26.1
+! Last modified: 2024.04.17.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -428,6 +428,10 @@ leadfeeder.com##+js(ss, img.lazy-image[data-src]:not([src]), dataset src)
 learnubuntu.com##+js(ss, img.lazyload[data-src][src*="/img-placeholder"], dataset src)
 learnubuntu.com##+js(set-attr, img.lazyload[data-src][src*="/img-placeholder"], src, [data-src])
 learnubuntu.com##img.lazyload[data-src][src]:style(opacity: 1 !important; filter: none !important;)
+
+! linkedin pulse
+linkedin.com##.lazy-load, [data-delayed-url], [data-delayed-poster], [data-delayed-background]:style(opacity: 1 !important;)
+linkedin.com##+js(set-attr, img[data-delayed-url]:not([src]), src, [data-delayed-url])
 
 ! linuxandubuntu.com
 linuxandubuntu.com##+js(ss, html[amp] amp-img[src] > i-amphtml-sizer > img.i-amphtml-intrinsic-sizer[src^="data:image"], parentElement parentElement attributes src value)
