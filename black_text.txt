@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.04.23.1
+! Last modified: 2024.04.23.2
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -39,6 +39,9 @@ digitalocean.com##[class^="Markdown_markdown"]:style(color: black !important;)
 
 ! fideloper.com
 fideloper.com##.markdown:style(color: black !important;)
+
+! ghacks
+ghacks.net##.user-content:style(color: black !important;)
 
 ! gpsoft.com.au
 gpsoft.com.au##.ui-widget-content:style(color: black !important;)
