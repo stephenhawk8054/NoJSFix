@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 8 hours
-! Last modified: 2024.04.14.1
+! Last modified: 2024.04.29.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -427,6 +427,14 @@ theverge.com##.duet--recirculation--related-list
 ! https://www.thoughtco.com
 thoughtco.com##article > :not(.article-post-header), .article-post-header > :not(.post-header-social-block), .print-button:others()
 thoughtco.com##main:style(margin-top: 0px !important;)
+
+! https://trendspider.com/learning-center/linear-regression-intercept-predicting-future-values-and-trends/
+trendspider.com##main > .container > :not(.post-links, article)
+trendspider.com##.sidebar-menu__container
+trendspider.com##.banner
+trendspider.com##.wp-block-group
+trendspider.com##.-side-banner
+trendspider.com##.page-layout:style(display: block !important;)
 
 ! https://www.tutorialspoint.com/difference-between-application-x-javascript-and-text-javascript-content-types
 tutorialspoint.com###mainContent, .tutorial-toc:others()
