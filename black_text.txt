@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.04.30.1
+! Last modified: 2024.05.02.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -17,7 +17,7 @@ cooltechzone.com,proofpoint.com##html:style(color: black !important;)
 
 askubuntu.com,mathoverflow.net,serverfault.com,stackexchange.com,stackoverflow.com,superuser.com##body:style(color: black !important;)
 
-alternativeto.net,arcanecode.com,bitwarden.com,blogs.infoblox.com,byjus.com,desmondrivet.com,exploreflask.com,flask.palletsprojects.com,fortinet.com,forum.sublimetext.com,kodify.net,koofr.*,mozilla.github.io,nbshare.io,nordvpn.com,note.nkmk.me,pictureflect.com,private.storage,pwelke.github.io,python-web.teclado.com,pythonanywhere.com,raw.githack.com,rclone.org,readthedocs.io,scikit-learn.org,sharepointdiary.com,sordum.org,sourceforge.net,support.mozilla.org,tenforums.com,thehackernews.com,thewindowsclub.com,trendspider.com,wikihow.com,wikipedia.org,www.okta.com,~forum.rclone.org,~vault.bitwarden.com##body:style(color: black !important;)
+alternativeto.net,arcanecode.com,bitwarden.com,blogs.infoblox.com,byjus.com,desmondrivet.com,exploreflask.com,flask.palletsprojects.com,fortinet.com,forum.sublimetext.com,jfrog.com,kodify.net,koofr.*,mozilla.github.io,nbshare.io,nordvpn.com,note.nkmk.me,pictureflect.com,private.storage,pwelke.github.io,python-web.teclado.com,pythonanywhere.com,raw.githack.com,rclone.org,readthedocs.io,scikit-learn.org,sharepointdiary.com,sordum.org,sourceforge.net,support.mozilla.org,tenforums.com,thehackernews.com,thewindowsclub.com,trendspider.com,wikihow.com,wikipedia.org,www.okta.com,~forum.rclone.org,~vault.bitwarden.com##body:style(color: black !important;)
 
 trustwave.com##p:style(color: black !important;)
 !=======================!
