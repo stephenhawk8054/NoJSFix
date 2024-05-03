@@ -1,7 +1,7 @@
 ! Title: Dark mode
 ! Description: Dark mode for users using Firefox' resistfingerprint or noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.05.03.1
+! Last modified: 2024.05.03.2
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -30,7 +30,8 @@ antifandom.com,breeze.hostux.net,breezewiki.com,breezewiki.pussthecat.org,bw.art
 developers.cloudflare.com##+js(trusted-set-local-storage-item, theme, {"theme":"dark"})
 
 ! codeberg
-||codeberg.org/assets/css/theme-codeberg-auto.css$css,replace=/\(prefers-color-scheme:dark/(prefers-color-scheme:light/
+! ||codeberg.org/assets/css/theme-codeberg-auto.css$css,replace=/\(prefers-color-scheme:dark/(prefers-color-scheme:light/
+||codeberg.org/assets/css/theme-codeberg-auto.css$stylesheet,1p,uritransform=/theme-codeberg-auto/theme-codeberg-dark/
 
 ! discourse
 ||discuss.python.org^$doc,replace=/(\?__ws=discuss\.python\.org" media="\(prefers-color-scheme:) dark/\$1 light/
