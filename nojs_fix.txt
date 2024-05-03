@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.04.29.1
+! Last modified: 2024.05.03.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -377,6 +377,9 @@ howtopronounce.com##img[loading="lazy"][data-src]:style(visibility: visible !imp
 
 ! howtoremove.guide
 howtoremove.guide##+js(ss, body.cookies-not-set img[loading="lazy"][data-wpfc-original-src][src$="blank.gif"], dataset wpfcOriginalSrc)
+
+! insideaiml.com
+insideaiml.com##.hideME:style(visibility: visible !important;)
 
 ! insideevs.com
 insideevs.com##+js(ss, img[loading="lazy"], previousElementSibling dataset srcset, 1)

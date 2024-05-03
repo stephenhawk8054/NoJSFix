@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.05.02.1
+! Last modified: 2024.05.03.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -48,6 +48,9 @@ gpsoft.com.au##.ui-widget-content:style(color: black !important;)
 
 ! hynek.me
 hynek.me##.text-primary:style(color: black !important;)
+
+! insideaiml.com
+insideaiml.com##.blackish:style(color: black !important;)
 
 ! https://krebsonsecurity.com/2024/02/u-s-internet-leaked-years-of-internal-customer-emails/
 krebsonsecurity.com##p:style(color: black !important;)
