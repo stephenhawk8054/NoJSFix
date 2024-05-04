@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.05.03.1
+! Last modified: 2024.05.04.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -305,6 +305,9 @@ forbes.com##img[style*="position: absolute"]:style(position: inherit !important;
 forbes.com##+js(rt, amp-img[src], img)
 forbes.com##+js(rt, progressive-image[src], img)
 forbes.com##+js(ss, progressive-image[background-image]:not([src]), attributes background-image value)
+
+! frasesdemoda.com
+frasesdemoda.com##+js(set-attr, img.lazyload[data-src][src$="/loader.gif"], src, [data-src])
 
 ! gadgets360.com
 gadgets360.com##+js(ss, iframe[data-src]:not([src]), dataset src)
@@ -811,6 +814,9 @@ tedium.co##+js(ss, html.no-js img.lazyload[data-src]:not([src]), dataset src)
 ! the74million.org
 the74million.org###frontpage-repeat:style(opacity: 1 !important; transform: inherit !important;)
 the74million.org##li[data-id]:style(opacity: 1 !important;)
+
+! https://www.theaidream.com/post/loss-functions-in-neural-networks
+theaidream.com##[data-animate-blur] img:style(filter: none !important;)
 
 ! https://www.theatlantic.com
 theatlantic.com##li > img.lazyload[data-srcset]:not([src])
