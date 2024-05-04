@@ -1,7 +1,7 @@
 ! Title: Cookie banners
 ! Description: Hide/Reject cookie banner
 ! Expires: 8 hours
-! Last modified: 2024.04.08.1
+! Last modified: 2024.05.04.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -9,7 +9,7 @@
 ! GitHub pull requests: https://github.com/stephenhawk8054/NoJSFix/pulls
 
 ! https://www.pythonsos.com/web-dev/returning-an-input-sentence-on-html-with-flask-and-python/?expand_article=1
-/gdpr-
+/gdpr-$~doc
 
 ! https://stats.uptimerobot.com/9PnmRfz6Gm
 /cookie-consent
@@ -19,6 +19,9 @@
 
 ! https://obsproject.com
 ##.notice--cookie
+
+! https://cvstuff.wordpress.com/2014/11/29/latex-l_1-versus-latex-l_2-loss-a-svm-example/
+##.widget_eu_cookie_law_widget
 
 ! https://random.org
 ###cookie-banner
