@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 8 hours
-! Last modified: 2024.04.29.1
+! Last modified: 2024.05.05.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -277,6 +277,10 @@ linuxhint.com##.entry-title, .entry-content:style(width: 80% !important)
 ! https://www.lovetoknow.com
 lovetoknow.com##.content-body, .content-header:others()
 lovetoknow.com##.social-container
+
+! https://machinecurve.com/index.php/2019/10/15/how-to-use-hinge-squared-hinge-loss-with-keras
+machinecurve.com##.right
+machinecurve.com##pre:style(max-width: 100% !important;)
 
 ! https://www.marketwatch.com
 ||privacy-mgmt.com^$domain=marketwatch.com
