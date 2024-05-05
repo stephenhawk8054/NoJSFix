@@ -1,7 +1,7 @@
 ! Title: ABPVN Override
 ! Description: Override whitelisting
 ! Expires: 8 hours
-! Last modified: 2024.04.29.2-ad59fad
+! Last modified: 2024.05.05.1-ad59fad
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -9,8 +9,8 @@
 ! GitHub pull requests: https://github.com/stephenhawk8054/NoJSFix/pulls
 
 @@/favicon.ico$badfilter
-/images/ad-300x250.jpg$1p,image,domain=lehait.net,important
-/wp-content/plugins/advanced-ads/admin/assets/js/advertisement.js$script,1p,important
+/images/ad-300x250.jpg$~third-party,image,domain=lehait.net,important
+/wp-content/plugins/advanced-ads/admin/assets/js/advertisement.js$script,~third-party,important
 @@||apicdn.sctvonline.vn/tenants/sctv/$xmlhttprequest,domain=sctvonline.vn,badfilter
 @@||cdnjs.cloudflare.com/ajax/libs/videojs-contrib-ads/6.0.0/videojs-contrib-ads.js$script,domain=sctvonline.vn,badfilter
 ||cdnwebonplay.gviet.vn/public/js/player/ads/ima3.js$script,domain=vtvcab.vn,important
@@ -24,3 +24,5 @@
 ||static.amcdn.vn/tka/cdn.js$script,domain=genk.vn,important
 ||tpc.googlesyndication.com/sodar/sodar2.js$domain=cungthi.online,important
 ||pagead2.googlesyndication.com^$domain=www.gaingon18.me,important
+
+imail.edu.vn##+js(nostif, ad_block)
