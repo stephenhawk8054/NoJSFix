@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.05.04.2
+! Last modified: 2024.05.06.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -33,6 +33,9 @@ docs.controld.com##.markdown-body:style(color: black !important;)
 
 ! cvstuff.wordpress.com
 ||wp.com/latex.php?latex=$image,3p,uritransform=/&fg=[^&]+/&fg=000000/,domain=cvstuff.wordpress.com
+
+! https://www.danli.org/2021/05/20/aos-chapter23-classification/
+danli.org##.content:style(color: black !important;)
 
 ! darkreading
 darkreading.com##.ArticleBase-HeaderSummary, .ContentText_variant_bodyNormal:style(color: black !important;)
