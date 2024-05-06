@@ -1,7 +1,7 @@
 ! Title: Cookie banners
 ! Description: Hide/Reject cookie banner
 ! Expires: 8 hours
-! Last modified: 2024.05.06.1
+! Last modified: 2024.05.06.2
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -14,8 +14,14 @@
 ! https://stats.uptimerobot.com/9PnmRfz6Gm
 /cookie-consent
 
+! https://trailhead.salesforce.com/trailblazer-community/feed/0D53A00003BB1QtSAL
+/cookie_consent
+
 ! https://www.fosshub.com/IrfanView.html
 /cookieconsent
+
+! https://trailhead.salesforce.com/trailblazer-community/feed/0D53A00003BB1QtSAL
+/one-trust
 
 ! https://blog.oversecured.com/20-Security-Issues-Found-in-Xiaomi-Devices/
 ##.gdpr-notice
