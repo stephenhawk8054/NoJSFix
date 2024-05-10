@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.05.06.1
+! Last modified: 2024.05.10.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -20,6 +20,9 @@ askubuntu.com,mathoverflow.net,serverfault.com,stackexchange.com,stackoverflow.c
 alternativeto.net,arcanecode.com,bitwarden.com,blogs.infoblox.com,byjus.com,cvstuff.wordpress.com,desmondrivet.com,exploreflask.com,flask.palletsprojects.com,fortinet.com,forum.sublimetext.com,jfrog.com,kodify.net,koofr.*,mozilla.github.io,nbshare.io,nordvpn.com,note.nkmk.me,petamind.com,pictureflect.com,private.storage,pwelke.github.io,python-web.teclado.com,pythonanywhere.com,raw.githack.com,rclone.org,readthedocs.io,scikit-learn.org,sharepointdiary.com,sordum.org,sourceforge.net,support.mozilla.org,tenforums.com,thehackernews.com,thewindowsclub.com,trendspider.com,wikihow.com,wikipedia.org,www.okta.com,~forum.rclone.org,~vault.bitwarden.com##body:style(color: black !important;)
 
 trustwave.com##p:style(color: black !important;)
+
+danli.org,stackabuse.com##.content:style(color: black !important;)
+
 !=======================!
 
 ! 1password
@@ -33,9 +36,6 @@ docs.controld.com##.markdown-body:style(color: black !important;)
 
 ! cvstuff.wordpress.com
 ||wp.com/latex.php?latex=$image,3p,uritransform=/&fg=[^&]+/&fg=000000/,domain=cvstuff.wordpress.com
-
-! https://www.danli.org/2021/05/20/aos-chapter23-classification/
-danli.org##.content:style(color: black !important;)
 
 ! darkreading
 darkreading.com##.ArticleBase-HeaderSummary, .ContentText_variant_bodyNormal:style(color: black !important;)
