@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.05.13.1
+! Last modified: 2024.05.13.2
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -76,6 +76,9 @@ malwaretips.com##.separate-containers .inside-article, .separate-containers .com
 
 ! mullvad
 mullvad.net##.cms:style(color: black !important;)
+
+! https://www.oreilly.com/library/view/machine-learning-with/9781491989371/ch01.html
+oreilly.com###sbo-reader .sbo-reader-content:style(color: black !important;)
 
 ! pdfjs.express
 pdfjs.express##.MarkdownTemplate .guide p:style(color: black !important;)
