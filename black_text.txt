@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.05.12.1
+! Last modified: 2024.05.13.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -60,6 +60,13 @@ insideaiml.com##.blackish:style(color: black !important;)
 
 ! https://krebsonsecurity.com/2024/02/u-s-internet-leaked-years-of-internal-customer-emails/
 krebsonsecurity.com##p:style(color: black !important;)
+
+! https://www.leviathansecurity.com/blog/tunnelvision
+leviathansecurity.com##.page-section:style(color: black !important;)
+leviathansecurity.com##.site-wrapper, .sqs-catalog-item-list:style(font-weight: 600 !important;)
+
+! https://machinelearningmastery.com/introduction-to-tensors-for-machine-learning/
+machinelearningmastery.com##.entry, .entry p:style(color: black !important;)
 
 ! malwarebytes blog
 www.malwarebytes.com##.site-main:style(color: black !important;)
