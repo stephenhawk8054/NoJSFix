@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.05.13.1
+! Last modified: 2024.05.16.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -26,6 +26,10 @@
 
 ! 9to5google.com
 9to5google.com##.swiper-container:style(opacity: 1 !important;)
+
+! https://abnormalsecurity.com/blog/cybercriminals-exploit-docusign
+abnormalsecurity.com##.opacity-0:remove-class(opacity-0)
+||abnormalsecurity.com/_next/image?url=http$image,doc,uritransform=/w=\d+/w=3840/
 
 ! https://agi-sphere.com
 agi-sphere.com##:is(figure, span) > img[src^="data:image"]

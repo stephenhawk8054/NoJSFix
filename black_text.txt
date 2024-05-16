@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.05.15.1
+! Last modified: 2024.05.16.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -21,7 +21,7 @@ alternativeto.net,arcanecode.com,bioconductor.org,bitwarden.com,blogs.infoblox.c
 
 trustwave.com##p:style(color: black !important;)
 
-danli.org,stackabuse.com##.content:style(color: black !important;)
+danli.org,juanitorduz.github.io,stackabuse.com##.content:style(color: black !important;)
 
 !=======================!
 
