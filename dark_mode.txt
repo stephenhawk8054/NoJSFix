@@ -1,7 +1,7 @@
 ! Title: Dark mode
 ! Description: Dark mode for users using Firefox' resistfingerprint or noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.05.12.1
+! Last modified: 2024.05.20.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -56,6 +56,9 @@ docs.github.com##+js(tsa, html, data-light-theme, dark)
 
 ! kbin
 fedia.io##+js(tsa, body, class, theme--dark)
+
+! https://flexbooks.ck12.org/cbook/ck-12-probability-and-statistics-concepts/section/5.4/primary/lesson/median-probability-and-statistics-pst/
+flexbooks.ck12.org##+js(trusted-set-local-storage-item, settings, '{"fontFamily":"ProximaNova,sans-serif","fontSize":18,"lineHeight":"1.5","background":{"backgroundColor":"#000000","color":"#ffffff"},"chatbotIntroduced":false,"unitChallengeIntroduced":false,"relatedContentIntroduced":false,"insightShowStudent":false,"hideInsightsPopup":true,"hideForesightsPopup":true,"isChatbotFloatingNotificationsEnabled":false,"loading":false}')
 
 ! geeksforgeeks.org
 geeksforgeeks.org##+js(trusted-set-cookie, gfg_theme, gfgThemeDark)
