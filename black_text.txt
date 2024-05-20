@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.05.16.1
+! Last modified: 2024.05.20.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -45,6 +45,9 @@ digitalocean.com##[class^="Markdown_markdown"]:style(color: black !important;)
 
 ! fideloper.com
 fideloper.com##.markdown:style(color: black !important;)
+
+! https://flexbooks.ck12.org/cbook/ck-12-probability-and-statistics-concepts/section/5.4/primary/lesson/median-probability-and-statistics-pst/
+flexbooks.ck12.org##.modalityRead:style(color: black !important;)
 
 ! ghacks
 ghacks.net##.user-content:style(color: black !important;)
