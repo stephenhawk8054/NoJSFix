@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.05.22.2
+! Last modified: 2024.05.22.3
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -27,6 +27,9 @@ danli.org,juanitorduz.github.io,stackabuse.com##.content:style(color: black !imp
 
 ! 1password
 1password.community##.userContent.userContent, .UserContent.UserContent:style(color: black !important;)
+
+! https://www.analyticsvidhya.com/blog/2021/03/how-to-select-best-split-in-decision-trees-gini-impurity/
+analyticsvidhya.com##.detail-page p:style(color: black !important;)
 
 ! briar
 briarproject.org###content-news p:style(color: black !important;)
