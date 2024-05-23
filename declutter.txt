@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 8 hours
-! Last modified: 2024.05.23.1
+! Last modified: 2024.05.23.2
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -177,6 +177,9 @@ darkreading.com##^nav, footer, .TwoColumnLayout-Sidebar
 ! https://data-flair.training
 data-flair.training##.entry-inner > :not(.code-block), .post-title:others()
 data-flair.training##article:style(margin-top: 50px !important;)
+
+! https://www.datacamp.com/tutorial/what-bagging-in-machine-learning-a-guide-with-examples
+datacamp.com##nav:is([aria-label="Sitewide Navigation"], [aria-label="Subnavigation"])
 
 ! https://datagy.io
 datagy.io##.entry-content, .nv-thumb-wrap, .entry-header:others()
