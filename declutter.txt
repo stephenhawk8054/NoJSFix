@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 8 hours
-! Last modified: 2024.05.23.2
+! Last modified: 2024.05.29.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -305,6 +305,9 @@ medscape.com##.article-content-wrapper, #legal_block:style(max-width: 100% !impo
 mirror.co.uk##.article-body, .article-information, .copy-link-list, .bookmark-li, .lead-content, .breadcrumbs:others()
 mirror.co.uk##.max-content, .inline-article-nav, .read-more-links, .recirculation, .read-more__title, #qc-cmp2-container
 mirror.co.uk##main:style(grid-template-columns: unset !important;)
+
+! https://mpaldridge.github.io/math2750/S10-stationary-distributions.html
+mpaldridge.github.io##+js(set-session-storage-item, :sidebar, false)
 
 ! https://www.newshub.co.nz
 newshub.co.nz##.c-ArticleBody > :not(.relatedarticles), .c-ArticleHeading:others()
