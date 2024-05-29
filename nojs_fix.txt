@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.05.16.1
+! Last modified: 2024.05.29.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -129,6 +129,9 @@ blog.mozilla.org##iframe:style(display: block !important;)
 
 ! bongdaplus.vn
 bongdaplus.vn##+js(ss, img.lzl[data-src][src^="data:image"], dataset src)
+
+! https://brilliant.org/wiki/transience-and-recurrence/
+brilliant.org###loggedout-wiki-footer
 
 ! browsertouse.com
 browsertouse.com##+js(ss, img.ezlazyload[data-ezsrc][src^="data:image", dataset ezsrc)
