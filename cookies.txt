@@ -1,7 +1,7 @@
 ! Title: Cookie banners
 ! Description: Hide/Reject cookie banner
 ! Expires: 8 hours
-! Last modified: 2024.05.17.1
+! Last modified: 2024.06.06.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -28,6 +28,10 @@
 
 ! https://blog.oversecured.com/20-Security-Issues-Found-in-Xiaomi-Devices/
 ##.gdpr-notice
+
+! https://math.libretexts.org/Bookshelves/Applied_Mathematics/Applied_Finite_Mathematics_(Sekhon_and_Bloom)/10%3A_Markov_Chains/10.01%3A_Introduction_to_Markov_Chains
+/js.cookie
+/js-cookie
 
 ! https://www.head-fi.org/threads/in-ear-gaming-headset-roccat-syva-vs-steelseries.738057/
 ##.js-notices
