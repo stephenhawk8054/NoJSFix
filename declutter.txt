@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 8 hours
-! Last modified: 2024.07.19.1
+! Last modified: 2024.07.19.2
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -374,6 +374,9 @@ scribbr.com##.content-block > :not(.scw), .post-meta, .post-title, .list-of-cont
 blog.sekoia.io##body > div:not([id]):not([class]):others()
 blog.sekoia.io##.notizia-single-main-content-container:style(max-width: 80% !important;)
 blog.sekoia.io##.notizia-single-main-content-container-inner:style(max-width: 100% !important;)
+
+! https://www.scaler.com/topics/merge-two-list-in-python/
+scaler.com##[class^="view_left_section"]:others()
 
 ! siipo.la
 siipo.la##article, .sla-title-element:others()
