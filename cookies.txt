@@ -1,7 +1,7 @@
 ! Title: Cookie banners
 ! Description: Hide/Reject cookie banner
 ! Expires: 8 hours
-! Last modified: 2024.07.23.1
+! Last modified: 2024.07.28.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -9,23 +9,23 @@
 ! GitHub pull requests: https://github.com/stephenhawk8054/NoJSFix/pulls
 
 ! https://stats.uptimerobot.com/9PnmRfz6Gm
-/cookie-consent$~doc
+/cookie-consent
 
 ! https://trailhead.salesforce.com/trailblazer-community/feed/0D53A00003BB1QtSAL
-/cookie_consent$~doc
+/cookie_consent
 
 ! https://www.fosshub.com/IrfanView.html
-/cookieconsent$~doc
+/cookieconsent
 
 ! https://www.pythonsos.com/web-dev/returning-an-input-sentence-on-html-with-flask-and-python/?expand_article=1
-/gdpr-$~doc
+/gdpr-
 
 ! https://math.libretexts.org/Bookshelves/Applied_Mathematics/Applied_Finite_Mathematics_(Sekhon_and_Bloom)/10%3A_Markov_Chains/10.01%3A_Introduction_to_Markov_Chains
-/js.cookie$~doc
-/js-cookie$~doc
+/js.cookie
+/js-cookie
 
 ! https://trailhead.salesforce.com/trailblazer-community/feed/0D53A00003BB1QtSAL
-/one-trust$~doc
+/one-trust
 
 ! https://random.org
 ###cookie-banner
@@ -37,6 +37,9 @@
 
 ! https://neurostars.org/t/using-nusvc-with-nilearn/28758
 ##.cc-banner
+
+! https://reqbin.com/req/c-tmyvmbgu/curl-head-request-example
+##.cookie-bar
 
 ! https://blog.oversecured.com/20-Security-Issues-Found-in-Xiaomi-Devices/
 ##.gdpr-notice
@@ -53,7 +56,7 @@
 ! https://cvstuff.wordpress.com/2014/11/29/latex-l_1-versus-latex-l_2-loss-a-svm-example/
 ##.widget_eu_cookie_law_widget
 
-##div[data-test="cookie-banner"]
+! ##div[data-test="cookie-banner"]
 
 ! https://www.cherryservers.com/blog/convert-string-to-int-in-python
-##div[x-data="cookiesConsent"]
+##.fixed[x-data="cookiesConsent"]
