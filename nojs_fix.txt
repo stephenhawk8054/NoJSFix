@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.05.29.1
+! Last modified: 2024.07.28.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -273,6 +273,10 @@ ehn.org##+js(ss, img.rm-lazyloadable-image[data-runner-src][src^="data:image"], 
 ehn.org##+js(rt, amp-img[src], img)
 ehn.org##.i-amphtml-layout-intrinsic:style(height: auto !important;)
 ehn.org##i-amphtml-sizer
+
+! https://www.empireofthekop.com/2024/07/28/van-den-berg-reaction-liverpool-asking-price/
+empireofthekop.com##+js(set-attr, [data-src]:not([src]), src, [data-src])
+empireofthekop.com##.lazyload:style(opacity: 1 !important;)
 
 ! https://blog.esper.io
 esper.io##.sh-page-loader
