@@ -12,6 +12,4 @@ https://raw.githubusercontent.com/stephenhawk8054/NoJSFix/main/nojs_fix.txt
 https://raw.githubusercontent.com/stephenhawk8054/NoJSFix/main/declutter.txt
 
 4. Dark mode filter lists - Set dark mode for Firefox' users with resistfingerprint or noscript mode  
-*Important: dark_mode_truted.txt contains trusted scriptlets from uBO. Therefore they can only be used in "My filters" pane. It cannot be used as an external list. Please just copy the filters to "My filters" pane.*  
 https://raw.githubusercontent.com/stephenhawk8054/NoJSFix/main/dark_mode.txt  
-https://raw.githubusercontent.com/stephenhawk8054/NoJSFix/main/dark_mode_trusted.txt
