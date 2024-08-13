@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.08.12.1
+! Last modified: 2024.08.13.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -76,6 +76,9 @@ leviathansecurity.com##.site-wrapper, .sqs-catalog-item-list:style(font-weight: 
 
 ! https://machinelearningmastery.com/introduction-to-tensors-for-machine-learning/
 machinelearningmastery.com##.entry, .entry p:style(color: black !important;)
+
+! https://www.makeuseof.com/tag/what-is-superfetch/
+makeuseof.com##.article-body ol li, .article-body ul li, #policyContent .static-list .article-body li, .article-body #policyContent .static-list li, .article-body p:style(color: black !important;)
 
 ! malwarebytes blog
 www.malwarebytes.com##.site-main:style(color: black !important;)
