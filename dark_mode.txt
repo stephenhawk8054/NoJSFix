@@ -1,7 +1,7 @@
 ! Title: Dark mode
 ! Description: Dark mode for users using Firefox' resistfingerprint or noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.08.12.1
+! Last modified: 2024.08.16.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -122,6 +122,10 @@ python-httpx.org##+js(trusted-set-local-storage-item, /.__palette, '{"index":1,"
 
 ! quetre
 qr.vern.cc,quetre.iket.me##+js(tsa, html, theme, dark)
+
+! https://www.quora.com/Whats-the-difference-between-a-limiting-and-stationary-distribution
+quora.com##+js(trusted-set-cookie, m-themeStrategy, dark)
+quora.com##+js(trusted-set-cookie, m-theme, dark)
 
 ! rclone
 ||forum.rclone.org^$doc,replace=/(\?__ws=forum\.rclone\.org" media="\(prefers-color-scheme:) dark/\$1 light/
