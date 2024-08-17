@@ -1,7 +1,7 @@
 ! Title: ABPVN Override
 ! Description: Override whitelisting
 ! Expires: 8 hours
-! Last modified: 2024.08.10.1-d2501dd
+! Last modified: 2024.08.17.1-2561705
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -25,5 +25,6 @@
 ||static.amcdn.vn/tka/cdn.js$script,domain=genk.vn,important
 ||tpc.googlesyndication.com/sodar/sodar2.js$domain=cungthi.online,important
 ||pagead2.googlesyndication.com^$domain=www.gaingon18.me,important
+||static.ads-twitter.com/uwt.js$script,domain=linkneverdie.net,important
 
 imail.edu.vn##+js(nostif, ad_block)
