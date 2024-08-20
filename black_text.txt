@@ -89,6 +89,9 @@ malwaretips.com##.separate-containers .inside-article, .separate-containers .com
 ! mullvad
 mullvad.net##.cms:style(color: black !important;)
 
+! ninjaone
+ninjaone.com##[data-widget_type="theme-post-content.default"]:style(color: black !important;)
+
 ! https://www.oreilly.com/library/view/machine-learning-with/9781491989371/ch01.html
 oreilly.com###sbo-reader .sbo-reader-content:style(color: black !important;)
 
