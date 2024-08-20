@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.08.17.1
+! Last modified: 2024.08.20.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -124,3 +124,6 @@ uservoice.com##.uvUserActionBody:style(color: black !important;)
 
 ! wired.com
 wired.com##.body:style(color: black !important;)
+
+! znews.vn
+znews.vn##.the-article-body:style(color: black !important;)

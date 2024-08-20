@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.08.17.1
+! Last modified: 2024.08.20.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -949,6 +949,9 @@ yahoo.com##img.caas-lazy[data-src]:style(opacity: 1 !important; animation: none 
 
 ! zingnews.vn
 zingnews.vn##+js(ss, img[src^="data:image"], dataset src)
+
+! znews.vn
+znews.vn##+js(set-attr, img[src^="data:image"][data-src], src, [data-src])
 
 
 ! ====================================== Specific sites-fix ======================================
