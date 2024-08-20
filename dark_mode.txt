@@ -1,7 +1,7 @@
 ! Title: Dark mode
 ! Description: Dark mode for users using Firefox' resistfingerprint or noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.08.18.1
+! Last modified: 2024.08.20.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -35,6 +35,10 @@ developers.cloudflare.com##+js(trusted-set-local-storage-item, theme, {"theme":"
 
 ! discourse
 ||discuss.python.org^$doc,replace=/(\?__ws=discuss\.python\.org" media="\(prefers-color-scheme:) dark/\$1 light/
+
+! https://hub.docker.com/r/rusian/yt-local/
+docker.com##+js(trusted-set-cookie, dds-theme, %7B%22preference%22%3A%22dark%22%2C%22resolved%22%3A%22dark%22%7D, , , domain, docker.com, reload, 1)
+||docker.com^$doc,replace=/color-scheme:light/color-scheme:dark/
 
 ! python
 docs.python.org##+js(trusted-set-local-storage-item, currentTheme, dark)
