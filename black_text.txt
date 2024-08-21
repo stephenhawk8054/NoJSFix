@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.08.20.3
+! Last modified: 2024.08.21.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -13,7 +13,7 @@ androidcentral.com,gamesradar.com,lifehacker.com,livescience.com,kotaku.com,pcga
 
 laptopmag.com##html:style(color: black !important;)
 
-cooltechzone.com,datacamp.com,proofpoint.com,railsware.com##html:style(color: black !important;)
+cooltechzone.com,datacamp.com,proofpoint.com,railsware.com,torrentfreak.com##html:style(color: black !important;)
 
 askubuntu.com,mathoverflow.net,serverfault.com,stackexchange.com,stackoverflow.com,superuser.com##body:style(color: black !important;)
 
