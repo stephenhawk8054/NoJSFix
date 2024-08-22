@@ -1,7 +1,7 @@
 ! Title: Dark mode
 ! Description: Dark mode for users using Firefox' resistfingerprint or noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.08.20.1
+! Last modified: 2024.08.22.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -107,6 +107,9 @@ lollox1k.github.io##+js(trusted-set-local-storage-item, theme, dark)
 
 ! https://platoblockchain.net/implementing-svm-and-kernel-svm-with-pythons-scikit-learn/
 platoblockchain.net##pre, code:style(background-color: transparent !important;)
+
+! plo.vn
+||plo.vn^$doc,replace=/data-theme='light'/data-theme='dark'/
 
 ! pomfcrawl.pythonanywhere.com
 pomfcrawl.pythonanywhere.com##+js(ac, dark, body)
