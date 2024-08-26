@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 8 hours
-! Last modified: 2024.07.23.1
+! Last modified: 2024.08.26.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -508,4 +508,4 @@ washingtonpost.com##[aria-label="Comment"]:upward([data-qa="article-actions"] > 
 washingtonpost.com##[data-qa="subscribe-promo"], [data-qa="comments-btn-div"], nav
 
 ! https://www.xda-developers.com
-www.xda-developers.com##.content-block-regular, .article_heading:others()
+www.xda-developers.com###article-body, .article-header:others()
