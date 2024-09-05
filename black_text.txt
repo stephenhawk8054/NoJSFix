@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.08.30.1
+! Last modified: 2024.09.05.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -42,6 +42,9 @@ docs.controld.com##.markdown-body:style(color: black !important;)
 
 ! cvstuff.wordpress.com
 ||wp.com/latex.php?latex=$image,3p,uritransform=/&fg=[^&]+/&fg=000000/,domain=cvstuff.wordpress.com
+
+! https://cybersecuritynews.com/appdomainmanager-injection-to-execute-malware/
+cybersecuritynews.com##.tagdiv-type:style(color: black !important;)
 
 ! darkreading
 darkreading.com##.ArticleBase-HeaderSummary, .ContentText_variant_bodyNormal:style(color: black !important;)
