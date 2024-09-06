@@ -1,7 +1,7 @@
 ! Title: Dark mode
 ! Description: Dark mode for users using Firefox' resistfingerprint or noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.08.22.1
+! Last modified: 2024.09.06.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -79,6 +79,9 @@ javascripttutorial.net##+js(tsa, html, data-theme, dark)
 
 ! joplin
 joplinapp.org##+js(trusted-set-local-storage-item, theme, dark)
+
+! kagifeedback.org
+kagifeedback.org##+js(set-cookie, flarum_nightmode, 2)
 
 ! lemmy
 lemmy.eus##^link#default-light

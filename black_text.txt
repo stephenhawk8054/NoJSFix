@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.09.05.1
+! Last modified: 2024.09.06.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -104,6 +104,9 @@ pdfjs.express##.MarkdownTemplate .guide p:style(color: black !important;)
 ! proton
 proton.me,~mail.proton.me##body, .entry-content:style(color: black !important;)
 
+! qyresearch.com
+qyresearch.com##.report_detail .content_detail .left_box_l .left_box .left_content .prod_description .cont:style(color: black !important;)
+
 ! sekoia.io
 blog.sekoia.io##.notizia-single-main-content-container-inner > :is(h2,p,ul):style(color: black !important;)
 
@@ -130,6 +133,9 @@ uservoice.com##.uvUserActionBody:style(color: black !important;)
 
 ! wired.com
 wired.com##.body:style(color: black !important;)
+
+! xda-developers.com
+xda-developers.com###policyContent .static-list .article-body li, .article-body #policyContent .static-list li, .article-body p:style(color: black !important;)
 
 ! znews.vn
 znews.vn##.the-article-body:style(color: black !important;)
