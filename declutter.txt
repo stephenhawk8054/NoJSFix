@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 8 hours
-! Last modified: 2024.08.26.1
+! Last modified: 2024.09.06.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -99,6 +99,11 @@ askubuntu.com,mathoverflow.net,serverfault.com,stackapps.com,stackexchange.com,s
 askubuntu.com,mathoverflow.net,serverfault.com,stackapps.com,stackexchange.com,stackoverflow.com,superuser.com##body.question-page :is(#post-form, .bottom-notice, .aside-cta)
 askubuntu.com,mathoverflow.net,serverfault.com,stackapps.com,stackexchange.com,stackoverflow.com,superuser.com##body.question-page #mainbar:style(width: 100% !important;)
 askubuntu.com,mathoverflow.net,serverfault.com,stackapps.com,stackexchange.com,stackoverflow.com,superuser.com##body.question-page:style(padding-top: 0px !important;)
+
+! https://bai-gaming.com/math-guides/lagrange-multipliers-optimization-example-1/
+bai-gaming.com###right-sidebar
+bai-gaming.com###primary:style(width: 75% !important;)
+bai-gaming.com###left-sidebar:style(left: -75% !important;)
 
 ! https://www.bleepingcomputer.com
 bleepingcomputer.com##head:has(> meta[content="article"]) + body :is(article, .cz-breadcrumb):others()
