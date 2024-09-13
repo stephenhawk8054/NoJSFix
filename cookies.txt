@@ -1,7 +1,7 @@
 ! Title: Cookie banners
 ! Description: Hide/Reject cookie banner
 ! Expires: 8 hours
-! Last modified: 2024.08.16.1
+! Last modified: 2024.09.13.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -9,23 +9,24 @@
 ! GitHub pull requests: https://github.com/stephenhawk8054/NoJSFix/pulls
 
 ! https://stats.uptimerobot.com/9PnmRfz6Gm
-/cookie-consent
+/cookie-consent/*
 
 ! https://trailhead.salesforce.com/trailblazer-community/feed/0D53A00003BB1QtSAL
-/cookie_consent
+/cookie_consent.
 
 ! https://www.fosshub.com/IrfanView.html
-/cookieconsent
+/cookieconsent.
 
 ! https://www.pythonsos.com/web-dev/returning-an-input-sentence-on-html-with-flask-and-python/?expand_article=1
 /gdpr-
 
 ! https://math.libretexts.org/Bookshelves/Applied_Mathematics/Applied_Finite_Mathematics_(Sekhon_and_Bloom)/10%3A_Markov_Chains/10.01%3A_Introduction_to_Markov_Chains
-/js.cookie
-/js-cookie
+/js.cookie.
 
 ! https://trailhead.salesforce.com/trailblazer-community/feed/0D53A00003BB1QtSAL
-/one-trust
+/cookie_consent-
+/cookieconsentpub/*
+/one-trust/*
 
 ! https://www.criminalip.io/domain/report?scan_id=13953909
 ###__next div[class^="CookiePolicyAgreementsPopup"]
