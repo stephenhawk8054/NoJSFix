@@ -1,7 +1,7 @@
 ! Title: Cookie banners
 ! Description: Hide/Reject cookie banner
 ! Expires: 8 hours
-! Last modified: 2024.09.13.1
+! Last modified: 2024.09.14.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -44,6 +44,9 @@
 
 ! https://neurostars.org/t/using-nusvc-with-nilearn/28758
 ##.cc-banner
+
+! https://www.overleaf.com/learn/latex/Matrices
+##.cookie-banner
 
 ! https://reqbin.com/req/c-tmyvmbgu/curl-head-request-example
 ##.cookie-bar
