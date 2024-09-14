@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.08.20.1
+! Last modified: 2024.09.14.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -967,7 +967,7 @@ vice.com##picture.lazyloader--lowres:remove-class(lazyloader--lowres)
 ! windowscentral.com
 ! windowscentral.com##+js(windowscentral-fix)
 
-! ====================================== Specific paywall ======================================
+! ====================================== Others ======================================
 ! bloomberg.com
 ||coordinator.cm.bloomberg.com^
 bloomberg.com##+js(set-local-storage-item, history, $remove$)
@@ -981,3 +981,10 @@ asia.nikkei.com##+js(set, Object.prototype.tbc, undefined)
 nj.com##+js(set, Fusion.globalContentConfig.query.limit, 10000)
 ||googletagmanager.com^$domain=nj.com,important
 ||sophi.io^$domain=nj.com,important
+
+! https://www.nytimes.com/2024/09/10/style/celebrity-six-leticia-sarda-reddit.html
+nytimes.com##+js(cookie-remover, /^/)
+||a.nytimes.com^
+||meter-svc.nytimes.com^
+||samizdat-graphql.nytimes.com/graphql/v2^
+
