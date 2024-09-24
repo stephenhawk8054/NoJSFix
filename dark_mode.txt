@@ -1,7 +1,7 @@
 ! Title: Dark mode
 ! Description: Dark mode for users using Firefox' resistfingerprint or noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.09.18.1
+! Last modified: 2024.09.24.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -175,4 +175,4 @@ w3schools.com##+js(trusted-set-local-storage-item, preferredmode, dark)
 w3schools.com##+js(trusted-set-local-storage-item, preferredpagemode, dark)
 
 ! wikipedia.org
-wikipedia.org##+js(trusted-set-cookie, enwikimwclientpreferences, vector-feature-custom-font-size-clientpref-1%2Cvector-feature-limited-width-clientpref-0%2Cskin-theme-clientpref-night%2Cvector-feature-appearance-pinned-clientpref-0%2Cvector-feature-toc-pinned-clientpref-0)
+wikipedia.org##+js(trusted-set-cookie, enwikimwclientpreferences, vector-feature-custom-font-size-clientpref-1%2Cvector-feature-limited-width-clientpref-0%2Cskin-theme-clientpref-night%2Cvector-feature-appearance-pinned-clientpref-0%2Cvector-feature-toc-pinned-clientpref-0, , , reload, 1)
