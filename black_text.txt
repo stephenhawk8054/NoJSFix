@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.09.27.2
+! Last modified: 2024.09.27.3
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -145,7 +145,7 @@ techcrunch.com##.entry-content, .wp-block-post-content:style(color: black !impor
 theathletic.com##.bodytext1:style(color: black !important;)
 
 ! https://gitlab.torproject.org/tpo/applications/tor-browser/-/issues/41764
-gitlab.torproject.org##.md blockquote, .md .blockquote:style(color: black !important;)
+gitlab.torproject.org##.md blockquote, .md .blockquote, .md p:style(color: black !important;)
 
 ! https://www.trendmicro.com/en_us/research/24/a/a-look-into-pikabot-spam-wave-campaign.html
 trendmicro.com##p:style(font-weight: 400 !important;)
