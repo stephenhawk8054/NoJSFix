@@ -1,7 +1,7 @@
 ! Title: Dark mode
 ! Description: Dark mode for users using Firefox' resistfingerprint or noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.09.24.1
+! Last modified: 2024.09.30.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -108,7 +108,7 @@ nyaa.si##+js(ac, dark, body)
 
 ! libreddit
 ! libreddit.freedit.eu,libreddit.kylrth.com,libreddit.mha.fi,lr.4201337.xyz,rd.funami.tech,darklab.sh,libreddit.kavin.rocks,libreddit.oxymagnesium.com,reddit.leptons.xyz,libreddit.pabloferreiro.es,lr.artemislena.eu,lr.riverside.rocks##+js(ac, dark, body)
-||redlib.freedit.eu^$doc,replace=/<html lang="en" class="f/<html lang="en" class="black f/
+*$doc,replace=/<html lang="en" class="f/<html lang="en" class="black f/,domain=r.darrennathanael.com|redlib.freedit.eu
 *$doc,replace=/<html lang="en"/<html lang="en" class="black"/,domain=libreddit.bus-hit.me|reddit.idevicehacked.com|redlib.freedit.eu|lr.n8pjl.ca|redlib.catsarch.com
 
 ! https://lollox1k.github.io/Matematica/Probabilit%C3%A0/Processi-stocastici/Limiting-distribution-of-a-Markov-Chain
