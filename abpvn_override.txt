@@ -1,7 +1,7 @@
 ! Title: ABPVN Override
 ! Description: Override whitelisting
 ! Expires: 8 hours
-! Last modified: 2024.09.19.1-038f2e5
+! Last modified: 2024.10.01.1-192c76f
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -26,5 +26,10 @@
 ||tpc.googlesyndication.com/sodar/sodar2.js$domain=cungthi.online,important
 ||pagead2.googlesyndication.com^$domain=www.gaingon18.me,important
 ||static.ads-twitter.com/uwt.js$script,domain=linkneverdie.net|linkneverdie.top|linkneverdie2.com,important
+||doubleclick.net^$important,domain=handydecor.com.vn|the.tube|they.tube
 
 imail.edu.vn##+js(nostif, ad_block)
+the.tube,they.tube##+js(acs, addEventListener, ad-block)
+||tube/js/simpleblocker.js
+||handydecor.com.vn/wp-content/plugins/deblocker/
+/^https:\/\/handydecor\.com\.vn\/wp-content\/plugins\/[a-z0-9]{8}\.js\?ver=/$script,1p,match-case,domain=handydecor.com.vn
