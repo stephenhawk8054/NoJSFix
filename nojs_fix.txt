@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.09.14.1
+! Last modified: 2024.10.01.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -808,6 +808,9 @@ stuff.tv##figure > img.lazyload[src^="data:image"]:not([data-orig-file])
 
 ! https://supabase.com
 supabase.com##img[class=""][src^="data:image"]
+
+! https://switowski.com/blog/map-vs-list-comprehension/
+switowski.com##nav > div[\@click="$store.nav.close()"]
 
 ! technologyreview.com
 technologyreview.com##.carousel__wrapper:style(opacity: 1 !important;)

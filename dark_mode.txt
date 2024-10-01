@@ -1,7 +1,7 @@
 ! Title: Dark mode
 ! Description: Dark mode for users using Firefox' resistfingerprint or noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.09.30.1
+! Last modified: 2024.09.30.2
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -157,6 +157,9 @@ searx.be##+js(trusted-set-cookie, oscar-style, logicodev-dark, , , reload, 1)
 
 ! https://www.spacebar.news/stop-using-brave-browser/
 ||spacebar.news^$doc,replace=/@media \(prefers-color-scheme: dark\)/@media (prefers-color-scheme: light)/
+
+! https://switowski.com/blog/map-vs-list-comprehension/
+||switowski.com^$doc,replace=/<html /<html data-theme="dark"/
 
 ! techlore
 discuss.techlore.tech##+js(trusted-set-local-storage-item, discourse_color_scheme_override, dark)
