@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.10.02.3
+! Last modified: 2024.10.03.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -134,6 +134,9 @@ qyresearch.com##.report_detail .content_detail .left_box_l .left_box .left_conte
 ! https://revisionmaths.com/advanced-level-maths-revision/statistics/expectation-and-variance
 revisionmaths.com##.text-dark, #drupal-off-canvas-wrapper .ui-autocomplete .linkit-result-line, #drupal-off-canvas-wrapper .ui-autocomplete .linkit-result-line--group.ui-menu-divider:style(color: black !important;)
 revisionmaths.com##body:style(font-weight: 400 !important;)
+
+! https://sansec.io/research/cosmicsting-fallout
+sansec.io##.markdown, .markdown p:style(color: black !important;)
 
 ! sekoia.io
 blog.sekoia.io##.notizia-single-main-content-container-inner > :is(h2,p,ul):style(color: black !important;)
