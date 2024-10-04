@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.10.04.1
+! Last modified: 2024.10.04.2
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -126,6 +126,9 @@ blocktower.com##img[data-src]:style(opacity: 1 !important;)
 
 ! blog.mozilla.org
 blog.mozilla.org##iframe:style(display: block !important;)
+
+! https://bongda24h.vn/chien-thuat-a-z/nghich-ly-trong-sach-luoc-cua-luis-enrique-thanh-bai-tai-ronald-araujo-394-385238.html
+bongda24h.vn##+js(set-attr, source.lazyload[data-srcset][srcset^="data:image"], srcset, [data-srcset])
 
 ! bongdaplus.vn
 bongdaplus.vn##+js(ss, img.lzl[data-src][src^="data:image"], dataset src)
