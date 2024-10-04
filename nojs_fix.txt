@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.10.01.1
+! Last modified: 2024.10.04.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -989,5 +989,6 @@ nj.com##+js(set, Fusion.globalContentConfig.query.limit, 10000)
 nytimes.com##+js(cookie-remover, /^/)
 ||a.nytimes.com^
 ||meter-svc.nytimes.com^
+||nytimes.com/svc/onsite-messaging/query^
 ||samizdat-graphql.nytimes.com/graphql/v2^
 
