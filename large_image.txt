@@ -1,7 +1,7 @@
 ! Title: Large Image Redirect
 ! Description: Redirect small image to large image
 ! Expires: 8 hours
-! Last modified: 2024.05.04.1
+! Last modified: 2024.10.08.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -10,7 +10,11 @@
 
 ! https://plo.vn/hlv-troussier-gach-5-cai-ten-chot-danh-sach-cuoi-cung-28-tuyen-thu-post780584.html
 ||image.plo.vn/*/Uploaded/$image,doc,uritransform=/\/[^\/]+\/Uploaded\//\/Uploaded\//
-||image.plo.vn/*.jpg.webp$image,doc,uritransform=/\.jpg\.webp/.jpg/
+||image.plo.vn/*.jpg.webp^$image,doc,uritransform=/\.jpg\.webp/.jpg/
 
 ! https://www.theaidream.com/post/loss-functions-in-neural-networks
 ||static.wixstatic.com/media/$image,doc,uritransform=/(media\/[^.]+\.[a-z]+)\/.+/\$1/
+
+! https://willkoehrsen.github.io/statistics/data%20science/modeling/the-poisson-distribution-and-poisson-process-explained/
+||miro.medium.com/max/$image,doc,uritransform=/\/max\/\d+\//\//
+||miro.medium.com/*?q=$removeparam=q
