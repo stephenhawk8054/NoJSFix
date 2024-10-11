@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.10.11.1
+! Last modified: 2024.10.11.2
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -912,6 +912,14 @@ usnews.com###main-column .border-top:style(visibility: visible !important;)
 
 ! https://vietnamnet.vn
 vietnamnet.vn##+js(set-attr, img.lazy[data-original][src^="data:image"], src, [data-original])
+
+! https://www.vietnamplus.vn/ba-kamala-harris-dan-truoc-ong-donald-trump-4-diem-trong-so-cac-cu-tri-tiem-nang-post982575.amp
+!#if env_mobile
+||vietnamplus.vn^$doc,replace=/amp-img/img/g
+!#else
+||vietnamplus.vn/*.amp^$doc,uritransform=/\.amp\b/.vnp/
+vietnamplus.vn##+js(set-cookie, isDesktop, 1, , reload, 1)
+!#endif
 
 ! https://www.visual-design.net/post/three-improvements-to-future-proof-your-machine-learning-project
 visual-design.net##[data-animate-blur] img[data-pin-media]:style(filter: unset !important;)
