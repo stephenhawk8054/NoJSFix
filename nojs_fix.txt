@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.10.04.2
+! Last modified: 2024.10.11.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -659,6 +659,9 @@ politico.com##img[data-lazy-img][src]:style(height: auto !important; padding-bot
 ! practical365.com
 practical365.com##figure > img[decoding="async"]:style(display: block !important;)
 
+! practical-tips.com
+practical-tips.com##+js(set-attr, img.penci-lazy[data-src][src^="data:image"], src, [data-src])
+
 ! https://www.pressherald.com
 pressherald.com##.mtm-article, .post-content:style(display: block !important;)
 pressherald.com##span > img[loading="lazy"][src$="1x1.trans.gif"]
@@ -918,6 +921,9 @@ visual-design.net##+js(set-attr, [data-animate-blur] img[data-pin-media], src, [
 vtc.vn##+js(ss, b.video-element[data-poster], dataset poster)
 vtc.vn##+js(ss, img[data-src][src^="data:image"], dataset src)
 vtc.vn##.swiper-slide > article:style(height: auto !important;)
+
+! https://vtcnews.vn/sang-lap-startup-ngoi-code-giua-dam-cuoi-cua-minh-dan-mang-mia-mai-tham-te-ar901223.html
+vtcnews.vn##+js(set-attr, img.lazy[data-src][src^="data:image"], src, [data-src])
 
 ! wallpaper.com
 wallpaper.com##+js(ss, img.lazy-image-van[data-original-mos][src$="missing-image.svg"], dataset originalMos)
