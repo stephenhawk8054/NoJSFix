@@ -1,7 +1,7 @@
 ! Title: Large Image Redirect
 ! Description: Redirect small image to large image
 ! Expires: 8 hours
-! Last modified: 2024.10.12.1
+! Last modified: 2024.10.12.2
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -23,3 +23,7 @@
 
 ! https://vtcnews.vn/sang-lap-startup-ngoi-code-giua-dam-cuoi-cua-minh-dan-mang-mia-mai-tham-te-ar901223.html
 ||vtcnews.vn/resize/*/upload/$image,doc,uritransform=/\/resize\/\w+//
+
+! https://vtv.vn/truyen-hinh/cap-nhat-cac-diem-cau-chung-ket-duong-len-dinh-olympia-2024-san-sang-bung-chay-20241012154402761.htm
+||cdn-images.vtv.vn/thumb_w/$image,doc,uritransform=/\/thumb_w\/\d+//
+||cdn-images.vtv.vn/zoom/$doc,uritransform=/\/zoom\/[_\d]+//
