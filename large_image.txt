@@ -1,7 +1,7 @@
 ! Title: Large Image Redirect
 ! Description: Redirect small image to large image
 ! Expires: 8 hours
-! Last modified: 2024.10.11.1
+! Last modified: 2024.10.12.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -18,6 +18,8 @@
 ! https://willkoehrsen.github.io/statistics/data%20science/modeling/the-poisson-distribution-and-poisson-process-explained/
 ||miro.medium.com/max/$image,doc,uritransform=/\/max\/\d+\//\//
 ||miro.medium.com/*?q=$removeparam=q
+! https://haneulkim.medium.com/binomial-distribution-and-normal-approximation-part-ii-73a1941596d2
+||miro.medium.com/*/resize:$image,doc,uritransform=/\/(?:resize|format):[^\/]+//g
 
 ! https://vtcnews.vn/sang-lap-startup-ngoi-code-giua-dam-cuoi-cua-minh-dan-mang-mia-mai-tham-te-ar901223.html
 ||vtcnews.vn/resize/*/upload/$image,doc,uritransform=/\/resize\/\w+//
