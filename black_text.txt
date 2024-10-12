@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.10.11.2
+! Last modified: 2024.10.12.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -60,6 +60,9 @@ dp.tdhopper.com##div.text_cell_render:style(color: black !important;)
 
 ! https://diveintopython.org/learn/functions/recursion
 diveintopython.org##.prose:style(color: black !important;)
+
+! https://every.to/p/the-disappearance-of-an-internet-domain
+every.to##body.public-container.posts:style(color: black !important;)
 
 ! fideloper.com
 fideloper.com##.markdown:style(color: black !important;)
