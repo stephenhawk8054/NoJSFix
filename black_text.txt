@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.10.12.2
+! Last modified: 2024.10.12.3
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -118,6 +118,9 @@ ninjaone.com##[data-widget_type="theme-post-content.default"]:style(color: black
 
 ! https://nld.com.vn/lum-xum-khay-com-cua-giao-vien-mam-non-30000-dong-chi-co-2-mieng-cha-o-br-vt-196240914124927585.htm
 nld.com.vn##[data-role="content"]:style(color: black !important;)
+
+! https://online.stat.psu.edu/stat414/lesson/28/28.1
+online.stat.psu.edu##.card-body:style(color: black !important;)
 
 ! https://www.oreilly.com/library/view/machine-learning-with/9781491989371/ch01.html
 oreilly.com###sbo-reader .sbo-reader-content:style(color: black !important;)
