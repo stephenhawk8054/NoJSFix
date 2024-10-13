@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.10.12.4
+! Last modified: 2024.10.13.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -155,6 +155,9 @@ blog.sonicwall.com##.main_color:style(color: black !important;)
 
 ! https://techcrunch.com/2024/05/24/signals-meredith-whittaker-on-the-telegram-security-clash-and-the-edge-lords-at-openai/
 techcrunch.com##.entry-content, .wp-block-post-content:style(color: black !important;)
+
+! https://thanhnien.vn/steam-thong-bao-mua-game-chi-la-mua-giay-phep-su-dung-185241011231228101.htm
+thanhnien.vn##.detail__cmain [data-role="content"]:style(color: black !important;)
 
 ! https://theathletic.com/5061003/2023/11/17/virgil-van-dijk-liverpool-netherlands-paradox/
 theathletic.com##.bodytext1:style(color: black !important;)
