@@ -1,7 +1,7 @@
 ! Title: Dark mode
 ! Description: Dark mode for users using Firefox' resistfingerprint or noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.10.12.1
+! Last modified: 2024.10.14.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -152,6 +152,12 @@ quora.com##+js(trusted-set-cookie, m-theme, dark)
 
 ! rclone
 ||forum.rclone.org^$doc,replace=/(\?__ws=forum\.rclone\.org" media="\(prefers-color-scheme:) dark/\$1 light/
+
+! https://readmedium.com/demystifying-the-python-datetime-module-with-examples-e6662da3aa93
+readmedium.com##pre, code:style(font-family: monospace !important;)
+readmedium.com##code:style(background: brown !important;)
+readmedium.com##pre:style(background: white !important; font-weight: 600 !important;)
+readmedium.com##+js(trusted-set-local-storage-item, payload-theme, dark)
 
 ! searx
 searx.be##+js(trusted-set-cookie, oscar-style, logicodev-dark, , , reload, 1)
