@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.10.13.1
+! Last modified: 2024.10.15.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -66,6 +66,9 @@ every.to##body.public-container.posts:style(color: black !important;)
 
 ! fideloper.com
 fideloper.com##.markdown:style(color: black !important;)
+
+! https://www.foxnews.com/politics/bill-clinton-suggests-laken-riley-would-still-alive-border-properly-secured-hitting-republicans
+foxnews.com##.article-body:style(color: black !important;)
 
 ! https://www.freeformatter.com/json-formatter.html
 freeformatter.com##body, #sidebar-menu ul li ul.sub-menu li a, .form-select:style(color: black !important;)
