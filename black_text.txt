@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.10.15.1
+! Last modified: 2024.10.15.2
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -109,6 +109,9 @@ www.malwarebytes.com##.site-main:style(color: black !important;)
 
 ! malwaretips.com
 malwaretips.com##.separate-containers .inside-article, .separate-containers .comments-area, .separate-containers .page-header, .one-container .container, .separate-containers .paging-navigation, .inside-page-header:style(color: black !important;)
+
+! https://www.mcafee.com/blogs/other-blogs/mcafee-labs/behind-the-captcha-a-clever-gateway-of-malware/
+mcafee.com##.the_content p:style(color: black !important;)
 
 ! mullvad
 mullvad.net##.cms:style(color: black !important;)
