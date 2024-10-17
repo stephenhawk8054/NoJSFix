@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.10.17.1
+! Last modified: 2024.10.17.2
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -871,7 +871,7 @@ thestreet.com##.is-waiting-to-load > img:style(visibility: visible !important;)
 thewindowsclub.com##+js(ss, body.no-js img.ezlazyload[data-ezsrc][src^="data:image"], dataset ezsrc)
 
 ! tienphong.vn
-tienphong.vn##+js(ss, img.lazyload[data-src][src^="data:image"], dataset src)
+tienphong.vn##+js(set-attr, video.cms-video[data-video-src]:not([src]), src, [data-video-src])
 
 ! timesofindia.com
 timesofindia.com##+js(ss, html.no-js img[data-src][placeholdersrc][src], dataset src)
