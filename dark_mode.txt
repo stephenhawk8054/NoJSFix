@@ -1,7 +1,7 @@
 ! Title: Dark mode
 ! Description: Dark mode for users using Firefox' resistfingerprint or noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.10.14.1
+! Last modified: 2024.10.17.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -111,6 +111,9 @@ mpaldridge.github.io##+js(trusted-set-session-storage-item, :fontState, '{"size"
 ! https://networkx.org/documentation/stable/reference/classes/digraph.html
 networkx.org##+js(trusted-set-local-storage-item, mode, dark)
 networkx.org##+js(trusted-set-local-storage-item, theme, dark)
+
+! ntfy.sh
+docs.ntfy.sh##+js(trusted-set-local-storage-item, /.__palette, '{"index":1,"color":{"media":"(prefers-color-scheme: dark)","scheme":"slate","primary":"indigo","accent":"indigo"}}')
 
 ! nyaa.si
 nyaa.si##+js(ac, dark, body)
