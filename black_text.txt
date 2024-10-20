@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.10.20.4
+! Last modified: 2024.10.20.5
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -200,6 +200,9 @@ wired.com##.body:style(color: black !important;)
 
 ! xda-developers.com
 xda-developers.com###policyContent .static-list .article-body li, .article-body #policyContent .static-list li, .article-body p:style(color: black !important;)
+
+! https://news.yahoo.com/news/liberals-starting-panic-donald-trump-043000345.html
+news.yahoo.com##.caas:style(color: black !important;)
 
 ! https://znews.vn/megan-fox-da-khac-post1497630.html
 znews.vn##.the-article-body, #page-article.article-format .the-article .main .the-article-body > p:style(color: black !important;)
