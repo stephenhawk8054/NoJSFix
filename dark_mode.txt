@@ -1,7 +1,7 @@
 ! Title: Dark mode
 ! Description: Dark mode for users using Firefox' resistfingerprint or noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.10.18.2
+! Last modified: 2024.10.21.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -121,6 +121,9 @@ docs.ntfy.sh##+js(trusted-set-local-storage-item, /.__palette, '{"index":1,"colo
 
 ! nyaa.si
 nyaa.si##+js(ac, dark, body)
+
+! https://www.pbr-book.org/3ed-2018/Monte_Carlo_Integration/The_Monte_Carlo_Estimator
+||pbr-book.org^$doc,replace='/lang="en"/lang="en" style="--bg:black;--bg-navbar:#343434;--bg-cse:#343434;--bg-table:#383838;--bg-tooltip:#444444;--bg-navlink-active:#444;--border-color:rgba(255,255,255,0.125);--link:#7186ac;--link-active:blue;--table-outline:#636363;--text:white;--text-navbar:rgb(172,172,172,0.75);--fig-outline:#404040;--legend:#acacac;--footnote-btn:#6080e0;--footnote-btn-bg:#3a3a3a;--icon:url(\/3ed-2018\/dark.svg);--landing-title:#eee;--text-midred:#a00000;--text-red:#ff0000;"/'
 
 ! https://platoblockchain.net/implementing-svm-and-kernel-svm-with-pythons-scikit-learn/
 platoblockchain.net##pre, code:style(background-color: transparent !important;)
