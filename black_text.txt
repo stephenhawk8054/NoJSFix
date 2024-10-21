@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.10.21.3
+! Last modified: 2024.10.21.4
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -87,6 +87,9 @@ graphviz.readthedocs.io##div.body:style(color: black !important;)
 
 ! https://gregorygundersen.com/blog/2019/10/28/ergodic-markov-chains/
 gregorygundersen.com##.article, .article blockquote:style(color: black !important;)
+
+! https://hackerone.com/reports/1579374
+hackerone.com##.interactive-markdown, .settings-title-container--daisy, .daisy-text, .daisy-link, .daisy-h1, .daisy-h2, .daisy-h3, .daisy-h4, .daisy-h5, .daisy-h6:style(color: black !important;)
 
 ! hynek.me
 hynek.me##.text-primary:style(color: black !important;)
