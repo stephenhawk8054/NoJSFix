@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.10.22.1
+! Last modified: 2024.10.22.2
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -13,11 +13,11 @@ androidcentral.com,gamesradar.com,lifehacker.com,livescience.com,kotaku.com,pcga
 
 laptopmag.com##html:style(color: black !important;)
 
-community.cloudflare.com,cooltechzone.com,datacamp.com,proofpoint.com,railsware.com,torrentfreak.com##html:style(color: black !important;)
+community.cloudflare.com,cooltechzone.com,datacamp.com,jross.me,proofpoint.com,railsware.com,torrentfreak.com##html:style(color: black !important;)
 
 askubuntu.com,mathoverflow.net,serverfault.com,stackexchange.com,stackoverflow.com,superuser.com##body:style(color: black !important;)
 
-alternativeto.net,arcanecode.com,bioconductor.org,bitwarden.com,blog.djnavarro.net,blog.kagi.com,blog.torproject.org,blogs.infoblox.com,bongdaplus.vn,brilliant.org,britannica.com,builtin.com,byjus.com,cherryservers.com,chingismaksimov.github.io,cloudsek.com,cvstuff.wordpress.com,desmondrivet.com,djangocas.dev,dziganto.github.io,eric-kim.net,exploreflask.com,f-droid.org,flask.palletsprojects.com,fortinet.com,forum.sublimetext.com,hedibert.org,investopedia.com,jfrog.com,kodify.net,koofr.*,liliputing.com,mathsisfun.com,microsoftedge.github.io,misp-project.org,mozilla.github.io,nbshare.io,nordvpn.com,note.nkmk.me,overleaf.com,pbr-book.org,pbpython.com,petamind.com,pictureflect.com,private.storage,probabilitycourse.com,pwelke.github.io,pypi.org,python-web.teclado.com,pythonanywhere.com,pythonguides.com,raw.githack.com,rclone.org,readthedocs.io,rockt.github.io,scaler.com,scratchapixel.com,scribbr.com,sharepointdiary.com,sordum.org,sourceforge.net,statlect.com,support.mozilla.org,techeffigytutorials.blogspot.com,tenforums.com,tgsoft.it,thehackernews.com,tienphong.vn,thewindowsclub.com,trendmicro.com,trendspider.com,webpages.uidaho.edu,wikihow.com,willkoehrsen.github.io,www.okta.com,~forum.rclone.org,~vault.bitwarden.com##body:style(color: black !important;)
+alternativeto.net,arcanecode.com,bioconductor.org,bitwarden.com,blog.djnavarro.net,blog.kagi.com,blog.torproject.org,blogs.infoblox.com,bongdaplus.vn,brilliant.org,britannica.com,builtin.com,byjus.com,cherryservers.com,chingismaksimov.github.io,cloudsek.com,cvstuff.wordpress.com,desmondrivet.com,djangocas.dev,dziganto.github.io,eric-kim.net,exploreflask.com,f-droid.org,flask.palletsprojects.com,fortinet.com,forum.sublimetext.com,hedibert.org,investopedia.com,jfrog.com,jross.me,kodify.net,koofr.*,liliputing.com,mathsisfun.com,microsoftedge.github.io,misp-project.org,mozilla.github.io,nbshare.io,nordvpn.com,note.nkmk.me,overleaf.com,pbr-book.org,pbpython.com,petamind.com,pictureflect.com,private.storage,probabilitycourse.com,pwelke.github.io,pypi.org,python-web.teclado.com,pythonanywhere.com,pythonguides.com,raw.githack.com,rclone.org,readthedocs.io,rockt.github.io,scaler.com,scratchapixel.com,scribbr.com,sharepointdiary.com,sordum.org,sourceforge.net,statlect.com,support.mozilla.org,techeffigytutorials.blogspot.com,tenforums.com,tgsoft.it,thehackernews.com,tienphong.vn,thewindowsclub.com,trendmicro.com,trendspider.com,webpages.uidaho.edu,wikihow.com,willkoehrsen.github.io,www.okta.com,~forum.rclone.org,~vault.bitwarden.com##body:style(color: black !important;)
 
 nytimes.com,physicsread.com,prob140.org,trustwave.com,www.backblaze.com##p:style(color: black !important;)
 
