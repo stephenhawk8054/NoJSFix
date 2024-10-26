@@ -1,7 +1,7 @@
 ! Title: Dark mode
 ! Description: Dark mode for users using Firefox' resistfingerprint or noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.10.21.2
+! Last modified: 2024.10.26.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -77,6 +77,9 @@ discuss.grapheneos.org##+js(set-cookie, flarum_nightmode, 2)
 
 ! https://nazanin-ashrafi.hashnode.dev/how-to-make-a-moon-with-css
 ||nazanin-ashrafi.hashnode.dev^$doc,replace=/class=""/class="dark"/
+
+! imginn.com
+||assets.imginn.com/css/art.css^$css,replace=/prefers-color-scheme: dark/prefers-color-scheme: light/
 
 ! javascripttutorial.net
 javascripttutorial.net##+js(tsa, html, data-theme, dark)
