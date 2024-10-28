@@ -1,7 +1,7 @@
 ! Title: Cookie banners
 ! Description: Hide/Reject cookie banner
 ! Expires: 8 hours
-! Last modified: 2024.09.14.1
+! Last modified: 2024.10.28.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -16,6 +16,9 @@
 
 ! https://www.fosshub.com/IrfanView.html
 /cookieconsent.
+
+! https://www.w3resource.com/python-exercises/numpy/python-numpy-exercise-33.php
+/cookieconsent2/*
 
 ! https://www.pythonsos.com/web-dev/returning-an-input-sentence-on-html-with-flask-and-python/?expand_article=1
 /gdpr-
@@ -44,6 +47,9 @@
 
 ! https://neurostars.org/t/using-nusvc-with-nilearn/28758
 ##.cc-banner
+
+! https://www.w3resource.com/python-exercises/numpy/python-numpy-exercise-33.php
+##.cc_banner-wrapper
 
 ! https://www.overleaf.com/learn/latex/Matrices
 ##.cookie-banner
