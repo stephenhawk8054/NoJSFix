@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.10.26.1
+! Last modified: 2024.10.28.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -10,9 +10,10 @@
 
 
 ! ====================================== Generic fixes ======================================
-*###mdp-deblocker-js-disabled
-*###nojs-banner
-*##.no-js-message
+###page-preloader
+###mdp-deblocker-js-disabled
+###nojs-banner
+##.no-js-message
 
 ! 1337x.*
 1337x.*##body:style(display: block !important;)
