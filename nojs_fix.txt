@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.10.28.1
+! Last modified: 2024.10.29.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -742,6 +742,9 @@ screenrant.com###article-directory-list-cta:style(position: inherit !important;)
 
 ! sdxcentral.com
 sdxcentral.com##img.preview:style(filter: unset !important;)
+
+! https://securelist.com/fake-captcha-delivers-lumma-amadey/114312/
+securelist.com##img[loading="lazy"]:not(.loaded):not(.loading):style(opacity: 1 !important;)
 
 ! sekoia.io
 blog.sekoia.io##^#notizia-loading-overlay, .notizia-dark-overlay-full, .notizia-modal
