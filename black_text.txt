@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.10.29.1
+! Last modified: 2024.10.29.2
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -206,6 +206,9 @@ vnexpress.net##.fck_detail:style(color: black !important;)
 
 ! voz.vn
 voz.vn##.block--messages .message, .block--messages .block-row:style(color: black !important;)
+
+! https://www.washingtonpost.com/opinions/2024/10/28/jeff-bezos-washington-post-trust/
+washingtonpost.com##[data-qa="article-body"] p:style(color: black !important;)
 
 ! wired.com
 wired.com##.body:style(color: black !important;)
