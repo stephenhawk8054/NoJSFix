@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.10.28.3
+! Last modified: 2024.10.29.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -200,6 +200,9 @@ vietnamnet.vn##.content-detail .maincontent:style(color: black !important;)
 
 ! https://www.vietnamplus.vn/ba-kamala-harris-dan-truoc-ong-donald-trump-4-diem-trong-so-cac-cu-tri-tiem-nang-post982575.amp
 vietnamplus.vn##body, .zce-content-body > *:style(color: black !important;)
+
+! https://vnexpress.net/thung-phieu-o-hai-bang-my-bi-phong-hoa-4809599.html
+vnexpress.net##.fck_detail:style(color: black !important;)
 
 ! voz.vn
 voz.vn##.block--messages .message, .block--messages .block-row:style(color: black !important;)
