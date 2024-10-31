@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.10.29.5
+! Last modified: 2024.10.31.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -164,6 +164,9 @@ sansec.io##.markdown, .markdown p:style(color: black !important;)
 
 ! sekoia.io
 blog.sekoia.io##.notizia-single-main-content-container-inner > :is(h2,p,ul):style(color: black !important;)
+
+! https://forums.simplenote.com/forums/topic/simplenote-security-breach-tonight/
+forums.simplenote.com##.spf-reply__content:not(.wp-block-embed *), .spf-reply__content p:not(.wp-block-embed *), .spf-reply__content ol:not(.wp-block-embed *), .spf-reply__content ul:not(.wp-block-embed *):style(color: black !important;)
 
 ! softkeys.uk
 softkeys.uk##.prose:style(color: black !important;)
