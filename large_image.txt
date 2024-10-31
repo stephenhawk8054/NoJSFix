@@ -1,7 +1,7 @@
 ! Title: Large Image Redirect
 ! Description: Redirect small image to large image
 ! Expires: 8 hours
-! Last modified: 2024.10.26.1
+! Last modified: 2024.10.31.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -33,3 +33,7 @@
 
 ! https://photo-baomoi.bmcdn.me/w700_r1/2024_10_18_23_50480198/e4d5fe835eccb792eedd.jpg
 ||bmcdn.me/w$image,doc,uritransform=/\/w\d+_\w+//
+
+! https://www.rt.com/news/606780-north-korea-icbm-test/
+||mf.b37mrtl.ru/files/*.jpg^$image,doc,uritransform=/(files\/[^\/]+)\/\w+/\$1\/l/
+||mf.b37mrtl.ru/files/*.png^$image,doc,uritransform=/(files\/[^\/]+)\/\w+/\$1\/l/

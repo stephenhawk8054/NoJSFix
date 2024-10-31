@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.10.29.1
+! Last modified: 2024.10.31.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -706,6 +706,9 @@ restofworld.org##img[data-src][src]:style(filter: none !important;)
 
 ! retroshareteam.wordpress.com
 retroshareteam.wordpress.com##img:style(max-width: -moz-available !important; height: auto !important;)
+
+! https://www.rt.com/news/606780-north-korea-icbm-test/
+rt.com##img.lazyload
 
 ! rte.ie
 rte.ie##+js(ss, html.no-js iframe[data-src]:not([src]), dataset src)
