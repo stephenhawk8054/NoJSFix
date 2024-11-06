@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.11.05.1
+! Last modified: 2024.11.06.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -90,6 +90,9 @@ gregorygundersen.com##.article, .article blockquote:style(color: black !importan
 
 ! https://hackerone.com/reports/1579374
 hackerone.com##.interactive-markdown, .settings-title-container--daisy, .daisy-text, .daisy-link, .daisy-h1, .daisy-h2, .daisy-h3, .daisy-h4, .daisy-h5, .daisy-h6:style(color: black !important;)
+
+! https://www.humansecurity.com/learn/blog/satori-threat-intelligence-alert-phish-n-ships-fakes-online-shops-to-steal-money-and-credit-card-information
+humansecurity.com##.single-content-section p:style(color: black !important;)
 
 ! hynek.me
 hynek.me##.text-primary:style(color: black !important;)
