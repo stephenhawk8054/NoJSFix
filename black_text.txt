@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.11.06.2
+! Last modified: 2024.11.06.3
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -127,6 +127,9 @@ mullvad.net##.cms:style(color: black !important;)
 
 ! http://mytechroad.com/markov-chain-branching-process/
 mytechroad.com##body, input, textarea:style(color: black !important;)
+
+! https://www.nbcnews.com/tech/tech-news/elon-musk-transgender-daughter-vivian-wilson-interview-rcna163665
+nbcnews.com##.article-body:style(color: black !important;)
 
 ! ninjaone
 ninjaone.com##[data-widget_type="theme-post-content.default"]:style(color: black !important;)
