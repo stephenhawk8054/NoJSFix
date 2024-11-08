@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 8 hours
-! Last modified: 2024.10.28.1
+! Last modified: 2024.11.08.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -442,6 +442,10 @@ theglobeandmail.com##.c-button--comments
 
 ! https://theintercept.com
 theintercept.com##.PostContent > :not(.NewsletterEmbed-container):not(.Cta):not(.PromoteRelatedPost-promo), .Post-contact, .Post-header-block, .Post-image-block:others()
+
+! https://www.theregister.com/2024/11/04/columbus_rhysida_ransomware/
+theregister.com###page > article:others()
+theregister.com##.listinks
 
 ! https://www.thestreet.com
 thestreet.com##.m-detail--body, .m-detail--author-box, .m-detail-header:others()
