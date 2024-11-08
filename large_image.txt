@@ -1,7 +1,7 @@
 ! Title: Large Image Redirect
 ! Description: Redirect small image to large image
 ! Expires: 8 hours
-! Last modified: 2024.10.31.1
+! Last modified: 2024.11.08.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -10,7 +10,7 @@
 
 ! https://plo.vn/hlv-troussier-gach-5-cai-ten-chot-danh-sach-cuoi-cung-28-tuyen-thu-post780584.html
 ! https://www.androidauthority.com/google-tensor-g5-specs-3493019/
-.jpg.webp^$image,doc,uritransform=/\.jpg\.webp\b/.jpg/
+.jpg.webp^$image,doc,uritransform=/\.jpg\.webp\b/.jpg/,to=~voz.vn
 ||image.plo.vn/*/Uploaded/$image,doc,uritransform=/\/[^\/]+\/Uploaded\//\/Uploaded\//
 ||androidauthority.com/wp-content/uploads/*.jpg^$image,doc,uritransform=/-\d+w-\d+h\.jpg\b/.jpg/
 
