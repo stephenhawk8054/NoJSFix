@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.11.06.3
+! Last modified: 2024.11.11.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -78,6 +78,9 @@ freeformatter.com##body, #sidebar-menu ul li ul.sub-menu li a, .form-select:styl
 
 ! ghacks
 ghacks.net##.user-content:style(color: black !important;)
+
+! https://gizmodo.com/nasa-remains-stubbornly-silent-on-dragon-splashdown-that-sent-crew-to-hospital-2000522187
+gizmodo.com##.prose:style(color: black !important;)
 
 ! gpsoft.com.au
 gpsoft.com.au##.ui-widget-content:style(color: black !important;)
