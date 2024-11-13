@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.11.13.1
+! Last modified: 2024.11.13.2
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -54,12 +54,14 @@ allthingsstatistics.com##img.ezlazyload[data-ezsrc][src]:style(opacity: 1 !impor
 analyzemath.com##+js(ss, img.ezlazyload[data-ezsrc][src^="data:image"], dataset ezsrc)
 
 ! techradar-sites
+! https://kotaku.com/redbox-machines-kiosks-free-movies-dvds-stealing-reddit-1851694915
 androidcentral.com,gamesradar.com,lifehacker.com,livescience.com,kotaku.com,pcgamer.com,space.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##+js(ss, img.lazy-image-van[src$="/missing-image.svg"], dataset originalMos)
 androidcentral.com,gamesradar.com,lifehacker.com,livescience.com,kotaku.com,pcgamer.com,space.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##.see-more__button-container
 androidcentral.com,gamesradar.com,lifehacker.com,livescience.com,kotaku.com,pcgamer.com,space.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##.see-more__filter
 androidcentral.com,gamesradar.com,lifehacker.com,livescience.com,kotaku.com,pcgamer.com,space.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##.text-copy :is(ol, ul):style(margin-bottom: 1em !important;)
 androidcentral.com,gamesradar.com,lifehacker.com,livescience.com,kotaku.com,pcgamer.com,space.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##.text-copy ol:style(list-style: decimal inside !important;)
 androidcentral.com,gamesradar.com,lifehacker.com,livescience.com,kotaku.com,pcgamer.com,space.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##.text-copy ol li:style(line-height: 1.5 !important;)
+androidcentral.com,gamesradar.com,lifehacker.com,livescience.com,kotaku.com,pcgamer.com,space.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##.js_expandable-container div[class]:style(max-height: unset !important;)
 lifehacker.com,kotaku.com##+js(ss, img[data-srcset][src^="data:image"], dataset srcset, 1)
 lifehacker.com,kotaku.com##+js(ss, img[data-src][src^="data:image"], dataset src)
 lifehacker.com,kotaku.com##+js(ss, picture > source[data-srcset][srcset^="data:image"], dataset srcset)

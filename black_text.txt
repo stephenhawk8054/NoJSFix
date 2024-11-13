@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.11.13.1
+! Last modified: 2024.11.13.2
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -9,7 +9,8 @@
 ! GitHub pull requests: https://github.com/stephenhawk8054/NoJSFix/pulls
 
 !==== Multiple sites ===!
-androidcentral.com,gamesradar.com,lifehacker.com,livescience.com,kotaku.com,pcgamer.com,space.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##html:style(color: black !important;)
+! https://kotaku.com/redbox-machines-kiosks-free-movies-dvds-stealing-reddit-1851694915
+androidcentral.com,gamesradar.com,lifehacker.com,livescience.com,kotaku.com,pcgamer.com,space.com,techradar.com,tomsguide.com,tomshardware.com,whathifi.com,windowscentral.com##html, body:style(color: black !important;)
 
 laptopmag.com##html:style(color: black !important;)
 
