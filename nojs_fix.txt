@@ -1,7 +1,7 @@
 ! Title: NoJS Fix
 ! Description: Filters to fix images not loading in noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.11.13.2
+! Last modified: 2024.11.14.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -944,6 +944,9 @@ visual-design.net##+js(set-attr, [data-animate-blur] img[data-pin-media], src, [
 ! https://vnexpress.net/thanh-tri-cua-pho-tuong-ba-harris-bau-cho-ong-trump-4813506.html
 vnexpress.net##+js(set-attr, img.lazy[src^="data:image"][data-src], src, [data-src])
 
+! voz.vn
+voz.vn##.has-no-js .lazyload:not(img[src^="data:image"]):style(display: block !important;)
+
 ! vtc.vn
 vtc.vn##+js(ss, b.video-element[data-poster], dataset poster)
 vtc.vn##+js(ss, img[data-src][src^="data:image"], dataset src)
@@ -1027,4 +1030,3 @@ nytimes.com##+js(cookie-remover, /^/)
 ||meter-svc.nytimes.com^
 ||nytimes.com/svc/onsite-messaging/query^
 ||samizdat-graphql.nytimes.com/graphql/v2^
-
