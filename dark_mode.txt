@@ -17,7 +17,7 @@
 4get.ca,4get.dcs0.hu,4get.kizuki.lol,4g.ggtyler.dev,4get.etenie.pl,4get.perennialte.ch,4get.seitan-ayoub.lol,4get.zzls.xyz##+js(trusted-set-cookie, theme, "Gore's shitty theme")
 
 ! adguard.com
-adguard.com##+js(tsa, html, data-theme, dark)
+adguard.com##+js(trusted-set-attr, html, data-theme, dark)
 
 ! https://bai-gaming.com/math-guides/lagrange-multipliers-optimization-example-1/
 bai-gaming.com##+js(trusted-click-element, div._thumb.wp-dark-mode-ignore + span.wp-dark-mode-ignore)
@@ -53,17 +53,17 @@ docs.scipy.org,executablebooks.org,imbalanced-learn.org,jupyterbook.org,matplotl
 educative.io##+js(trusted-set-cookie, theme, dark)
 
 ! fabiobarbero.eu
-fabiobarbero.eu##+js(tsa, body, theme, dark)
+fabiobarbero.eu##+js(trusted-set-attr, body, theme, dark)
 
 ! github.com
-docs.github.com##+js(tsa, html, data-color-mode, dark)
-docs.github.com##+js(tsa, html, data-light-theme, dark)
+docs.github.com##+js(trusted-set-attr, html, data-color-mode, dark)
+docs.github.com##+js(trusted-set-attr, html, data-light-theme, dark)
 ||github.githubassets.com/assets/light-$css,3p,domain=github.com
 ||github.githubassets.com/assets/dark-$css,3p,replace=/data-light-theme=dark/data-light-theme=light/g,domain=github.com
 ||github.githubassets.com/assets/dark-$css,3p,replace=/\[data-light-theme="dark"\]/[data-light-theme="light"]/g,domain=github.com
 
 ! kbin
-fedia.io##+js(tsa, body, class, theme--dark)
+fedia.io##+js(trusted-set-attr, body, class, theme--dark)
 
 ! https://flexbooks.ck12.org/cbook/ck-12-probability-and-statistics-concepts/section/5.4/primary/lesson/median-probability-and-statistics-pst/
 flexbooks.ck12.org##+js(trusted-set-local-storage-item, settings, '{"fontFamily":"ProximaNova,sans-serif","fontSize":18,"lineHeight":"1.5","background":{"backgroundColor":"#000000","color":"#ffffff"},"chatbotIntroduced":false,"unitChallengeIntroduced":false,"relatedContentIntroduced":false,"insightShowStudent":false,"hideInsightsPopup":true,"hideForesightsPopup":true,"isChatbotFloatingNotificationsEnabled":false,"loading":false}')
@@ -82,7 +82,7 @@ discuss.grapheneos.org##+js(set-cookie, flarum_nightmode, 2)
 ||assets.imginn.com/css/art.css^$css,replace=/prefers-color-scheme: dark/prefers-color-scheme: light/
 
 ! javascripttutorial.net
-javascripttutorial.net##+js(tsa, html, data-theme, dark)
+javascripttutorial.net##+js(trusted-set-attr, html, data-theme, dark)
 
 ! joplin
 joplinapp.org##+js(trusted-set-local-storage-item, theme, dark)
@@ -97,7 +97,7 @@ learn.microsoft.com##+js(trusted-set-attr, html, class, hasSidebar hasPageAction
 
 ! lemmy
 lemmy.eus##^link#default-light
-lemmy.eus##+js(tsa, link#default-dark, media, (prefers-color-scheme: light))
+lemmy.eus##+js(trusted-set-attr, link#default-dark, media, (prefers-color-scheme: light))
 
 ! libreddit                                                                                                                                                                                               ! libreddit.freedit.eu,libreddit.kylrth.com,libreddit.mha.fi,lr.4201337.xyz,rd.funami.tech,darklab.sh,libreddit.kavin.rocks,libreddit.oxymagnesium.com,reddit.leptons.xyz,libreddit.pabloferreiro.es,lr.artemislena.eu,lr.riverside.rocks##+js(ac, dark, body)
 l.opnxng.com,r.darrennathanael.com##+js(trusted-set-cookie, theme, black, , , reload, 1)
@@ -161,7 +161,7 @@ python.quantecon.org##+js(set-local-storage-item, setContrast, 1)
 python-httpx.org##+js(trusted-set-local-storage-item, /.__palette, '{"index":1,"color":{"media":"(prefers-color-scheme: dark)","scheme":"slate","primary":"blue","accent":"indigo"}}')
 
 ! quetre
-qr.vern.cc,quetre.iket.me##+js(tsa, html, theme, dark)
+qr.vern.cc,quetre.iket.me##+js(trusted-set-attr, html, theme, dark)
 
 ! https://www.quora.com/Whats-the-difference-between-a-limiting-and-stationary-distribution
 quora.com##+js(trusted-set-cookie, m-themeStrategy, dark)
