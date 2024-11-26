@@ -1,7 +1,7 @@
 ! Title: Cookie banners
 ! Description: Hide/Reject cookie banner
 ! Expires: 8 hours
-! Last modified: 2024.10.28.1
+! Last modified: 2024.11.26.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -39,6 +39,9 @@
 
 ! deepl.com
 ###cookieBanner
+
+! https://forums.malwarebytes.com/topic/167799-ive-tried-doing-everything-i-know-to-get-rid-of-this-malware-but-i-cant/
+###elGuestTerms
 
 ###eu-cookie-policy
 
