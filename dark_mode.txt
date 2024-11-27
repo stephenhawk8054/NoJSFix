@@ -1,7 +1,7 @@
 ! Title: Dark mode
 ! Description: Dark mode for users using Firefox' resistfingerprint or noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.11.14.1
+! Last modified: 2024.11.27.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -18,6 +18,9 @@
 
 ! adguard.com
 adguard.com##+js(trusted-set-attr, html, data-theme, dark)
+
+! https://www.androidauthority.com/how-i-use-obsidian-3499300/
+androidauthority.com##+js(trusted-set-attr, body, class, d_a)
 
 ! https://bai-gaming.com/math-guides/lagrange-multipliers-optimization-example-1/
 bai-gaming.com##+js(trusted-click-element, div._thumb.wp-dark-mode-ignore + span.wp-dark-mode-ignore)
