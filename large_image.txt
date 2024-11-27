@@ -1,7 +1,7 @@
 ! Title: Large Image Redirect
 ! Description: Redirect small image to large image
 ! Expires: 8 hours
-! Last modified: 2024.11.14.1
+! Last modified: 2024.11.27.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -40,3 +40,6 @@
 
 ! voz.vn
 ||data.voz.vn/avatars/$doc,image,uritransform=/\/avatars\/(?:l|m)\//\/avatars\/h\//
+
+! https://www.askpython.com/resources/python-good-choice-creating-online-games
+||images.unsplash.com/photo-$image,doc,removeparam
