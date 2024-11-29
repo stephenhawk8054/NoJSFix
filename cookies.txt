@@ -1,7 +1,7 @@
 ! Title: Cookie banners
 ! Description: Hide/Reject cookie banner
 ! Expires: 8 hours
-! Last modified: 2024.11.28.1
+! Last modified: 2024.11.29.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -59,6 +59,9 @@
 
 ! https://reqbin.com/req/c-tmyvmbgu/curl-head-request-example
 ##.cookie-bar
+
+! https://labex.io/tutorials/numpy-numpy-einsum-for-scientific-computing-4991
+##.cookie-popup
 
 ! https://blog.oversecured.com/20-Security-Issues-Found-in-Xiaomi-Devices/
 ##.gdpr-notice
