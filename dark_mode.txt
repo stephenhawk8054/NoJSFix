@@ -1,7 +1,7 @@
 ! Title: Dark mode
 ! Description: Dark mode for users using Firefox' resistfingerprint or noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.11.27.1
+! Last modified: 2024.11.29.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -187,6 +187,9 @@ securelist.com##+js(trusted-set-attr, body, class, post-template-default single 
 
 ! simplex.chat
 simplex.chat##+js(trusted-set-local-storage-item, theme, dark)
+
+! https://www.slingacademy.com/article/using-np-einsum-to-avoid-explicit-loops-in-numpy/
+slingacademy.com##+js(trusted-set-local-storage-item, theme, dark)
 
 ! https://www.spacebar.news/stop-using-brave-browser/
 ||spacebar.news^$doc,replace=/@media \(prefers-color-scheme: dark\)/@media (prefers-color-scheme: light)/
