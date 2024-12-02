@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.12.02.2
+! Last modified: 2024.12.02.3
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -204,6 +204,9 @@ thanhnien.vn##.detail__cmain [data-role="content"]:style(color: black !important
 
 ! https://theathletic.com/5061003/2023/11/17/virgil-van-dijk-liverpool-netherlands-paradox/
 theathletic.com##.bodytext1:style(color: black !important;)
+
+! https://thethao247.vn/395-ro-thoi-gian-ke-thuc-vu-kien-115-cao-buoc-cua-man-city-d349664.html
+thethao247.vn##.detail_article #content_detail:style(color: black !important;)
 
 ! https://gitlab.torproject.org/tpo/applications/tor-browser/-/issues/41764
 gitlab.torproject.org##.md blockquote, .md .blockquote, .md p:style(color: black !important;)
