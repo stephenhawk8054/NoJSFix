@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.12.02.1
+! Last modified: 2024.12.02.2
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -37,6 +37,9 @@ analyticsvidhya.com##.detail-page p:style(color: black !important;)
 
 ! https://wiki.archiveteam.org/index.php/YouTube
 archiveteam.org##.mw-body, .parsoid-body:style(color: black !important;)
+
+! https://blog.checkpoint.com/security/the-black-friday-cybercrime-economy/
+blog.checkpoint.com##.post--single .single-body:style(color: black !important;)
 
 ! briar
 briarproject.org###content-news p:style(color: black !important;)
