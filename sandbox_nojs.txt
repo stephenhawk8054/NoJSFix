@@ -1,0 +1,31 @@
+! Title: Sandbox noscript
+! Description: Filters to fix images not loading in noscript sandbox-mode
+! Expires: 8 hours
+! Last modified: 2024.12.07.1
+! Homepage: https://github.com/stephenhawk8054/NoJSFix
+! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
+!
+! GitHub issues: https://github.com/stephenhawk8054/NoJSFix/issues
+! GitHub pull requests: https://github.com/stephenhawk8054/NoJSFix/pulls
+
+
+! ====================================== Generic fixes ======================================
+###page-preloader
+###mdp-deblocker-js-disabled
+###nojs-banner
+##.js-jsWarning
+##.no-js-message
+##.u-noJsOnly
+! ===========================================================================================
+
+! https://plo.vn/hlv-troussier-gach-5-cai-ten-chot-danh-sach-cuoi-cung-28-tuyen-thu-post780584.html
+plo.vn##+js(set-attr, img.lazyload[data-src][src^="data:image"], src, [data-src])
+plo.vn##.zce-content-body img, .zce-content-body video:style(height: auto !important;)
+plo.vn##.zce-content-body a:style(display: contents !important; color: #00739f !important;)
+!#if !env_mobile
+plo.vn##+js(set-cookie, isDesktop, 1, , reload, 1)
+!#endif
+
+! voz.vn
+voz.vn##.has-no-js .lazyload:not(img[src^="data:image"]):style(display: block !important;)
+voz.vn##.has-no-js .js-expandContent:style(max-height: fit-content !important;)
