@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.12.08.1
+! Last modified: 2024.12.08.2
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -46,6 +46,9 @@ briarproject.org###content-news p:style(color: black !important;)
 
 ! https://builtin.com/data-science/train-test-split
 builtin.com##.blog-national .field--name-body:style(color: black !important;)
+
+! cnn.com
+cnn.com##.vossi-paragraph, .vossi-paragraph strong:style(color: black !important;)
 
 ! https://community.bitdefender.com/en/discussion/97814/has-anyone-else-encountered-xg4ken-com
 community.bitdefender.com##.userContent.userContent, .UserContent.UserContent:style(color: black !important;)
