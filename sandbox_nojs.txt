@@ -1,7 +1,7 @@
 ! Title: Sandbox noscript
 ! Description: Filters to fix images not loading in noscript sandbox-mode
 ! Expires: 8 hours
-! Last modified: 2024.12.08.1
+! Last modified: 2024.12.18.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -17,6 +17,9 @@
 ##.no-js-message
 ##.u-noJsOnly
 ! ===========================================================================================
+
+! https://www.bleepingcomputer.com/news/security/malicious-ads-push-lumma-infostealer-via-fake-captcha-pages/
+bleepingcomputer.com##+js(set-attr, img.b-lazy[data-src][src^="data:image"], src, [data-src])
 
 ! https://plo.vn/hlv-troussier-gach-5-cai-ten-chot-danh-sach-cuoi-cung-28-tuyen-thu-post780584.html
 plo.vn##+js(set-attr, img.lazyload[data-src][src^="data:image"], src, [data-src])
