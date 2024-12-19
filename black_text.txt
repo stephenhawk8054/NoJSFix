@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.12.08.2
+! Last modified: 2024.12.19.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -222,6 +222,9 @@ trendmicro.com##.articleContent p:style(color: black !important; font-weight: 40
 
 ! https://tuoitre.vn/giam-doc-mat-vu-my-thua-nhan-that-bai-vu-ong-trump-bi-ban-nhung-khong-tu-chuc-20240722224931511.htm
 tuoitre.vn##.detail__cmain .detail-content:style(color: black !important;)
+
+! https://unit42.paloaltonetworks.com/european-phishing-campaign/
+unit42.paloaltonetworks.com##.blog-editor .be__wrapper .be__contents .be__contents-wrapper *:style(color: black !important;)
 
 ! uservoice
 uservoice.com##.uvUserActionBody:style(color: black !important;)
