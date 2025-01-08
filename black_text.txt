@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2024.12.19.1
+! Last modified: 2025.01.08.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -65,8 +65,8 @@ cybersecuritynews.com##.tagdiv-type:style(color: black !important;)
 ! darkreading
 darkreading.com##.ArticleBase-HeaderSummary, .ContentText_variant_bodyNormal:style(color: black !important;)
 
-! digitalocean
-digitalocean.com##[class^="Markdown_markdown"]:style(color: black !important;)
+! https://www.digitalocean.com/community/tutorials/python-string-to-datetime-strptime
+digitalocean.com##div[class^="Markdown_markdown"], div[class^="Markdownstyles-sc-"]:style(color: black !important;)
 
 ! https://dp.tdhopper.com/dirichlet-distribution/
 dp.tdhopper.com##div.text_cell_render:style(color: black !important;)

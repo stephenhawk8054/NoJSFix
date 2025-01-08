@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 8 hours
-! Last modified: 2024.12.08.1
+! Last modified: 2025.01.08.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -347,8 +347,9 @@ nytimes.com##.commentAdjustClass
 nytimes.com##article > header:style(margin-top: 0px !important;)
 
 ! https://www.pcmag.com
-pcmag.com##article, .article-image, #content-header, [data-parent-group="author-bio"]:others()
+pcmag.com,~au.pcmag.com##article, .article-image, #content-header, [data-parent-group="author-bio"]:others()
 pcmag.com##div#onetrust-consent-sdk, [data-parent-group="related-stories"], [x-data="window.newsletters()"], #comments
+au.pcmag.com##.hero, .content:others()
 
 ! https://www.polygon.com
 polygon.com##.c-entry-content, .c-entry-hero, .e-image--hero:others()
