@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 8 hours
-! Last modified: 2025.01.08.1
+! Last modified: 2025.01.10.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -132,7 +132,9 @@ bloomberg.com##+js(aeld, scroll)
 ||assets.bwbx.io/s3/navi/$domain=bloomberg.com
 
 ! https://builtin.com/data-science/train-test-split
-builtin.com##.region-inner, #page-main-content:others()
+! https://builtin.com/data-science/gamma-distribution
+builtin.com##main:others()
+builtin.com###job-search-widget
 builtin.com##body:style(margin-top: 0px !important;)
 
 ! https://careerfoundry.com
