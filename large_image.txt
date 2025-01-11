@@ -1,7 +1,7 @@
 ! Title: Large Image Redirect
 ! Description: Redirect small image to large image
 ! Expires: 8 hours
-! Last modified: 2024.12.08.1
+! Last modified: 2025.01.11.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -46,3 +46,6 @@
 
 ! https://lifestyle.znews.vn/thay-gi-khi-ke-am-sat-ceo-unitedhealthcare-duoc-tung-ho-nhu-nguoi-hung-post1516636.html
 ||photo.znews.vn/w*/Uploaded/$doc,image,uritransform=/\/w\d+\/Uploaded/\/Uploaded/
+
+! https://www.tomshardware.com/pc-components/cpus/amd-says-intels-horrible-product-is-causing-ryzen-9-9800x3d-shortages
+||cdn.mos.cms.futurecdn.net^$doc,image,uritransform=/(?:-\d{2,4}){2}\.jpg\b/.jpg/
