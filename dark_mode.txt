@@ -1,7 +1,7 @@
 ! Title: Dark mode
 ! Description: Dark mode for users using Firefox' resistfingerprint or noscript mode
 ! Expires: 8 hours
-! Last modified: 2024.11.29.1
+! Last modified: 2025.01.14.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -106,6 +106,13 @@ lemmy.eus##+js(trusted-set-attr, link#default-dark, media, (prefers-color-scheme
 l.opnxng.com,r.darrennathanael.com##+js(trusted-set-cookie, theme, black, , , reload, 1)
 *$doc,replace=/<html lang="en" class="f/<html lang="en" class="black f/,domain=redlib.freedit.eu
 *$doc,replace=/<html lang="en"/<html lang="en" class="black"/,domain=libreddit.bus-hit.me|reddit.idevicehacked.com|redlib.freedit.eu|lr.n8pjl.ca|redlib.catsarch.com
+
+! https://librespeed.org/
+librespeed.org##html, body, #loading:style(background: #202020 !important; color: #F4F4F4 !important;)
+librespeed.org##h1:style(color:#E0E0E0 !important;)
+librespeed.org##a:style(color:#9090FF !important;)
+librespeed.org###privacyPolicy:style(background:#000000 !important;)
+librespeed.org###resultsImg:style(filter: invert(1) !important;)
 
 ! https://lollox1k.github.io/Matematica/Probabilit%C3%A0/Processi-stocastici/Limiting-distribution-of-a-Markov-Chain
 lollox1k.github.io##+js(trusted-set-local-storage-item, theme, dark)
