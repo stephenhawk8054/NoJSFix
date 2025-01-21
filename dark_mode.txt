@@ -1,7 +1,7 @@
 ! Title: Dark mode
 ! Description: Dark mode for users using Firefox' resistfingerprint or noscript mode
 ! Expires: 8 hours
-! Last modified: 2025.01.16.1
+! Last modified: 2025.01.21.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -51,6 +51,7 @@ docker.com##+js(trusted-set-cookie, dds-theme, %7B%22preference%22%3A%22dark%22%
 docs.python.org##+js(trusted-set-local-storage-item, currentTheme, dark)
 docs.scipy.org,executablebooks.org,imbalanced-learn.org,jupyterbook.org,matplotlib.org,numpy.org,pandas.pydata.org,readthedocs.io,scikit-learn.org##+js(trusted-set-local-storage-item, mode, dark)
 docs.scipy.org,executablebooks.org,imbalanced-learn.org,jupyterbook.org,matplotlib.org,numpy.org,pandas.pydata.org,readthedocs.io,scikit-learn.org##+js(trusted-set-local-storage-item, theme, dark)
+numpy.org##+js(set-cookie, dummy, 1, , reload, 1)
 
 ! educative.io
 educative.io##+js(trusted-set-cookie, theme, dark)

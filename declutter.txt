@@ -1,7 +1,7 @@
 ! Title: Declutter
 ! Description: Declutter news/blog sites that distracts users from main content
 ! Expires: 8 hours
-! Last modified: 2025.01.10.1
+! Last modified: 2025.01.21.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -275,6 +275,9 @@ hothardware.com###spotim-specific
 
 ! https://home.howstuffworks.com
 howstuffworks.com##article, #share-bar-bottom li.text-center, .share-email, [id^="citation-link"], #content-well > .page-title, #content-well > .page-title + div > .justify-between, [aria-label="Breadcrumb Links"]:others()
+
+! https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2024/12/our-response-to-google-s-policy-change-on-fingerprinting
+ico.org.uk##article:others()
 
 ! https://www.japantimes.co.jp
 japantimes.co.jp##article > .padding_block:not(.entry) > :not(#after_contents), #slideshow_and_video, .single-title:others()
