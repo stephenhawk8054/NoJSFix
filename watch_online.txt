@@ -7,3 +7,32 @@
 !
 ! GitHub issues: https://github.com/stephenhawk8054/NoJSFix/issues
 ! GitHub pull requests: https://github.com/stephenhawk8054/NoJSFix/pulls
+
+/^([a-z0-9]{1,4}\.)?(90phut|banhkhuc|cakeo|cakhia|mitom|thapcam|vebo|xoilac)[a-z0-9]*\.[a-z]{2,5}$/##.modal-backdrop
+/^([a-z0-9]{1,4}\.)?(90phut|banhkhuc|cakeo|cakhia|mitom|thapcam|vebo|xoilac)[a-z0-9]*\.[a-z]{2,5}$/##.bg-overlay
+.gif^$image,redirect=1x1.gif,domain=/^([a-z0-9]{1,4}\.)?(90phut|banhkhuc|cakeo|cakhia|mitom|thapcam|vebo|xoilac)[a-z0-9]*\.[a-z]{2,5}$/
+##.modal:has(.rn-close)
+##.fade.show[class*="modal-_"]
+##.mct_-bet
+##.bann-bot
+##.bann-right
+##.btn-bet
+##.btn-bet-top
+##.mmo
+##.mmo-inner
+##.size-728x90
+##.size-1330x90
+##.size-160x800
+##.size-500x500
+##.odds-table-container
+##.vebo-sp
+###app-web div[class*="size-"]:has(> a[aria-label="adz"])
+###app-web .for-desktop
+###app-web .for-mobile
+##a#partner1[target="_blank"]
+##a#partner2[target="_blank"]
+##a#partner3[target="_blank"]
+##a#partner4[target="_blank"]
+##a#partner5[target="_blank"]
+##a#partner6[target="_blank"]
+##.list-main-link > .group-link.d-none
