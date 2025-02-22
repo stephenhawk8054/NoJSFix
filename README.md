@@ -13,3 +13,6 @@ https://raw.githubusercontent.com/stephenhawk8054/NoJSFix/main/declutter.txt
 
 4. Dark mode filter lists - Set dark mode for Firefox' users with resistfingerprint or noscript mode  
 https://raw.githubusercontent.com/stephenhawk8054/NoJSFix/main/dark_mode.txt  
+
+5. Watch online filter list
+https://cdn.jsdelivr.net/gh/stephenhawk8054/NoJSFix@latest/watch_online.txt
