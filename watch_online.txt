@@ -1,14 +1,14 @@
 ! Title: Watch online
 ! Description: Generic/regex filters for Vietnamese online football sites
 ! Expires: 8 hours
-! Last modified: 2025.02.23.2
+! Last modified: 2025.02.24.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
 ! GitHub issues: https://github.com/stephenhawk8054/NoJSFix/issues
 ! GitHub pull requests: https://github.com/stephenhawk8054/NoJSFix/pulls
 
-/^([a-z0-9]{1,4}\.)?(90phut|banhkhuc|cakeo|cakhia|mitom|thapcam|vebo|xoilac)[a-z0-9]*\.[a-z]{2,5}$/##.bg-overlay, .modal-backdrop, .modal
+/^([a-z0-9]{1,4}\.)?(90phut|banhkhuc|cakeo|cakhia|mitom|thapcam|vebo|xoilac)[a-z0-9]*\.[a-z]{2,5}$/##.bg-overlay, .modal-backdrop, .modal, #app-web div[class*="size-"]:has(> a[aria-label="adz"])
 .gif^$image,redirect=1x1.gif,domain=/^([a-z0-9]{1,4}\.)?(90phut|banhkhuc|cakeo|cakhia|mitom|thapcam|vebo|xoilac)[a-z0-9]*\.[a-z]{2,5}$/
 ##.fade.show[class*="modal-_"]
 ##.mct_-bet
@@ -24,7 +24,6 @@
 ##.size-500x500
 ##.odds-table-container
 ##.vebo-sp
-###app-web div[class*="size-"]:has(> a[aria-label="adz"])
 ###app-web .for-desktop
 ###app-web .for-mobile
 ##a#partner1[target="_blank"]
