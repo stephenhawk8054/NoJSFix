@@ -1,7 +1,7 @@
 ! Title: Black text
 ! Description: Force black text on sites without dark mode
 ! Expires: 8 hours
-! Last modified: 2025.01.21.1
+! Last modified: 2025.07.11.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -201,6 +201,9 @@ softkeys.uk##.prose:style(color: black !important;)
 
 ! sonicwall
 blog.sonicwall.com##.main_color:style(color: black !important;)
+
+! https://www.statistics.com/glossary/likelihood-function/
+statistics.com##.text-primary-400:style(color: black !important;)
 
 ! https://techcrunch.com/2024/05/24/signals-meredith-whittaker-on-the-telegram-security-clash-and-the-edge-lords-at-openai/
 techcrunch.com##.entry-content, .wp-block-post-content:style(color: black !important;)
