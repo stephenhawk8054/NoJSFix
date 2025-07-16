@@ -91,3 +91,8 @@
 
 ! https://www.cherryservers.com/blog/convert-string-to-int-in-python
 ##.fixed[x-data="cookiesConsent"]
+
+! https://www.psychologicalscience.org/observer/bayes-for-beginners-2-the-prior
+###cookie-law-info-bar
+###cookie-law-info-again
+###cliSettingsPopup
