@@ -1,7 +1,7 @@
 ! Title: Sandbox noscript
 ! Description: Filters to fix images not loading in noscript sandbox-mode
 ! Expires: 8 hours
-! Last modified: 2025.25.08.1
+! Last modified: 2025.25.08.2
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -16,13 +16,11 @@
 ##.js-jsWarning
 ##.no-js-message
 ##.u-noJsOnly
+
+! ##+js(set-attr, img[data-src][src^="data:image"], src, [data-src])
+bleepingcomputer.com,dantri.com.vn,plo.vn,vietnamnet.vn##+js(set-attr, img[data-src][src^="data:image"], src, [data-src])
+
 ! ===========================================================================================
-
-! https://www.bleepingcomputer.com/news/security/malicious-ads-push-lumma-infostealer-via-fake-captcha-pages/
-bleepingcomputer.com##+js(set-attr, img.b-lazy[data-src][src^="data:image"], src, [data-src])
-
-! https://dantri.com.vn/doi-song/di-nhan-gan-nua-the-ky-khong-ngu-bay-gio-ra-sao-20220403164147478.htm
-dantri.com.vn##+js(set-attr, img[data-src][src^="data:image/"], src, [data-src])
 
 ! https://au.pcmag.com/processors/109107/intels-2025-arrow-lake-core-ultra-chips-for-laptops-prioritize-power-over-ai
 pcmag.com##+js(set-attr, img[data-src][src^="data:image"]:not([data-image-loader]), src, [data-src])
@@ -30,7 +28,6 @@ pcmag.com##+js(set-attr, img[data-image-loader][src^="data:image"]:not([data-src
 pcmag.com##.video-parent:has(img[src^="https://cdn.ex.co/"])
 
 ! https://plo.vn/hlv-troussier-gach-5-cai-ten-chot-danh-sach-cuoi-cung-28-tuyen-thu-post780584.html
-plo.vn##+js(set-attr, img.lazyload[data-src][src^="data:image"], src, [data-src])
 plo.vn##.zce-content-body img, .zce-content-body video:style(height: auto !important;)
 plo.vn##.zce-content-body a:style(display: contents !important; color: #00739f !important;)
 !#if !env_mobile
@@ -42,9 +39,6 @@ ponderwall.com##+js(set-attr, img.lazy[src^="data:image"][data-src], src, [data-
 
 ! https://unit42.paloaltonetworks.com/european-phishing-campaign/
 unit42.paloaltonetworks.com##+js(set-attr, img.lozad[data-src]:not([src]), src, [data-src])
-
-! https://vietnamnet.vn/thu-tuong-viet-nam-xay-dung-tiem-luc-quoc-phong-du-manh-de-tang-kha-nang-tu-ve-2354000.html
-vietnamnet.vn##+js(set-attr, img.lazy[data-original][src^="data:image"], src, [data-original])
 
 ! voz.vn
 voz.vn##.has-no-js .lazyload:not(img[src^="data:image"]):style(display: block !important;)
