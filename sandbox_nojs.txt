@@ -1,7 +1,7 @@
 ! Title: Sandbox noscript
 ! Description: Filters to fix images not loading in noscript sandbox-mode
 ! Expires: 8 hours
-! Last modified: 2025.25.08.2
+! Last modified: 2025.25.08.3
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -18,7 +18,7 @@
 ##.u-noJsOnly
 
 ! ##+js(set-attr, img[data-src][src^="data:image"], src, [data-src])
-bleepingcomputer.com,dantri.com.vn,plo.vn,vietnamnet.vn##+js(set-attr, img[data-src][src^="data:image"], src, [data-src])
+bleepingcomputer.com,dantri.com.vn,plo.vn,ponderwall.com,vietnamnet.vn##+js(set-attr, img[data-src][src^="data:image"], src, [data-src])
 
 ! ===========================================================================================
 
@@ -35,7 +35,7 @@ plo.vn##+js(set-cookie, isDesktop, 1, , reload, 1)
 !#endif
 
 ! https://ponderwall.com/index.php/2024/12/07/fbi-warning-phones/
-ponderwall.com##+js(set-attr, img.lazy[src^="data:image"][data-src], src, [data-src])
+ponderwall.com##.lazy-hidden
 
 ! https://unit42.paloaltonetworks.com/european-phishing-campaign/
 unit42.paloaltonetworks.com##+js(set-attr, img.lozad[data-src]:not([src]), src, [data-src])
