@@ -1,7 +1,7 @@
 ! Title: Sandbox noscript
 ! Description: Filters to fix images not loading in noscript sandbox-mode
 ! Expires: 8 hours
-! Last modified: 2025.01.08.1
+! Last modified: 2025.25.08.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -20,6 +20,9 @@
 
 ! https://www.bleepingcomputer.com/news/security/malicious-ads-push-lumma-infostealer-via-fake-captcha-pages/
 bleepingcomputer.com##+js(set-attr, img.b-lazy[data-src][src^="data:image"], src, [data-src])
+
+! https://dantri.com.vn/doi-song/di-nhan-gan-nua-the-ky-khong-ngu-bay-gio-ra-sao-20220403164147478.htm
+dantri.com.vn##+js(set-attr, img[data-src][src^="data:image/"], src, [data-src])
 
 ! https://au.pcmag.com/processors/109107/intels-2025-arrow-lake-core-ultra-chips-for-laptops-prioritize-power-over-ai
 pcmag.com##+js(set-attr, img[data-src][src^="data:image"]:not([data-image-loader]), src, [data-src])
