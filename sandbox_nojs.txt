@@ -1,7 +1,7 @@
 ! Title: Sandbox noscript
 ! Description: Filters to fix images not loading in noscript sandbox-mode
 ! Expires: 8 hours
-! Last modified: 2025.25.08.4
+! Last modified: 2025.26.08.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -18,7 +18,7 @@
 ##.u-noJsOnly
 
 ! ##+js(set-attr, img[data-src][src^="data:image"], src, [data-src])
-*,~pcmag.com,~unit42.paloaltonetworks.com,~voz.vn##+js(set-attr, img[data-src][src^="data:image"], src, [data-src])
+*,~pcmag.com,~unit42.paloaltonetworks.com,~vietnamnet.vn,~voz.vn##+js(set-attr, img[data-src][src^="data:image"], src, [data-src])
 
 ! ===========================================================================================
 
@@ -39,6 +39,9 @@ ponderwall.com##.lazy-hidden
 
 ! https://unit42.paloaltonetworks.com/european-phishing-campaign/
 unit42.paloaltonetworks.com##+js(set-attr, img.lozad[data-src]:not([src]), src, [data-src])
+
+! https://vietnamnet.vn/iphone-fold-ra-mat-2026-apple-khai-tu-face-id-gia-du-kien-cham-noc-2436264.html
+vietnamnet.vn##+js(set-attr, body img[data-original][src^="data:image"], src, [data-original])
 
 ! voz.vn
 voz.vn##.has-no-js .lazyload:not(img[src^="data:image"]):style(display: block !important;)
