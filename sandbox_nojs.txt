@@ -1,7 +1,7 @@
 ! Title: Sandbox noscript
 ! Description: Filters to fix images not loading in noscript sandbox-mode
 ! Expires: 8 hours
-! Last modified: 2025.26.08.2
+! Last modified: 2025.03.09.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -18,9 +18,12 @@
 ##.u-noJsOnly
 
 ! ##+js(set-attr, img[data-src][src^="data:image"], src, [data-src])
-*,~pcmag.com,~unit42.paloaltonetworks.com,~vietnamnet.vn,~voz.vn##+js(set-attr, body img[data-src][src^="data:image"], src, [data-src])
+*,~forbes.com,~pcmag.com,~unit42.paloaltonetworks.com,~vietnamnet.vn,~voz.vn##+js(set-attr, body img[data-src][src^="data:image"], src, [data-src])
 
 ! ===========================================================================================
+
+! https://www.forbes.com/
+forbes.com##.featured__slide-content:style(opacity: 1 !important;)
 
 ! https://au.pcmag.com/processors/109107/intels-2025-arrow-lake-core-ultra-chips-for-laptops-prioritize-power-over-ai
 pcmag.com##+js(set-attr, img[data-src][src^="data:image"]:not([data-image-loader]), src, [data-src])
