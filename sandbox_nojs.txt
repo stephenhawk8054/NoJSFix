@@ -1,7 +1,7 @@
 ! Title: Sandbox noscript
 ! Description: Filters to fix images not loading in noscript sandbox-mode
 ! Expires: 8 hours
-! Last modified: 2025.03.09.1
+! Last modified: 2025.13.09.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -18,7 +18,7 @@
 ##.u-noJsOnly
 
 ! ##+js(set-attr, img[data-src][src^="data:image"], src, [data-src])
-*,~forbes.com,~pcmag.com,~unit42.paloaltonetworks.com,~vietnamnet.vn,~voz.vn##+js(set-attr, body img[data-src][src^="data:image"], src, [data-src])
+*,~forbes.com,~pcmag.com,~trustedsec.com,~unit42.paloaltonetworks.com,~vietnamnet.vn,~voz.vn##+js(set-attr, body img[data-src][src^="data:image"], src, [data-src])
 
 ! ===========================================================================================
 
@@ -39,6 +39,9 @@ plo.vn##+js(set-cookie, isDesktop, 1, , reload, 1)
 
 ! https://ponderwall.com/index.php/2024/12/07/fbi-warning-phones/
 ponderwall.com##.lazy-hidden
+
+! https://trustedsec.com/blog/detecting-password-spraying-with-a-honeypot-account
+trustedsec.com##.opacity-0:remove-class(opacity-0)
 
 ! https://unit42.paloaltonetworks.com/european-phishing-campaign/
 unit42.paloaltonetworks.com##+js(set-attr, img.lozad[data-src]:not([src]), src, [data-src])
