@@ -16,3 +16,6 @@ https://raw.githubusercontent.com/stephenhawk8054/NoJSFix/main/dark_mode.txt
 
 5. Watch online filter list  
 https://cdn.jsdelivr.net/gh/stephenhawk8054/NoJSFix@latest/watch_online.txt
+
+6. Userscript:
+https://raw.githubusercontent.com/stephenhawk8054/NoJSFix/refs/heads/main/sandbox.user.js
