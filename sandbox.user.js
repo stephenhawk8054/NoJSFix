@@ -7,6 +7,7 @@
 // @version     1.0
 // @author      -
 // @description Restore frames and images in no-scripting mode
+// @downloadURL https://raw.githubusercontent.com/stephenhawk8054/NoJSFix/refs/heads/main/sandbox.user.js
 // ==/UserScript==
 
 // General -----------------------------------------------------------------
