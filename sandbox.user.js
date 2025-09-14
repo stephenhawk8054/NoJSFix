@@ -2,9 +2,10 @@
 // @name        No JS
 // @namespace   User Scripts
 // @match       https://www.forbes.com/*
+// @match       https://www.cnbc.com/*
 // @grant       none
 // @run-at      document-end
-// @version     1.0
+// @version     2.0
 // @author      -
 // @description Restore frames and images in no-scripting mode
 // @downloadURL https://raw.githubusercontent.com/stephenhawk8054/NoJSFix/refs/heads/main/sandbox.user.js
@@ -32,6 +33,32 @@ const forbes = () => {
   })
 }
 
+// CNBC -------------------------------------------------------------------
+const cnbc = () => {
+  document.querySelectorAll('script[charset="UTF-8"]').forEach(scriptEl => {
+    let scriptTxt = scriptEl.textContent
+    if (scriptTxt.includes("window.__s_data")) {
+      new Function(scriptTxt)();
+      __s_data.page.page.layout.forEach(layout => {
+        layout.columns.forEach(column => {
+          column.modules.forEach(module => {
+            if (module.name === "articleBody") {
+              module.data.body.content.forEach(content => {
+                if (content.tagName === "image") {
+                  let imagePlaceholder = document.querySelector(`#ArticleBody-InlineImage-${content.attributes.id} .InlineImage-imagePlaceholder`);
+                  imagePlaceholder.removeAttribute("style");
+                  addNode("img", content.attributes.url, imagePlaceholder);
+                }
+              })
+            }
+          })
+        })
+      })
+    }
+  })
+}
+
 // Sites
 const hostname = location.hostname;
 if (hostname.includes("forbes.com")) { forbes() }
+else if (hostname.includes("cnbc.com")) { cnbc() }
