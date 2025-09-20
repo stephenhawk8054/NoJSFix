@@ -1,7 +1,7 @@
 ! Title: Sandbox noscript
 ! Description: Filters to fix images not loading in noscript sandbox-mode
 ! Expires: 8 hours
-! Last modified: 2025.13.09.1
+! Last modified: 2025.20.09.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -18,7 +18,8 @@
 ##.u-noJsOnly
 
 ! ##+js(set-attr, img[data-src][src^="data:image"], src, [data-src])
-*,~forbes.com,~pcmag.com,~trustedsec.com,~unit42.paloaltonetworks.com,~vietnamnet.vn,~voz.vn##+js(set-attr, body img[data-src][src^="data:image"], src, [data-src])
+*,~cnbc.com,~forbes.com,~pcmag.com,~thanhnien.vn,~trustedsec.com,~unit42.paloaltonetworks.com,~vietnamnet.vn,~voz.vn##+js(set-attr, body img[data-original][src^="data:image"], src, [data-original])
+*,~cnbc.com,~forbes.com,~pcmag.com,~thanhnien.vn,~trustedsec.com,~unit42.paloaltonetworks.com,~vietnamnet.vn,~voz.vn##+js(set-attr, body img[data-src][src^="data:image"]:not([data-original]), src, [data-src])
 
 ! ===========================================================================================
 

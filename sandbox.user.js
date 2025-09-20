@@ -3,15 +3,18 @@
 // @namespace   User Scripts
 // @match       https://www.forbes.com/*
 // @match       https://www.cnbc.com/*
+// @match       https://thanhnien.vn/*
 // @grant       none
 // @run-at      document-end
-// @version     2.0
+// @version     3.0
 // @author      -
 // @description Restore frames and images in no-scripting mode
 // @downloadURL https://raw.githubusercontent.com/stephenhawk8054/NoJSFix/refs/heads/main/sandbox.user.js
+// @updateURL   https://raw.githubusercontent.com/stephenhawk8054/NoJSFix/refs/heads/main/sandbox.user.js
 // ==/UserScript==
 
 // General -----------------------------------------------------------------
+const parser = new DOMParser();
 const addNode = (nodeStr, source, parent) => {
   if (source) {
     let node = document.createElement(nodeStr);
@@ -58,7 +61,20 @@ const cnbc = () => {
   })
 }
 
+// thanhnien.vn -----------------------------------------------------------
+const thanhnien = () => {
+  document.querySelectorAll(".VCSortableInPreviewMode[data-vid]").forEach(dataVid => {
+    const dataset = dataVid.dataset;
+    const video = parser.parseFromString(
+      `<video poster="${dataset.thumb}" width="${dataset.width}" controls><source src="https://${dataset.vid}" type="video/mp4"></video>`,
+      "text/html"
+    );
+    dataVid.insertBefore(video.body.children[0], dataVid.firstChild);
+  })
+}
+
 // Sites
 const hostname = location.hostname;
 if (hostname.includes("forbes.com")) { forbes() }
 else if (hostname.includes("cnbc.com")) { cnbc() }
+else if (hostname.includes("thanhnien.vn")) { thanhnien() }
