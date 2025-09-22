@@ -1,7 +1,7 @@
 ! Title: Trackers blocklist
 ! Description: Trackers blocklist
 ! Expires: 8 hours
-! Last modified: 2025.09.22.1
+! Last modified: 2025.09.22.2
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -20,6 +20,7 @@
 ! URLs
 /v1/rgstr^
 ||arte.tv/static/analytics/
+||err.ee/api/statistics/
 ||gala.games/gal/fp/
 ||jsdelivr.net/npm/search-insights
 ||luckyduckgames.com/global/index.php?controller=statistics
