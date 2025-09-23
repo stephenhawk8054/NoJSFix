@@ -1,7 +1,7 @@
 ! Title: Trackers blocklist
 ! Description: Trackers blocklist
 ! Expires: 8 hours
-! Last modified: 2025.09.23.1
+! Last modified: 2025.09.23.2
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -17,9 +17,11 @@
 ||jzq915.playmobil.com^
 ||smind.hr^
 ||tracking.dpmlol.com^
+
 ! URLs
 /v1/rgstr^
 ||arte.tv/static/analytics/
+||dp.ru/api/*/ClientLogs
 ||err.ee/api/statistics/
 ||gala.games/gal/fp/
 ||globalbunjang.com/api/log/
@@ -31,14 +33,17 @@
 ||vodafone.com/submit-events
 ||youtube.com/api/stats/$method=post
 willap.jp%2Ft%3Fr=$image
+
 ! removeparam
 ||cnet.com^$removeparam=ftag
 ||cnet.com^$removeparam=medium
 ||cnet.com^$removeparam=source
+
 ! Risky
 ||analytics.
 /lre-events^
 /Statistics/statistics.
 ^utm_$removeparam=/^utm_/
+
 ! Others
 hoyoverse.com##+js(trusted-set-cookie, _HYVUUID, , 0, , domain, .hoyoverse.com)
