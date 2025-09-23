@@ -32,6 +32,7 @@
 ||qobuz.com/api.json/*/user/tracking?
 ||spotifycdn.com/cdn/js/gtm.
 ||vodafone.com/submit-events
+||y2down.cc/cdn-cgi/trace
 ||youtube.com/api/stats/$method=post
 willap.jp%2Ft%3Fr=$image
 
