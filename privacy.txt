@@ -1,7 +1,7 @@
 ! Title: Trackers blocklist
 ! Description: Trackers blocklist
-! Expires: 8 hours
-! Last modified: 2025.09.23.4
+! Expires: 6 hours
+! Last modified: 2025.09.25.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -44,6 +44,7 @@ willap.jp%2Ft%3Fr=$image
 ! scriptlets
 azrhymes.com##+js(remove-cookie, visitor, when, scroll keydown)
 azrhymes.com##+js(set-local-storage-item, visitor_hash, $remove$)
+hostadvice.com##+js(remove-cookie, msvt_uid, when, scroll keydown)
 youskbe.com##+js(set-local-storage-item, __adm_uid, $remove$)
 
 ! Risky
@@ -51,6 +52,8 @@ youskbe.com##+js(set-local-storage-item, __adm_uid, $remove$)
 /lre-events^
 /Statistics/statistics.
 ^utm_$removeparam=/^utm_/
+$removeparam=ref
+$removeparam=ref_
 
 ! Others
 hoyoverse.com##+js(trusted-set-cookie, _HYVUUID, , 0, , domain, .hoyoverse.com)
