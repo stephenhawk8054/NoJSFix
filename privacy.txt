@@ -1,7 +1,7 @@
 ! Title: Trackers blocklist
 ! Description: Trackers blocklist
 ! Expires: 6 hours
-! Last modified: 2025.09.25.2
+! Last modified: 2025.09.27.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -46,11 +46,15 @@ willap.jp%2Ft%3Fr=$image
 ! scriptlets
 azrhymes.com##+js(remove-cookie, visitor, when, scroll keydown)
 azrhymes.com##+js(set-local-storage-item, visitor_hash, $remove$)
+bloomberg.com##+js(set-local-storage-item, /^statsig/, $remove$)
+bloomberg.com##+js(remove-cookie, _pxhd)
 hostadvice.com##+js(remove-cookie, msvt_uid, when, scroll keydown)
 youskbe.com##+js(set-local-storage-item, __adm_uid, $remove$)
 
 ! Risky
 ||analytics.
+||cm.bloomberg.com^
+/event-recorder-client/*
 /lre-events^
 /Statistics/statistics.
 ^utm_$removeparam=/^utm_/
