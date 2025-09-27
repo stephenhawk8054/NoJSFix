@@ -1,7 +1,7 @@
 ! Title: Trackers blocklist
 ! Description: Trackers blocklist
 ! Expires: 6 hours
-! Last modified: 2025.09.27.3
+! Last modified: 2025.09.27.4
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -12,6 +12,8 @@
 ||a.streamed.pk^
 ||api-logdev.sohatv.vn^
 ||deqik.com^
+||e2elog.fetnet.net^
+||e2elogv2.*.cloudapp.azure.com^
 ||event.arte.tv^
 ||ezodn.com^
 ||jzq915.playmobil.com^
@@ -21,17 +23,22 @@
 
 ! URLs
 /v1/rgstr^
+||api.svc.taiwanmedia.org/taiwan-media/puid/
 ||arte.tv/static/analytics/
 ||dp.ru/api/*/ClientLogs
 ||err.ee/api/statistics/
+||fino.svc.litv.tv/acs/dms.js
 ||gala.games/gal/fp/
 ||globalbunjang.com/api/log/
 ||globalbunjang.com/scripts/google_tag_manager.js
 ||jsdelivr.net/npm/search-insights
 ||lenta.ru/atlas/metrics/
+||litv.tv/api/generate-device-id
 ||luckyduckgames.com/global/index.php?controller=statistics
 ||maukerja.my/server-api/impression-api
 ||maukerja.my/v3mkapi/track/
+||player.svc.litv.tv/pixel/
+||pusti.svc.litv.tv/puid
 ||qobuz.com/api.json/*/user/tracking?
 ||spotifycdn.com/cdn/js/gtm.
 ||vodafone.com/submit-events
