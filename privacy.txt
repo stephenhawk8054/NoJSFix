@@ -1,7 +1,7 @@
 ! Title: Trackers blocklist
 ! Description: Trackers blocklist
 ! Expires: 6 hours
-! Last modified: 2025.09.30.3
+! Last modified: 2025.09.30.4
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -44,6 +44,8 @@
 ||player.svc.litv.tv/pixel/
 ||pusti.svc.litv.tv/puid
 ||qobuz.com/api.json/*/user/tracking?
+||rtings.com/js/script.manual.js
+||rtings.com/api/event
 ||slideshare.net/api/v*/events
 ||spotifycdn.com/cdn/js/gtm.
 ||vodafone.com/submit-events
