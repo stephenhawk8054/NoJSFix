@@ -1,7 +1,7 @@
 ! Title: Trackers blocklist
 ! Description: Trackers blocklist
 ! Expires: 6 hours
-! Last modified: 2025.10.02.1
+! Last modified: 2025.10.02.2
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -28,6 +28,7 @@
 ||api.svc.taiwanmedia.org/taiwan-media/puid/
 ||arte.tv/static/analytics/
 ||dp.ru/api/*/ClientLogs
+||dubcdn.com/analytics/
 ||err.ee/api/statistics/
 ||fino.svc.litv.tv/acs/dms.js
 ||gala.games/gal/fp/
@@ -69,6 +70,7 @@ mous.co##+js(set-local-storage-item, acs_uid, $remove$)
 pelikan.*##+js(remove-cookie, /^codeblocks_/, when, scroll keydown)
 jdpower.com##+js(remove-cookie, /_pxhd|userid/, when, scroll keydown)
 slideshare.net##+js(remove-cookie, browser_id, when, scroll keydown)
+superhuman.com##+js(remove-cookie, web-device, when, scroll keydown)
 youskbe.com##+js(set-local-storage-item, __adm_uid, $remove$)
 ! statsig
 bloomberg.com,slideshare.net##+js(set-local-storage-item, /^statsig/, $remove$)
