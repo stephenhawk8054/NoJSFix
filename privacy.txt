@@ -61,6 +61,7 @@ willap.jp%2Ft%3Fr=$image
 ||cnet.com^$removeparam=source
 
 ! scriptlets
+agatameble.pl##+js(remove-cookie, private_content_version, when, scroll keydown)
 azrhymes.com##+js(remove-cookie, visitor, when, scroll keydown)
 azrhymes.com##+js(set-local-storage-item, visitor_hash, $remove$)
 bloomberg.com##+js(remove-cookie, _pxhd, when, scroll keydown)
@@ -83,6 +84,7 @@ bloomberg.com,slideshare.net##+js(set-local-storage-item, /^statsig/, $remove$)
 ||analytics.
 ||cm.bloomberg.com^
 ||digitalbox.workers.dev^
+||snrbox.com^
 /event-recorder-client/*
 /lre-events^
 /Statistics/statistics.
