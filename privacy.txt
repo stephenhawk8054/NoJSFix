@@ -1,7 +1,7 @@
 ! Title: Trackers blocklist
 ! Description: Trackers blocklist
 ! Expires: 6 hours
-! Last modified: 2025.10.02.2
+! Last modified: 2025.10.02.3
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -24,6 +24,7 @@
 ||wa.slideshare.net^
 
 ! URLs
+/piano/engagement
 /v1/rgstr^
 ||api.svc.taiwanmedia.org/taiwan-media/puid/
 ||arte.tv/static/analytics/
