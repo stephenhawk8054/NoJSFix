@@ -1,7 +1,7 @@
 ! Title: Trackers blocklist
 ! Description: Trackers blocklist
 ! Expires: 6 hours
-! Last modified: 2025.09.30.4
+! Last modified: 2025.10.02.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -76,6 +76,7 @@ bloomberg.com,slideshare.net##+js(set-local-storage-item, /^statsig/, $remove$)
 ! Risky
 ||analytics.
 ||cm.bloomberg.com^
+||digitalbox.workers.dev^
 /event-recorder-client/*
 /lre-events^
 /Statistics/statistics.
