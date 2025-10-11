@@ -1,7 +1,7 @@
 ! Title: Trackers blocklist
 ! Description: Trackers blocklist
 ! Expires: 6 hours
-! Last modified: 2025.10.11.4
+! Last modified: 2025.10.11.5
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -32,6 +32,7 @@
 /v1/rgstr^
 ||api.svc.taiwanmedia.org/taiwan-media/puid/
 ||arte.tv/static/analytics/
+||kt.com/js/adobe/staticsLogcodeLaunch.js
 ||delishkitchen.tv/api/access_trackers
 ||dp.ru/api/*/ClientLogs
 ||dubcdn.com/analytics/
@@ -39,6 +40,7 @@
 ||fino.svc.litv.tv/acs/dms.js
 ||framerusercontent.com/modules/*/events.js
 ||framerusercontent.com/sites/*/notifier.
+||freshworksapi.com/euc/rts-min.js
 ||gala.games/gal/fp/
 ||globalbunjang.com/api/log/
 ||globalbunjang.com/scripts/google_tag_manager.js
@@ -55,7 +57,6 @@
 ||qobuz.com/api.json/*/user/tracking?
 ||rtings.com/js/script.manual.js
 ||rtings.com/api/event
-||rts-static-prod.freshworksapi.com/euc/rts-min.js
 ||slideshare.net/api/v*/events
 ||spankbang.com/api/*/click
 ||spankbang.com/api/*/events
@@ -92,6 +93,9 @@ superhuman.com##+js(trusted-replace-argument, String.prototype.includes, 0, json
 youskbe.com##+js(set-local-storage-item, __adm_uid, $remove$)
 ! statsig
 bloomberg.com,slideshare.net##+js(set-local-storage-item, /^statsig/, $remove$)
+
+! Breakage
+kt.com##+js(set, KT_trackClicks, noopFunc)
 
 ! Risky
 ||analytics.
