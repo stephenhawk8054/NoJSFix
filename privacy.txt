@@ -1,7 +1,7 @@
 ! Title: Trackers blocklist
 ! Description: Trackers blocklist
 ! Expires: 6 hours
-! Last modified: 2025.10.11.19
+! Last modified: 2025.10.11.20
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -38,6 +38,7 @@
 /api/*/track-impression
 /boq-subscribewithgoogle/*
 /initialize?k=client-
+/libs/widget/sensors/*
 /mw/track/view?
 /piano/engagement
 /rgstr?k=client-
