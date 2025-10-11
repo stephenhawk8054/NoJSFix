@@ -1,7 +1,7 @@
 ! Title: Trackers blocklist
 ! Description: Trackers blocklist
 ! Expires: 6 hours
-! Last modified: 2025.10.11.14
+! Last modified: 2025.10.11.15
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -12,6 +12,7 @@
 ||a.nytimes.com^
 ||a.streamed.pk^
 ||api-logdev.sohatv.vn^
+||data.tm-awx.com^
 ||deqik.com^
 ||e2elog.fetnet.net^
 ||e2elogv2.*.cloudapp.azure.com^
@@ -21,6 +22,7 @@
 ||jzq915.playmobil.com^
 ||ldpsh.fashionnova.com^
 ||meter-svc.nytimes.com^
+||onesignal.com^
 ||p.eneba.com^
 ||partners.pelikan.
 ||pocustrack.com^
@@ -91,6 +93,16 @@ willap.jp%2Ft%3Fr=$image
 ||cnet.com^$removeparam=ftag
 ||cnet.com^$removeparam=medium
 ||cnet.com^$removeparam=source
+
+! express.co.uk
+/feliz-tracking*.min.js
+/amplitude*.min.js
+/prebid*.min.js
+/prebid_express*.min.js
+/adblockdetector*.min.js
+/check-adblock*.min.js
+/newrelic*.min.js
+/onetag*.min.js
 
 ! scriptlets
 agatameble.pl##+js(remove-cookie, private_content_version, when, scroll keydown)
