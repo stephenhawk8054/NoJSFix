@@ -1,7 +1,7 @@
 ! Title: Trackers blocklist
 ! Description: Trackers blocklist
 ! Expires: 6 hours
-! Last modified: 2025.10.11.9
+! Last modified: 2025.10.11.10
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -87,6 +87,7 @@ azrhymes.com##+js(remove-cookie, visitor, when, scroll keydown)
 azrhymes.com##+js(set-local-storage-item, visitor_hash, $remove$)
 bloomberg.com##+js(remove-cookie, _pxhd, when, scroll keydown)
 dcinside.com##+js(trusted-set-cookie, ci_c, , 0, , domain, .dcinside.com)
+dmm.com##+js(remove-cookie, /^top_/)
 hostadvice.com##+js(remove-cookie, msvt_uid, when, scroll keydown)
 hoyoverse.com##+js(trusted-set-cookie, _HYVUUID, , 0, , domain, .hoyoverse.com)
 iflscience.com##+js(set-local-storage-item, /SPOTIM_|social-browser-storage/, $remove$)
