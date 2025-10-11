@@ -1,7 +1,7 @@
 ! Title: Trackers blocklist
 ! Description: Trackers blocklist
 ! Expires: 6 hours
-! Last modified: 2025.10.11.16
+! Last modified: 2025.10.11.17
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -16,6 +16,7 @@
 ||deqik.com^
 ||e2elog.fetnet.net^
 ||e2elogv2.*.cloudapp.azure.com^
+||email.2ndswing.com^
 ||event.arte.tv^
 ||ezodn.com^
 ||hotbhaluca.com^
@@ -107,6 +108,7 @@ willap.jp%2Ft%3Fr=$image
 /onetag*.min.js
 
 ! scriptlets
+2ndswing.com##+js(set-local-storage-item, uw-uid, $remove$)
 agatameble.pl##+js(remove-cookie, private_content_version, when, scroll keydown)
 azrhymes.com##+js(remove-cookie, visitor, when, scroll keydown)
 azrhymes.com##+js(set-local-storage-item, visitor_hash, $remove$)
