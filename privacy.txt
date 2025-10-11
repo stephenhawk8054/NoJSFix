@@ -1,7 +1,7 @@
 ! Title: Trackers blocklist
 ! Description: Trackers blocklist
 ! Expires: 6 hours
-! Last modified: 2025.10.11.8
+! Last modified: 2025.10.11.9
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -70,6 +70,7 @@
 ||spotifycdn.com/cdn/js/gtm.
 ||thehealthsite.com/loadad/
 ||thehealthsite.com/~partytown/
+||townwork.net/api/lettice/collect/
 ||vodafone.com/submit-events
 ||y2down.cc/cdn-cgi/trace
 ||youtube.com/api/stats/$method=post
@@ -98,6 +99,7 @@ slideshare.net##+js(remove-cookie, browser_id, when, scroll keydown)
 superhuman.com##+js(no-fetch-if, /metrics.)
 superhuman.com##+js(remove-cookie, web-device, when, scroll keydown)
 superhuman.com##+js(trusted-replace-argument, String.prototype.includes, 0, json:"nonexist", condition, /^superhuman$/)
+townwork.net##+js(remove-cookie, cwr_u)
 youskbe.com##+js(set-local-storage-item, __adm_uid, $remove$)
 ! _shopify_y
 mous.co,titan-army.com##+js(remove-cookie, _shopify_y, when, scroll keydown)
