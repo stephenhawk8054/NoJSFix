@@ -1,7 +1,7 @@
 ! Title: Trackers blocklist
 ! Description: Trackers blocklist
 ! Expires: 6 hours
-! Last modified: 2025.10.11.15
+! Last modified: 2025.10.11.16
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -21,6 +21,7 @@
 ||hotbhaluca.com^
 ||jzq915.playmobil.com^
 ||ldpsh.fashionnova.com^
+||marathondataco.com^
 ||meter-svc.nytimes.com^
 ||onesignal.com^
 ||p.eneba.com^
@@ -29,6 +30,7 @@
 ||smind.hr^
 ||tracking.dpmlol.com^
 ||wa.slideshare.net^
+||wurflcloud.com^
 
 ! URLs
 /api/*/track-impression
@@ -109,6 +111,7 @@ agatameble.pl##+js(remove-cookie, private_content_version, when, scroll keydown)
 azrhymes.com##+js(remove-cookie, visitor, when, scroll keydown)
 azrhymes.com##+js(set-local-storage-item, visitor_hash, $remove$)
 bloomberg.com##+js(remove-cookie, _pxhd, when, scroll keydown)
+carved.com##+js(set-local-storage-item, onsite_client_id, $remove$)
 dcinside.com##+js(trusted-set-cookie, ci_c, , 0, , domain, .dcinside.com)
 dmm.com##+js(remove-cookie, /^top_/)
 eneba.com##+js(remove-cookie, userId, when, scroll keydown)
@@ -129,7 +132,7 @@ superhuman.com##+js(trusted-replace-argument, String.prototype.includes, 0, json
 townwork.net##+js(remove-cookie, cwr_u)
 youskbe.com##+js(set-local-storage-item, __adm_uid, $remove$)
 ! _shopify_y
-mous.co,titan-army.com##+js(remove-cookie, _shopify_y, when, scroll keydown)
+carved.com,mous.co,titan-army.com##+js(remove-cookie, _shopify_y, when, scroll keydown)
 ! statsig
 bloomberg.com,nytimes.com,slideshare.net##+js(set-local-storage-item, /^statsig/, $remove$)
 
