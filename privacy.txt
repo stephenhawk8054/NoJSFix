@@ -1,7 +1,7 @@
 ! Title: Trackers blocklist
 ! Description: Trackers blocklist
 ! Expires: 6 hours
-! Last modified: 2025.10.11.18
+! Last modified: 2025.10.11.19
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -19,6 +19,7 @@
 ||email.2ndswing.com^
 ||event.arte.tv^
 ||ezodn.com^
+||fuse.ubs.com^
 ||hotbhaluca.com^
 ||jzq915.playmobil.com^
 ||ldpsh.fashionnova.com^
@@ -47,6 +48,7 @@
 /v*/engagement/*
 /v1/rgstr^
 /^https:\/\/www\.purevpn\.[a-z]+\/[a-z0-9]{7}\/$/$script
+||adobedtm.com/launch-$important
 ||api.svc.taiwanmedia.org/taiwan-media/puid/
 ||arte.tv/static/analytics/
 ||kt.com/js/adobe/staticsLogcodeLaunch.js
