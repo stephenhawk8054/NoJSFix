@@ -1,7 +1,7 @@
 ! Title: Trackers blocklist
 ! Description: Trackers blocklist
 ! Expires: 6 hours
-! Last modified: 2025.10.11.2
+! Last modified: 2025.10.11.3
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -53,6 +53,7 @@
 ||qobuz.com/api.json/*/user/tracking?
 ||rtings.com/js/script.manual.js
 ||rtings.com/api/event
+||rts-static-prod.freshworksapi.com/euc/rts-min.js
 ||slideshare.net/api/v*/events
 ||spankbang.com/api/*/click
 ||spankbang.com/api/*/events
@@ -81,6 +82,7 @@ mous.co##+js(remove-cookie, _shopify_y, when, scroll keydown)
 mous.co##+js(set-local-storage-item, acs_uid, $remove$)
 pelikan.*##+js(remove-cookie, /^codeblocks_/, when, scroll keydown)
 jdpower.com##+js(remove-cookie, /_pxhd|userid/, when, scroll keydown)
+nencinisport.it##+js(remove-cookie, _fw_crm_v, when, scroll keydown)
 slideshare.net##+js(remove-cookie, browser_id, when, scroll keydown)
 superhuman.com##+js(no-fetch-if, /metrics.)
 superhuman.com##+js(remove-cookie, web-device, when, scroll keydown)
