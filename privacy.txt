@@ -1,7 +1,7 @@
 ! Title: Trackers blocklist
 ! Description: Trackers blocklist
 ! Expires: 6 hours
-! Last modified: 2025.10.11.10
+! Last modified: 2025.10.11.11
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -18,6 +18,7 @@
 ||ezodn.com^
 ||hotbhaluca.com^
 ||jzq915.playmobil.com^
+||p.eneba.com^
 ||partners.pelikan.
 ||pocustrack.com^
 ||smind.hr^
@@ -40,6 +41,7 @@
 ||delishkitchen.tv/api/access_trackers
 ||dp.ru/api/*/ClientLogs
 ||dubcdn.com/analytics/
+||eneba.com/metrics/
 ||err.ee/api/statistics/
 ||fino.svc.litv.tv/acs/dms.js
 ||framerusercontent.com/modules/*/events.js
@@ -58,6 +60,7 @@
 ||neo24.pl/rest/V*/statistics/
 ||neo24.pl/common-scripts/abTests-
 ||news.google.com/swg/
+||nsureapi.com/sdk.js
 ||player.svc.litv.tv/pixel/
 ||pusti.svc.litv.tv/puid
 ||qobuz.com/api.json/*/user/tracking?
@@ -88,6 +91,7 @@ azrhymes.com##+js(set-local-storage-item, visitor_hash, $remove$)
 bloomberg.com##+js(remove-cookie, _pxhd, when, scroll keydown)
 dcinside.com##+js(trusted-set-cookie, ci_c, , 0, , domain, .dcinside.com)
 dmm.com##+js(remove-cookie, /^top_/)
+eneba.com##+js(remove-cookie, userId, when, scroll keydown)
 hostadvice.com##+js(remove-cookie, msvt_uid, when, scroll keydown)
 hoyoverse.com##+js(trusted-set-cookie, _HYVUUID, , 0, , domain, .hoyoverse.com)
 iflscience.com##+js(set-local-storage-item, /SPOTIM_|social-browser-storage/, $remove$)
