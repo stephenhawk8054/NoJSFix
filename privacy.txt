@@ -1,7 +1,7 @@
 ! Title: Trackers blocklist
 ! Description: Trackers blocklist
 ! Expires: 6 hours
-! Last modified: 2025.10.11.13
+! Last modified: 2025.10.11.14
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -9,6 +9,7 @@
 ! GitHub pull requests: https://github.com/stephenhawk8054/NoJSFix/pulls
 
 ! Domains
+||a.nytimes.com^
 ||a.streamed.pk^
 ||api-logdev.sohatv.vn^
 ||deqik.com^
@@ -19,6 +20,7 @@
 ||hotbhaluca.com^
 ||jzq915.playmobil.com^
 ||ldpsh.fashionnova.com^
+||meter-svc.nytimes.com^
 ||p.eneba.com^
 ||partners.pelikan.
 ||pocustrack.com^
@@ -29,11 +31,14 @@
 ! URLs
 /api/*/track-impression
 /boq-subscribewithgoogle/*
+/initialize?k=client-
 /mw/track/view?
 /piano/engagement
+/rgstr?k=client-
 /server-api/impression-api
 /shopifycloud/perf-kit/*
 /shopifycloud/*/shop_events_listener-
+/statsig/*
 /v*/engagement/*
 /v1/rgstr^
 ||api.svc.taiwanmedia.org/taiwan-media/puid/
@@ -101,6 +106,7 @@ hoyoverse.com##+js(trusted-set-cookie, _HYVUUID, , 0, , domain, .hoyoverse.com)
 iflscience.com##+js(set-local-storage-item, /SPOTIM_|social-browser-storage/, $remove$)
 inet.se##+js(set-local-storage-item, /^visitor/, $remove$)
 mous.co##+js(set-local-storage-item, acs_uid, $remove$)
+nytimes.com##+js(remove-cookie, nyt-a)
 pelikan.*##+js(remove-cookie, /^codeblocks_/, when, scroll keydown)
 jdpower.com##+js(remove-cookie, /_pxhd|userid/, when, scroll keydown)
 nencinisport.it##+js(remove-cookie, _fw_crm_v, when, scroll keydown)
@@ -113,7 +119,7 @@ youskbe.com##+js(set-local-storage-item, __adm_uid, $remove$)
 ! _shopify_y
 mous.co,titan-army.com##+js(remove-cookie, _shopify_y, when, scroll keydown)
 ! statsig
-bloomberg.com,slideshare.net##+js(set-local-storage-item, /^statsig/, $remove$)
+bloomberg.com,nytimes.com,slideshare.net##+js(set-local-storage-item, /^statsig/, $remove$)
 
 ! Breakage
 kt.com##+js(set, KT_trackClicks, noopFunc)
