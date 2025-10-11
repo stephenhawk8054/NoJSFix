@@ -1,7 +1,7 @@
 ! Title: Trackers blocklist
 ! Description: Trackers blocklist
 ! Expires: 6 hours
-! Last modified: 2025.10.11.6
+! Last modified: 2025.10.11.7
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -26,6 +26,7 @@
 
 ! URLs
 /api/*/track-impression
+/mw/track/view?
 /piano/engagement
 /server-api/impression-api
 /shopifycloud/perf-kit/*
