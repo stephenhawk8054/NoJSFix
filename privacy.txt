@@ -1,7 +1,7 @@
 ! Title: Trackers blocklist
 ! Description: Trackers blocklist
 ! Expires: 6 hours
-! Last modified: 2025.10.11.17
+! Last modified: 2025.10.11.18
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -46,6 +46,7 @@
 /statsig/*
 /v*/engagement/*
 /v1/rgstr^
+/^https:\/\/www\.purevpn\.[a-z]+\/[a-z0-9]{7}\/$/$script
 ||api.svc.taiwanmedia.org/taiwan-media/puid/
 ||arte.tv/static/analytics/
 ||kt.com/js/adobe/staticsLogcodeLaunch.js
@@ -127,6 +128,7 @@ nytimes.com##+js(remove-cookie, nyt-a)
 pelikan.*##+js(remove-cookie, /^codeblocks_/, when, scroll keydown)
 jdpower.com##+js(remove-cookie, /_pxhd|userid/, when, scroll keydown)
 nencinisport.it##+js(remove-cookie, _fw_crm_v, when, scroll keydown)
+purevpn.*##+js(remove-cookie, /^intercom-/, when, scroll keydown)
 slideshare.net##+js(remove-cookie, browser_id, when, scroll keydown)
 superhuman.com##+js(no-fetch-if, /metrics.)
 superhuman.com##+js(remove-cookie, web-device, when, scroll keydown)
