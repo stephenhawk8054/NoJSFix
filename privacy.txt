@@ -97,6 +97,10 @@
 ||youtube.com/api/stats/$method=post
 willap.jp%2Ft%3Fr=$image
 
+! email
+/click.ses.fox.com/*$image
+%2Fclick.ses.fox.com%2F$image
+
 ! removeparam
 ||cnet.com^$removeparam=ftag
 ||cnet.com^$removeparam=medium
