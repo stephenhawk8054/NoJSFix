@@ -98,6 +98,8 @@
 ||thehealthsite.com/~partytown/
 ||townwork.net/api/lettice/collect/
 ||vodafone.com/submit-events
+||voorkeuren.tvgids.nl/v1/_|
+||voorkeuren.tvgids.nl/js/v*/osb-cmp.min.mjs
 ||y2down.cc/cdn-cgi/trace
 ||youtube.com/api/stats/$method=post
 willap.jp%2Ft%3Fr=$image
@@ -149,6 +151,8 @@ superhuman.com##+js(no-fetch-if, /metrics.)
 superhuman.com##+js(remove-cookie, web-device, when, scroll keydown)
 superhuman.com##+js(trusted-replace-argument, String.prototype.includes, 0, json:"nonexist", condition, /^superhuman$/)
 townwork.net##+js(remove-cookie, cwr_u)
+tvgids.nl##+js(set-local-storage-item, /duid/, $remove$)
+tvgids.nl##+js(remove-cookie, /duid|cs_fpid/, when, scroll keydown)
 youskbe.com##+js(set-local-storage-item, __adm_uid, $remove$)
 ! _shopify_y
 carved.com,mous.co,titan-army.com##+js(remove-cookie, _shopify_y, when, scroll keydown)
