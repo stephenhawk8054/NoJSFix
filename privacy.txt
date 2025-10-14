@@ -1,7 +1,7 @@
 ! Title: Trackers blocklist
 ! Description: Trackers blocklist
 ! Expires: 6 hours
-! Last modified: 2025.10.11.21
+! Last modified: 2025.10.14.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -136,6 +136,8 @@ nytimes.com##+js(remove-cookie, nyt-a)
 pelikan.*##+js(remove-cookie, /^codeblocks_/, when, scroll keydown)
 jdpower.com##+js(remove-cookie, /_pxhd|userid/, when, scroll keydown)
 nencinisport.it##+js(remove-cookie, _fw_crm_v, when, scroll keydown)
+novakid.*,novakidschool.com##+js(remove-cookie, ftr)
+novakid.*,novakidschool.com##+js(set-local-storage-item, ftr, $remove$)
 purevpn.*##+js(remove-cookie, /^intercom-/, when, scroll keydown)
 slideshare.net##+js(remove-cookie, browser_id, when, scroll keydown)
 superhuman.com##+js(no-fetch-if, /metrics.)
