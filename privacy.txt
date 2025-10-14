@@ -85,6 +85,7 @@
 ||player.svc.litv.tv/pixel/
 ||pusti.svc.litv.tv/puid
 ||qobuz.com/api.json/*/user/tracking?
+||repost.aws/api/v*/content/markResourceViewed
 ||rtings.com/js/script.manual.js
 ||rtings.com/api/event
 ||shopify.com/*/ba_pop_tracking.js
