@@ -1,7 +1,7 @@
 ! Title: Trackers blocklist
 ! Description: Trackers blocklist
 ! Expires: 6 hours
-! Last modified: 2025.10.14.1
+! Last modified: 2025.10.14.2
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -50,6 +50,7 @@
 /v*/engagement/*
 /v1/rgstr^
 /^https:\/\/www\.purevpn\.[a-z]+\/[a-z0-9]{7}\/$/$script
+||20min.ch/__global/att/prod/latest/ats-tm.js
 ||adobedtm.com/launch-$important
 ||api.svc.taiwanmedia.org/taiwan-media/puid/
 ||arte.tv/static/analytics/
@@ -71,6 +72,7 @@
 ||jsdelivr.net/npm/search-insights
 ||langwill.com/api/v*/merchant/getVisits
 ||lenta.ru/atlas/metrics/
+||lessentiel.lu/kaia/v*/persist
 ||letscooee.com/v*/event/
 ||litv.tv/api/generate-device-id
 ||luckyduckgames.com/global/index.php?controller=statistics
@@ -86,6 +88,7 @@
 ||rtings.com/api/event
 ||shopify.com/*/ba_pop_tracking.js
 ||slideshare.net/api/v*/events
+||smallencode.me/js*_as.js
 ||spankbang.com/api/*/click
 ||spankbang.com/api/*/events
 ||spotifycdn.com/cdn/js/gtm.
@@ -157,6 +160,7 @@ kt.com##+js(set, KT_trackClicks, noopFunc)
 ||analytics.
 ||cm.bloomberg.com^
 ||digitalbox.workers.dev^
+||k5a.io^
 ||karte.io^
 ||snrbox.com^
 /event-recorder-client/*
