@@ -1,7 +1,7 @@
 ! Title: Trackers blocklist
 ! Description: Trackers blocklist
 ! Expires: 6 hours
-! Last modified: 2025.10.19.3
+! Last modified: 2025.10.19.4
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -38,9 +38,12 @@
 
 ! URLs
 /api/*/track-impression
+/batchexecute?
 /boq-subscribewithgoogle/*
+/ccm/collect?
 /gtm/*
 /initialize?k=client-
+/jserror?
 /libs/widget/sensors/*
 /mw/track/view?
 /piano/engagement
@@ -176,6 +179,7 @@ kt.com##+js(set, KT_trackClicks, noopFunc)
 /lre-events^
 /Statistics/statistics.
 /v1/initialize^
+/web-vitals
 ^utm_$removeparam=/^utm_/
 $removeparam=ref
 $removeparam=ref_
