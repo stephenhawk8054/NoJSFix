@@ -51,4 +51,4 @@
 ||cdn.mos.cms.futurecdn.net^$doc,image,uritransform=/(?:-\d{2,4}){2}\.jpg\b/.jpg/
 
 ! https://unit42.paloaltonetworks.com/global-smishing-campaign/
-/wp-content/uploads/2025/10/word-image-283082-161931-10-1810x700.png
+/wp-content/uploads/*.png^$doc,image,uritransform=/(\/wp-content\/uploads\/\d{4}\/\d{1,2}\/(?:[a-z0-9]+-)+[a-z0-9]+)-\d+x\d+\.png\b/$1.png/
