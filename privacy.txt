@@ -1,7 +1,7 @@
 ! Title: Trackers blocklist
 ! Description: Trackers blocklist
 ! Expires: 6 hours
-! Last modified: 2025.10.19.5
+! Last modified: 2025.11.01.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -54,6 +54,7 @@
 /statsig/*
 /v*/engagement/*
 /v1/rgstr^
+/wp-content/cache/min/*/analytics.js
 /^https:\/\/www\.purevpn\.[a-z]+\/[a-z0-9]{7}\/$/$script
 ||20min.ch/__global/att/prod/latest/ats-tm.js
 ||adobedtm.com/launch-$important
