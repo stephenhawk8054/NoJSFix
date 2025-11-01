@@ -1,7 +1,7 @@
 ! Title: Trackers blocklist
 ! Description: Trackers blocklist
 ! Expires: 6 hours
-! Last modified: 2025.11.01.1
+! Last modified: 2025.11.01.2
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -26,6 +26,7 @@
 ||jzq915.playmobil.com^
 ||ldpsh.fashionnova.com^
 ||marathondataco.com^
+||matomo-
 ||meter-svc.nytimes.com^
 ||onesignal.com^
 ||p.eneba.com^
