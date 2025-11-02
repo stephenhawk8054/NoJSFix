@@ -1,7 +1,7 @@
 ! Title: Trackers blocklist
 ! Description: Trackers blocklist
 ! Expires: 6 hours
-! Last modified: 2025.11.02.1
+! Last modified: 2025.11.02.2
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -180,6 +180,7 @@ kt.com##+js(set, KT_trackClicks, noopFunc)
 ||k5a.io^
 ||karte.io^
 ||snrbox.com^
+||stats.
 /event-recorder-client/*
 /lre-events^
 /Statistics/statistics.
