@@ -4,9 +4,10 @@
 // @match       https://www.forbes.com/*
 // @match       https://www.cnbc.com/*
 // @match       https://thanhnien.vn/*
+// @match       https://baomoi.com/*
 // @grant       none
 // @run-at      document-end
-// @version     3.0
+// @version     4.0
 // @author      -
 // @description Restore frames and images in no-scripting mode
 // @downloadURL https://raw.githubusercontent.com/stephenhawk8054/NoJSFix/refs/heads/main/sandbox.user.js
@@ -73,8 +74,27 @@ const thanhnien = () => {
   })
 }
 
+// baomoi.com
+const baomoi = () => {
+  let images = [];
+  const bodys = JSON.parse(document.querySelector("script#__NEXT_DATA__")?.innerText)?.props?.pageProps?.resp?.data?.content?.bodys;
+  if (!bodys) { return; }
+  bodys.forEach(body => {
+    if (body.type !== "image") { return; }
+    images.push(body.originUrl || "");
+  })
+  if (!images) { return; }
+  document.querySelectorAll(".content-body > .body-image").forEach((bodyImage, index) => {
+    bodyImage.querySelectorAll("source").forEach(source => {
+      source.srcset = images[index];
+    });
+    bodyImage.querySelector("img").src = images[index];
+  })
+}
+
 // Sites
 const hostname = location.hostname;
 if (hostname.includes("forbes.com")) { forbes() }
 else if (hostname.includes("cnbc.com")) { cnbc() }
 else if (hostname.includes("thanhnien.vn")) { thanhnien() }
+else if (hostname.includes("baomoi.com")) { baomoi() }
