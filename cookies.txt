@@ -1,7 +1,7 @@
 ! Title: Cookie banners
 ! Description: Hide/Reject cookie banner
 ! Expires: 8 hours
-! Last modified: 2025.09.14.1
+! Last modified: 2026.04.05.1
 ! Homepage: https://github.com/stephenhawk8054/NoJSFix
 ! License: https://github.com/stephenhawk8054/NoJSFix/blob/main/LICENSE
 !
@@ -64,7 +64,7 @@
 ##.cookie-bar
 
 ! https://www.geeksforgeeks.org/data-science/likelihood-function/
-##.cookie-consent
+##body .cookie-consent
 
 ! https://labex.io/tutorials/numpy-numpy-einsum-for-scientific-computing-4991
 ##.cookie-popup
